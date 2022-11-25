@@ -80,7 +80,7 @@ jobs:
            
           # TODO - verify module looks valid?
            
-          rm -R modules/${{ github.event.inputs.module-name }}
+          rm -Rf modules/${{ github.event.inputs.module-name }} || true
 
           mv pkg module/${{ github.event.inputs.module-name }}
           
