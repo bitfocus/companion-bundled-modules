@@ -1,0 +1,1 @@
+{"version":3,"file":"MediaPoolClearStillCommand.d.ts","sourceRoot":"","sources":["../../../src/commands/Media/MediaPoolClearStillCommand.ts"],"names":[],"mappings":";AAAA,OAAO,EAAE,oBAAoB,EAAE,MAAM,gBAAgB,CAAA;AAErD,qBAAa,0BAA2B,SAAQ,oBAAoB,CAAC;IAAE,KAAK,EAAE,MAAM,CAAA;CAAE,CAAC;IACtF,gBAAuB,OAAO,UAAS;gBAE3B,KAAK,EAAE,MAAM;IAIlB,SAAS,IAAI,MAAM;CAK1B"}

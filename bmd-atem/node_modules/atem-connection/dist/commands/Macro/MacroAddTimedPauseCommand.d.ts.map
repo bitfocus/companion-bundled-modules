@@ -1,0 +1,1 @@
+{"version":3,"file":"MacroAddTimedPauseCommand.d.ts","sourceRoot":"","sources":["../../../src/commands/Macro/MacroAddTimedPauseCommand.ts"],"names":[],"mappings":";AAAA,OAAO,EAAE,oBAAoB,EAAE,MAAM,gBAAgB,CAAA;AAErD,qBAAa,yBAA0B,SAAQ,oBAAoB,CAAC;IAAE,MAAM,EAAE,MAAM,CAAA;CAAE,CAAC;IACtF,gBAAuB,OAAO,UAAS;gBAE3B,MAAM,EAAE,MAAM;IAInB,SAAS,IAAI,MAAM;CAK1B"}

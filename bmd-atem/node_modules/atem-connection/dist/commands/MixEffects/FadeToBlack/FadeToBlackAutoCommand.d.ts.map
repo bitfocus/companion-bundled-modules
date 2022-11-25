@@ -1,0 +1,1 @@
+{"version":3,"file":"FadeToBlackAutoCommand.d.ts","sourceRoot":"","sources":["../../../../src/commands/MixEffects/FadeToBlack/FadeToBlackAutoCommand.ts"],"names":[],"mappings":";AAAA,OAAO,EAAE,oBAAoB,EAAE,MAAM,mBAAmB,CAAA;AAExD,qBAAa,sBAAuB,SAAQ,oBAAoB,CAAC,IAAI,CAAC;IACrE,gBAAuB,OAAO,UAAS;IAEvC,SAAgB,SAAS,EAAE,MAAM,CAAA;gBAErB,SAAS,EAAE,MAAM;IAMtB,SAAS,IAAI,MAAM;CAK1B"}

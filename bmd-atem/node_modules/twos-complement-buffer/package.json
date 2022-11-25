@@ -1,0 +1,81 @@
+{
+  "name": "twos-complement-buffer",
+  "version": "0.0.1",
+  "description": "Encode and decode two's complement integers to and from byte buffers.",
+  "homepage": "https://github.com/rochars/twos-complement-buffer",
+  "author": "Rafael da Silva Rocha <rocha.rafaelsilva@gmail.com>",
+  "license": "MIT",
+  "module": "./twos-complement-buffer.js",
+  "types": "./twos-complement-buffer.d.ts",
+  "main": "./twos-complement-buffer.umd.js",
+  "engines": {
+    "node": ">=8"
+  },
+  "keywords": [
+    "byte",
+    "buffer",
+    "binary",
+    "parser",
+    "number",
+    "signed",
+    "twos-complement",
+    "8-bit",
+    "16-bit",
+    "32-bit",
+    "pack",
+    "unpack",
+    "encode",
+    "decode",
+    "serialize",
+    "deserialize"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rochars/twos-complement-buffer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rochars/twos-complement-buffer/issues"
+  },
+  "directories": {
+    "externs": "externs"
+  },
+  "files": [
+    "externs",
+    "twos-complement-buffer.js",
+    "twos-complement-buffer.d.ts",
+    "twos-complement-buffer.umd.js",
+    "LICENSE",
+    "CHANGELOG.md",
+    "README.md"
+  ],
+  "scripts": {
+    "lint": "jshint twos-complement-buffer.js externs test/src",
+    "test": "nyc ./node_modules/mocha/bin/_mocha test/src --recursive -R dot",
+    "test-umd": "node ./node_modules/mocha/bin/_mocha test/src --umd --recursive -R dot",
+    "test-tsc": "tsc ./test/dist/TypeScript/main.ts && node -r esm ./test/dist/TypeScript/main.js",
+    "test-dist": "npm run test-umd && npm run test-tsc",
+    "pack": "npm run test && rollup -c && npm run test-dist",
+    "doc": "./node_modules/.bin/jsdoc twos-complement-buffer.js -d docs -r README.md -t node_modules/docdash",
+    "build": "npm run lint && npm run pack && npm run doc",
+    "coverage": "nyc report --reporter=lcov > coverage.lcov && codecov"
+  },
+  "devDependencies": {
+    "codecov": "^3.0.2",
+    "docdash": "^0.4.0",
+    "esm": "^3.0.51",
+    "google-closure-compiler": "^20180610.0.2",
+    "jsdoc": "^3.5.5",
+    "jshint": "^2.9.5",
+    "mocha": "^5.2.0",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nyc": "^12.0.2",
+    "rollup": "^0.61.2",
+    "rollup-plugin-closure-compiler-js": "^1.0.6",
+    "rollup-plugin-commonjs": "^9.1.4",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "uint-buffer": "^0.1.0"
+  }
+}

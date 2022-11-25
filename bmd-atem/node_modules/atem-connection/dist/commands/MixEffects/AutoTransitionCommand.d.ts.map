@@ -1,0 +1,1 @@
+{"version":3,"file":"AutoTransitionCommand.d.ts","sourceRoot":"","sources":["../../../src/commands/MixEffects/AutoTransitionCommand.ts"],"names":[],"mappings":";AAAA,OAAO,EAAE,oBAAoB,EAAE,MAAM,gBAAgB,CAAA;AAErD,qBAAa,qBAAsB,SAAQ,oBAAoB,CAAC,IAAI,CAAC;IACpE,gBAAuB,OAAO,UAAS;IAEvC,SAAgB,SAAS,EAAE,MAAM,CAAA;gBAErB,SAAS,EAAE,MAAM;IAMtB,SAAS,IAAI,MAAM;CAK1B"}

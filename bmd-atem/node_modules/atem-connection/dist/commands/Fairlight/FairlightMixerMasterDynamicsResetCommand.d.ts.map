@@ -1,0 +1,1 @@
+{"version":3,"file":"FairlightMixerMasterDynamicsResetCommand.d.ts","sourceRoot":"","sources":["../../../src/commands/Fairlight/FairlightMixerMasterDynamicsResetCommand.ts"],"names":[],"mappings":";AAAA,OAAO,EAAE,eAAe,EAAE,MAAM,gBAAgB,CAAA;AAChD,OAAO,EAAE,2BAA2B,EAAE,MAAM,UAAU,CAAA;AAEtD,qBAAa,wCAAyC,SAAQ,eAAe,CAAC,2BAA2B,CAAC;IACzG,gBAAuB,OAAO,UAAS;IAEhC,SAAS,IAAI,MAAM;CAoB1B"}

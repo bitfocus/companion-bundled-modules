@@ -1,0 +1,43 @@
+/**
+ * @fileoverview Externs for twos-complement-buffer 0.0.1
+ * @see https://github.com/rochars/twos-complement-buffer
+ * @externs
+ */
+
+/**
+ * A class to write and read two's complement integers
+ * to and from byte buffers.
+ */
+var TwosComplementBuffer = {};
+
+/**
+ * The number of bits used by one number.
+ * @type {number}
+ */
+TwosComplementBuffer.prototype.bits = 0;
+
+/**
+ * The number of bytes used by one number.
+ * @type {number}
+ */
+TwosComplementBuffer.prototype.bytes = 0;
+
+/**
+ * Write one two's complement signed integer to a byte buffer.
+ * @param {!Uint8Array|!Array<number>} buffer An array of bytes.
+ * @param {number} num The number.
+ * @param {number=} index The index being written in the byte buffer.
+ * @return {number} The next index to write on the byte buffer.
+ * @throws {Error} If num is NaN.
+ * @throws {Error} On overflow.
+ */
+TwosComplementBuffer.prototype.pack = function(buffer, num, index=0) {};
+
+/**
+ * Read one two's complement signed integer from a byte buffer.
+ * @param {!Uint8Array|!Array<number>} buffer An array of bytes.
+ * @param {number=} index The index to read.
+ * @return {number}
+ * @throws {Error} On overflow.
+ */
+TwosComplementBuffer.prototype.unpack = function(buffer, index=0) {};

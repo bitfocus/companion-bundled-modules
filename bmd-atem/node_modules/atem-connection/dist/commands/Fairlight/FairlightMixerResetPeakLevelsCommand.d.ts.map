@@ -1,0 +1,1 @@
+{"version":3,"file":"FairlightMixerResetPeakLevelsCommand.d.ts","sourceRoot":"","sources":["../../../src/commands/Fairlight/FairlightMixerResetPeakLevelsCommand.ts"],"names":[],"mappings":";AAAA,OAAO,EAAE,oBAAoB,EAAE,MAAM,gBAAgB,CAAA;AAErD,qBAAa,oCAAqC,SAAQ,oBAAoB,CAAC;IAAE,GAAG,EAAE,OAAO,CAAC;IAAC,MAAM,EAAE,OAAO,CAAA;CAAE,CAAC;IAChH,gBAAuB,OAAO,UAAS;IAEhC,SAAS,IAAI,MAAM;CAoB1B"}

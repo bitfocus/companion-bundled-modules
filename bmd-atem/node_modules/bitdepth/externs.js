@@ -1,0 +1,17 @@
+/**
+ * @fileoverview Externs for bitdepth 7.0
+ *
+ * @see https://github.com/rochars/bitdepth
+ * @externs
+ */
+
+/**
+ * Change the bit depth of samples. The input array.
+ * @param {!TypedArray} input The samples.
+ * @param {string} original The original bit depth of the data.
+ *      One of "8" ... "53", "32f", "64"
+ * @param {string} target The desired bit depth for the data.
+ *      One of "8" ... "53", "32f", "64"
+ * @param {!TypedArray} output The output array.
+ */
+function bitDepth(input, original, target, output) {}

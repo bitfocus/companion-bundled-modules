@@ -1,0 +1,1 @@
+{"version":3,"file":"common.d.ts","sourceRoot":"","sources":["../../src/state/common.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,QAAQ;IACxB,KAAK,EAAE,MAAM,CAAA;IACb,OAAO,EAAE,MAAM,CAAA;IACf,OAAO,EAAE,MAAM,CAAA;IACf,MAAM,EAAE,MAAM,CAAA;IACd,WAAW,EAAE,OAAO,CAAA;CACpB"}

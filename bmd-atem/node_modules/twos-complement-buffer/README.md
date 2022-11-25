@@ -1,0 +1,158 @@
+# twos-complement-buffer
+Copyright (c) 2018 Rafael da Silva Rocha.  
+https://github.com/rochars/twos-complement-buffer
+
+[![NPM version](https://img.shields.io/npm/v/twos-complement-buffer.svg?style=for-the-badge)](https://www.npmjs.com/package/twos-complement-buffer) [![Docs](https://img.shields.io/badge/docs-online-blue.svg?style=for-the-badge)](https://rochars.github.io/twos-complement-buffer/docs/index.html) [![Tests](https://img.shields.io/badge/tests-online-blue.svg?style=for-the-badge)](https://rochars.github.io/twos-complement-buffer/test/dist/browser.html)  
+[![Codecov](https://img.shields.io/codecov/c/github/rochars/twos-complement-buffer.svg?style=flat-square)](https://codecov.io/gh/rochars/twos-complement-buffer) [![Unix Build](https://img.shields.io/travis/rochars/twos-complement-buffer.svg?style=flat-square)](https://travis-ci.org/rochars/twos-complement-buffer) [![Windows Build](https://img.shields.io/appveyor/ci/rochars/twos-complement-buffer.svg?style=flat-square&logo=appveyor)](https://ci.appveyor.com/project/rochars/twos-complement-buffer) [![Scrutinizer](https://img.shields.io/scrutinizer/g/rochars/twos-complement-buffer.svg?style=flat-square&logo=scrutinizer)](https://scrutinizer-ci.com/g/rochars/twos-complement-buffer/)
+
+**twos-complement-buffer** is a module to encode and decode two's complement integers to and from byte buffers.
+
+- **MIT licensed**
+- **Use it out of the box in the browser**
+- **Use it out of the box in Node.js**
+- **Can be used with arrays and typed arrays**
+- **Compatible with IE8+**
+- **Include TypeScript declaration file**
+- **Tested against Python's struct module**
+- **Less than 2kb minified**
+
+## Install
+```
+npm install twos-complement-buffer
+```
+
+## Use
+
+### Node
+If you installed via [NPM](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com), **import TwosComplementBuffer from twos-complement-buffer**:
+```javascript
+import TwosComplementBuffer from 'twos-complement-buffer';
+
+// A byte buffer, array and Uint8Array can be used
+let buffer = [];
+
+// Create a UintBuffer to handle 32-bit numbers
+let uintBufer = new UintBuffer(32);
+
+// Pack a value
+uintBufer.pack(buffer, -2045);
+
+// Check the buffer
+console.log(buffer);
+```
+
+Or **require**:
+```javascript
+const TwosComplementBuffer = require('twos-complement-buffer');
+```
+
+### Browser
+Use **twos-complement-buffer.umd.js** in the */dist* folder of this package:
+```html
+<script src="twos-complement-buffer.umd.js"></script>
+<script>
+  import TwosComplementBuffer from 'twos-complement-buffer';
+
+  // A byte buffer, array and Uint8Array can be used
+  let buffer = [];
+
+  // Create a UintBuffer to handle 32-bit numbers
+  let uintBufer = new UintBuffer(32);
+
+  // Pack a value
+  uintBufer.pack(buffer, 3247);
+
+  // Check the buffer
+  console.log(buffer);
+</script>
+```
+
+Or load it from the [jsDelivr](https://cdn.jsdelivr.net/npm/twos-complement-buffer) CDN:
+```html
+<script src="https://cdn.jsdelivr.net/npm/twos-complement-buffer"></script>
+```
+
+Or load it from [unpkg](https://unpkg.com/twos-complement-buffer):
+```html
+<script src="https://unpkg.com/twos-complement-buffer"></script>
+```
+
+## API
+```javascript
+/**
+ * A class to write and read two's complement signed integers
+ * to and from byte buffers.
+ */
+class TwosComplementBuffer {
+  
+  /**
+   * @param {number} bits The number of bits used by the integer.
+   */
+  constructor(bits) {
+    /**
+     * The number of bits used by one number.
+     * @type {number}
+     */
+    this.bits;
+    /**
+     * The number of bytes used by one number.
+     * @type {number}
+     */
+    this.bytes;
+  }
+
+  /**
+   * Write one two's complement signed integer to a byte buffer.
+   * @param {!Uint8Array|!Array<number>} buffer An array of bytes.
+   * @param {number} num The number.
+   * @param {number=} index The index being written in the byte buffer.
+   * @return {number} The next index to write on the byte buffer.
+   * @throws {Error} If num is NaN.
+   * @throws {Error} On overflow.
+   */
+  pack(buffer, num, index=0) {}
+  
+  /**
+   * Read one two's complement signed integer from a byte buffer.
+   * @param {!Uint8Array|!Array<number>} buffer An array of bytes.
+   * @param {number=} index The index to read.
+   * @return {number}
+   * @throws {Error} On overflow.
+   */
+  unpack(buffer, index=0) {}
+}
+```
+
+## Contributing
+**twos-complement-buffer** welcomes all contributions from anyone willing to work in good faith with other contributors and the community. No contribution is too small and all contributions are valued.
+
+See [CONTRIBUTING.md](https://github.com/rochars/twos-complement-buffer/blob/master/CONTRIBUTING.md) for details.
+
+### Style guide
+**twos-complement-buffer** code should follow the Google JavaScript Style Guide:  
+https://google.github.io/styleguide/jsguide.html
+
+### Code of conduct
+This project is bound by a code of conduct: The [Contributor Covenant, version 1.4](https://github.com/rochars/twos-complement-buffer/blob/master/CODE_OF_CONDUCT.md), also available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html
+
+## LICENSE
+Copyright (c) 2018 Rafael da Silva Rocha.  
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
