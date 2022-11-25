@@ -23,7 +23,7 @@ jobs:
     steps:
       - name: Clone module
         run: |
-          git clone https://github.com/bitfocus/companion-module-${{ github.event.inputs.module-name }} -b ${{ github.event.inputs.git-ref }} ${{ github.event.inputs.module-name }}
+          git clone https://github.com/bitfocus/companion-module-${{ github.event.inputs.module-name }} -b "${{ github.event.inputs.git-ref }}" "${{ github.event.inputs.module-name }}"
           
       - name: Use Node.js 14.x
         uses: actions/setup-node@v1
