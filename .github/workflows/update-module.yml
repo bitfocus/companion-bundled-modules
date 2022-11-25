@@ -24,13 +24,13 @@ jobs:
       - name: Clone module
         run: |
           git clone https://github.com/bitfocus/companion-module-${{ github.event.inputs.module-name }} -b "${{ github.event.inputs.git-ref }}" "${{ github.event.inputs.module-name }}"
-          
+
       - name: Use Node.js 14.x
         uses: actions/setup-node@v1
         with:
           # TODO - should this be configurable?
           node-version: 14.x
- 
+
       - name: Prepare module
         run: |
           cd ${{ github.event.inputs.module-name }}
@@ -38,7 +38,7 @@ jobs:
           yarn
           # yarn build would be better, but lacks the --if-present property
           npm run build --if-present
-         
+
       - name: Package module
         run: |
           cd ${{ github.event.inputs.module-name }}
@@ -52,6 +52,40 @@ jobs:
         with:
           name: pkg
           path: ${{ github.event.inputs.module-name }}/pkg.tgz
-      
+          retention-days: 1
 
+  commit:
+    runs-on: ubuntu-latest
+
+    # The second stage is to commit the module to the repository
+
+    # only allow one workflow to run this step at a time
+    concurrency: add-module-${{ github.ref }}
+    
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          path: modules
+        
+      - uses: actions/download-artifact@v3
+        with:
+          name: pkg
+
+      - name: Package module
+        run: |
+          tar -xvzf pkg.tgz
+
+          # TODO - include module metadata
+           
+          # TODO - verify module looks valid?
+           
+          rm -R modules/${{ github.event.inputs.module-name }}
+
+          mv pkg module/${{ github.event.inputs.module-name }}
           
+      - name: Commit tag and hostname list
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          repository: modules
+          commit_message: "update ${{ github.event.inputs.module-name }} to ${{ github.event.inputs.git-ref }}"
+
