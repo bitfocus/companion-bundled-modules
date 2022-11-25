@@ -31,6 +31,13 @@ jobs:
           # TODO - should this be configurable?
           node-version: 14.x
 
+      - name: Collect info
+        run: |
+          cd ${{ github.event.inputs.module-name }}
+
+          GIT_HASH=$(git rev-parse HEAD)
+          echo "git-hash=$GIT_HASH" >> $GITHUB_OUTPUT
+
       - name: Prepare module
         run: |
           cd ${{ github.event.inputs.module-name }}
@@ -62,12 +69,12 @@ jobs:
 
     # only allow one workflow to run this step at a time
     concurrency: add-module-${{ github.ref }}
-    
+
     steps:
       - uses: actions/checkout@v3
         with:
           path: modules
-        
+
       - uses: actions/download-artifact@v3
         with:
           name: pkg
@@ -76,17 +83,20 @@ jobs:
         run: |
           tar -xvzf pkg.tgz
 
-          # TODO - include module metadata
+          cat <> pkg/.build-info
+          MODULE_NAME=${{ github.event.inputs.module-name }}
+          GIT_REF=${{ github.event.inputs.git-ref }}
+          RUN_ID=${{ github.run_id	}}
+          EOF
            
           # TODO - verify module looks valid?
            
           rm -Rf modules/${{ github.event.inputs.module-name }} || true
 
           mv pkg modules/${{ github.event.inputs.module-name }}
-          
+
       - name: Commit tag and hostname list
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           repository: modules
           commit_message: "update ${{ github.event.inputs.module-name }} to ${{ github.event.inputs.git-ref }}"
-
