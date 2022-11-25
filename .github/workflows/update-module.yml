@@ -103,3 +103,7 @@ jobs:
         with:
           repository: modules
           commit_message: "update ${{ github.event.inputs.module-name }} to ${{ github.event.inputs.git-ref }}"
+
+      - name: Report info
+        run: |
+          echo "Updated **${{ github.event.inputs.module-name }}** to ${{ github.event.inputs.git-ref }} :rocket:" >> $GITHUB_STEP_SUMMARY
