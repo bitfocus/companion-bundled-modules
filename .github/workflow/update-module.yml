@@ -1,0 +1,54 @@
+name: Update Module
+
+# Controls when the workflow will run
+on:
+  workflow_dispatch:
+    inputs:
+      module-name:
+        type: string
+        description: Name of the module (eg bmd-atem)
+        required: true
+      git-ref:
+        type: string
+        description: Git ref to build (tag/commit)
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    # The first stage is to build their module
+    # Remember that this is running user code, so we need to make sure not to leak any secrets
+
+    steps:
+      - name: Clone module
+        run: |
+          git clone https://github.com/bitfocus/companion-module-${{ github.event.inputs.module-name }} -b ${{ github.event.inputs.git-ref }} ${{ github.event.inputs.module-name }}
+          
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          # TODO - should this be configurable?
+          node-version: 14.x
+ 
+      - name: Prepare module
+        run: |
+          cd ${{ github.event.inputs.module-name }}
+
+          yarn
+          # yarn build would be better, but lacks the --if-present property
+          npm run build --if-present
+         
+      - name: Package module
+        run: |
+          cd ${{ github.event.inputs.module-name }}
+
+          yarn companion-module-build
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: pkg
+          path: ${{ github.event.inputs.module-name }}/pkg.tgz
+      
+
+          
