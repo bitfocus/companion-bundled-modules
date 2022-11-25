@@ -21,6 +21,10 @@ jobs:
     # Remember that this is running user code, so we need to make sure not to leak any secrets
 
     steps:
+      - name: Report info
+        run: |
+          echo "Updating **${{ github.event.inputs.module-name }}** to ${{ github.event.inputs.git-ref }} :rocket:" >> $GITHUB_STEP_SUMMARY
+
       - name: Clone module
         run: |
           git clone https://github.com/bitfocus/companion-module-${{ github.event.inputs.module-name }} -b "${{ github.event.inputs.git-ref }}" "${{ github.event.inputs.module-name }}"
@@ -106,7 +110,3 @@ jobs:
         with:
           repository: modules
           commit_message: "update ${{ github.event.inputs.module-name }} to ${{ github.event.inputs.git-ref }}"
-
-      - name: Report info
-        run: |
-          echo "Updated **${{ github.event.inputs.module-name }}** to ${{ github.event.inputs.git-ref }} :rocket:" >> $GITHUB_STEP_SUMMARY
