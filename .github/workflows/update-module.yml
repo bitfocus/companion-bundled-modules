@@ -83,7 +83,7 @@ jobs:
         run: |
           tar -xvzf pkg.tgz
 
-          cat <> pkg/.build-info
+          tee -a pkg/.build-info <<EOF
           MODULE_NAME=${{ github.event.inputs.module-name }}
           GIT_REF=${{ github.event.inputs.git-ref }}
           RUN_ID=${{ github.run_id	}}
