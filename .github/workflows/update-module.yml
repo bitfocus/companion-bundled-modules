@@ -43,6 +43,9 @@ jobs:
         run: |
           cd ${{ github.event.inputs.module-name }}
 
+          # hack
+          yarn add tar 
+
           yarn companion-module-build
 
       - uses: actions/upload-artifact@v3
