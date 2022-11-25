@@ -82,7 +82,7 @@ jobs:
            
           rm -Rf modules/${{ github.event.inputs.module-name }} || true
 
-          mv pkg module/${{ github.event.inputs.module-name }}
+          mv pkg modules/${{ github.event.inputs.module-name }}
           
       - name: Commit tag and hostname list
         uses: stefanzweifel/git-auto-commit-action@v4
