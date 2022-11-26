@@ -1,4 +1,4 @@
 MODULE_NAME=generic-osc
-GIT_REF=v2.0.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/3550762419
-UPDATE_DATE=2022-11-25
+GIT_REF=v2.0.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/3553593950
+UPDATE_DATE=2022-11-26
