@@ -29,11 +29,11 @@ jobs:
         run: |
           git clone https://github.com/bitfocus/companion-module-${{ github.event.inputs.module-name }} -b "${{ github.event.inputs.git-ref }}" "${{ github.event.inputs.module-name }}"
 
-      - name: Use Node.js 14.x
+      - name: Use Node.js 18.x
         uses: actions/setup-node@v1
         with:
           # TODO - should this be configurable?
-          node-version: 14.x
+          node-version: 18.x
 
       - name: Collect info
         run: |
@@ -53,9 +53,6 @@ jobs:
       - name: Package module
         run: |
           cd ${{ github.event.inputs.module-name }}
-
-          # hack
-          yarn add tar 
 
           yarn companion-module-build
 
