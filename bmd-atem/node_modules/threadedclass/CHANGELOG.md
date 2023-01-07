@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/nytamin/threadedClass/compare/1.2.0...1.2.1) (2022-12-07)
+
+
+### Bug Fixes
+
+* linting errors ([c3fedd5](https://github.com/nytamin/threadedClass/commit/c3fedd50b0b6d4872d2fa7d8a6e54a36345b2d48))
+* only apply custom loader for electron < 17.3 ([1e063a1](https://github.com/nytamin/threadedClass/commit/1e063a1c9f2b9ad0c0a105e054cbc7eb2696a031))
+
 ## [1.2.0](https://github.com/nytamin/threadedClass/compare/1.1.2...1.2.0) (2022-11-23)
 
 

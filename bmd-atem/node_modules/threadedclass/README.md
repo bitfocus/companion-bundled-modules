@@ -100,31 +100,32 @@ An optional options object can be passed to threadedClass() with the following p
 ### ThreadedClassManager API
 
 ```typescript
+import { ThreadedClassManager } from 'threadedclass'
 
  // Debug mode, will log stuff to console
-ThreadedClassManagerClass.debug = true
+ThreadedClassManager.debug = true
 
 // Enable strict mode.
 // When strict mode is enabled, checks will be done to ensure that best-practices are followed (such as listening to the proper events, etc).
 // Warnings will be output to the console if strict mode is enabled.
-ThreadedClassManagerClass.strict = true
+ThreadedClassManager.strict = true
 
 // Whether ThreadedClass will register exit handlers. If not, then the application should ensure the threads are aborted on process exit
-ThreadedClassManagerClass.handleExit = RegisterExitHandlers.AUTO // Default, checks if exit handlers have been set up by user before first threadedClass() call.
-ThreadedClassManagerClass.handleExit = RegisterExitHandlers.YES // Will set up exit handlers to ensure child processes are killed on exit signal.
-ThreadedClassManagerClass.handleExit = RegisterExitHandlers.NO // Don't set up any exit handlers (depending on your environment and Node version, children might need to be manually killed).
+ThreadedClassManager.handleExit = RegisterExitHandlers.AUTO // Default, checks if exit handlers have been set up by user before first threadedClass() call.
+ThreadedClassManager.handleExit = RegisterExitHandlers.YES // Will set up exit handlers to ensure child processes are killed on exit signal.
+ThreadedClassManager.handleExit = RegisterExitHandlers.NO // Don't set up any exit handlers (depending on your environment and Node version, children might need to be manually killed).
 
 // Destroy a proxy instance
-await ThreadedClassManagerClass.destroy(mrSmith)
+await ThreadedClassManager.destroy(mrSmith)
 
 // Destroys all proxy instances and closes all threads
-await ThreadedClassManagerClass.destroyAll()
+await ThreadedClassManager.destroyAll()
 
 // Returns the number of threads / child processes
-ThreadedClassManagerClass.getThreadCount()
+ThreadedClassManager.getThreadCount()
 
 // Returns memory usage for each thread
-const memUsage = await ThreadedClassManagerClass.getThreadsMemoryUsage()
+const memUsage = await ThreadedClassManager.getThreadsMemoryUsage()
 
 // Set up an event listener for an instance
 ThreadedClassManager.onEvent(mrSmith, 'thread_closed', () => {}) // This event is fired if a thread has closed. If autoRestart is set, an attempt to auto-restart the thread will be made after this
@@ -132,10 +133,10 @@ ThreadedClassManager.onEvent(mrSmith, 'restarted', () => {}) // This event is fi
 ThreadedClassManager.onEvent(mrSmith, 'error', (error) => {}) // This event is fired if there is an unhandled error in the thread
 
 // Restart the thread of the proxy instance, useful if you don't use autoRestart and want to handle restarts manually.
-await ThreadedClassManagerClass.restart(mrSmith)
+await ThreadedClassManager.restart(mrSmith)
 
 // Returns how the threads are implemented ( not_supported, web_worker, worker_threads, child_process )
-const mode = ThreadedClassManagerClass.getThreadMode()
+const mode = ThreadedClassManager.getThreadMode()
 
 ```
 
@@ -175,7 +176,7 @@ await mrSmith.talkAboutAncientGreece() // All methods returns a Promise
 
 
 function onShutdown() {
-   // If ThreadedClassManagerClass.handleExit is set to RegisterExitHandlers.NO
+   // If ThreadedClassManager.handleExit is set to RegisterExitHandlers.NO
    // You should call this when shutting down, to ensure that any child processes are closed properly:
    await ThreadedClassManager.destroyAll()
 }

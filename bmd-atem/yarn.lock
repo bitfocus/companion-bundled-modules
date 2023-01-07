@@ -216,9 +216,9 @@ strip-ansi@^6.0.0, strip-ansi@^6.0.1:
     ansi-regex "^5.0.1"
 
 threadedclass@^1.1.1:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/threadedclass/-/threadedclass-1.2.0.tgz#da76b83caee58f170d191f507251b53f0bc4db9b"
-  integrity sha512-o1noXHysn9YhiktrUkuCGz/FT6Ikh6NOqd8ptAVt4JZR5o//O7EmLDxSpal4wAUrjFUvKEtDw03ihdoKMRLkSg==
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/threadedclass/-/threadedclass-1.2.1.tgz#1ce1316f6835cec238edabba75421e654f2c5572"
+  integrity sha512-b8dUXW0K3dUWYrQakKhXvY/Owrnd3p+NKTI0BVEuAU/o7PsLupoNDCadK6V3WwyVLKCy0CS/d1xBmc6uZNPgOw==
   dependencies:
     callsites "^3.1.0"
     eventemitter3 "^4.0.4"
