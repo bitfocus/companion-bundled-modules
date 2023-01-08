@@ -1,4 +1,4 @@
 MODULE_NAME=generic-mqtt
-GIT_REF=v2.0.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/3569115569
-UPDATE_DATE=2022-11-28
+GIT_REF=v2.0.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/3869105626
+UPDATE_DATE=2023-01-08
