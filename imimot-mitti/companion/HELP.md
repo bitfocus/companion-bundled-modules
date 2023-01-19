@@ -57,6 +57,10 @@ _Requires Mitti 2_
 - Cue Contrast
 - Cue Opacity
 - Cue Volume
+- Toggle Goto Cue after End
+- Goto after End On
+- Goto after End Off
+- Set Goto after End Cue
 - Master Fader
 
 **Available Feedback**
