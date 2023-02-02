@@ -34,6 +34,13 @@ body:
 
   - type: textarea
     attributes:
+      label: Summary of the changes
+      description: Please provide a brief summary of what changed in this new version of your module
+    validations:
+      required: false
+      
+  - type: textarea
+    attributes:
       label: Additional context
       description: Add any other context about the problem here.
     validations:
