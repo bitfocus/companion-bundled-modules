@@ -1,0 +1,4 @@
+MODULE_NAME=getontime-ontime
+GIT_REF=v2.0.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4078746973
+UPDATE_DATE=2023-02-02
