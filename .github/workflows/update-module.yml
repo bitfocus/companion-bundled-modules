@@ -30,7 +30,7 @@ jobs:
           git clone https://github.com/bitfocus/companion-module-${{ github.event.inputs.module-name }} -b "${{ github.event.inputs.git-ref }}" "${{ github.event.inputs.module-name }}"
 
       - name: Use Node.js 18.x
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           # TODO - should this be configurable?
           node-version: 18.x
@@ -100,7 +100,7 @@ jobs:
 
           mv pkg modules/${{ github.event.inputs.module-name }}
 
-      - name: Commit tag and hostname list
+      - name: Commit updated module
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           repository: modules
