@@ -1,45 +1,58 @@
-## ZoomOSC/ISO module
+# ZoomOSC/ISO module
 
 This module is rebuild for the new version (> 4.0.5) of Zoom OSC/Zoom ISO V2.
 
-It is mainly based on the principle of selecting a caller or caller group first and then do an user action. Most of what you need you'll find in the presets. Of course you can use Global actions also.
+It is mainly based on the principle of selecting a caller or caller group first and then do an user action. Most of what you need you'll find in the presets.
 
-### Selection of participants
+## Selection of participants
 
-There is a multi or single selection mode. This option is settable in the config or with the predefined presets. This way easy selection is possible.
-There are 4-ways of selecting a participant;
+Before you can do an user action like `pin` or `spotlight` you need to select a participant. There are several way's op doing that;
 
-#### Selection by username
+- Selection based on index (order based on order of entering the meeting)
+		- Presets found @ `Select from Participants`
+- Selection based on Gallery position (set the same amound of row/columns to reflect the GUI best)
+		- Presets found @ `Select from Gallery`
+- Selection based on pre-known username
+		- Preset found @ `Manage Selections of Participants`
+- Selection from within a group
+		- Presets found @ `Manage Selections of Groups` & `Select Hosts participants` 
 
-> Manually fill in the name, to use for example when name is already known. 'me' is also possible
+> There is a special group called Hosts. All Hosts and Co-Host will automaticly enter this group for easy selection. There are no presets for clearing and/or adding to this group.
 
-#### Selection based on index from participants coming in
+> In the Instance config its now posible to create multiple groups. As groups are set, you'll find predefined groups in the presets based on the name of the group.
 
-> The buttons will autopopulate themselfs. Have a few of these buttons on your streamdeck and use the previous/next presets to cycle through them.
-![Selection of Participants](images/ExampleIndex.png)
+> When you use the prebuild presets, action and feedback (mute/handraise/active speaker) are automaticly applied
 
-#### Selection based on Gallery view
+### Single and multi - selection
 
-> Works almost the same as selection based on index. Only now the order of the participant on your streamdeck is based on the gallery view. When you match you Gallery layout to your streamdeck, easy selection is posible.
-![Gallery selection](images/ExampleGallery.png)
+By setting this option, you can select a participant and quickly jump to an other or select multiple participants and send all of the selected the same action
 
-#### Selection based on a group
+## Global actions
 
-> By using the group option you can select a group of predefined participants (more info below about groups)
-![Group selection](images/Example2.png)
+These actions are selectable without the need to select a user first. For example you can use `Join Meeting` to join a recuring meeting, by filling the fields, `Meeting ID`, `Password` and `Name`.
 
-Use the add to group options to add participants to a group.
+## ISO Commands
 
-### ISO Commands
+Some of the actions only apply to ZoomISO. You'll also find them in a seperate preset category: `ZoomISO Output Actions`. These actions are mainly based on selecting a participant and then route them to an output. There are 2 ways of doing this;
 
-There are different ISO commands which are avaliable when you have a ISO license. Besides the selection for a user and then route it to an output. You'll find 8 outputs in the presets. Select the participants and select the desired outputs. Then hit the take button (you can find that in the presets also). The participants will be routed to the selected outputs
+First method
+1. Select a single participant
+2. Select a single output e.q. `Select output 1`
+3. Hit `Apply output`
 
-> *The order of selection is the order of routing*
+Second method
+1. Select multiple participants
+2. Select multiple outputs
+3. Hit `Apply outputs`
 
-### Feedback
+>  The order of selection is the order of routing
+
+## Feedback
+
 You will find feedback for;
-* Microphone live/hot
-* Selected
-* Active speaker
-* Handraised
-* There is also an option for camera on.
++ Microphone live/hot
++ Selected
++ Active speaker
++ Handraised
++ Camera on/live
++ Engine state
