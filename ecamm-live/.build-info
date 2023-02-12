@@ -1,4 +1,4 @@
 MODULE_NAME=ecamm-live
-GIT_REF=v3.0.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4151583624
-UPDATE_DATE=2023-02-11
+GIT_REF=v3.0.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4158198205
+UPDATE_DATE=2023-02-12
