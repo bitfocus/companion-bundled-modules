@@ -1,0 +1,1 @@
+{"version":3,"file":"DisplayClockRequestTimeCommand.d.ts","sourceRoot":"","sources":["../../../src/commands/DisplayClock/DisplayClockRequestTimeCommand.ts"],"names":[],"mappings":";AAAA,OAAO,EAAE,oBAAoB,EAAE,MAAM,gBAAgB,CAAA;AAErD,qBAAa,8BAA+B,SAAQ,oBAAoB,CAAC,MAAM,CAAC,MAAM,EAAE,OAAO,CAAC,CAAC;IAChG,gBAAuB,OAAO,UAAS;;IAMhC,SAAS,IAAI,MAAM;CAI1B"}
