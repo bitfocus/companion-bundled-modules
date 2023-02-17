@@ -4,7 +4,7 @@ What does QLab do?
 QLab makes it simple to create intricate designs of light, sound, and video, which you play back during a live performance.
 QLab allows you to lock in exactly how you want the light, sound, and video to play during your performance. When you are done designing, switch to “show mode” and run your show just by pressing “GO”.
 
-The software is available at [QLab.app](qlab.app). You can use QLab for 2 channel audio and 1 screen video without
+The software is available at [QLab.app](http://qlab.app). You can use QLab for 2 channel audio and 1 screen video without
 needing a license.
 
 This module adds a TCP mode option to the *QLab* module.
