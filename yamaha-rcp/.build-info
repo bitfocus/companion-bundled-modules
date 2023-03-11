@@ -1,4 +1,4 @@
 MODULE_NAME=yamaha-rcp
-GIT_REF=v3.0.3
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4287475860
-UPDATE_DATE=2023-02-27
+GIT_REF=v3.0.4
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4389965003
+UPDATE_DATE=2023-03-11
