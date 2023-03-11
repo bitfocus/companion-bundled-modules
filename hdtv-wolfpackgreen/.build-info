@@ -1,4 +1,4 @@
 MODULE_NAME=hdtv-wolfpackgreen
-GIT_REF=v0.2.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4276998827
-UPDATE_DATE=2023-02-26
+GIT_REF=v0.3.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4389963231
+UPDATE_DATE=2023-03-11
