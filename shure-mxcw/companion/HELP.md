@@ -68,6 +68,7 @@ This module will connect to the Shure MXCWAPT to provide feedback status as well
 - Check the volume of loudspeakers for conference units
 - Check microphone AGC
 - Check microphone priority
+- Check microphone status
 - Check operation mode
 - Check retain seat information on reboot
 - Check RF power
