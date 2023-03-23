@@ -1,4 +1,4 @@
 MODULE_NAME=axis-ptz
-GIT_REF=v2.0.3
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4276946412
-UPDATE_DATE=2023-02-26
+GIT_REF=v2.0.4
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4500852460
+UPDATE_DATE=2023-03-23
