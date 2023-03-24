@@ -229,7 +229,18 @@ Because of space restrictions on our small Stream Deck buttons, some things are 
   There is a caveat too: sometimes one user action in WebRCS internally sends more than one command or if one command is executed more than one thing changes (e.g. if you recall a memory many layers will change). Every change sends its status and only the last one will be available with the Learn button (you can record multiple status changes with the Action Recorder though). Also sometimes the path needed to change something is different from the path to read the value. In all of those cases the Learn button will not work and you have to use the programmers guide to get the right command.
 	1. Internally the device works with image scalers and processors which are arranged in presets. Each time you hit Take the preset shown on program and on preview change. When working with AWJ often you can't address program and preview, but you have to address the hardware preset. Companion will take that burdon from you. Whenever you actually would have to enter "A" or "B" or "UP" or "DOWN" you can just use "pvw" or "pgm" in the path and the action will replace it at execution time with the correct address.
 	2. Many commands just set parameters which will be reflected in the GUI but the visual output won't change. These commands need to be followed by a so called xUpdate command to tell the processors to use the new parameters. The action offers a convenient checkbox to append such a xUpdate command to your custom command. If you're in doubt whether you need it or not, just first try without xUpdate.
-	3. The texinputs for path, text value and object value allow parsing variables. If you want to set e.g. the name of an input to the value of a custom variable you can use the custom variable in the text value field. If you want to set boolean or numeric values by a variable, you have to use the object value instead and make sure that you have data in the correct format.
+	3. The texinputs for path, text value and object value allow parsing variables. If you want to set e.g. the name of an input to the value of a custom variable you can use the custom variable in the text value field. If you want to set boolean or numeric values by a variable, you have to use the object value instead and make sure that you have data in the correct format.  
+
+- Send custom AWJ get command
+
+	Available at: LivePremier, Alta 4K, Midra 4K  
+	This is the get equivalent to the "Send custom AWJ replace command" action. You can send any AWJ get command to your device, retrieve the value and store it to a custom variable.
+	Variable parsing for the path is possible and the Learn button for the path act exactly like at the custom AWJ replace command. Please refer to the documentation there.  
+	The value will be stored in a custom variable.  
+	The type of the retrieved value can optionally be stored in another custom variable.
+	If no value can be found at the path the returned value and the type will both be "undefined".
+	If the type is "boolean" the value will read either 1 or 0.  
+	If the type is an object, it will be stringyfied. This gives you the same format like you need to use in the custom AWJ replace command.
 
 - Set GPO
 
