@@ -31,7 +31,7 @@ This module uses the Sony Visca protocol to control PTZ cameras.
 - Zoom In
 - Zoom Out
 - Zoom Stop
-- Clear Image Zoom
+- Zoom Mode (Optical Only, Clear Image, Digital)
 - Focus Near
 - Focus Far
 - Focus Stop
@@ -50,9 +50,12 @@ This module uses the Sony Visca protocol to control PTZ cameras.
 - Shutter Up
 - Shutter Down
 - Set Shutter
-- BackLight Compensation On/Off
+- Exposure Compensation On/Off, Reset, Up, Down, Direct
+- Backlight Compensation On/Off
+- Spotlight Compensation On/Off
 - Aperture +,-,Reset
 - Wide Dynamic Range (Off,Low,Mid,High)
+- Noise Reduction
 
 ### Color
 
@@ -75,12 +78,13 @@ The pan-tilt directional commands (Up, Down, Left, Right) double as controls for
 - Menu Enter
 - Power Camera On/Off
 - Tally on/off
+- Latency
 
 ## Companion Presets
 
 - Pan/Tilt
 - Lens - Zoom and Focus actions
-- Exposure - Modes, Gain, Iris, Shutter)
+- Exposure - Modes, Gain, Iris, Shutter, Compensation
 - Color - White Balance modes, adjustments, trigger
 - System - Power On, Power Off, Menu On, Menu Enter
 - Presets - Tap to recall or hold for 2 seconds to save. When a camera preset button is held for 2 seconds, all camera preset buttons will highlight yellow indicating the preset is saved and you can let go.
@@ -95,6 +99,7 @@ Intended for devices like the Stream Deck + and the Loupe Deck Live that have kn
 - Iris
 - Gain
 - Shutter
+- Exposure Compensation
 - White Balance - Red Gain
 - White Balance - Blue Gain
 - White Balance - Offset
