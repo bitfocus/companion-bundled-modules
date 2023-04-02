@@ -29,17 +29,20 @@ For each matrix there are the two selection actions.
 For all matrices exists
 * take
 * clear
+* undo
 
 ## Available feedbacks
 * Source currently selected
 * Target currently selected
 * Source which is routed to currently selected target
 * Valid take feedback, when target and source of the same matrix is selected
-* Clear feedback, when somthing is selected
+* Clear feedback, when something is selected
+* Undo, shows when you can undo the last routing process on a selected target
 
 ## Available presets
 * Take
 * Clear
+* Undo
 * Source Selection
 * Target Selection
 
@@ -51,3 +54,4 @@ For all matrices exists
 | **$(INSTANCENAME:output_MATRIXLABEL_TARGETID_input)** | Label of the specified source in the specified matrix routed to the currently selected target |
 | **$(INSTANCENAME:selected_target)**                   | Label of the selected target                                                                  |
 | **$(INSTANCENAME:selected_target_source)**            | Label of the source routed to the selected target                                             |
+| **$(INSTANCENAME:selected_target_undo_source)**       | Label of the source which was routed to the target previously                                 |
