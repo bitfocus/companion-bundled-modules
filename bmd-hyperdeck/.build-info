@@ -1,4 +1,4 @@
 MODULE_NAME=bmd-hyperdeck
-GIT_REF=v2.0.2
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4104518520
-UPDATE_DATE=2023-02-06
+GIT_REF=v2.0.3
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4641227083
+UPDATE_DATE=2023-04-07
