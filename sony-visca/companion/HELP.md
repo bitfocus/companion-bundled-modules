@@ -1,6 +1,6 @@
-# Sony Visca
+# Sony VISCA
 
-This module uses the Sony Visca protocol to control PTZ cameras.
+This module uses the Sony VISCA protocol to control PTZ cameras.
 
 **Please Note**: Not all Sony PTZ cameras support all VISCA commands. Please check the official "Technical Manual" of your exact model to see what commands it supports, in case one of the commands in this module is not working for you.
 
@@ -10,9 +10,9 @@ This module uses the Sony Visca protocol to control PTZ cameras.
 - Type in the port of the device (default is 52381).
 - You can also specify the Camera ID.
 
-## Available Actions
+## Actions Implemented
 
-### Movement
+### Pan/Tilt Actions
 
 - Pan Left
 - Pan Right
@@ -22,84 +22,187 @@ This module uses the Sony Visca protocol to control PTZ cameras.
 - Up Right
 - Down Left
 - Down Right
-- P/T Stop
-- P/T Home
-- P/T Speed
-- P/T Speed Up
-- P/T Speed Down
-- P/T Slow Mode
-- Zoom In
-- Zoom Out
+- Pan/Tilt Stop
+- Pan/Tilt Home
+- Pan/Tilt Slow Mode
+- Pan Speed (up/down/default)
+- Tilt Speed (up/down/default)
+- Pan/Tilt Speed (up/down/default)
+- Set Pan and/or Tilt Speed
+- Set Pan and Tilt Speed
+
+### Lens Actions
+
+- Zoom In - standard speed
+- Zoom Out - standard speed
+- Zoom In - variable speed
+- Zoom Out - variable speed
 - Zoom Stop
-- Zoom Mode (Optical Only, Clear Image, Digital)
-- Focus Near
-- Focus Far
+- Zoom Mode (digital/optical/clear image)
+- Zoom Speed (up/down/default)
+- Focus Speed (up/down/default)
+- Focus Mode (auto/manual)
+- Focus Near - standard speed
+- Focus Far - standard speed
+- Focus Near - variable speed
+- Focus Far - variable speed
 - Focus Stop
-- Focus Mode (Auto or Manual)
 - One Push Auto Focus
 
-### Exposure
+### Exposure Actions
 
-- Set Exposure Mode
-- Gain Up
-- Gain Down
-- Set Gain
-- Iris Up
-- Iris Down
+- Exposure Mode (auto/manual/shutter/iris/gain priority)
+- Iris Adjust (up/down)
 - Set Iris
-- Shutter Up
-- Shutter Down
+- Gain Adjust (up/down)
+- Set Gain
+- Shutter Adjust (up/down)
 - Set Shutter
-- Exposure Compensation On/Off, Reset, Up, Down, Direct
-- Backlight Compensation On/Off
-- Spotlight Compensation On/Off
-- Aperture +,-,Reset
-- Wide Dynamic Range (Off,Low,Mid,High)
-- Noise Reduction
+- Brightness Adjust (up/down)
+- Set Brightness
+- Exposure Compensation (on/off)
+- Exposure Compensation (up/down/reset)
+- Exposure Compensation Set Value
+- Aperture Compensation (up/down/reset)
+- Wide Dynamic Range (off/low/mid/high)
+- Noise Reduction Level (off-strong)
+- Backlight Compensation (on/off)
+- Spotlight Compensation (on/off)
 
-### Color
+### Color Actions
 
-- White Balance Modes - Auto1, Auto2, Indoor, Outdoor, Manual, One push WB
-- One push White Balance trigger (must be in One Push WB mode)
-- Adjust Red or Green Up, Down or set to value (must be in Manual WB mode)
-- Offset - **adjust up** to make redder, **adjust down** to make bluer, or **reset** (works in Auto1, Auto2, or One Push WB modes)
+- White Balance Mode (auto/indoor/outdoor/one push/ATW/manual)
+- One push WB trigger
+- White Balance Adjust (red/blue - up/down)
+- White Balance - Set custom values
+- White Balance - Offset Adjust (up/down/reset)
 
-### Camera Presets
+### Camera Preset Actions
 
 - Save Preset
 - Recall Preset
-- Preset Drive Speed
+- Preset Drive Speed (individual)
 
-### Misc
+### Miscellaneous Actions
 
-The pan-tilt directional commands (Up, Down, Left, Right) double as controls for the menu.
+- Camera Power (on/off)
+- Tally (on/off)
+- Menu (on/off/enter)
+- Video Latency (normal/low)
+- Button Feedback (highlight/clear)
+- Custom Command - *If you use a custom command that may be a useful action for others please let us know at [Issues - Custom Commands #35](https://github.com/bitfocus/companion-module-sony-visca/issues/35)*
 
-- Menu Display (doubles as a back button when you have the menu on screen)
-- Menu Enter
-- Power Camera On/Off
-- Tally on/off
-- Latency
+## Presets Implemented
 
-## Companion Presets
+### Pan/Tilt Presets
 
-- Pan/Tilt
-- Lens - Zoom and Focus actions
-- Exposure - Modes, Gain, Iris, Shutter, Compensation
-- Color - White Balance modes, adjustments, trigger
-- System - Power On, Power Off, Menu On, Menu Enter
-- Presets - Tap to recall or hold for 2 seconds to save. When a camera preset button is held for 2 seconds, all camera preset buttons will highlight yellow indicating the preset is saved and you can let go.
+- Up
+- Down
+- Left
+- Right
+- Up Left
+- Up Right
+- Down Left
+- Down Right
+- Home
+- Pan/Tilt Speed Up
+- Pan/Tilt Speed Down
+- Pan/Tilt Speed Default
+- Pan/Tilt Slow Mode (normal/slow)
 
-**Note:** The implementation has changed since Companion 2.4.x. If you used "Cam Presets" in previous versions the recall function for those buttons works as expected but save function will no longer work. This can be fixed by replacing it with a new preset or by deleting the `savePsetLongPress` action from an existing button and adding a duration group with the action "Save Preset".
+### Lens Presets
 
-## Rotation Enabled Presets
+- Zoom In (variable speed)
+- Zoom Out (variable speed)
+- Zoom Mode
+- Focus Far (variable speed)
+- Focus Near (variable speed)
+- Focus Mode - Auto/Manual
+- One Push Auto Focus
+- Zoom Speed Faster
+- Zoom Speed Slower
+- Zoom Speed Default (1)
+- Focus Speed Faster
+- Focus Speed Slower
+- Focus Speed Default (1)
 
-Intended for devices like the Stream Deck + and the Loupe Deck Live that have knobs. Rotate Left decreases the value, Rotate Right increases, and Pressing the knob defaults the setting.
+### Exposure Presets
 
-- Pan/Tilt Speed
-- Iris
-- Gain
-- Shutter
-- Exposure Compensation
-- White Balance - Red Gain
-- White Balance - Blue Gain
-- White Balance - Offset
+- Auto/Manual Exposure Toggle
+- Iris Up
+- Iris Down
+- Gain Up
+- Gain Down
+- Shutter Up
+- Shutter Down
+- Brightness Up
+- Brightness Down
+- Exposure Compensation On/Off
+- Exposure Compensation Up
+- Exposure Compensation Down
+- Exposure Compensation Reset
+- Backlight Compensation On/Off
+- Spotlight Compensation On/Off
+
+### Color Presets
+
+- White Balance Mode - Auto1
+- White Balance Mode - Auto2 (ATW)
+- White Balance Mode - Indoor
+- White Balance Mode - Outdoor
+- White Balance Mode - Manual
+- White Balance Mode - Custom
+- White Balance Mode - One push WB
+- One push WB trigger (must be in One push WB mode)
+- White Balance - Red Gain Up (must be in WB Manual)
+- White Balance - Red Gain Down (must be in WB Manual)
+- White Balance - Blue Gain Up (must be in WB Manual)
+- White Balance - Blue Gain Down (must be in WB Manual)
+- White Balance - Offset Reset
+- White Balance - Offset Up (more red)
+- White Balance - Offset Down (more blue)
+
+### System Presets
+
+- Camera Power On
+- Camera Power Off
+- Menu/Back Button
+- Menu Enter Button
+
+### Camera Presets
+
+- Presets 1-64 are available  
+- Tap to recall or hold for 2 seconds to save. When a camera preset button is held for 2 seconds, all camera preset buttons will highlight yellow indicating the preset is saved and you can let go.*
+
+### Rotation Enabled Presets
+
+- Iris - tap to open iris
+- Gain - tap to set to 0dB
+- Shutter - tap for default (1/60 or 1/50)
+- Brightness - tap for default (1/60 or 1/50)
+- Exposure Compensation - tap to reset
+- Red Gain - tap for default (192)
+- Blue Gain - tap for default (192)
+- White Balance Offset - tap to reset
+- Pan/Tilt Speed - tap for default
+- Zoom Speed - tap for standard (1)
+- Focus Speed - tap for standard (1)
+
+*Rotation enabled presets are intended for devices like the Stream Deck+ and the Loupe Deck Live that have knobs. Rotate Left decreases the value, Rotate Right increases, and Tapping the knob defaults the setting.*
+
+## Variables Implemented
+
+| Id | Name |
+|----|------|
+| ptSlowMode | Pan/Tilt Slow mode (slow/normal) |
+| panSpeed | Pan Speed |
+| tiltSpeed | Tilt Speed |
+| zoomSpeed | Zoom Speed |
+| focusSpeed | Focus Speed |
+| zoomMode | Zoom Mode (optical/digital/clr img) |
+| focusMode | Focus Mode (auto/manual) |
+| expMode | Exposure Mode |
+| expCompOnOff | Exposure Compensation (on/off) |
+| backlightComp | Backlight Compensation (on/off) |
+| spotlightComp | Spotlight Compensation (on/off) |
+| lastCmdSent | Last Command Sent (hex values) |
