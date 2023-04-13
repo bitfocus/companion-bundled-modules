@@ -20,6 +20,7 @@ A module for controlling HDTV WolfPackGreen HDMI Matrix.
 - Recall Layout
 - Unset Output
 - Unset All Output
+- Refresh Matrix Labels
 
 Note: To use Apply Outputs, select an input, then select the outputs you want the input to go to, repeat for all of the input/outputs combinations you want to set and then run Apply Outputs action
 
