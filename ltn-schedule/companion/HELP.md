@@ -25,7 +25,8 @@ Action | Description
 **Toggle breaking live** | Starts/stop a breaking live, with a selectable livestream. If the selected livestream is different from the running one, it will try to switch to it
 **Toggle PNG Overlay** | Toggle the activation of the PNG overlay.
 **Toggle HTML5 Overlay** | Toggle the activation of the HTML5 overlay.
-**Toggle hold** | Toggles the hold parameter of the current running element.
+**Toggle hold** | Toggle the hold parameter of the current running element.
+**Insert template** | Insert an existing template from the Schedule system
 
 ## Feedback available
 Feedback | Description
@@ -40,6 +41,7 @@ Feedback | Description
 **PNG Overlay status** | Shows if the overlay is active or not.
 **HTML5 Overlay status** | Shows if the overlay is active or not.
 **Hold status** | Shows if the current element has the hold property enabled or not, or if it is currently being held.
+**Template insertion status** | Shows if the insertion of a template is running or has failed
 
 ## Presets
 
