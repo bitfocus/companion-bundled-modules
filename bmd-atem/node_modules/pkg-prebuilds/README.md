@@ -78,6 +78,13 @@ Where `./binding-options.js` is the file exporting the options object.
 This is very similar to how `bindings` or `node-gyp-build` operate, but is much more verbose in requiring the options object.
 
 
+## Breaking changes
+
+### v0.2.0
+
+A command such as `yarn pkg-prebuilds-copy --source build/Release/testbinding.node --name=testbinding`, but be changed to `yarn pkg-prebuilds-copy --baseDir build/Release --source testbinding.node --name=testbinding`.  
+This is to allow for supplying the new `--extraFiles` parameter which is also relative to baseDir.
+
 ## Why another tool?
 
 `node-gyp-build` is very based around `node-gyp`, and getting support for `cmake-js` stalled many years ago.

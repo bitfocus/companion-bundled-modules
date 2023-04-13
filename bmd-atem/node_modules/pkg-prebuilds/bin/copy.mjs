@@ -18,9 +18,14 @@ const yargs = require("yargs")
     .usage("pkg-prebuilds " + version + "\n\nUsage: $0 [<command>] [options]")
     .version(version)
     .options({
+        baseDir: {
+            demand: true,
+            describe: "base path to built binary files",
+            type: 'string'
+        },
         source: {
             demand: true,
-            describe: "path to the built binary",
+            describe: "filename of built binary file",
             type: "string"
         },
         name: {
@@ -57,13 +62,19 @@ const yargs = require("yargs")
             demand: false,
             describe: 'override the platform',
             type: 'string'
+        },
+        extraFiles: {
+            demand: false,
+            describe: 'extra files to copy',
+            type: 'string'
         }
     })
 
 const argv = yargs.argv;
 
 const targetDir = path.join(process.cwd(), 'prebuilds')
-const sourceFile = path.join(process.cwd(), argv.source)
+const sourceDir = path.join(process.cwd(), argv.baseDir)
+const sourceFile = path.join(sourceDir, argv.source)
 
 if (!fs.existsSync(sourceFile)) {
     console.error(`Built binary does not exist!`)
@@ -101,5 +112,15 @@ if (argv.strip) {
         cp.spawnSync('strip', [destFile, '-Sx'])
     }
 }
+
+// copy any extra files that have been requested, typically libraries needed
+if (argv.extraFiles) {
+    const extraFiles = Array.isArray(argv.extraFiles) ? argv.extraFiles : [argv.extraFiles]
+    
+    for (const file of extraFiles) {
+        fs.copyFileSync(path.join(sourceDir, file), path.join(destDir, file))
+    }
+}
+
 
 console.log('Done')
