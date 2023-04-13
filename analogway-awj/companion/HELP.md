@@ -38,6 +38,10 @@ Because of space restrictions on our small Stream Deck buttons, some things are 
   
   If you check this box, the selection synchronization will be automatically turned on after the connection is established. See the action ['Sync selection'](#sync) to learn what that means.
 
+- Show also disabled inputs in dropdowns  
+
+  If you disable an input, it won't be included in dropdowns where inputs are shown. If you check this box also disabled inputs are shown.
+
 - Colors
   
   Here you can define your preferred default colors, which are used in feedbacks and presets. Remember that these are only default colors, if you drag a preset to a button, that color will be stored at the button and won't change later.
