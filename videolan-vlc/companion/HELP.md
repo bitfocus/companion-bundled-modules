@@ -48,6 +48,8 @@ Action | Description
 **Add and Play** | Add item to Playlist and Play
 **Delete ID** | Delete a specific item from the playlist
 
+*Note:* All toggle style actions have options to set On, Off, or Toggle
+
 >\
 >The **Seek To *Where*** option accepts values of the form:\
 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[+ or -][{int}{H or h}:][{int}{M or m or '}:][{int}{nothing or S or s or "}] or [+ or -]{int}%\
@@ -77,8 +79,12 @@ Variable | Description
 **$(INSTANCENAME:e_mm)** | Elapsed time Minutes for Playing Item
 **$(INSTANCENAME:e_ss)** | Elapsed time Seconds for Playing Item
 **$(INSTANCENAME:pname_{num})** | Title of the Playlist Item {num}. Limited to 20 characters. If longer this will display the first 10 and the last 10 characters of the title.
+**$(INSTANCENAME:v_ver)** | Version of VLC attached
+**$(INSTANCENAME:v_num)** | Number of items loaded in current playlist
+**$(INSTANCENAME:vol)** | Current volume value (0-320)
+**$(INSTANCENAME:volp)** | Current volume percent (Value of 256 is 100%)
 
-To use these, replace INSTANCENAME with the label/name of your module instance.
+To use these, replace INSTANCENAME with the label/name of your connection label
 
 ## Feedback available
 Feedback | Description
