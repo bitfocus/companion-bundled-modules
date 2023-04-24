@@ -39,7 +39,9 @@ Replace `ow` with the actual instance label.
 *Current Information* | &nbsp;
 `$(ow:c_time)` | Time last updated
 `$(ow:c_temp)` | Temperature<sup>*1</sup>
-`$(ow:c_feels)` | Feels like<sup>*1</sup>
+`$(ow:c_time)` | Time last updated
+`$(ow:c_press)` | Barometric Pressure
+`$(ow:c_humid)` | /relative Humidity
 `$(ow:c_text)` | Condition description
 `$(ow:c_wind)` | Wind speed
 `$(ow:c_windir)` | Wind direction
