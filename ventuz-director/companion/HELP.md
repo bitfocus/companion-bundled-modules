@@ -1,8 +1,8 @@
-## Ventuz Technology - Director
+# Ventuz Technology - Director
 
-This module allows you to control the Ventuz Director (Enterprise edition) via Websocket.
+This module allows you to control the Ventuz Director (Enterprise edition version 6.11+) via Websocket.
 
-### Implemented Actions
+## Implemented Actions
 
 - Window Fullscreen
 - Window Reverse
@@ -19,12 +19,16 @@ This module allows you to control the Ventuz Director (Enterprise edition) via W
 - Show Take Out Recue
 - Show Clear
 - Show Create Page
-- Show Set Project Data
+- Show Set Project Data Event
+- Show Set Project Data Boolean
+- Show Set Project Data Number
+- Show Set Project Data (string)
 - Show Preload Templates
 - Show Preload Templates in Playlist
 - Show Preload Templates in Timeline
 - Show Reload Templates
 - Playlist Activate
+- Playlist Restart
 - Macro Execute
 - Timeline Play
 - Timeline Pause
@@ -34,7 +38,7 @@ This module allows you to control the Ventuz Director (Enterprise edition) via W
 - Timeline Jump End
 - Log Write
 
-### Implemented Feedbacks
+## Implemented Feedbacks
 
 - Show Can Take
 - Show Can Take Recue
@@ -49,7 +53,7 @@ This module allows you to control the Ventuz Director (Enterprise edition) via W
 - Macro Can Execute
 - Window Can Set Layout
 
-### Implemented Presets
+## Implemented Presets
 
 - Take
 - Take Recue
