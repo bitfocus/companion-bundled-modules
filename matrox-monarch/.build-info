@@ -1,4 +1,4 @@
 MODULE_NAME=matrox-monarch
-GIT_REF=v3.0.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4358862553
-UPDATE_DATE=2023-03-07
+GIT_REF=v3.0.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4901837060
+UPDATE_DATE=2023-05-06
