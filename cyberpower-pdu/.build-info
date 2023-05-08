@@ -1,4 +1,4 @@
 MODULE_NAME=cyberpower-pdu
-GIT_REF=v2.0.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4892470084
-UPDATE_DATE=2023-05-05
+GIT_REF=v2.0.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4916474752
+UPDATE_DATE=2023-05-08
