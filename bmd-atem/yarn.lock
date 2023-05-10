@@ -3,9 +3,9 @@
 
 
 "@julusian/freetype2@^1.1.0":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@julusian/freetype2/-/freetype2-1.1.1.tgz#4fe9c78fcaf7bd8bb63a3908fd2ba6afa13aa97a"
-  integrity sha512-k58JEBYIe8+JPRa57/4C/G44XtM0bLJLZfGTBsRX1OCzxcffm65UBgfXk8SPFJLueDPQ9wjV8Mxz6wqrgvYuGA==
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@julusian/freetype2/-/freetype2-1.1.2.tgz#c4a4030785214ad1f9b833d78b8571b78afe76a0"
+  integrity sha512-Y7JCIE2EIvQtne3J1FY5eweD4GcCGG3nX323Yq2AOGus9/1PGjcxTv8OWL34ONt11kuTMItEt9klddZzIeUHvQ==
   dependencies:
     node-addon-api "^5.0.0"
     pkg-prebuilds "^0.2.1"
@@ -27,10 +27,10 @@ ansi-styles@^4.0.0:
   dependencies:
     color-convert "^2.0.1"
 
-atem-connection@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/atem-connection/-/atem-connection-3.2.0.tgz#139b6f935a774d40e2ec337746777d3e87ca0c54"
-  integrity sha512-9kn/uC6DQIIGSg+n+M84lXm9nPOXkvKHN3/TFnsAev/xVeFSSy5OgvfqkcUF3/+HxJNeuUc4bj+ezEVn/AKbMA==
+atem-connection@3.3.0-nightly-master-20230413-093956-1951a9ce.0:
+  version "3.3.0-nightly-master-20230413-093956-1951a9ce.0"
+  resolved "https://registry.yarnpkg.com/atem-connection/-/atem-connection-3.3.0-nightly-master-20230413-093956-1951a9ce.0.tgz#d47caa72816105d387ae132a026abfd96a0d612a"
+  integrity sha512-/4NuN8XUkc5k0Z9uj2F+AMsP5dGk4LVOikIVyLW/uwtvN8hdQ5ZBoFyqO2ppChM5rw+RnJmLMFMwCpO/dqb1ag==
   dependencies:
     "@julusian/freetype2" "^1.1.0"
     debug "^4.3.4"
@@ -283,9 +283,9 @@ yargs-parser@^21.1.1:
   integrity sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==
 
 yargs@^17.5.1:
-  version "17.7.1"
-  resolved "https://registry.yarnpkg.com/yargs/-/yargs-17.7.1.tgz#34a77645201d1a8fc5213ace787c220eabbd0967"
-  integrity sha512-cwiTb08Xuv5fqF4AovYacTFNxk62th7LKJ6BL9IGUpTJrWoU7/7WdQGTP2SjKf1dUNBGzDd28p/Yfs/GI6JrLw==
+  version "17.7.2"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-17.7.2.tgz#991df39aca675a192b816e1e0363f9d75d2aa269"
+  integrity sha512-7dSzzRQ++CKnNI/krKnYRV7JKKPUXMEh61soaHKg9mrWEhzFWhFnxPxGl+69cD1Ou63C13NUPCnmIcrvqCuM6w==
   dependencies:
     cliui "^8.0.1"
     escalade "^3.1.1"
