@@ -1,0 +1,19 @@
+## Barco Pulse module
+
+## Currently support the following functions:
+
+* **Power state** on/off
+* **Ilumination** on/off
+* **Input selection** Currently HDMI / Displayport **Not tested**
+* **OSD** on/off
+* **Shutter** open/close/toggle
+* **Testpattern** on/off Select testpattern type first
+* **Zoom** in/out, set number of steps (default = 1)
+* **Focus** in/out
+* **Lens Shift** set number of steps (default = 1)
+* **Remote Lens Shift** 4 directions using remote key commands, create an press and release actions
+* **Stealth** on/off/toggle disable LED lights on projector
+* **Remote control** All remote buttons avalible
+* **Factory Reset** Factory Reset the device
+
+* **Presets availible for all included commands!**
