@@ -1,0 +1,4 @@
+MODULE_NAME=lightware-lw3
+GIT_REF=v2.0.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4970685378
+UPDATE_DATE=2023-05-14
