@@ -1,0 +1,4 @@
+MODULE_NAME=generic-ping
+GIT_REF=v2.0.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4980658947
+UPDATE_DATE=2023-05-15
