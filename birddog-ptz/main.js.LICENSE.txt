@@ -5,6 +5,4 @@
  * MIT Licensed
  */
 
-/*! fetch-blob. MIT License. Jimmy Wärting <https://jimmy.warting.se/opensource> */
-
 /*! node-domexception. MIT License. Jimmy Wärting <https://jimmy.warting.se/opensource> */
