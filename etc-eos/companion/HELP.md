@@ -146,7 +146,7 @@ Based on initial testing, the wheels are numbered like so:
 | $(etc-eos:wheel_label_40) | Wheel 40's label | {unused?}                      |
 
 In testing, I only saw 39 reported, but if more exist the count will have to
-be adjusted.
+be adjusted. This is set at 100 as I saw other software have over 80.
 
 These parameters are reported when working with a fixture.
 You must select the fixture by typing its number on the
@@ -157,37 +157,55 @@ All of these variables are availabe in a string (integer)
 and a floating point format. Just append _stringval or
 _floatval to the end of the base name in the table below
 
-| Variable base name           | Description
+| Variable base name           |       Description
 | ---------------------------- | ----------------------------- |
-|  enc_intensity               | Encoder: Intensity level      | 
-|  enc_zoom                    | Encoder: Zoom level           | 
-|  enc_edge                    | Encoder: Edge level           | 
-|  enc_iris                    | Encoder: Iris level           | 
-|  enc_pan                     | Encoder: Pan level            | 
-|  enc_tilt                    | Encoder: Tilt level           | 
-|  enc_x_focus                 | Encoder: X Focus level        | 
-|  enc_y_focus                 | Encoder: Y Focus level        | 
-|  enc_z_focus                 | Encoder: Z Focus level        | 
-|  enc_red                     | Encoder: Red level            | 
-|  enc_green                   | Encoder: Green level          | 
-|  enc_blue                    | Encoder: Blue level           | 
-|  enc_white                   | Encoder: White level          | 
-|  enc_cyan                    | Encoder: Cyan level           | 
-|  enc_magenta                 | Encoder: Magenta level        | 
-|  enc_yellow                  | Encoder: Yellow level         | 
-|  enc_amber                   | Encoder: Amber level          | 
-|  enc_lime                    | Encoder: Lime level           | 
-|  enc_indigo                  | Encoder: Indigo level             | 
-|  enc_uv                      | Encoder: UV level             | 
-|  enc_hue                     | Encoder: Hue level            | 
-|  enc_cto                     | Encoder: CTO level            | 
-|  enc_c1                      | Encoder: C1 level            | 
-|  enc_c2                      | Encoder: C2 level            | 
-|  enc_ctc                     | Encoder: CTC level            | 
-|  enc_shutter_strobe          | Encoder: Shutter Strobe level | 
-|  enc_saturation              | Encoder: Saturation level     | 
-|  enc_diffusion               | Encoder: Diffusion level      | 
-
+|  enc_intensity               | Encoder: Intensity            | 
+|  enc_zoom                    | Encoder: Zoom                 | 
+|  enc_edge                    | Encoder: Edge                 | 
+|  enc_iris                    | Encoder: Iris                 | 
+|  enc_pan                     | Encoder: Pan                  | 
+|  enc_tilt                    | Encoder: Tilt                 | 
+|  enc_x_focus                 | Encoder: X Focus              | 
+|  enc_y_focus                 | Encoder: Y Focus              | 
+|  enc_z_focus                 | Encoder: Z Focus              | 
+|  enc_red                     | Encoder: Red                  | 
+|  enc_green                   | Encoder: Green                | 
+|  enc_blue                    | Encoder: Blue                 | 
+|  enc_white                   | Encoder: White                | 
+|  enc_cyan                    | Encoder: Cyan                 | 
+|  enc_magenta                 | Encoder: Magenta              | 
+|  enc_yellow                  | Encoder: Yellow               | 
+|  enc_amber                   | Encoder: Amber                | 
+|  enc_lime                    | Encoder: Lime                 | 
+|  enc_indigo                  | Encoder: Indigo               | 
+|  enc_uv                      | Encoder: UV                   | 
+|  enc_red_adj                 | Encoder: Red Adj              | 
+|  enc_green_adj               | Encoder: Green Adj            | 
+|  enc_blue_adj                | Encoder: Blue Adj             | 
+|  enc_white_adj               | Encoder: White Adj            | 
+|  enc_cyan_adj                | Encoder: Cyan Adj             | 
+|  enc_magenta_adj             | Encoder: Magenta Adj          | 
+|  enc_yellow_adj              | Encoder: Yellow Adj           | 
+|  enc_amber_adj               | Encoder: Amber Adj            | 
+|  enc_lime_adj                | Encoder: Lime Adj             | 
+|  enc_indigo_adj              | Encoder: Indigo               | 
+|  enc_hue                     | Encoder: Hue                  | 
+|  enc_cto                     | Encoder: CTO                  | 
+|  enc_c1                      | Encoder: Color Select         | 
+|  enc_c2                      | Encoder: Color Mix MSpeed     | 
+|  enc_ctc                     | Encoder: CTC                  | 
+|  enc_shutter_strobe          | Encoder: Shutter Strobe       | 
+|  enc_saturation              | Encoder: Saturation           | 
+|  enc_diffusion               | Encoder: Diffusion            | 
+|  enc_angle_a                 | Encoder: Angle A              | 
+|  enc_angle_b                 | Encoder: Angle B              | 
+|  enc_angle_c                 | Encoder: Angle C              | 
+|  enc_angle_d                 | Encoder: Angle D              | 
+|  enc_thrust_a                | Encoder: Thrust A             | 
+|  enc_thrust_b                | Encoder: Thrust B             | 
+|  enc_thrust_c                | Encoder: Thrust C             | 
+|  enc_thrust_d                | Encoder: Thrust D             | 
+|  enc_frame_assembly          | Encoder: Frame Assembly       | 
 
 
 ## Feedbacks
