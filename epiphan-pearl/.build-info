@@ -1,4 +1,4 @@
 MODULE_NAME=epiphan-pearl
-GIT_REF=v2.0.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5064159923
-UPDATE_DATE=2023-05-24
+GIT_REF=v2.1.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5091338834
+UPDATE_DATE=2023-05-26
