@@ -1,0 +1,14 @@
+/*!
+ * cookie
+ * Copyright(c) 2012-2014 Roman Shtylman
+ * Copyright(c) 2015 Douglas Christopher Wilson
+ * MIT Licensed
+ */
+
+/**
+ * MIDI Schow Control over Ethernet for MA lighting
+ * @module mamsc
+ * @license
+ * Copyright (C) 2018 Christian Volmering <christian@volmering.name>
+ * Licensed under the MIT and GPL-3.0 licenses.
+ */
