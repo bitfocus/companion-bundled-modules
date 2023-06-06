@@ -1,4 +1,4 @@
 MODULE_NAME=bmd-smartview
-GIT_REF=v2.0.2
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4431973919
-UPDATE_DATE=2023-03-15
+GIT_REF=v2.0.3
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5190117282
+UPDATE_DATE=2023-06-06
