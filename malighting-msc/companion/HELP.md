@@ -6,9 +6,9 @@ While initially developed for the dot2 lineup it also works for grandMA2 with so
 
 # *IMPORTANT Companion V3.0 UPDATE!*
 **If you use variables from this module in an earlier version of Companion, you will need to update them.**
-Prior to V3.0, module variables could contain spaces and `:` without any issues. In order to use these variables in more situations,
-the characters available to name variables needed to be restricted to those allowed in the underlying programming. Unfortunately,
-these can not be converted on importing/upgrading and need to be fixed manually.
+
+The deprecated `exec:x.x` variable for fader position has been replaced with 'exec_x.x_fader`. Prior to V3.0, module variables could contain spaces and `:` without any issues. In order to use these variables in more situations (such as triggers and actions), the characters available to name variables needed to be restricted to those allowed in the underlying programming. Unfortunately, these can not be converted on importing/upgrading and need to be fixed manually.
+
 
 ## Console/onPC configuration
 You are required to set the MIDI Show Control mode to `Ethernet`, exec to `Exec.Page` and the command format to `All`.
@@ -57,6 +57,16 @@ Be aware that feedbacks are dependent on MSC messages comming from the console a
 | Executor paused state feedback | Executor Number, [Page Number], Paused, Foreground Color, Background Color, [Button Text] |
 | Cue list feedback | Cue Number, Executor Number, [Page Number], Foreground Color, Background Color, [Button Text] |
 | Fader position feedback | Percent, Operator, Executor Number, [Page Number], Foreground Color, Background Color, [Button Text] |
+
+## Variables
+| Variable | Description |
+| --- | --- |
+| exec_x.x_fader | Position of fader on executor x.x |
+| exec_x.x_cue | Current Cue on executor x.x |
+| exec_x.x_active | `true` if executor x.x is Active |
+| exec_x.x_paused | `true` if executor x.x is paused |
+
+Replace `x.x` with appropriate Page and Executor numbers
 
 * * *
 
