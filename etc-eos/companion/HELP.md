@@ -100,53 +100,10 @@ Each wheel has the following variables:
 | $(etc-eos:wheel_cat_X)       | Wheel X's function category   | Category      |
 | $(etc-eos:wheel_floatval_X)  | Wheel X's float numeric value | 2 decimals    |
 
-Based on initial testing, the wheels are numbered like so:
-
-| Variable                  | Description      | Example value                  |
-| ------------------------- | ---------------- | ------------------------------ |
-| $(etc-eos:wheel_label_1)  | Wheel 1's label  | Intens                         |
-| $(etc-eos:wheel_label_2)  | Wheel 2's label  | Intensity Macros               |
-| $(etc-eos:wheel_label_3)  | Wheel 3's label  | Intensity Macro Rate           |
-| $(etc-eos:wheel_label_4)  | Wheel 4's label  | Intensity Macro Crossfade Rate |
-| $(etc-eos:wheel_label_5)  | Wheel 5's label  | Pan                            |
-| $(etc-eos:wheel_label_6)  | Wheel 6's label  | Tilt                           |
-| $(etc-eos:wheel_label_7)  | Wheel 7's label  | X Focus                        |
-| $(etc-eos:wheel_label_8)  | Wheel 8's label  | Y Focus                        |
-| $(etc-eos:wheel_label_9)  | Wheel 9's label  | Z Focus                        |
-| $(etc-eos:wheel_label_10) | Wheel 10's label | Cyan                           |
-| $(etc-eos:wheel_label_11) | Wheel 11's label | Magenta                        |
-| $(etc-eos:wheel_label_12) | Wheel 12's label | Yellow                         |
-| $(etc-eos:wheel_label_13) | Wheel 13's label | Color Select                   |
-| $(etc-eos:wheel_label_14) | Wheel 14's label | Hue                            |
-| $(etc-eos:wheel_label_15) | Wheel 15's label | Saturatn                       |
-| $(etc-eos:wheel_label_16) | Wheel 16's label | CTO                            |
-| $(etc-eos:wheel_label_17) | Wheel 17's label | Color Mix Mode                 |
-| $(etc-eos:wheel_label_18) | Wheel 18's label | Gobo Ind/Spd                   |
-| $(etc-eos:wheel_label_19) | Wheel 19's label | Gobo Select                    |
-| $(etc-eos:wheel_label_20) | Wheel 20's label | Beam Fx Ind/Spd                |
-| $(etc-eos:wheel_label_21) | Wheel 21's label | Beam Fx Select                 |
-| $(etc-eos:wheel_label_22) | Wheel 22's label | Animation Select               |
-| $(etc-eos:wheel_label_23) | Wheel 23's label | Effect Macros                  |
-| $(etc-eos:wheel_label_24) | Wheel 24's label | Iris                           |
-| $(etc-eos:wheel_label_25) | Wheel 25's label | Edge                           |
-| $(etc-eos:wheel_label_26) | Wheel 26's label | Zoom                           |
-| $(etc-eos:wheel_label_27) | Wheel 27's label | Shutter Strobe                 |
-| $(etc-eos:wheel_label_28) | Wheel 28's label | Diffusion                      |
-| $(etc-eos:wheel_label_29) | Wheel 29's label | Global MSpeed                  |
-| $(etc-eos:wheel_label_30) | Wheel 30's label | Edge Mode                      |
-| $(etc-eos:wheel_label_31) | Wheel 31's label | Angle C                        |
-| $(etc-eos:wheel_label_32) | Wheel 32's label | Thrust C                       |
-| $(etc-eos:wheel_label_33) | Wheel 33's label | Angle A                        |
-| $(etc-eos:wheel_label_34) | Wheel 34's label | Thrust A                       |
-| $(etc-eos:wheel_label_35) | Wheel 35's label | Angle D                        |
-| $(etc-eos:wheel_label_36) | Wheel 36's label | Thrust D                       |
-| $(etc-eos:wheel_label_37) | Wheel 37's label | Angle B                        |
-| $(etc-eos:wheel_label_38) | Wheel 38's label | Thrust B                       |
-| $(etc-eos:wheel_label_39) | Wheel 39's label | Frame Assembly                 |
-| $(etc-eos:wheel_label_40) | Wheel 40's label | {unused?}                      |
-
 In testing, I only saw 39 reported, but if more exist the count will have to
 be adjusted. This is set at 100 as I saw other software have over 80.
+
+## Wheels - Distinct Parameters
 
 These parameters are reported when working with a fixture.
 You must select the fixture by typing its number on the
@@ -155,57 +112,126 @@ software does not consistently send updates on the values.
 
 All of these variables are availabe in a string (integer)
 and a floating point format. Just append _stringval or
-_floatval to the end of the base name in the table below
+_floatval to the end of the base name in the list below:
 
-| Variable base name           |       Description
-| ---------------------------- | ----------------------------- |
-|  enc_intensity               | Encoder: Intensity            | 
-|  enc_zoom                    | Encoder: Zoom                 | 
-|  enc_edge                    | Encoder: Edge                 | 
-|  enc_iris                    | Encoder: Iris                 | 
-|  enc_pan                     | Encoder: Pan                  | 
-|  enc_tilt                    | Encoder: Tilt                 | 
-|  enc_x_focus                 | Encoder: X Focus              | 
-|  enc_y_focus                 | Encoder: Y Focus              | 
-|  enc_z_focus                 | Encoder: Z Focus              | 
-|  enc_red                     | Encoder: Red                  | 
-|  enc_green                   | Encoder: Green                | 
-|  enc_blue                    | Encoder: Blue                 | 
-|  enc_white                   | Encoder: White                | 
-|  enc_cyan                    | Encoder: Cyan                 | 
-|  enc_magenta                 | Encoder: Magenta              | 
-|  enc_yellow                  | Encoder: Yellow               | 
-|  enc_amber                   | Encoder: Amber                | 
-|  enc_lime                    | Encoder: Lime                 | 
-|  enc_indigo                  | Encoder: Indigo               | 
-|  enc_uv                      | Encoder: UV                   | 
-|  enc_red_adj                 | Encoder: Red Adj              | 
-|  enc_green_adj               | Encoder: Green Adj            | 
-|  enc_blue_adj                | Encoder: Blue Adj             | 
-|  enc_white_adj               | Encoder: White Adj            | 
-|  enc_cyan_adj                | Encoder: Cyan Adj             | 
-|  enc_magenta_adj             | Encoder: Magenta Adj          | 
-|  enc_yellow_adj              | Encoder: Yellow Adj           | 
-|  enc_amber_adj               | Encoder: Amber Adj            | 
-|  enc_lime_adj                | Encoder: Lime Adj             | 
-|  enc_indigo_adj              | Encoder: Indigo               | 
-|  enc_hue                     | Encoder: Hue                  | 
-|  enc_cto                     | Encoder: CTO                  | 
-|  enc_c1                      | Encoder: Color Select         | 
-|  enc_c2                      | Encoder: Color Mix MSpeed     | 
-|  enc_ctc                     | Encoder: CTC                  | 
-|  enc_shutter_strobe          | Encoder: Shutter Strobe       | 
-|  enc_saturation              | Encoder: Saturation           | 
-|  enc_diffusion               | Encoder: Diffusion            | 
-|  enc_angle_a                 | Encoder: Angle A              | 
-|  enc_angle_b                 | Encoder: Angle B              | 
-|  enc_angle_c                 | Encoder: Angle C              | 
-|  enc_angle_d                 | Encoder: Angle D              | 
-|  enc_thrust_a                | Encoder: Thrust A             | 
-|  enc_thrust_b                | Encoder: Thrust B             | 
-|  enc_thrust_c                | Encoder: Thrust C             | 
-|  enc_thrust_d                | Encoder: Thrust D             | 
-|  enc_frame_assembly          | Encoder: Frame Assembly       | 
+enc_intensity
+enc_background_intensity
+enc_zoom
+enc_edge
+enc_iris
+enc_pan
+enc_tilt
+enc_x_focus
+enc_y_focus
+enc_z_focus
+enc_red
+enc_green
+enc_blue
+enc_red_main
+enc_green_main
+enc_blue_main
+enc_white_main
+enc_bgnd_red
+enc_bgnd_grn
+enc_bgnd_blu
+enc_bgnd_whi
+enc_white
+enc_cyan
+enc_magenta
+enc_yellow
+enc_amber
+enc_lime
+enc_indigo
+enc_uv
+enc_red_adj
+enc_green_adj
+enc_blue_adj
+enc_white_adj
+enc_cyan_adj
+enc_magenta_adj
+enc_yellow_adj
+enc_amber_adj
+enc_lime_adj
+enc_indigo_adj
+enc_hue
+enc_cto
+enc_ctb
+enc_color_select
+enc_color_mix_mspeed
+enc_ctc
+enc_shutter_strobe
+enc_saturation
+enc_diffusion
+enc_diffusion_2
+enc_edge_distance
+enc_position_mspeed
+enc_position_blink
+enc_color_mix
+enc_color_mix_2
+enc_background_color_mix
+enc_cmixmaft
+enc_cmixmart
+enc_color_temperature
+enc_cri
+enc_angle_a
+enc_angle_b
+enc_angle_c
+enc_angle_d
+enc_thrust_a
+enc_thrust_b
+enc_thrust_c
+enc_thrust_d
+enc_frame_assembly
+enc_gobo_select
+enc_gobo_ind_spd
+enc_gobo_select_2
+enc_gobo_ind_spd_2
+enc_gobo_select_3
+enc_gobo_ind_spd_3
+enc_beam_fx_select
+enc_beam_fx_ind_spd
+enc_beam_fx_select_2
+enc_beam_fx_ind_spd_2
+enc_animation_select
+enc_animation_ind_spd
+enc_cooling_fan
+enc_dim_curve
+enc_global_mspeed
+enc_lt_diffusion
+enc_med_diffusion
+enc_color_mix_mode
+enc_edge_mode
+enc_edge_adjust
+enc_effect_macros
+enc_form_mspeed
+enc_tint
+enc_color_temperature
+enc_color_mix_mode_2
+
+## Wheels - By category
+
+The encoder wheels are also availble by category:
+
+| Category# | Description         |
+| --------- | ------------------- |
+| 0         | Uncategorized       |
+| 1         | Intensity           |
+| 2         | Focus               |
+| 3         | Color               |
+| 4         | Image               |
+| 5         | Form                |
+| 6         | Shutter             |
+
+Each category will have its own set of encoder wheels depending on
+the fixture selected
+
+| Variable                     | Description                            |
+| ---------------------------- | -------------------------------------- |
+| catX_wheel_count             | How many wheels are in this category   |
+| catX_wheel_Y_label           | Label for Wheel Y of Category X        |
+| catX_wheel_Y_stringval       | String/Int for Wheel Y of Category X   |
+| catX_wheel_Y_floatval        | Float value for Wheel Y or Category X  |
+| catX_wheel_Y_oscname         | OSC path value (from label)            |
 
 
 ## Feedbacks
