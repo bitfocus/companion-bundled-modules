@@ -2,6 +2,9 @@
 
 This module will connect to any Blackmagic Design VideoHub Device.
 
+Presets are not available for all input & output combinations for the larger models, as it causes stability issues.  
+Instead you can take one of the existing presets and update it to the correct input and output.
+
 **Available commands for Blackmagic Design VideoHub**
 
 - Rename destination
