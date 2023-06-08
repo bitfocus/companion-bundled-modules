@@ -1,0 +1,35 @@
+/*!
+   * SlowBuffer convenience methods.
+   */
+
+/*!
+ * Set the `name` property of the types. Used for debugging...
+ */
+
+/*!
+ * Set the `type` property of the `NULL` pointer Buffer object.
+ */
+
+/*!
+ * This `char *` type is used by "allocCString()" above.
+ */
+
+/*!
+ * cookie
+ * Copyright(c) 2012-2014 Roman Shtylman
+ * Copyright(c) 2015 Douglas Christopher Wilson
+ * MIT Licensed
+ */
+
+/**
+ * Wrapper for built-in http.js to emulate the browser XMLHttpRequest object.
+ *
+ * This can be used with JS designed for browsers to improve reuse of code and
+ * allow the use of existing libraries.
+ *
+ * Usage: include("XMLHttpRequest.js") and use XMLHttpRequest per W3C specs.
+ *
+ * @author Dan DeFelippi <dan@driverdan.com>
+ * @contributor David Ellis <d.f.ellis@ieee.org>
+ * @license MIT
+ */
