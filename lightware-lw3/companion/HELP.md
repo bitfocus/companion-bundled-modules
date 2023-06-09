@@ -1,5 +1,5 @@
 ## Lightware 3
-This module is for controlling Lightware equipment that supports LW3 protocol. So far only HDMI20_OPTC, MMX-8x8-HDMI and MX2-8x8-HDMI20 have been tested. Not all actions or feedbacks may work with other stuff. Please contact us if your LW3 compatible equipment is not supported.
+This module is for controlling Lightware equipment that supports LW3 protocol. So far only MX2-8x8-HDMI20, MX2-48x48-HDMI20-A-R, MMX8x8-HDMI-4K-A-USB20 and HDMI20_OPTC have been tested. Not all actions or feedbacks may work with other stuff. Please contact us if your LW3 compatible equipment is not supported.
 
 ### Configuration
 * Type in the IP address of the device.
@@ -25,4 +25,5 @@ This module is for controlling Lightware equipment that supports LW3 protocol. S
 ### Presets
 * Presets are available for selection of all inputs and outputs your matrix supports. You can use them to make routes with two or three button pushes.  
 With two pushes use: 1. Select Output, 2. Select and Take Input   
-with three pushes use: 1. Select Output or Select Input, 2. Select Input or Select Output, 3. Take selected
+with three pushes use: 1. Select Output or Select Input, 2. Select Input or Select Output, 3. Take selected  
+The presets for selecting and switching crosspoints make the buttons act very similar to an X/Y salvo panel. Color feedbacks show active routes and selections as background and tet colors. It is more difficult to explain then in reality, so just play with it and you'll get it.
