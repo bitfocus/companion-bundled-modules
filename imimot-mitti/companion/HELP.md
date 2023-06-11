@@ -85,4 +85,12 @@ _Requires Mitti 2_
 - cueTimeLeft_m
 - cueTimeLeft_s
 - currentCueTRT **Total Runtime (TRT) of Current Cue**
+- currentCueAudio
+- currentCuePauseAtBeginning
+- currentCuePauseAtEnd
+- currentCueFadeIn
+- currentCueFadeOut
+- currentCueLoop
+- currentCueTransition
+- currentCueGoto
 - cue\_(number)\_cueName (requires Mitti 2)
