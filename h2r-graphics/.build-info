@@ -1,4 +1,4 @@
 MODULE_NAME=h2r-graphics
-GIT_REF=v3.0.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4216996200
-UPDATE_DATE=2023-02-19
+GIT_REF=v3.1.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5246577065
+UPDATE_DATE=2023-06-12
