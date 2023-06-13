@@ -30,25 +30,28 @@ You should use a different **User ID** if someone will be running your console w
 
 _A User ID of `-1` refers to whichever user the console is currently set to._
 
+The **Use TCP SLIP** setting will use port 3037 with TCP 1.1 SLIP protocol, otherwise it will use port 3032. This is a new option since EOS 3.1 for 3rd party connections.
+
 ## Actions
 
 While it's not practical to create specific actions for every possible command available in your light console, some common actions/keys have been added, although the **Custom Command** action is the most flexible.
 
-| Action               | Description                                                                                                                                                                                                                                                                                                         |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Custom Command       | Runs a custom command. See the section below for more information.                                                                                                                                                                                                                                                  |
-| Custom Command (OSC) | Sends a custom OSC command to Eos. See the **Supported OSC Input** section in the [Eos Operations Manual](https://www.etcconnect.com/WebDocs/Controls/EosFamilyOnlineHelp/en-us/Default.htm) for a list of commands. The paths should all start with `/eos/`. Use the Generic OSC module for more advanced OSC use. |
-| Key: Blackout        | Toggles the **Blackout** button.                                                                                                                                                                                                                                                                                    |
-| Key: Go              | Runs the next cue in the current list.<br />This is the same as pressing the **Go** button on your console.                                                                                                                                                                                                         |
-| Key: Stop/Back       | Press once to stop the current cue (if it's running), and again to move back to the previous cue in the list.<br />This is the same as pressing the **Stop/Back** button on your console.                                                                                                                           |
-| Run Cue              | Runs a specific cue in a cue list.                                                                                                                                                                                                                                                                                  |
-| Run Macro            | Runs a specific macro.                                                                                                                                                                                                                                                                                              |
-| Press Key            | Presses one of the console's keys. A full list of keys can be found in the latest [Eos Family Operations Manual](https://www.etcconnect.com/WorkArea/DownloadAsset.aspx?id=10737500523) (links to v2.9.1); do a search for `Eos OSC Keys` (use the value from the first column).                                    |
-| Channel Intensity    | Sets a channel's intensity to a percentage, or to a keyword: `out`, `full`, `min`, `max`.                                                                                                                                                                                                                           |
-| Group Intensity      | Sets a group's intensity to a percentage, or to a keyword: `out`, `full`, `min`, `max`.                                                                                                                                                                                                                             |
-| Submaster Intensity  | Sets a submaster's intensity to a percentage, or to a keyword: `out`, `full`, `min`, `max`.                                                                                                                                                                                                                         |
-| Submaster Bump       | Simulates a submaster's bump button. The **State** property can be:<br /> - Press and Release<br /> - Press and Hold<br /> - Release<br /><br />_Hint: Add this action to a down/on action to **Press and Hold**, and a **Release** action to up/off, then make the button **Latch/Toggle**._                       |
-| Fire Preset          | Runs the preset given its number.                                                                                                                                                                                                                                                                                   |
+| Action                         | Description                                                                                                                                                                                                                                                                                                                        |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Custom Command                 | Runs a custom command. See the section below for more information.                                                                                                                                                                                                                                                                 |
+| Custom Command (OSC)           | Sends a custom OSC command to Eos. See the **Supported OSC Input** section in the [Eos Operations Manual](https://www.etcconnect.com/WebDocs/Controls/EosFamilyOnlineHelp/en-us/Default.htm) for a list of commands. The paths should all start with `/eos/`. Use the Generic OSC module for more advanced OSC use.                |
+| Custom Command (OSC) with args | Sends a custom OSC command to Eos with arguments. See the **Supported OSC Input** section in the [Eos Operations Manual](https://www.etcconnect.com/WebDocs/Controls/EosFamilyOnlineHelp/en-us/Default.htm) for a list of commands. The paths should all start with `/eos/`. Use the Generic OSC module for more advanced OSC use. |
+| Key: Blackout                  | Toggles the **Blackout** button.                                                                                                                                                                                                                                                                                                   |
+| Key: Go                        | Runs the next cue in the current list.<br />This is the same as pressing the **Go** button on your console.                                                                                                                                                                                                                        |
+| Key: Stop/Back                 | Press once to stop the current cue (if it's running), and again to move back to the previous cue in the list.<br />This is the same as pressing the **Stop/Back** button on your console.                                                                                                                                          |
+| Run Cue                        | Runs a specific cue in a cue list.                                                                                                                                                                                                                                                                                                 |
+| Run Macro                      | Runs a specific macro.                                                                                                                                                                                                                                                                                                             |
+| Press Key                      | Presses one of the console's keys. A full list of keys can be found in the latest [Eos Family Operations Manual](https://www.etcconnect.com/WorkArea/DownloadAsset.aspx?id=10737500523) (links to v2.9.1); do a search for `Eos OSC Keys` (use the value from the first column).                                                   |
+| Channel Intensity              | Sets a channel's intensity to a percentage, or to a keyword: `out`, `full`, `min`, `max`.                                                                                                                                                                                                                                          |
+| Group Intensity                | Sets a group's intensity to a percentage, or to a keyword: `out`, `full`, `min`, `max`.                                                                                                                                                                                                                                            |
+| Submaster Intensity            | Sets a submaster's intensity to a percentage, or to a keyword: `out`, `full`, `min`, `max`.                                                                                                                                                                                                                                        |
+| Submaster Bump                 | Simulates a submaster's bump button. The **State** property can be:<br /> - Press and Release<br /> - Press and Hold<br /> - Release<br /><br />_Hint: Add this action to a down/on action to **Press and Hold**, and a **Release** action to up/off, then make the button **Latch/Toggle**._                                      |
+| Fire Preset                    | Runs the preset given its number.                                                                                                                                                                                                                                                                                                  |
 
 ## Dynamic variables
 
@@ -105,14 +108,9 @@ be adjusted. This is set at 100 as I saw other software have over 80.
 
 ## Wheels - Distinct Parameters
 
-These parameters are reported when working with a fixture.
-You must select the fixture by typing its number on the
-command line. If using next/last or other methods the EOS
-software does not consistently send updates on the values.
+These parameters are reported when working with a fixture. You must select the fixture by typing its number on the command line. If using next/last or other methods the EOS software does not consistently send updates on the values.
 
-All of these variables are availabe in a string (integer)
-and a floating point format. Just append _stringval or
-_floatval to the end of the base name in the list below:
+All of these variables are availabe in a string (integer) and a floating point format. Just append _stringval or _floatval to the end of the base name in the list below:
 
 enc_intensity
 enc_background_intensity
@@ -233,6 +231,7 @@ the fixture selected
 | catX_wheel_Y_floatval        | Float value for Wheel Y or Category X  |
 | catX_wheel_Y_oscname         | OSC path value (from label)            |
 
+There is a sample Stream Deck + configuration file in the github repository that demonstrates how this can be used effectively to manage all encoders on a single Stream Deck + page.
 
 ## Feedbacks
 
