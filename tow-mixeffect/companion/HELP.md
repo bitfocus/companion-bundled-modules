@@ -4,8 +4,7 @@ This module will allow you to control a MixEffect instance running on iOS device
 
 ### Configuration
 
-The MixEffect Companion Module requires that your MixEffect app is configured for OSC. This
-configuration includes:
+The MixEffect Companion Module requires that your MixEffect app is configured for OSC. This configuration includes:
 
 1. Enabling OSC support within MixEffect Automation Settings,
 2. Enabling the OSC server for the particular switcher you want to control, and
