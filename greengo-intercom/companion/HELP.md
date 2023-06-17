@@ -10,7 +10,7 @@ It is also worth mentioning that we currently can't support Green-GO WAA antenna
 
 Please check the tables below for an overview of supported button actions and feedbacks. Also, remember to use the available button presets for easy setup.
 
-If you need more information about the Companion module, please refer to our [documentation](https://docs.greengo.digital/en/guides/companion/) or contact our [community](https://greengoconnect.com) in case you need further assistance.
+If you need more information about the Companion module, please refer to our [documentation](https://manual.greengoconnect.com/en/guides/companion/) or contact our [community](https://greengoconnect.com) in case you need further assistance.
 
 ##### Prerequisites
 
@@ -27,7 +27,7 @@ There are a few configuration options, of which currently only the first two are
 
 - **Device IP:** Match this to your Green-GO device's IPv4 address and avoid using broadcast addresses to prevent receiving conflicting states.
 - **Control Port:** Specify the UDP port that is utilized for OSC messages. Please ensure the port number matches the one specified in your [osc-remote.gg5t](https://github.com/bitfocus/companion-module-greengo-intercom/blob/master/osc-remote.gg5t) Green-GO script.
-- **Device Type:** This option is a placeholder. It currently _serves no function_ and can be ignored.<br>Once the Green-GO firmware exposes OSC endpoints, this placeholder will define available states and variables.
+- **Device Type:** This option defines the range of available actions, feedbacks, and presets. In addition, it is used for preset button names.
 - **Channel Count:** Define the number of channels (1 - 6) to control the amount of actions, feedbacks, presets, and variables created for this module. Using a lower number of channels can improve performance and reduce network load.
 
 ##### Available Button Actions
