@@ -33,7 +33,7 @@ MIDI channels are ignored when mode is set to `Ethernet`.
 | Console/onPC Type | Type of Console/onPC you want to communicate with. |
 
 ## Limitations
-Generally executor numbers can be between `0` and `127`. This is a protocol limitation.
+~~Generally executor numbers can be between `0` and `127`. This is a protocol limitation.~~ All executor numbers can be used now with one exception: When using fader/intensity actions the executor numbers are still limited between `0` and `127`. The console does send and receive fader/intensity information for higher executor numbers but wraps around above `127`. So it is adviced to either stick to executors below `128` or to not use nor rely on fader/intensity actions/information when using higher executors. Also note that while it works it is documented otherwise and might be subject to change even though unlikely.
 If you don't define an executor or use `0` then the main executor is assumed on a dot2 or the first executor on a grandMA2. The grand master can't be controlled through MSC.
 By default page `1` is assumed for all executors. The dot2 only supports control of page `1` via MSC while the grandMA2 does support different pages. Note that the main executor is technically not on a page so when the executor is set to `0` and the console type is set to `dot2`, the page setting isn't used.
 Some actions support an optional fade time in seconds which can be between `0` and `3600`.
@@ -53,10 +53,10 @@ Be aware that feedbacks are dependent on MSC messages comming from the console a
 ## Feedbacks
 | Feedback | Parameters |
 | --- | --- |
-| Executor active state feedback | Executor Number, [Page Number], Active, Foreground Color, Background Color, [Button Text] |
-| Executor paused state feedback | Executor Number, [Page Number], Paused, Foreground Color, Background Color, [Button Text] |
-| Cue list feedback | Cue Number, Executor Number, [Page Number], Foreground Color, Background Color, [Button Text] |
-| Fader position feedback | Percent, Operator, Executor Number, [Page Number], Foreground Color, Background Color, [Button Text] |
+| Executor active state feedback | Executor Number, [Page Number], Active |
+| Executor paused state feedback | Executor Number, [Page Number], Paused |
+| Cue list feedback | Cue Number, Executor Number, [Page Number] |
+| Fader position feedback | Percent, Operator, Executor Number, [Page Number] |
 
 ## Variables
 | Variable | Description |
@@ -70,4 +70,4 @@ Replace `x.x` with appropriate Page and Executor numbers
 
 * * *
 
-&copy; 2020 Christian Volmering &lt;christian@volmering.name&gt;
+&copy; 2023 Christian Volmering &lt;christian@volmering.name&gt;
