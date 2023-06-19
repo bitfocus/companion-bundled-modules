@@ -1,4 +1,4 @@
 MODULE_NAME=govee-lights
-GIT_REF=v1.0.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5316477366
+GIT_REF=v1.0.2
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5316600559
 UPDATE_DATE=2023-06-19
