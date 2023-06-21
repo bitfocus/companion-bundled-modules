@@ -6,15 +6,15 @@ Exit out of your console and enter the Eos Shell (Eos Configuration Utility).
 
 Open **Settings** and click on **Network**. Make a note of your console's IP address.
 
-![console-ip](documentation/images/console-ip.jpg)
+![console-ip](./images/console-ip.jpg)
 
 Scroll down to the **Interface Protocols** section and make sure the OSC TCP Format is **TCP format for OSC 1.0 (packet length headers)** (the default option). Save your changes by pressing the **Accept** button, then launch your console.
 
-![osc-1.0](documentation/images/osc-1.0.jpg)
+![osc-1.0](./images/osc-1.0.jpg)
 
 Once your console has started, make sure the **OSC RX** and **OSC TX** options are enabled (they are by default). The location may vary depending on your console's version, but it should be somewhere close to **Setup > System > Show Control > OSC**.
 
-![enable-osc](documentation/images/enable-osc.jpg)
+![enable-osc](./images/enable-osc.jpg)
 
 _Previous versions of this module asked you to change the OSC [UDP] RX Port. This is no longer required. You should reset the field back to `0` if you're not using it for another purpose._
 
@@ -90,21 +90,6 @@ A list of the available variables is listed on the module's config page, and is 
 | $(etc-eos:softkey_label_12)     | Soft key 12's label                 | AutoBlk Clean               |
 
 _Soft keys 7-12 are the alternates available when you toggle the {More SK} button._
-
-## Wheels - More variables
-
-There are also a set of variables to track the status of the encoder wheels.
-Each wheel has the following variables:
-
-| Variable                     | Description                   | Example value |
-| ---------------------------- | ----------------------------- | ------------- |
-| $(etc-eos:wheel_label_X)     | Wheel X's label               | Function      |
-| $(etc-eos:wheel_stringval_X) | Wheel X's string value        | String Format |
-| $(etc-eos:wheel_cat_X)       | Wheel X's function category   | Category      |
-| $(etc-eos:wheel_floatval_X)  | Wheel X's float numeric value | 2 decimals    |
-
-In testing, I only saw 39 reported, but if more exist the count will have to
-be adjusted. This is set at 100 as I saw other software have over 80.
 
 ## Wheels - Distinct Parameters
 
