@@ -48,3 +48,7 @@
 - Mute Status
 - Power Status
 - Projector Input
+
+--------
+Contributions for development of this open source module are always welcome
+https://github.com/sponsors/istnv
