@@ -68,7 +68,11 @@ To use these, replace INSTANCENAME with the name of your module instance.
 Feedback | Description
 -----------------|---------------
 **Cue Number Color as Background** | Use the Go Button color for specified cue number as background.<br />Only works for Hit cues. Use HIT# where # is the Hit number for the cue number.
-**Color when Full Screen** | Set the button color when Go Button is Full Screen
-**Color when Master Fader Visible** | Set the button color when the Master Fader is Visible
-**Color when Dimmed** | Set the button color when Master Fader is Dimmed
-**Color when Muted** | Set the button color when Master Fader is Muted
+**Color when Full Screen** | Indicate on a button when Go Button is Full Screen
+**Color when Master Fader Visible** | Indicate on a button when the Master Fader is Visible
+**Color when Dimmed** | Indicate on a button when Master Fader is Dimmed
+**Color when Muted** | Indicate on a button when Master Fader is Muted
+
+--------
+Contributions for development of this open source module are always welcome
+https://github.com/sponsors/istnv
