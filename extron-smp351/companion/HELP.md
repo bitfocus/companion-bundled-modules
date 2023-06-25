@@ -15,12 +15,15 @@ This module connects to the Extron H.264 Streaming Media Processor (SMP) 351.
 - **Pause Recording** Pause a recording
 - **Extend Scheduled Recording** Extend a scheduled recording by 1 - 60 minutes
 - **RTMP Stream** Start/Stop
+- **Set Chapter Marker**
+- **Audio Mute/Unmute**
 
 ## Feedback
 
 - **Record state** Stop/Record/Pause
 - **Stream Primary/Backup state** On/Off
 - **Dual Encoder mode** On/Off
+- **Audio Mute Status** Mute/Unmute
 
 ## Variables
 
