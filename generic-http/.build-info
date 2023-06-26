@@ -1,4 +1,4 @@
 MODULE_NAME=generic-http
-GIT_REF=v2.1.4
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5061646866
-UPDATE_DATE=2023-05-23
+GIT_REF=v2.1.5
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5376034033
+UPDATE_DATE=2023-06-26
