@@ -12,6 +12,7 @@ This module is for controlling Lightware equipment that supports LW3 protocol. S
 * Preset - Recall a preset
 * Run Macro (only available if there are macros)
 * Switch USB Host (only available if your matrix has USB switching capability)
+* Soft Reset Device
 
 ### Feedbacks
 * Route - Shows if a given source is routed to a given output or selected port
