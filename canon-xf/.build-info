@@ -1,0 +1,4 @@
+MODULE_NAME=canon-xf
+GIT_REF=v2.0.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5414915753
+UPDATE_DATE=2023-06-29
