@@ -1,4 +1,4 @@
 MODULE_NAME=google-sheets
-GIT_REF=v1.0.2
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4983393761
-UPDATE_DATE=2023-05-15
+GIT_REF=v1.1.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5431617515
+UPDATE_DATE=2023-07-01
