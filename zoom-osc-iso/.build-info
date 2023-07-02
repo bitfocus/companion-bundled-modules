@@ -1,4 +1,4 @@
 MODULE_NAME=zoom-osc-iso
-GIT_REF=v3.6.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5343829056
-UPDATE_DATE=2023-06-22
+GIT_REF=v3.7.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5436042727
+UPDATE_DATE=2023-07-02
