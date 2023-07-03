@@ -1,4 +1,4 @@
 MODULE_NAME=toggl-track
-GIT_REF=v2.0.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5414946256
-UPDATE_DATE=2023-06-29
+GIT_REF=v2.0.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5445910794
+UPDATE_DATE=2023-07-03
