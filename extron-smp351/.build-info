@@ -1,4 +1,4 @@
 MODULE_NAME=extron-smp351
-GIT_REF=v2.1.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5369787062
-UPDATE_DATE=2023-06-25
+GIT_REF=v2.1.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5458718807
+UPDATE_DATE=2023-07-04
