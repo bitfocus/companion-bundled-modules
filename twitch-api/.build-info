@@ -1,4 +1,4 @@
 MODULE_NAME=twitch-api
 GIT_REF=v3.0.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/3990592378
-UPDATE_DATE=2023-01-23
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5467193970
+UPDATE_DATE=2023-07-05
