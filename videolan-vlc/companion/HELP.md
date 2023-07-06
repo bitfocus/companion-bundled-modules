@@ -3,7 +3,11 @@ VLC is a free and open source cross-platform multimedia player and framework tha
 
 You can find it here: <a href="https://www.videolan.org/vlc/index.html" title="VLC">videolan.org</a>
 
+--------
+Contributions for maintenance and development of this open source module are always welcome
+https://github.com/sponsors/istnv
 
+--------
 # *IMPORTANT UPDATE!*
 **If you used this module prior to the feedback and variables version, the Play ID has changed!**
 The prior versions *sometimes* worked by starting the playlist at number 3. This version retrieves the
@@ -34,7 +38,7 @@ Action | Description
 **Play ID** | Play a specific item from the playlist. If ID does not exist, this command acts like a simple **Play** command.
 **Stop** | Stop playback
 **Pause / Resume** | Toggle pause. If state is 'stopped' then play current item. If no current item then play the 1st item.
-**Seek To** | Set playback to a particular position in the current item. See below for options.
+**Seek To** | Set playback to a particular position in the current item. See below for options. **
 **Next** | Jump to next item
 **Previous** | Jump to previous item
 **Full Screen** | Toggle full screen
@@ -43,12 +47,15 @@ Action | Description
 **Repeat** | Toggle item repeat mode (cancels loop mode)
 **Clear Playlist** | Clear all items from Playlist
 **Delete ID** | Delete item with ID from Playlist
-**Volume** | Adjust VLC playback volume. Can be Absolute (0-320) or Relative (+1, -5)
-**Add Item** | Add item to Playlist
-**Add and Play** | Add item to Playlist and Play
+**Volume** | Adjust VLC playback volume. Can be Absolute (0-320) or Relative (+1, -5) **
+**Set Playback Rate** | Set or adjust playback playback rate. Must be larger than 0. 100 is normal speed. Add +/- to adjust by percentage. **
+**Add Item** | Add item to Playlist **
+**Add and Play** | Add item to Playlist and Play **
 **Delete ID** | Delete a specific item from the playlist
 
 *Note:* All toggle style actions have options to set On, Off, or Toggle
+
+** These actions accept dynamic variables for their options.
 
 >\
 >The **Seek To *Where*** option accepts values of the form:\
@@ -83,6 +90,7 @@ Variable | Description
 **$(INSTANCENAME:v_num)** | Number of items loaded in current playlist
 **$(INSTANCENAME:vol)** | Current volume value (0-320)
 **$(INSTANCENAME:volp)** | Current volume percent (Value of 256 is 100%)
+**$(INSTANCENAME:rate)** | Current playback speed as percent
 
 To use these, replace INSTANCENAME with the label/name of your connection label
 
@@ -107,3 +115,4 @@ On the Main Interfaces-->Lua page, set the password for Companion access.
 ![setup2](images/VLCSetup2.png "Setup2")
 
 ***Note:** VLC must be closed and restarted for the password to take effect.*
+
