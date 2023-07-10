@@ -28,6 +28,7 @@ The actions are separated into the following categories:
 - Digital Zoom On/Off
 - Image Stabilization On/Off
 - Send Custom Command
+- Change Module IP
 
 **Pan/Tilt**
 
