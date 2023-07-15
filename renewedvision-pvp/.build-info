@@ -1,0 +1,4 @@
+MODULE_NAME=renewedvision-pvp
+GIT_REF=v2.0.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5559776773
+UPDATE_DATE=2023-07-15
