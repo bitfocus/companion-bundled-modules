@@ -1,10 +1,18 @@
 ## <a href="https://openweathermap.org/"> <img src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png" width=150></a>
 
 Retrieve and display weather information. <br>
-This module requires an active internet connection and you will need your own API key from here: <a href="https://openweathermap.org/home/sign_up" title="OpenWeather">OpenWeather.com</a>
-.<br>
 
+Stuck backstage in some cold, dark ballroom, running A/V support for meetings?<br>
+Do you wonder what the weather is like outside?<br>
+Display the current weather information on a Companion button!<br>
 
+This module requires an active internet connection and you will need your own API key from here: <a href="https://openweathermap.org/home/sign_up" title="OpenWeather">OpenWeather.com</a>.<br>
+
+--------
+Contributions for maintenance and development of this open source module are always welcome
+https://github.com/sponsors/istnv
+
+--------
 ## Configuration
 **Setting** | **Description**
 -----------------|---------------
@@ -66,3 +74,4 @@ Canada postal code | G2J
 <sup>*3</sup> City name options:
 - Add a comma "," and a 2 character country code to specify which City: "Paris,FR"
 - Add a comma "," and a 2 character state code followed by another comma and a 2 character country code to specify which City: "Paris,TX,US"
+
