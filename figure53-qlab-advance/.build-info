@@ -1,4 +1,4 @@
 MODULE_NAME=figure53-qlab-advance
-GIT_REF=v2.0.3
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4738168527
-UPDATE_DATE=2023-04-19
+GIT_REF=v2.1.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5632659453
+UPDATE_DATE=2023-07-22
