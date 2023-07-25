@@ -20,4 +20,8 @@ ViStream.online is the first real-time CMS for event operators. All participants
 - Cue status
 
 ### Available variables
-- Stream OnAir state
+- Stream on air state
+- Presenter key presses
+- Conference slot state
+- Conference on air speaker names
+- ...
