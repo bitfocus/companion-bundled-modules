@@ -42,6 +42,7 @@ It's recommended to use the presets as much as possible as there is a lot of act
 - Pan/Tilt Speed Up
 - Pan/Tilt Speed Down
 - Pan/Tilt Home
+- Adjust pan/tilt velocity on speed change
 
 **Lens**
 
@@ -50,10 +51,12 @@ It's recommended to use the presets as much as possible as there is a lot of act
 - Set Zoom Speed
 - Zoom Speed Up
 - Zoom Speed Down
+- Adjust zoom quickness on speed change
 - Focus Far, Focus Near
 - Set Focus Speed
 - Focus Speed Up
 - Focus Speed Down
+- Adjust focus quickness on speed change
 - Focus Mode (Auto/Manual)
 - One Touch Auto Focus (OTAF)
 
