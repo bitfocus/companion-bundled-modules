@@ -18,7 +18,8 @@ So all broadcasts to be controlled by the module have to be created in the YouTu
   stream data has successfully reached the corresponding YouTube endpoint.
 - **Reload everything from YouTube** - this forces all cached data to be reloaded from YouTube. This can be
   used to make broadcasts created after Companion startup appear in the Companion UI.
-- **Send message to live chat** - this action send a message (200 chars max.) to a Youtube broadcast's live chat.
+- **Send message to live chat** - this action send a message (200 chars max.) to a YouTube broadcast's live chat.
+- **Insert advertisement (cuepoint)** - this action inserts an advertisement to the YouTube broadcast
 
 [ytapi]: https://developers.google.com/youtube/v3/live/docs/liveBroadcasts/transition
 
