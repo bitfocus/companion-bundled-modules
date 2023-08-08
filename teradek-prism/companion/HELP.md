@@ -30,6 +30,8 @@
 - Streaming State
 - Streaming Uptime
 - Streaming Service
+- Stream URL
+- Stream Name
 - Input Format
 - Input Resolution
 - Input Framerate
