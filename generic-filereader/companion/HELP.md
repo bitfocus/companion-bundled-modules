@@ -8,6 +8,10 @@ This module will allow you to read a local file and pull the contents into a Var
 ## Actions
 
 * Read File Now
+* Read Custom File Path into Custom Variable
+* Read Specific Line into Custom Variable
+* Read Specific Line of Custom File Path into Custom Variable
+* Start/Stop File Reading Interval
 
 ## Variables
 
