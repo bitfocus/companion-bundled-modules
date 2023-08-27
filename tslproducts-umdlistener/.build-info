@@ -1,4 +1,4 @@
 MODULE_NAME=tslproducts-umdlistener
-GIT_REF=v2.0.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5848492189
-UPDATE_DATE=2023-08-13
+GIT_REF=v2.0.3
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5991814603
+UPDATE_DATE=2023-08-27
