@@ -2,7 +2,7 @@
 
 **Basic Configuration**
 
-- In the configuration page for the Mitti module in Companion, enter the IP address of the Teradek Prism or Prism Flex
+- In the configuration page for the Teradek module in Companion, enter the IP address of the Teradek Prism or Prism Flex
 - Enter the username and password for the Prism. _Note: while there may not be a username field on some Prism devices the username of "admin" is still required._
 
 ## Actions
