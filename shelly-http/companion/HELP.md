@@ -1,6 +1,6 @@
-## Shelly Module
+## Shelly HTTP Module
 
-This module allows adding Shelly devices to your Companion instance. This module is using the local HTTP endpoints of the Shelly devices and no cloud. At the moment the following Shelly products are integrated:
+This module allows adding older Shelly devices to your Companion instance. This module is using the local HTTP endpoints of the Shelly devices and no cloud. At the moment the following Shelly products are integrated:
 
 - Shelly 1
 - Shelly Plus 1
@@ -19,3 +19,5 @@ This module allows adding Shelly devices to your Companion instance. This module
 - Shelly Dimmer1/2
 - Shelly RGBW2 (Color Mode)
 - Shelly RGBW2 (White Mode)
+
+For controlling newer Shelly devices (Pro & Plus) please use the shelly-ws module.
