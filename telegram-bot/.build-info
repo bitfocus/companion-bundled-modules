@@ -1,0 +1,4 @@
+MODULE_NAME=telegram-bot
+GIT_REF=v0.1.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/6060656841
+UPDATE_DATE=2023-09-02
