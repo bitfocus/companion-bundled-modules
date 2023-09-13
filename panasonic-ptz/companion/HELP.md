@@ -39,8 +39,13 @@ It's recommended to use the presets as much as possible as there is a lot of act
 
 - Up, Down, Left, Right, UpLeft, UpRight, DownLeft, DownRight
 - Set Pan/Tilt Speed
+- Set Pan and Tilt speeds independently
 - Pan/Tilt Speed Up
+- Pan Speed Up
+- Tilt Speed Up
 - Pan/Tilt Speed Down
+- Pan Speed Down
+- Tilt Speed Down
 - Pan/Tilt Home
 - Adjust pan/tilt velocity on speed change
 
