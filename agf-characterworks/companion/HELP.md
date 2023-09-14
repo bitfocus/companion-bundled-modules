@@ -1,11 +1,12 @@
 # Characterworks Companion Module
 
-v 2.0.0<br>
+v 2.0.1<br>
 5/6/23<br>
 Eddie Wettach <ewettach@gmail.com>
 
 ## Change Log
 
+2.0.1 - Added ability to trigger multiple motions in one request<br>
 2.0.0 - Added support for Companion version 3 <br>
 1.0.2 - Added ability to trigger grid buttons<br>
 1.0.1 - Initial CW Support - trigger motions and set text functions
