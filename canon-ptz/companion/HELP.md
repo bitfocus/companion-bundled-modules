@@ -103,6 +103,7 @@ The actions are separated into the following categories:
 - Prepare
 - Start
 - Stop
+- Run Custom Trace
 
 ## Variables
 
