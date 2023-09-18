@@ -1,4 +1,4 @@
 MODULE_NAME=presentationtools-cuetimer
-GIT_REF=v2.0.2
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5898522393
-UPDATE_DATE=2023-08-18
+GIT_REF=v2.0.3
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/6224473468
+UPDATE_DATE=2023-09-18

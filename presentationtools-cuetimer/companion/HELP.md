@@ -5,7 +5,7 @@ Controls CueTimer by [PresentationTools](https://presentationtools.com/).
 ## Configuration
 
 - IP address of the computer running CueTimer for local use 127.0.0.1.
-- Port, the default is 4778.
+- Port, the default is 31601.
 
 ## Available actions:
 
@@ -30,6 +30,10 @@ Controls CueTimer by [PresentationTools](https://presentationtools.com/).
 - Fire timer with ID
 - Cue timer with ID
 - Cue Current
+- Initialize List
+- Set Duration
+- Add X Minutes
+- Subtract X Minutes
 
 ## Variables:
 
@@ -45,6 +49,8 @@ Variables can be used by putting $(instancename:variablename) e.g. $(cuetimer:ho
 - endTime
 - nextTimerName
 - nextTimerDuration
+- scheduleOffset
+- scheduleOffsetStatus
 
 ## Feedback:
 
