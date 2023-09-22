@@ -24,3 +24,8 @@ Control Netgear AVLive AV-over-IP network switches.
 - cpu_usage
 - memory_usage
 - uptime
+
+_Per Port Variables_
+
+- poe_current_power
+- poe_status
