@@ -29,3 +29,5 @@ _Per Port Variables_
 
 - poe_current_power
 - poe_status
+- speed
+- vlans
