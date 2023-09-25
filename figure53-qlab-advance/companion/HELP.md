@@ -29,9 +29,10 @@ https://github.com/sponsors/istnv
 | Setting               | Description                                                                                                                                                                   |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Target IP**         | Enter the address of the QLab computer. You can enter 127.0.0.1 if Companion is running on the same computer.                                                                 |
+| **Target Port**       | Enter the port number where QLab is listening for OSC messages. This defaults to 53000.                                                                                       |
 | **Use TCP?**          | Check to enable TCP mode. This is required for variables and feedback.                                                                                                        |
 | **Use Tenths**        | If checked, the variable _r_left_ will display 0.1 seconds when less than 5 seconds. If unchecked, the time left will be adjusted by 1 second for a more accurate count-down. |
-| **OSC Passcode**      | Enter a passcode if needed for the QLab workspace.                                                                                                                            |
+| **OSC Passcode**      | Enter a passcode if needed for the QLab workspace. QLab 5 requires a passcode to work reliably from Companion.                                                                |
 | **Workspace**         | Enter the workspace title or ID to control a specific QLab workspace, enter 'default' or leave blank to control active/default workspace.                                     |
 | **Specific Cue List** | Dropdown selection to limit control to a specific cuelist.                                                                                                                    |
 
@@ -126,10 +127,13 @@ To use these, replace INSTANCENAME with the name of your module instance.
 
 ## OSC
 
-This module connects to QLab on port 53000.
+This module connects to QLab on port 53000 by default.
 
 From QLab preferences OSC controls tab make sure you have the "Use OSC controls" checkbox ticked.
 ![QLab](images/qlab.jpg?raw=true 'QLab')
+
+QLab 5 configuration is under the **Network / OSC Access** page on the Workspace Settings window.
+![QLab5](images/QLab5.jpg?raw=true 'QLab5')
 
 ### Running cue examples
 
