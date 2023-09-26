@@ -1,4 +1,4 @@
 MODULE_NAME=tellyo-streamstudio
-GIT_REF=v1.0.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/6074790164
-UPDATE_DATE=2023-09-04
+GIT_REF=v1.0.2
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/6317054829
+UPDATE_DATE=2023-09-26
