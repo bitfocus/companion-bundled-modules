@@ -7,19 +7,23 @@ So all broadcasts to be controlled by the module have to be created in the YouTu
 
 ### Available actions
 
-- **Start broadcast test** - this action initializes a YouTube broadcast. You'll need to explicitly use this only if you want
+- **Start broadcast test** - This action initializes a YouTube broadcast. You'll need to explicitly use this only if you want
   to launch the so called "monitor stream" of a broadcast. The same goal can be achieved by visiting the Live Control Room
   of the broadcast when the associated input stream is active.
-- **Go live** - this action starts a YouTube broadcast and makes it available for the public.
-- **Finish broadcast** - this action ends a published YouTube broadcast.
-- **Advance broadcast to next phase** - this action combines the above actions into one action (off → testing → live → finished).
-- **Refresh broadcast/stream feedbacks** - this triggers immediate refresh of broadcast lifecycle status/
+- **Go live** - This action starts a YouTube broadcast and makes it available for the public.
+- **Finish broadcast** - This action ends a published YouTube broadcast.
+- **Advance broadcast to next phase** - This action combines the above actions into one action (off → testing → live → finished).
+- **Refresh broadcast/stream feedbacks** - This triggers immediate refresh of broadcast lifecycle status/
   stream health and their feedbacks/variables. This can typically be useful for quickly checking if your RTMP
   stream data has successfully reached the corresponding YouTube endpoint.
-- **Reload everything from YouTube** - this forces all cached data to be reloaded from YouTube. This can be
+- **Reload everything from YouTube** - This forces all cached data to be reloaded from YouTube. This can be
   used to make broadcasts created after Companion startup appear in the Companion UI.
-- **Send message to live chat** - this action send a message (200 chars max.) to a YouTube broadcast's live chat.
-- **Insert advertisement (cuepoint)** - this action inserts an advertisement to the YouTube broadcast
+- **Send message to live chat** - This action send a message (200 chars max.) to a YouTube broadcast's live chat.
+- **Insert advertisement (cuepoint)** - This action inserts an advertisement to the YouTube broadcast.
+- **Set description** - This action set the description of the specified broadcast.
+- **Prepend text to description** - This action insert the given text at beginning of the description.
+- **Append text to description** - This action insert the given text at end of the description.
+- **Add chapter timecode to description** - This action insert a chapter timecode at the end of the description.
 
 [ytapi]: https://developers.google.com/youtube/v3/live/docs/liveBroadcasts/transition
 
