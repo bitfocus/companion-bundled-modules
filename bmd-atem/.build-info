@@ -1,4 +1,4 @@
 MODULE_NAME=bmd-atem
-GIT_REF=v3.5.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/6203636519
-UPDATE_DATE=2023-09-15
+GIT_REF=v3.5.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/6317422471
+UPDATE_DATE=2023-09-26
