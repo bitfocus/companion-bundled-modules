@@ -5,6 +5,7 @@ its [Websocket API](https://cpvalente.gitbook.io/ontime/control-and-feedback/web
 
 ## Configuration
 
+- This module requires Ontime V 1 or Ontime V 2.8.0 or above
 - You can download ontime at [www.getontime.no](https://www.getontime.no/)
 - Ontime must be reachable through the network by the device running companion
 - **Ontime server IP** should be set to the IP address of the machine running ontime, available interfaces are
