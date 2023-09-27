@@ -26,15 +26,15 @@ https://github.com/sponsors/istnv
 
 ## Configuration
 
-| Setting               | Description                                                                                                                                                                   |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Target IP**         | Enter the address of the QLab computer. You can enter 127.0.0.1 if Companion is running on the same computer.                                                                 |
-| **Target Port**       | Enter the port number where QLab is listening for OSC messages. This defaults to 53000.                                                                                       |
-| **Use TCP?**          | Check to enable TCP mode. This is required for variables and feedback.                                                                                                        |
-| **Use Tenths**        | If checked, the variable _r_left_ will display 0.1 seconds when less than 5 seconds. If unchecked, the time left will be adjusted by 1 second for a more accurate count-down. |
-| **OSC Passcode**      | Enter a passcode if needed for the QLab workspace. QLab 5 requires a passcode to work reliably from Companion.                                                                |
-| **Workspace**         | Enter the workspace title or ID to control a specific QLab workspace, enter 'default' or leave blank to control active/default workspace.                                     |
-| **Specific Cue List** | Dropdown selection to limit control to a specific cuelist.                                                                                                                    |
+| Setting               | Description                                                                                                                                                                                                              |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Target IP**         | Enter the address of the QLab computer. You can enter 127.0.0.1 if Companion is running on the same computer.                                                                                                            |
+| **Target Port**       | Enter the port number where QLab is listening for OSC messages. This defaults to 53000. Has no effect on QLab4 (or QLab3)                                                                                                                                 |
+| **Use TCP?**          | Check to enable TCP mode. This is required for variables and feedback.                                                                                                                                                   |
+| **Use Tenths**        | If checked, the variable _r_left_ will display 0.1 seconds when less than 5 seconds. If unchecked, the time left will be adjusted by 1 second for a more accurate count-down.                                            |
+| **OSC Passcode**      | Enter a passcode if needed for the QLab workspace. QLab 5 requires a passcode to work reliably from Companion.                                                                                                           |
+| **Workspace**         | Dropdown selection to select a specific Workspace. You can enter 'default' or leave blank to control front-most workspace (if more than one is open) in QLab4. QLab5 commands go to all open workspaces. You can change the IP Control Port too allow multiple workspaces open at once. |
+| **Specific Cue List** | Dropdown selection to limit control to a specific cuelist.                                                                                                                                                               |
 
 ## Actions
 
