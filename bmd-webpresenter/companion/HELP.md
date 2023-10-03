@@ -50,4 +50,6 @@ Add legacy module name to manifest
 ## Version 2.0.2
 Add a warning in the log for missing Server or Stream Key
 
+## Version 2.0.3
+Allow variables to be used in Server and Stream Key fields
 
