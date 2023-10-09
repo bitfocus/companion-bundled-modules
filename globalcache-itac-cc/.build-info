@@ -1,4 +1,4 @@
 MODULE_NAME=globalcache-itac-cc
-GIT_REF=v2.0.4
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4846761640
-UPDATE_DATE=2023-04-30
+GIT_REF=v2.0.5
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/6460846681
+UPDATE_DATE=2023-10-09
