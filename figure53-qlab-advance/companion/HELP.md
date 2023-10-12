@@ -50,6 +50,8 @@ https://github.com/sponsors/istnv
 | **Pause**                     | Pause all currently running cues in the workspace.                                                                                                                                                                                                       |
 | **Resume**                    | Un-pause all paused cues in the workspace.                                                                                                                                                                                                               |
 | **Preview**                   | Preview the selected cue without moving the Playhead.                                                                                                                                                                                                    |
+| **Audition GO**               | 'Audition' the current cue QLab5 Only                                                                                                                                                                                                                    |
+| **Audition Preview**          | 'Audition' Preview the selected cue without moving the Playhead. QLab5 Only                                                                                                                                                                              |
 | **Toggle Pause**              | Pause/Unpause selected cue                                                                                                                                                                                                                               |
 | **GoTo (Cue/ID)**             | Move the playhead to (Cue/ID). Does not start the cue.                                                                                                                                                                                                   |
 | **Start (Cue/ID)**            | Start (Cue/ID). Does not move the playhead. If the specified cue is playing, this command has no effect.                                                                                                                                                 |
@@ -125,10 +127,10 @@ To use these, replace INSTANCENAME with the name of your module instance.
 | **Cue Number Color as Background**   | Sets the button background to QLab color of a specified cue                                    |
 | **Colors for GO status**             | Set the button color for the GO button state: active or disabled via the double-go timer       |
 | **Indicate Workspace Mode**          | Set the button to indicate the QLab workspace mode: Audition (window on), Show Mode, Edit Mode |
-| **Indicate Audition Monitors Open**          | Set the button to indicate ALL Audition monitors are Open |
+| **Indicate Audition Monitors Open**  | Set the button to indicate ALL Audition monitors are Open                                      |
 | **Indicate Override Window On**      | Set the button to indicate Override Window is Visible                                          |
 | **Indicate Master Override**         | Set the button to indicate if the selected Override is Active (Turned off)                     |
-| **Show if ANY cue is runing** 	| Set the button to show when any cue is running |
+| **Show if ANY cue is runing**        | Set the button to show when any cue is running                                                 |
 | **Show Cue # is Running**            | Set the button to show when a specific cue is running                                          |
 | **Show Cue ID is Running**           | Set the button to show when a specific cue ID is running                                       |
 
