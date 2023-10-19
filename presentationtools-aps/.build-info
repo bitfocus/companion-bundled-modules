@@ -1,4 +1,4 @@
 MODULE_NAME=presentationtools-aps
-GIT_REF=v2.0.4
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/6227356885
-UPDATE_DATE=2023-09-18
+GIT_REF=v2.0.5
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/6574204912
+UPDATE_DATE=2023-10-19
