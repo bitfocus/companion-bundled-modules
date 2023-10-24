@@ -4,39 +4,58 @@ Control [VDO.Ninja](https://vdo.ninja) settings remotely.
 
 ### Getting Started
 
-- Ensure you are using VDO.Ninja 22 or above
+- Ensure you are using VDO.Ninja 23 or above
 - Add an API ID as a URL parameter (ex. `&api=xxxxxx`) to your VDO.Ninja URL
 - Enter the same API ID in the module settings
 
 ### Available Actions
 
-#### General
+#### Local
 
 - Mic Control
-- Speaker Control
-- Speaker Volume
 - Camera Control
-- Record Local Video
+- Speaker Control
+- Playback Volume
+- Send Chat Message
+- Record Video
 - Reload
 - Hang Up
-- Send Chat Message
-- Set Bitrate
-- Set Panning
+- Set Video Bitrate
+- Set Audio Pan
 - Raise Hand
-- Toggle Screen Share
+- Screen Share
+- Force Keyframe
+- Next Slide
+- Previous Slide
 
-#### Control Rooms
+#### Director
 
-- Room Guest: Mute/Unmute Guest
-- Room Guest: Deafen/Un-Deafen Guest
-- Room Guest: Mic Volume
-- Room Guest: Hang Up
-- Room Guest: Transfer
-- Room Guest: Add/Remove Group
-- Room Guest: Add/Remove Scene
-- Room Guest: Mute Guest in Scene
-- Room Guest: Blind/Un-Blind Guest
-- Room Guest: Highlight Guest
+##### Targets self
+
+- Self in Group
+- Join Group
+- Leave Group
+- View Group
+- Join View Group
+- Leave View Group
+- Highlight Video Control
+
+##### Targets a room guest
+
+- Guest Mic
+- Guest Speaker
+- Set Guest Mic Volume
+- Overlay Message to Guest
+- Transfer Guest
+- Guest in Scene
+- Guest Mic in Scene
+- Guest in Group
+- Guest Blind
+- Guest Highlight
+- Solo Talk
+- Two-way Solo Talk
+- Force Keyframe
+- Hang Up Guest
 
 ### Available Feedbacks
 
@@ -49,3 +68,4 @@ Control [VDO.Ninja](https://vdo.ninja) settings remotely.
 - mic (Current mute status, either by stream ID or guest position)
 - camera (Current camera status, either by stream ID or guest position)
 - speaker (Available for the "Director" role only)
+- label (if specified, otherwise just the guest position number)
