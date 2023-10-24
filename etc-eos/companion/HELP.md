@@ -2,6 +2,8 @@
 
 ## Configure your console
 
+### EOS v3.1.x and earlier
+
 Exit out of your console and enter the Eos Shell (Eos Configuration Utility).
 
 Open **Settings** and click on **Network**. Make a note of your console's IP address.
@@ -17,6 +19,18 @@ Once your console has started, make sure the **OSC RX** and **OSC TX** options a
 ![enable-osc](./images/enable-osc.jpg)
 
 _Previous versions of this module asked you to change the OSC [UDP] RX Port. This is no longer required. You should reset the field back to `0` if you're not using it for another purpose._
+
+### EOS v3.2.x and later
+
+You will find the network settings now in Setup > Device Settings > Network
+
+![console-ip-3.2.x](./images/console-ip-3.2.x.jpg)
+
+If you use the EOS software local on a Mac/PC with Streamdeck+ attached you no longer need an active network connection as long as the OS recognize a network card (WIFI or Ethernet). You can use the loopback address 127.0.0.1 instead.
+
+You will find the OSC settings in Setup > System Settings > Show Control > OSC
+
+![enable-osc-3.2.x](./images/enable-osc-3.2.x.jpg)
 
 ## Configure Companion
 
