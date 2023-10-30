@@ -22,3 +22,4 @@ If you're missing a feature, feel free to [open an issue](https://github.com/bit
 | Dim Master            | Dim the master bus (incl. feedback) (Ui24R only)                 |
 | Shows                 | Load shows, snapshots and cues                                   |
 | Phantom Power         | Switch phantom power on hardware channels                        |
+| Automix               | Enable/disable automix groups, assign channels to groups         |
