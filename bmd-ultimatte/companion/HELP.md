@@ -2,6 +2,8 @@
 
 This module was designed for the Blackmagic Design Ultimatte 12. There is not an ethernet protocol with earlier versions.
 
+## Sponsored By
+Module development sponsored by Stream Works [streamworks.ae](streamworks.ae)
 
 ## Configuration
 
