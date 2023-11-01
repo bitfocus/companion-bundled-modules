@@ -1,4 +1,4 @@
 MODULE_NAME=videolan-vlc
-GIT_REF=v2.3.5
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/6663025917
-UPDATE_DATE=2023-10-27
+GIT_REF=v2.3.6
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/6717187468
+UPDATE_DATE=2023-11-01
