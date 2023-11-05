@@ -22,7 +22,7 @@ If you can successfully connect to VLC with a browser, this module will work. En
 
 Setting | Description
 -----------------|---------------
-**Target IP** | Enter the address of the VLC computer. You can enter 127.0.0.1 if Companion is running on the same computer.
+**Target IP/HOST** | Enter the address of the VLC computer. You can enter 127.0.0.1 if Companion is running on the same computer. You may enter a Host name if there is a valid DNS server on the network
 **Target Port** | Enter the port VLC is listening for HTTP/REST commands. Default port for VLC is 8080.
 **Password** | Enter the password if required to interact with VLC
 **Increase timer resolution** | Enable for better response and countdown timer accuracy. Disable if companion or playback is bogged down.
