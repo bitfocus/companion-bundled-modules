@@ -27,10 +27,10 @@ ansi-styles@^4.0.0:
   dependencies:
     color-convert "^2.0.1"
 
-atem-connection@3.3.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/atem-connection/-/atem-connection-3.3.1.tgz#17016566e61aec0543fb99e700505762d94c628e"
-  integrity sha512-tpLTdfwwxT9Lr+zZxXFa0r8qpJOZJM4o4i70XiefZRNNi2I6HqkZZh2kTooG62sV4sEGCnuCQj1kOx9nblF3aw==
+atem-connection@3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/atem-connection/-/atem-connection-3.3.2.tgz#da174f4a69332c7a0f07af1bbb79809c7291a630"
+  integrity sha512-kwXgDufVx46rBDsFV52RHso39uXOMMIZmRV4rUggik7WZCxGPIeg1uzirWEJQAkYa1GC5phM8SjnTdyA06lDRQ==
   dependencies:
     "@julusian/freetype2" "^1.1.2"
     debug "^4.3.4"
