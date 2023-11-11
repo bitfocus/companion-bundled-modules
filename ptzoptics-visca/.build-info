@@ -1,4 +1,4 @@
 MODULE_NAME=ptzoptics-visca
-GIT_REF=v2.0.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/6486817566
-UPDATE_DATE=2023-10-11
+GIT_REF=v2.0.2
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/6837163210
+UPDATE_DATE=2023-11-11
