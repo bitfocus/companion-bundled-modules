@@ -1,4 +1,4 @@
 MODULE_NAME=snapav-wattbox
-GIT_REF=v2.0.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4941570257
-UPDATE_DATE=2023-05-10
+GIT_REF=v2.1.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7008549397
+UPDATE_DATE=2023-11-27

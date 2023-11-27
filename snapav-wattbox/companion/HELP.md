@@ -4,8 +4,8 @@ This module will allow you to control the WattBox family of devices using compan
 
 ### Configuration
 
-- The WattBox must be powered on and connected to the same network as the computer that is running Companion. The WattBox can be controlled across VLANs, however, you must allow communication between the required VLANs on port 80.
-- This module controls the WattBox through REST on port 80.
+- The WattBox must be powered on and connected to the same network as the computer that is running Companion.
+- This module controls the WattBox through REST on port 80  or Telnet on port 23.
 
 #### Static Network Configuration (optional)
 
@@ -42,4 +42,5 @@ Add a button and choose the action you want to use.
 
 ### Tested Devices
 
-- WattBox WB-300-IP-3 (Firmware: WB10.6c14)
+- WattBox WB-300-IP-3 (Firmware: WB10.6c14) (REST)
+- WB-250-IPW-2 (Telnet)
