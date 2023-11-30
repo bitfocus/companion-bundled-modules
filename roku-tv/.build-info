@@ -1,0 +1,4 @@
+MODULE_NAME=roku-tv
+GIT_REF=v2.0.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7047444167
+UPDATE_DATE=2023-11-30
