@@ -14,13 +14,6 @@
  * This `char *` type is used by "allocCString()" above.
  */
 
-/*!
- * cookie
- * Copyright(c) 2012-2014 Roman Shtylman
- * Copyright(c) 2015 Douglas Christopher Wilson
- * MIT Licensed
- */
-
 /**
  * Wrapper for built-in http.js to emulate the browser XMLHttpRequest object.
  *

@@ -1,3 +1,7 @@
+**Sponsor**<br />
+This module, as with Companion, is free and open source, but if you'd like to support the continued development of this and my other modules (vMix, Google Sheets, Twitch, Discord, and more) tips will always be appreciated either on [Github](https://github.com/sponsors/thedist) or [Ko-Fi](https://ko-fi.com/thedist).
+
+
 # Voicemeeter Proxy
 Companion interacts with the Voicemeeter API by searching for the install location and then binding to a .dll file used by Voicemeeter for external remote control, but because of this it means that if you wish to control Voicemeeter on a machine other than the one running Companion you will need to use a proxy running on the machine running Voicemeeter.
 
