@@ -40,6 +40,11 @@ jobs:
         run: |
           cd ${{ github.event.inputs.module-name }}
 
+          if grep -q "companion-module-your-module-name" "companion/manifest.json"; then
+            echo "Module manifest contains references to companion-module-your-module-name!"
+            exit 99
+          fi
+
           GIT_HASH=$(git rev-parse HEAD)
           echo "git-hash=$GIT_HASH" >> $GITHUB_OUTPUT
 
