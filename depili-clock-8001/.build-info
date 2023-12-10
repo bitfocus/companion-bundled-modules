@@ -1,0 +1,4 @@
+MODULE_NAME=depili-clock-8001
+GIT_REF=v6.1.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7158360462
+UPDATE_DATE=2023-12-10
