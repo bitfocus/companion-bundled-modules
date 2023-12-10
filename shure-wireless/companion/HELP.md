@@ -9,18 +9,22 @@ This module will connect to the Shure receivers below to provide feedback status
 
 ### Available actions
 
-| Title                              | Model Support       |
-| ---------------------------------- | ------------------- |
-| Set Channel Name                   | All                 |
-| Mute/Unmute/Toggle Mute of Channel | ULX & AD            |
-| Set Audio Gain of Channel          | All                 |
-| Increase Audio Gain of Channel     | All                 |
-| Decrease Audio Gain of Channel     | All                 |
-| Set Frequency of Channel           | ULX, QLX, SLX, & AD |
-| Flash Lights on Receiver           | ULX, SLX, AD        |
-| Flash Lights on Receiver Channel   | SLX, AD             |
-| Set slot RF output                 | ADX only            |
-| Set slot RF power level            | ADX only            |
+| Title                                                         | Model Support       |
+| ------------------------------------------------------------- | ------------------- |
+| Set Channel Name <sup>x</sup>                                 | All                 |
+| Mute/Unmute/Toggle Mute of Channel                            | ULX & AD            |
+| Set Audio Gain of Channel <sup>x</sup>                        | All                 |
+| Increase Audio Gain of Channel <sup>x</sup>                   | All                 |
+| Decrease Audio Gain of Channel <sup>x</sup>                   | All                 |
+| Set Frequency of Channel <sup>x</sup>                         | ULX, QLX, SLX, & AD |
+| Flash Lights on Receiver                                      | ULX, SLX, AD        |
+| Flash Lights on Receiver Channel                              | SLX, AD             |
+| Set slot RF output                                            | ADX only            |
+| Set slot RF power level                                       | ADX only            |
+| <sup>x</sup> Dynamic variables can be used with these actions |                     |
+
+
+
 
 ### Available feedbacks
 
@@ -61,7 +65,7 @@ Once added, the feedback will have option to select a channel to display, a fiel
 
 ![Instance feedback options](images/doc-options.png)
 
-Most of the data that presents is automatically populated from the receiver as information changes, however, a data flow called "metering" is used for the audio and RF data. By default the instance will ask for updates to that data every 5 seconds (5000 ms). In the instance's configuration, metering can be disabled or the interval changed to between 500 and 60000 ms. Because of the graphical nature of this display, additional CPU resources are needed to update the displays timely. For this reason it is recommended to test faster metering intervals with your configuration if you would like the audio and RF displays to update faster.
+Most of the data that presents is automatically populated from the receiver as information changes, however, a data flow called "metering" is used for the audio and RF data. By default the instance will ask for updates to that data every 5 seconds (5000 ms). In the instance's configuration, metering can be disabled or the interval changed to between 50 and 60000 ms. Because of the graphical nature of this display, additional CPU resources are needed to update the displays timely. For this reason it is recommended to test faster metering intervals with your configuration if you would like the audio and RF displays to update faster. Warning: if the metering interval is too low (fast), you can lock yourself out of the GUI to make changes.
 
 ![Instance metering](images/doc-metering.PNG)
 
