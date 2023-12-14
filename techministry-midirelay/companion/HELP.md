@@ -4,7 +4,6 @@ This module will allow you to send MIDI Channel Voice, MIDI Show Control, and Sy
 
 ### Configuration
 * The remote device must be running midi-relay, a listener program that relays the MIDI commands on the remote machine/network. You can download it here: <http://www.github.com/josephdadams/midi-relay>
-* This module is only compatible with midi-relay v3.0 or greater. If you need compatibility with an older version of midi-relay, you will need to downgrade your version of Companion.
 * Configure the instance with the IP address of the remote machine running the MIDI Relay listener/server.
 * The module makes HTTP/socket.io requests over port 4000 by default.
 
