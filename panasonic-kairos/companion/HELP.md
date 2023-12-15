@@ -4,24 +4,19 @@ This module is for the Panasonic Kairos switcher.
 
 **Available commands in this module**
 
-### Master transition control
-* execute auto transition for selected SCENE
-* execute cut transition for selected SCENE
-
-### Individual transition control
-* set next transition for LAYER
-* execute auto transition for selected TRANSITION of LAYER
-* execute cut transition for selected TRANSITION of LAYER
+###  Transition control
+* execute auto transition for selected SCENE or LAYER
+* execute cut transition for selected SCENE or LAYER
 
 ### Layer source assignment
-* set sourceA for LAYER of SCENE
-* set sourceB for LAYER of SCENE
+* set sourceA (PGM) for LAYER of SCENE
+* set sourceB (PVW) for LAYER of SCENE (if avaliable)
 
 ### Snapshot control
-* trigger snapshot of SCENE
+* trigger snapshot
 
 ### AUX source assignment
-* set source for selected AUX
+* set source for selected AUX, only possible when sources assigned to an AUX
 
 ### RAM players/Clip players
 * go to begin
@@ -43,6 +38,8 @@ This module is for the Panasonic Kairos switcher.
 * record start
 * record stop
 
+> At this point there is a limitation to Macro's , in the presets you'll only find root macro's
+
 ### Multiview control
 * recall preset to MV1
 * recall preset to MV2
@@ -62,12 +59,10 @@ This module is for the Panasonic Kairos switcher.
 **Available variables in this module**
 
 * SourceA for each layer (PGM)
-* SourceB for each layer (PVW)
+* Presets enabled or not (PVW bus on a layer)
 * Next transition
 * Input names
 * AUX with sources
 * MUTE master
 * MUTE channel 1 t/m 16
 * PLAYER repeat modus
-* AUX enabled
-* Presets enabled or not (PVW bus on a layer)
