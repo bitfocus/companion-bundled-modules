@@ -15,24 +15,15 @@ Controls ZEN NDIRouter. Click here: [ZEN NDIRouter](https://www.ndistuff.uk/zen-
 
 ## Actions
 
-| Command             | Description                 |
-| ------------------- | --------------------------- |
-| **Input to Output** | Route an input to an output |
-| **Recall Preset**   | Recall a saved Preset       |
+| Command             | Description                      |
+| ------------------- | -------------------------------- |
+| **Input to Output** | Route an input to an output      |
+| **Recall Preset**   | Recall a saved Preset            |
+| **Store Preset**    | Store current routes to a Preset |
 
 _Note:_ Dynamic variables can be used in most places
 
 ---
-
-### ---The following features are waiting for a sponsor---
-
----
-
-## Actions
-
-| Command | Description |
-|---|---|
-| **Store Preset** | Store current routes to a Preset |
 
 ## Variables
 
@@ -59,13 +50,13 @@ To use these, replace NAME with the name of your module instance.
 
 ## Feedbacks
 
-| Feedback          | Description                                               |
-| ----------------- | --------------------------------------------------------- |
-| **Input Valid**   | Adjust button appearance if Input ## is Valid             |
-| **Input In Use**  | Adjust button appearance if Input ## is In Use            |
-| **Routed**        | Adjust button appearance if Input X is routed to Output Y |
-| **Preset Valid**  | Adjust button appearance if Preset ## is Valid            |
-| **Preset In Use** | Adjust button appearance if Preset ## is In Use           |
+| Feedback          | Description                                                          |
+| ----------------- | -------------------------------------------------------------------- |
+| **Input Valid**   | Adjust button appearance if Input ## is Valid                        |
+| **Input In Use**  | Adjust button appearance if Input ## is In Use (Routed to an Output) |
+| **Routed**        | Adjust button appearance if Input X is routed to Output Y            |
+| **Preset Valid**  | Adjust button appearance if Preset ## is Valid                       |
+| **Preset In Use** | Adjust button appearance if Preset ## is In Use                      |
 
 ---
 
