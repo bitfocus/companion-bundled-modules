@@ -1,6 +1,6 @@
-## PixelHue
+## Pixelhue
 
-This module will allow you to control the following PixelHue products: F4, F4Lite, F8, P10, P20 and Q8.
+This module will allow you to control the following Pixelhue products: F4, F4 Lite, F8, P10, P20 and Q8.
 
 ### Configuration
 
