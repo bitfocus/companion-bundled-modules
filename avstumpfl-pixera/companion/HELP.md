@@ -1,4 +1,4 @@
-## AV Stumpfl Pixera JSON Api Rev264
+## AV Stumpfl Pixera JSON Api Rev367
 
 Nativ implementation using Pixera JSON/TCP Api
 
@@ -6,7 +6,7 @@ Nativ implementation using Pixera JSON/TCP Api
 * Timeline Transport Mode
 * Timeline NextCue
 * Timeline PerviusCue
-* Timeline IgnoreNextCue
+* Timeline IgnoreNextCueW
 * Timeline Store
 * Visible Screen On/Off
 * Screen is Projectable On/Off
@@ -34,3 +34,5 @@ Nativ implementation using Pixera JSON/TCP Api
 
 ** Response
 * API Commands returns Handles if available
+
+* some commands are only workig in version 2.0
