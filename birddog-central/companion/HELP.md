@@ -1,10 +1,10 @@
 ## BirdDog Central 2.0
 
-This module allows you to control [BirdDog](https://birddog.tv/central-overview/) Central 2.0 software.
+This module allows you to control [BirdDog Central 2.0](https://birddog.tv/central-overview/).
 
 ## Configuration
 
-- Enter the IP address of the computer running Central 2.0 into the module settings
+- Enter the IP address of the computer running Central 2.0 into the module configuration
 
 ## Lite Version Actions / Feedback / Variables
 
@@ -20,11 +20,6 @@ This module allows you to control [BirdDog](https://birddog.tv/central-overview/
 - Feedbacks
 
   - Generator Media Status
-  - Source Connected to Router
-  - Retransmitter Audio Source
-  - Retransmitter Audio Status
-  - Retransmitter Video Source
-  - Retransmitter Video Status
 
 - Variables
   - Software version
@@ -52,7 +47,12 @@ This module allows you to control [BirdDog](https://birddog.tv/central-overview/
 
 - Feedbacks
 
-  - All Lite feedbacks
+  - Generator Media Status
+  - Source Connected to Router
+  - Retransmitter Audio Source
+  - Retransmitter Audio Status
+  - Retransmitter Video Source
+  - Retransmitter Video Status
 
 - Variables
   - All Lite Variables
