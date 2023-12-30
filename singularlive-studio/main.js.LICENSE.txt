@@ -1,10 +1,1 @@
-/*!
- * cookie
- * Copyright(c) 2012-2014 Roman Shtylman
- * Copyright(c) 2015 Douglas Christopher Wilson
- * MIT Licensed
- */
-
-/*! fetch-blob. MIT License. Jimmy Wärting <https://jimmy.warting.se/opensource> */
-
 /*! node-domexception. MIT License. Jimmy Wärting <https://jimmy.warting.se/opensource> */
