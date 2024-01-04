@@ -1,4 +1,4 @@
 MODULE_NAME=leolabs-ableset
-GIT_REF=v1.4.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7309049187
-UPDATE_DATE=2023-12-23
+GIT_REF=v1.4.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7413712460
+UPDATE_DATE=2024-01-04
