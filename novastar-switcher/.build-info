@@ -1,0 +1,4 @@
+MODULE_NAME=novastar-switcher
+GIT_REF=v1.2.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7413817596
+UPDATE_DATE=2024-01-04
