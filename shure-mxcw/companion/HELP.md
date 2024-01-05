@@ -1,6 +1,6 @@
 ## Shure Microflex Complete Wireless System (MXCW)
 
-This module will connect to the Shure MXCWAPT to provide feedback status as well as some control.  Reference the Shure [Command Strings](https://pubs.shure.com/command-strings/MXCW/en-US) document for more information.
+This module will connect to the Shure MXCWAPT to provide feedback status as well as some control. Reference the Shure [Command Strings](https://pubs.shure.com/command-strings/MXCW/en-US) document for more information.
 
 ### Available actions
 
