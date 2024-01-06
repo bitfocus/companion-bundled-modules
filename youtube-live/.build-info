@@ -1,4 +1,4 @@
 MODULE_NAME=youtube-live
-GIT_REF=v2.4.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/6789034616
-UPDATE_DATE=2023-11-07
+GIT_REF=v2.4.2
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7428636446
+UPDATE_DATE=2024-01-06
