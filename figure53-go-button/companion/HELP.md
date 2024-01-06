@@ -74,5 +74,5 @@ Feedback | Description
 **Color when Muted** | Indicate on a button when Master Fader is Muted
 
 --------
-Contributions for development of this open source module are always welcome
+Contributions for development and maintenance of this open source module are always welcome
 https://github.com/sponsors/istnv
