@@ -7,8 +7,8 @@
 3. Add an instance of the `VSCode` module to your companion setup.
 4. Configure the instance to match your setup in VSCode.
 5. Look at the instance variables and check if it successfully fetched your VSCode version.
-    - If it did: You're good to go.
-    - Otherwise: Check the instance status. If it is green, you have probably entered the wrong password. If it says `Connection Failure`, either VSCode is not running, the CommandSocket extension is not enabled or you mismatched the target IP/port.
+   - If it did: You're good to go.
+   - Otherwise: Check the instance status. If it is green, you have probably entered the wrong password. If it says `Connection Failure`, either VSCode is not running, the CommandSocket extension is not enabled or you mismatched the target IP/port.
 
 ### Configuration
 
@@ -23,19 +23,21 @@
 
 ### Actions
 
--   Show a notification in VSCode
--   Show a message in the status bar
--   Run a command
-
-### Feedbacks
-
--   Current editor language
+- Run any command (including optional argument)
+- Show a notification in VSCode and get feedback over selected options
+- Show a message in the status bar
+- Show an input or select box
 
 ### Variables
 
--   VSCode version
--   Current editor language and line count
--   Command count
+- Current editor version, language, line count and tab size
+- Command count in current workspace
+- VSCode state (including cursor position, file name and git branch)
+- Last interaction responses (from notification buttons, input and select)
+
+### Feedbacks
+
+Each variable has according feedback definitions.
 
 ### Tips and fixes
 
@@ -54,7 +56,7 @@ Commands provided by extensions will not be registered in VSCode until the exten
 As long as the command is not registered, the companion interface will not allow you to choose it.
 (Note that the command will stay chosen, even when the extension is deactivated again.)
 
-So to make sure that a command is available, just run it manually once, wait for companion to update its command list (one minute by default) and try again.
+So to make sure that a command is available, just run it manually once, wait for companion to update its command list (or update it manually) and try again.
 
 ##### Companion can't connect even though VSCode is running and the connection is setup correctly
 
