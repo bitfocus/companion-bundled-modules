@@ -78,6 +78,9 @@ Mac only:
 - curr: Currently opened presentation
 - prev: Prevously opened presentation
 - next: Next presentation to be opened
+- slide_number: Slide Number
+- slides_count: Slides Count
+- builds_count: Builds Count
 
 #### Feedbacks
 
