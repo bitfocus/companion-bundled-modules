@@ -1,4 +1,4 @@
 MODULE_NAME=etc-paradigm
-GIT_REF=v1.0.4
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5237970136
-UPDATE_DATE=2023-06-11
+GIT_REF=v1.0.6
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7439482817
+UPDATE_DATE=2024-01-07

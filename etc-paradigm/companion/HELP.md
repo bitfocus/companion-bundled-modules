@@ -1,6 +1,6 @@
-## ETC Paradigm Architectual Control
+## ETC Paradigm Architectural Control
 
-A module for controlling ETC-Paradigm Architectual Control Systems.
+A module for controlling ETC-Paradigm Architectural Control Systems.
 
 ** Connection **
 This module needs to be run from a computer on the same network as the Paradigm system.
@@ -21,3 +21,5 @@ This module needs to be run from a computer on the same network as the Paradigm 
 **Notice**
 
 This module is based on the web interface from the Paradigm Architectural Controller. Support using the UDP Serial connection could not be implemented in testing. Therefore, features and functions included in that interface are not available in this module.
+
+**Supports up to version 3. Versions 4+ are in development.**
