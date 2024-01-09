@@ -36,11 +36,11 @@ Enter the number of automix channels the unit is configured to for correct initi
 - **Matrix - Gain** Query / Change Matrix Output Gain. Accepts variables
 - **Matrix - Output** Query / Change Matrix Output. Accepts variables
 
-- **Metering** Query various metering and channel flags. Return data not handled yet.
+- **Metering** Query metering and channel flags.
 
 - **Query - Bulk Config** Query all channel params or matrix crosspoints
 - **Query - Name List** Query Channel or Scene Name List
-- **Query - System** Query readonly system parameters and write to log
+- **Query - System** Query read only system parameters
 
 - **Recall Defaults** Reset channels or matrix to defaults
 
@@ -52,7 +52,7 @@ Enter the number of automix channels the unit is configured to for correct initi
 - **Scene - Save** Save Scene. Accepts variables
 - **Scene - Save New** Save New Scene. Applies default name "Scene #"
 
-- **System - Adat Mirror** Query / Change channel count echod to Adat
+- **System - Adat Mirror** Query / Change channel count echoed to Adat
 - **System - Automix Channel Offset** Query / change input channel mapped to Automix Channel 1
 - **System - Automix Channels** Query / Change channel count (8 > 64)
 - **System - Blink Mode** Query / Change blink mode
@@ -76,20 +76,56 @@ Enter the number of automix channels the unit is configured to for correct initi
 - **Group - Music System Threshold**  Number (dB)
 - **Group - Music System Gain Reduction**  Number (dB)
 - **Group - NOM Gain Limit** Number
-- **Group - NOM Gain Reduction** Number(dB)
+- **Group - NOM Gain Reduction** Number (dB)
 
 - **Is Talking - Channel** Number
 - **Is Talking - Name** String
 
-- **Matrix - Fader** Number(dB)
-- **Matrix - Output Level** Number(dB)
-- **Matrix - Crosspoint** Number(dB)
+- **Matrix - Fader** Number (dB)
+- **Matrix - Output Level** Number (dB)
+- **Matrix - Crosspoint** Number (dB)
 
-- **Scene - Active** Name, Index, Has Changed
-- **System - All** All system queries returned to varibles. All queried once on connect.
+- **Scene - Active** Active Scene name
+- **Scene - Active Index** Active scene index
+- **Scene - Active Has Changed** True if any parameter has been changed from the recalled Scene
+- **Scene - Count** Number of saved scenes
+
+- **System** 
+System related Varaibles, many are read only. Several arent directly exposed in the dugan software.
+- **Adat Mirror**
+- **Blink Mode**
+- **Channel Count**
+- **Clock Source**
+- **Device Type**
+- **DHCP**
+- **DSP**
+- **FPGA Version**
+- **Firmware Version**
+- **Secondary Firmware Version**
+- **Gateway**
+- **Hardware Revsion**
+- **Heart Beat**
+- **Host Name**
+- **Input Offset**
+- **IP Address**
+- **Link Group** AKA System in the Dugan software
+- **MAC Address**
+- **Mac RX**
+- **Mac TX**
+- **Malloc Heap Free**
+- **Master**
+- **RTOS Heap Free**
+- **Sample Rate**
+- **Serial Number**
+- **Subnet Mask**
+- **Switch Headroom**
+- **TCPIP**
+- **TCP Clients** 
+- **UDP Clients**
+The units support a total of five simultaneous connections across TCP & UDP. The Dugan software and Model K connect via UDP.
 
 ## Feedbacks
-All feedbacks are boolean. Using any feedbacks will force the subscription level to at least the minimum required.
+All feedbacks are boolean. Feedbacks will force the subscription level to at least the minimum required.
 
 - **Channel - Automix Gain Reduction**
 - **Channel - Bypass**
@@ -117,14 +153,20 @@ All feedbacks are boolean. Using any feedbacks will force the subscription level
 - **Matrix - Output Level**
 - **Matrix - Output Route**
 
-- **Scene - Has Changed** True when any parameter is changed from the saved state of the recalled scene
+- **Scene - Has Changed** True when any parameter is changed from the saved state of the current scene
 
 ## Support for other models
-At present only the Model M & N are explicitly supported. With that said, the dugan units share a common api.
+Only the Model M & N are supported. With that said, the dugan units share a common api.
 The Model M & N represent a complete set of API commands. All other units (MY-16, Model-E3A, etc) support a subset of of these commands. The core channel controls are supported by all units.
 It is advised to set the the channel count to the appropriate value, turn the metering off, and dont use the functions not supported by your unit. This functionality is untested.
 
 ## Version History
+
+### Version 1.0.1
+- Add timeout clearToTx (500ms).
+- Update help
+- Code refactor
+- Update companion-module-base & companion-module-tools
 
 ### Version 1.0.0
 - Initial release
