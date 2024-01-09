@@ -17,6 +17,11 @@ Once OSC is enabled on the MixEffect app you can proceed to configure this modul
 1. the Target IP address (which is the IP of the iOS device running MixEffect), and
 2. the Target Port (which is the port of the switcher's OSC server described above).
 
+If you have the HTTP Feedback server enabled in your Switcher Connection in MixEffect and want to have feedback returned to Companion from your ATEM switcher, follow these steps:
+
+1. Set the HTTP Server Port to the same HTTP Server Port value in your Switcher Connection entry in MixEffect.
+2. Set the Polling Interval in milliseconds. The minimum time value should be 500, but you can increase this number if it leads to better performance in Companion.
+
 ### Actions
 
 We have included a number of actions to help you control MixEffect. There are actions in each of these categories:
