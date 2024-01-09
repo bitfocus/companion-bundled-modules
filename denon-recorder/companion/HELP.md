@@ -8,8 +8,8 @@ The rs232 only models (DN-500R, DN-F450R, DN-F650R) require an Ethernet to RS232
 **Available commands:**
 * Power On/Off
 * Recording
-* Playback 
-* Panel Lock/Unlock 
+* Playback
+* Panel Lock/Unlock
 
 **Presets Included:**
 * Presets for most commands
@@ -20,3 +20,7 @@ The rs232 only models (DN-500R, DN-F450R, DN-F650R) require an Ethernet to RS232
 * Power On / Off
 
 Special thanks to Kevin Haddock for sponsoring the initial work on this module.
+
+--------
+Contributions for development of this open source module are always welcome
+https://github.com/sponsors/istnv
