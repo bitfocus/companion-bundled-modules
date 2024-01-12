@@ -16,12 +16,15 @@ This module allows you to control the Tricaster line of video production switche
 - Set Source to program
 - Set Source to M/E
 - Set Source to DSK per ME (A & B bus)
+- Set DSK On Air
+- Set Transition Selection
 - Media actions
   - Play/Play Toggle/Stop/Back/Forward
 - Run System Macros
 - Run Custom Macros
 - Record (Toggle / Start / Stop)
 - Stream (Toggle / Start / Stop)
+- Set Mix Output
 - Set a DataLink value
 - Custom Shortcuts
 
@@ -31,6 +34,7 @@ This module allows you to control the Tricaster line of video production switche
 - Media Playing (DDRs, GFX, Stills, Titles, Sound)
 - Recording
 - Streaming
+- DSK On-Air
 
 ### Available Variables
 
