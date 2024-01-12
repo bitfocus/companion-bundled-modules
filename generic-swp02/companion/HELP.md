@@ -21,5 +21,10 @@ Enter the IP address, port and source and destination count. The Wait on Ack che
 
 ## Version History
 
-### Version 1.0.0
+### Version 1.0.2
+- Decode & Write Dual Controller Status Response to logs
+- Add feedback subscription
+- Minor fixes
+
+### Version 1.0.1
 - Initial release
