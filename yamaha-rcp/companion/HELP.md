@@ -1,8 +1,8 @@
-## Yamaha Remote Control Protocol - v3.3.1
+## Yamaha Remote Control Protocol - v3.4.8
 
 Please visit https://discourse.checkcheckonetwo.com for help, discussions, suggestions, etc.
 
-_Andrew Broughton_
+_Andrew Broughton, Dec 26, 2023_
 
 ---
 
@@ -10,7 +10,7 @@ _Andrew Broughton_
 
 **MACROS** ("Learn" Function)
 
-> *Macro Preset is not available in this version, so please download the Macro Button page from https://discourse.checkcheckonetwo.com/t/macro-page-for-yamaha-midi-module/2267*
+> *Macro Preset is not available in this version, so please download the Macro Button page from https://discourse.checkcheckonetwo.com/t/macro-page-for-yamaha-rcp-and-midi-module*
 
 > Macros utilize the new Action Recorder feature in v3, and will only work while connected to a console.
 

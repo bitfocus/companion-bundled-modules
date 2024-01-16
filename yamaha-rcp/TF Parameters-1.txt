@@ -107,5 +107,13 @@ OK prminfo 105 "MIXER:Current/St/Role" 2 0 0 7 0 "" binary any r 1
 OK prminfo 106 "MIXER:Current/FxRtnCh/Label/Category" 4 0 0 6 0 "" binary any rw 1
 OK prminfo 107 "MIXER:Current/MuteMaster/Label/Name" 6 0 0 8 "MUTE 1" "" string any rw 1
 OK scninfo 1000 "MIXER:Lib/Bank/Scene/Recall" 1 2 0 100 0 "" integer any w 1
-OK scninfo 1001 "MIXER:Lib/Scene/RecallInc" 0 0 0 0 0 "" none any w 1
-OK scninfo 1002 "MIXER:Lib/Scene/RecallDec" 0 0 0 0 0 "" none any w 1
+OK scninfo 1001 "MIXER:Lib/Bank/Scene/Store" 1 2 0 100 0 "" integer any w 1
+OK scninfo 1010 "MIXER:Lib/Scene/RecallInc" 0 0 0 0 0 "" none any w 1
+OK scninfo 1011 "MIXER:Lib/Scene/RecallDec" 0 0 0 0 0 "" none any w 1
+OK mtrinfo 2000 "MIXER:Current/Meter/InCh" 40 3 0 127 0 "dB" mtr any r 1 "PreHPF|PreFader|PostOn"
+OK mtrinfo 2001 "MIXER:Current/Meter/StInCh" 4 3 0 127 0 "dB" mtr any r 1 "PreEQ|PreFader|PostOn"
+OK mtrinfo 2002 "MIXER:Current/Meter/FxRtnCh" 4 2 0 127 0 "dB" mtr any r 1 "PreFader|PostOn"
+OK mtrinfo 2100 "MIXER:Current/Meter/Mix" 20 3 0 127 0 "dB" mtr any r 1 "PreEQ|PreFader|PostOn"
+OK mtrinfo 2101 "MIXER:Current/Meter/Mtrx" 4 3 0 127 0 "dB" mtr any r 1 "PreEQ|PreFader|PostOn"
+OK mtrinfo 2102 "MIXER:Current/Meter/St" 2 3 0 127 0 "dB" mtr any r 1 "PreEQ|PreFader|PostOn"
+OK mtrinfo 2103 "MIXER:Current/Meter/Mono" 1 3 0 127 0 "dB" mtr any r 1 "PreEQ|PreFader|PostOn"
