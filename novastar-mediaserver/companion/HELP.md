@@ -1,18 +1,22 @@
-## NovaStar
+## Nuowaxingyun
 
-This module will allow you to control the following NovaStar media server products: RX6.
+This module will allow you to control the following Nuowaxingyun media server products: RX6.
 
 ### Configuration
 
 - Enter the IP address of the product in the configuration settings.
-- The device will use UDP communication.
 
 **Available actions:**
 
 - Program
-- Pause
-- Play
-- Stop
-- FTB
-- Volume
-- PPT page up/down
+- Pause_program
+- Play_program
+- Open_ftb
+- Close_ftb
+- Open_volume
+- Close_volume
+- ppt_pgup
+- ppt_pgdn
+- Stop_program
+- Volume_up
+- Volume_down
