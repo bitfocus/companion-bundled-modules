@@ -171,6 +171,9 @@ This turns the record function of the controlled device on/off.
 
 ## Version History
 
+### Version 1.1.3
+- Bug fixes & timer safety
+
 ### Version 1.1.1
 - Bug fixes
 - Update help
