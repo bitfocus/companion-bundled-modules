@@ -1,4 +1,4 @@
 MODULE_NAME=mt-viki-matrix
-GIT_REF=v1.0.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7489699999
-UPDATE_DATE=2024-01-11
+GIT_REF=v1.1.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7548729767
+UPDATE_DATE=2024-01-16
