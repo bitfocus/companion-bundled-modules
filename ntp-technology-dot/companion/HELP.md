@@ -30,6 +30,9 @@ The alarms should match the number of configured alarm indexs in your system. Re
 
 ## Version History
 
+### Version 1.0.2
+- Minor TCP improvements & fixes
+
 ### Version 1.0.1
 - Update dependencies
 

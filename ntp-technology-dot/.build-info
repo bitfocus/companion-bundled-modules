@@ -1,4 +1,4 @@
 MODULE_NAME=ntp-technology-dot
-GIT_REF=1.0.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7440906073
-UPDATE_DATE=2024-01-07
+GIT_REF=1.0.2
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7548542363
+UPDATE_DATE=2024-01-16
