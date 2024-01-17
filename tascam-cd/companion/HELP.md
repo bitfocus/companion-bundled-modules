@@ -166,9 +166,12 @@ Enter the IP address, port of the media player. If a password is required, enter
 
 ## Version History
 
+### Version 2.0.2
+- Minor fixes
+
 ### Version 2.0.1
 - Add action & feedback subscription callbacks
-- Update package.josn
+- Update package.json
 - Update companion-module-base to 1.7.0
 
 ### Version 2.0.0
