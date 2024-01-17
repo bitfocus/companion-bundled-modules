@@ -1,7 +1,6 @@
 ## SportInTheBoxVersion In The Box 2 plugin
 
-SportInTheBoxVersion In The Box is a powerful production and playout system that allows the user to create engaging live content and output it to video boards, in-house tv systems and streaming.
-
+Sport In TheBox is a powerful production and playout system that allows the user to create engaging live content and output it to video boards, in-house tv systems and streaming.
 
 It handles playout of stored images and videos, live video inputs, replays and graphics for both full screen scoreboards and overlays for TV.
 
@@ -9,7 +8,7 @@ It handles playout of stored images and videos, live video inputs, replays and g
 With great flexibility SportInTheBoxVersion In The Box can output almost any format and resolution to adapt with custom video screens, making it the ideal solution for both smaller clubs and larger arenas.
 
 
-SportInTheBoxVersion In The Box can have multiple live video inputs with SDI, HDMI or NDI and the output windows can be placed in any size and position on the desktop to adapt to the LED-screens used, taking away the need for a video scaler.
+Sport In The Box In The Box can have multiple live video inputs with SDI, HDMI or NDI and the output windows can be placed in any size and position on the desktop to adapt to the LED-screens used, taking away the need for a video scaler.
 
 For more information and contacts visit [our website](https://www.iccmediasport.com/en/sport-in-the-box/)
 
@@ -52,6 +51,16 @@ be set in the module *helper password* field.
 
 ![cmp_helper_pass.png](cmp_helper_pass.png)
 
+### Change team
 
+Change team via preset. Home and guest team can be changes separately.
 
+![preset_teams.png](preset_teams.png)
 
+Inside preset, all teams are shown with team color and small team image.
+
+![preset_team_select.png](preset_team_select.png)
+
+Once created, team can be changed with the action editor.
+
+![action_change_team.png](action_change_team.png)
