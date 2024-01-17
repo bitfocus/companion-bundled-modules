@@ -11,7 +11,7 @@ https://s3.bitfocus.io/builds/companion/companion-win64-3.1.2+6243-stable-05c37a
 ## Install NodeJS
 Use NodeJS v18.xx.xx (18.19.0) x64 (And not version 20)
 Here the link:
-https://nodejs.org/en/about/previous-releases
+https://nodejs.org/download/release/v18.19.0/node-v18.19.0-x64.msi
 Use default installation.
 
 ## Install yarn package manager
