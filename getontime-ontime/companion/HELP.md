@@ -40,6 +40,7 @@ Actions related to time control
 |   ✅   | Toggle/On/Off On Air                                                 |
 |   ✅   | Toggle/On/Off Timer Blinking                                         |
 |   ✅   | Toggle/On/Off Timer Blackout                                         |
+|   ✅   | Change event property                                                |
 
 ### Messages Control
 
