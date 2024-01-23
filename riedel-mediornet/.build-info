@@ -1,4 +1,4 @@
 MODULE_NAME=riedel-mediornet
-GIT_REF=v1.1.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7620399875
+GIT_REF=v1.1.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7628319377
 UPDATE_DATE=2024-01-23

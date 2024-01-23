@@ -6,6 +6,7 @@ This module enables the matrix control of Riedels Mediornet.
 Please enter:
 - IP-Address
 - Auto-Take
+- Reset Selection
 - InputCount
 - OutputCount
 
@@ -14,8 +15,10 @@ EmBER+ Port is 9000 by specification from Riedel.
 **IP-Address:**
 Enter the IP Address of the main Mediornet Device
 
-**Auto-Take:**
-When enabled, a source is routed to the selected destination immediatly.
+**Auto Take:**
+When enabled, a source is routed to the selected destination immediately.
+
+**Reset Selection:** Reset Source and Target after Take action.
 
 **Input-/OutputCount:**
 For offline Programming, you can give a wanted amount of in-/outputs to give you access to all variables and dropdown menues.
@@ -35,6 +38,7 @@ For all matrices exists
 * Source currently selected
 * Target currently selected
 * Source which is routed to currently selected target
+* Source which is routed to specified target
 * Valid take feedback, when target and source of the same matrix is selected
 * Clear feedback, when something is selected
 * Undo, shows when you can undo the last routing process on a selected target
