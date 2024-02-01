@@ -1,4 +1,4 @@
 MODULE_NAME=birddog-ptz
-GIT_REF=v3.1.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7705826803
-UPDATE_DATE=2024-01-30
+GIT_REF=v3.1.2
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7734990693
+UPDATE_DATE=2024-02-01
