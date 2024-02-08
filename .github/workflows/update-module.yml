@@ -36,6 +36,10 @@ jobs:
           # TODO - should this be configurable?
           node-version: 18.x
 
+      - name: Enable corepack
+        run: |
+          corepack enable
+
       - name: Collect info
         run: |
           cd ${{ github.event.inputs.module-name }}
