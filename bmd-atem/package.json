@@ -1,1 +1,9 @@
-{"name":"bmd-atem","version":"3.7.1","license":"MIT","type":"commonjs","dependencies":{"atem-connection":"3.3.3"}}
+{
+  "name": "bmd-atem",
+  "version": "3.8.2",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "atem-connection": "3.5.0"
+  }
+}
