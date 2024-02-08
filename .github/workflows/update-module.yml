@@ -97,6 +97,9 @@ jobs:
 
           UPDATE_DATE=$(date +%Y-%m-%d)
 
+          # cleanup some junk
+          rm -Rf pkg/.yarn || true
+
           tee -a pkg/.build-info <<EOF
           MODULE_NAME=${{ github.event.inputs.module-name }}
           GIT_REF=${{ github.event.inputs.git-ref }}
