@@ -1,4 +1,4 @@
 MODULE_NAME=techministry-midirelay
-GIT_REF=v3.1.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7211530728
-UPDATE_DATE=2023-12-14
+GIT_REF=v3.1.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7855977652
+UPDATE_DATE=2024-02-10
