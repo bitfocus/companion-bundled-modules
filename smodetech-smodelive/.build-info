@@ -1,4 +1,4 @@
 MODULE_NAME=smodetech-smodelive
-GIT_REF=v1.0.2
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7596823068
-UPDATE_DATE=2024-01-20
+GIT_REF=v1.0.3
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7855966178
+UPDATE_DATE=2024-02-10
