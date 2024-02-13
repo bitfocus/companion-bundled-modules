@@ -31,6 +31,8 @@ Upon launch enter the IP of the Helios processor you wish to monitor and control
 - Blackout (Enable, Disable, Toggle)
 - Freeze (Enable, Disable, Toggle)
 - Show Test Pattern (Enable, Disable, Toggle)
+- Show Still
+- Hide Still
 - Test Pattern Style
 - Screen Brightness
 - Screen Gamma
