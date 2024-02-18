@@ -10,6 +10,8 @@ When you have an issue let me know at: [https://github.com/bitfocus/companion-mo
 
 Download and run the application on the remote computer (local is also possible). In companion, fill in the IP address of the remote computer or 127.0.0.1 if installed on the same machine.
 
+From version 8.0.0 its possible to use the Bonjour service to find a listener on the network.
+
 >> Check the build in presets!
 
 ## SUPPORTED ACTIONS ##
@@ -26,6 +28,7 @@ Download and run the application on the remote computer (local is also possible)
 * Separate key release
 * MousePosition
 * MouseClick
+* MouseScrolling
 * Send a string
 * Send Shell command
 * Open a file remotely 
