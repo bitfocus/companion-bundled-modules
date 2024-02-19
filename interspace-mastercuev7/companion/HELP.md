@@ -14,6 +14,7 @@ After configuring the MasterCueV7 Connection, you have several options to custom
 - Set Output : Set the State of an Output
 - Set Outputs : Set the State of multiple Outputs
 - Set Blackout : Enable/Disable Blackout
+- Set Technician Mode : Set Cues to Full or Lights Only
 - Suspend All : Suspends all Outputs
 - Resume All : Resumes all Outputs
 - Clear Handsets : Removes all Handsets
@@ -25,4 +26,5 @@ After configuring the MasterCueV7 Connection, you have several options to custom
 - Next State : Indicates state of Next Cue
 - Back State : Indicates state of Back Cue
 - Blackout State : Indicates state of Blackout Cue
+- TM State : Indicates state of Technician Mode
 - Acknowledge Cue : Indicates Cue being received (Last Feedback step)
