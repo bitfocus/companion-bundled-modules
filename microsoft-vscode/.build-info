@@ -1,4 +1,4 @@
 MODULE_NAME=microsoft-vscode
-GIT_REF=v1.1.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7440918224
-UPDATE_DATE=2024-01-07
+GIT_REF=v3.0.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7965650357
+UPDATE_DATE=2024-02-19
