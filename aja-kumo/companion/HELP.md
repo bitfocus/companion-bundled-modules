@@ -1,10 +1,33 @@
-## AJA Kumo Router control
+## AJA KUMO Router control
 This module sends HTTP requests to the router for control. On connection, we get the current router status and watch for changes for feedbacks and variables.
+
+### Usage
+
+#### 2-button press behavior similar to KUMO Control Panel  
+
+A complete 'matrix' of source and destination buttons can be created that can apply routing changes using a familiar 2-button press method to the one present in the KUMO Control Panel (CP) and the web browser interface.
+
+
+**Create the buttons**
+
+1. Go to Presets > AJA: Kumo > Source buttons, and drag each desired Source to a button on your page.
+
+2. Go to Destination buttons, and drag each desired Destination to a button on your page.
+
+**Use**
+
+1. Press a 'Destination' button. It illuminates a Source to which it is currently routed, and grabs it for a subsequent routing change.
+
+2. Press any 'Source' button. It will perform a route between that Source and the Destination you just grabbed.
+
+
+
+## Documentation
 
 ### Actions
 
 - Route a source (input) to a destination (output) (`route`)
-	- The primary command for routing. Use to set the Source and the Destination in a single button press.
+	- For explicitly routing a source to a destination. Used to perform a route in a single button press.
 - Pre-select a destination (`destination`)
 	- This is a two-part action. It sets a draft destination you choose and Companion remembers it. Then later, run "Send source" action once you know the intended Source. This could be in a separate button press, or after some processing has occurred.
 - Send source to the pre-selected destination (`source`)
@@ -14,20 +37,36 @@ This module sends HTTP requests to the router for control. On connection, we get
 - Swap source between two given destinations
 	- Nominate a Destination A and B, and the sources between the two will be swapped. Useful for example for swapping the inputs shown on a particular section of a multiviewer.
 
+### Presets
+
+- Destination buttons
+	- A button to simulate the behavior of the KUMO Control Panel. Press once to 'grab' a Destination, the corresponding Source button is shown highlighted and then press any other Source button to apply routing to that Source.
+	- Destinations 1 through max matrix count (4, 16, 32 or 64) are available in the list.
+	- The button label consists of 3 lines: Number, Label Line 1 and Label Line 2.
+- Source buttons
+	- A button to simulate the behavior of the KUMO Control Panel. A Source button will illuminate when you press a Destination button, if that Destination and Source are currently routed.
+	- Sources 1 through max matrix count (16, 32, or 64) are available in the list.
+	- The button label consists of 3 lines: Number, Label Line 1 and Label Line 2.
+
 ### Variables
-- Salvo names
-	- `$(kumo:salvo_name_n)`
-- Currently routed source per destination:
-	- `$(kumo:dest_n)`
+`n` indicates the number of the source or destination.
+
 - Source and destination names: 
 	- `$(kumo:src_name_n_line1)`
 	- `$(kumo:src_name_n_line2)`
 	- `$(kumo:dest_name_n_line1)`
 	- `$(kumo:dest_name_n_line2)`
+- Source and destination combination name for button labels:
+	- `$(kumo:src_n_label_combo)`
+	- `$(kumo:dest_n_label_combo)`
 - Currently pre-selected source button within Companion
 	- `$(kumo:source)`
 - Currently pre-selected destination within Companion
 	- `$(kumo:destination)`
+- Currently routed source per destination:
+	- `$(kumo:dest_n)`
+- Salvo names
+	- `$(kumo:salvo_name_n)`
 
 ### Feedbacks
 All feedbacks are booleans, which allows them to be used in triggers.
@@ -41,12 +80,7 @@ All feedbacks are booleans, which allows them to be used in triggers.
 - Specific source is routed to a specific destination (`destination_match`)
 	- When routing on this device changes to a specific source and destination.
 
-### Usage
-
-
-#### Behaviour similar to KUMO
-
-To create a complete 'matrix' of source and destination buttons similar to the KUMO CP and KUMO Web Browser User Interface, follow the below steps.
+### 2-button press behavior - manual steps
 
 1. For a source button:
 	- Create a button with Button text:
@@ -60,9 +94,3 @@ To create a complete 'matrix' of source and destination buttons similar to the K
 	- Add a Press action for **Pre-select a destination** with `Destination number`: 1
 	- Add a Feedback for **Selection of a destination button** with `Destination number`: 1. By default, this will make the button background turn red.
 	- Copy and paste the button to have as many Destinations buttons as desired. Modify each one and increment the number `1` in the Button text, Press action and Feedback to the correct number.
-
-##### Side note
-
-The feedback 'Selection of a source button' (`active_source`) is not used in the above steps and is not be required for recreating the typical 2-button press of the KUMO Control Panel.
-
-It may be potentially used if you wish to have a 3-button press system, i.e., first button press is the Destination (feedback to illuminate that button), second button press is the Source (feedback to illuminate that button: `active_source`), and a 3rd button press to 'Apply' or commit that decision. However, this would need to be implemented. Because currently the action 'Send source to the pre-selected destination' (`source`) immediately sends the routing change.
