@@ -1,3 +1,48 @@
+## ColorLight Media Server Companion Plugin
+
+This module allows users to control the following products: GrandShow
+
+### Configuration
+
+- Enter the IP address and port number of the product in the configuration screen
+- The product will communicate via UDP
+
+### Supported Actions:
+
+**_Software and Server Control_**
+
+- Shutdown
+- Switch project
+- Open project
+- Close software
+- Open/close screens
+
+**_Scene playback_**
+
+- Play next scene
+- Play the previous scene
+- Play scene by column number
+- Pause playback
+- Stop playback
+
+**_Volume Control_**
+
+- Adjust global volume
+
+**_Brightness control_**
+
+- Adjust global brightness
+- Get current global brightness
+- Get black screen status
+
+**_HDR Switch_**
+
+- Enable/Disable HDR
+  </br>
+  </br>
+  </br>
+  </br>
+
 ## 卡莱特媒体服务器 配套插件
 
 该模块允许用户控制以下产品：GrandShow
