@@ -1,4 +1,4 @@
 MODULE_NAME=panasonic-kairos
-GIT_REF=v4.0.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7220054673
-UPDATE_DATE=2023-12-15
+GIT_REF=v4.1.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7980197692
+UPDATE_DATE=2024-02-20

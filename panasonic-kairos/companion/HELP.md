@@ -8,7 +8,7 @@ This module is for the Panasonic Kairos switcher.
 * execute auto transition for selected SCENE or LAYER
 * execute cut transition for selected SCENE or LAYER
 
-### Layer source assignment
+### Layer source/media still assignment
 * set sourceA (PGM) for LAYER of SCENE
 * set sourceB (PVW) for LAYER of SCENE (if avaliable)
 
