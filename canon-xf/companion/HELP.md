@@ -1,17 +1,18 @@
-## Canon XF
+## Canon Browser Remote
 
-This module will allow you to control a Canon XF Camera such as the XF405 or XF705. For the XF605, try the Canon-PTZ module which uses the XC protocol.
+This module will allow you to control a Canon Camera with the web Browser Remote such as the XF405, XF705, or C100. For the XF605, try the Canon-PTZ module which uses the XC protocol.
 
 ### Configuration
-* Enter the IP address of the Canon XF in the configuration settings.
+* Enter the IP address of the Canon camera in the configuration settings.
 * The device will use HTTP port 80.
 * When the module is in use, the Browser Remote is unavailable due to limitations of the Canon software.
+* The XF405 and XF705 models require a username/password. The C100 does not require credentials.
 * For the Set White Balance function to work, you must first enable the Kelvin WB mode using the Kelvin Custom WB Mode action. 
 * The camera must be in Manual Focus Mode for the manual focus adjustments to work.
 * The camera must be in Manual Iris Mode for the manual iris adjustments to work.
 
-**Available Actions:**
-* Gain Up/Down
+**Available Actions:** (Not all actions available on all models)
+* Gain/ISO Up/Down
 * Iris Up/Down
 * Push Auto Iris
 * Auto Iris Mode
@@ -34,7 +35,7 @@ This module will allow you to control a Canon XF Camera such as the XF405 or XF7
 * Full Auto Mode Enable/Disable
 * Login/Logout functionality
 
-**Available Variables:**
+**Available Variables:** (Not all variables available on all models)
 * Camera ID
 * Battery Percent
 * Battery Remaining
@@ -69,5 +70,5 @@ This module will allow you to control a Canon XF Camera such as the XF405 or XF7
 * Zoom Speed
 * Zoom Position
 
-**Available Feedbacks:**
+**Available Feedbacks:** (Not all feedbacks available on all models)
 * Camera is Recording
