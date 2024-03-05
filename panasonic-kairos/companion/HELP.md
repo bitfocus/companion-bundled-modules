@@ -4,7 +4,10 @@ This module is for the Panasonic Kairos switcher.
 
 **Available commands in this module**
 
-###  Transition control
+### Actions
+* All actions are present, you can find it in the presets
+
+### Transition control
 * execute auto transition for selected SCENE or LAYER
 * execute cut transition for selected SCENE or LAYER
 
