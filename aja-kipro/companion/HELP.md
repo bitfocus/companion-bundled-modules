@@ -27,6 +27,7 @@ Add an action to a button and choose the action you wish to use.
 * Erase Clip By Name (Requires extension)
 * Erase Clip By List
 * Set Custom Take Number
+* Set Custom Clip Name
 * Load Clip By Name (Requires extension)
 * Load Clip By List
 * Loop Clip
