@@ -1,4 +1,4 @@
 MODULE_NAME=aja-kipro
-GIT_REF=v3.2.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/8187787042
-UPDATE_DATE=2024-03-07
+GIT_REF=v3.3.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/8239017060
+UPDATE_DATE=2024-03-11
