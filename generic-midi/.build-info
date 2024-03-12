@@ -1,4 +1,4 @@
 MODULE_NAME=generic-midi
-GIT_REF=1.1.3
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/8214301442
-UPDATE_DATE=2024-03-09
+GIT_REF=1.1.7
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/8243522314
+UPDATE_DATE=2024-03-12
