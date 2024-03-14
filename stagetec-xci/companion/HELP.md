@@ -1,6 +1,6 @@
 ## Stagetec Nexus XCI
 
-This module is a reciver for SNMP traps from the Stagetec Nexus XCI card. It allows boolean feedbacks to be created and used to trigger events in Companion based on Logic configured in Nexus Service.
+This module is a SNMP trap reciever optimised for the logic configurable traps from the Stagetec Nexus XCI. It allows boolean feedbacks to be created and used to trigger events in Companion based on Logic configured in Nexus Service.
 
 Each XCI card is capable of 256 logic configurable SNMP traps. NB. In the test system the 256th logic cell doesnt report an OID correctly.
 
@@ -37,4 +37,4 @@ Both the network settings and logic configuration must be uploaded to the nexus 
 
 ### Note on use
 
-Since this module just listens for SNMP traps, it will not pickup the state of logic cells at the time of module initialisation. Initally all are initialised to false.
+Since this module just listens for SNMP traps, it does not pickup the state of logic cells at module initialisation. All feedbacks are initialised to false.
