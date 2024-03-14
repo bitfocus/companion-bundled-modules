@@ -37,6 +37,7 @@ The actions are separated into the following categories:
 - Pan/Tilt Speed Up
 - Pan/Tilt Speed Down
 - Set Pan/Tilt Speed
+- Pan/Tilt Initialization
 
 **Lens**
 
