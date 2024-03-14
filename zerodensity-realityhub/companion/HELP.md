@@ -15,6 +15,7 @@ In addition please make sure to expose Companion to the same network as the Real
 
 **Available Actions:**
 * Basic: Do Transition
+* Basic: Enable Render
 * Basic: Load Feature Data
 * Basic: Set Constant Data Value
 * Basic: Set Media File Path
@@ -33,7 +34,7 @@ In addition please make sure to expose Companion to the same network as the Real
 * Basic: Feature Selected
 * Basic: Media File Path
 * Basic: Mixer Channel
-* Node: Property
+* Node: Check Property Value
 * Rundown: Button Label
 * Template: Button Label
 
