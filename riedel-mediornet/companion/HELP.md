@@ -59,3 +59,4 @@ For all matrices exists
 | **$(INSTANCENAME:selected_target)**                   | Label of the selected target                                                                  |
 | **$(INSTANCENAME:selected_target_source)**            | Label of the source routed to the selected target                                             |
 | **$(INSTANCENAME:selected_target_undo_source)**       | Label of the source which was routed to the target previously                                 |
+| **$(INSTANCENAME:selected_source)**                   | Label of the source which is selected                                                         |
