@@ -1,4 +1,4 @@
 MODULE_NAME=rogueamoeba-farrago
-GIT_REF=v1.1.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7509970252
-UPDATE_DATE=2024-01-13
+GIT_REF=v1.2.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/8317785663
+UPDATE_DATE=2024-03-17
