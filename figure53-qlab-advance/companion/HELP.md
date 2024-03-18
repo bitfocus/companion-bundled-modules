@@ -1,8 +1,8 @@
 # Help for the QLabFB module
 
 What does QLab do?
-QLab makes it simple to create intricate designs of light, sound, and video, which you play back during a live performance.
-QLab allows you to lock in exactly how you want the light, sound, and video to play during your performance. When you are done designing, switch to “show mode” and run your show just by pressing “GO”.
+QLab makes it simple to create intricate designs of light, sound, and video for live performance.
+When you are done designing, switch to “show mode” and run your show just by pressing “GO”.
 
 The software is available at [QLab.app](http://qlab.app). You can try QLab for 2 channel audio and 1 screen video without needing a license.
 
@@ -10,8 +10,9 @@ This module adds a TCP mode option to the _QLab_ module.
 Due to the nature and volume of information feedback and variables are only available in TCP mode.
 This may cause a noticible increase in network traffic.
 
-This module is intended for QLab4. While QLab3 is detected, some features may not work.
-New features unique to QLab5 are in development.
+This is being updated and maintained for QLab5.
+QLab 4.7 compatibility is checked will be continued when possible.
+While QLab3 is detected, some features may not work.
 
 ## Notice!
 
@@ -20,7 +21,7 @@ QLab versions 5.2 and onward will require version `2.1.0` or newer of this modul
 ---
 
 Contributions for development and maintenance of this open source module are always welcome
-https://github.com/sponsors/istnv
+<https://github.com/sponsors/istnv>
 
 ---
 
@@ -28,7 +29,7 @@ https://github.com/sponsors/istnv
 
 | Setting                        | Description                                                                                                                                                                                                                                                                             |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Target Host/IP**                  | Enter the hostname or IP address of the QLab computer. You can enter 127.0.0.1 if Companion is running on the same computer.                                                                                                                                                                           |
+| **Target Host/IP**             | Enter the hostname or IP address of the QLab computer. You can enter 127.0.0.1 if Companion is running on the same computer.                                                                                                                                                            |
 | **Target Port**                | Enter the port number where QLab is listening for OSC messages. This defaults to 53000. Has no effect on QLab4 (or QLab3)                                                                                                                                                               |
 | **Use TCP?**                   | Check to enable TCP mode. This is required for variables and feedback.                                                                                                                                                                                                                  |
 | **Use Tenths?**                | If checked, the variable _r_left_ will display 0.1 seconds when less than 5 seconds. If unchecked, the time left will be adjusted by 1 second for a more accurate count-down.                                                                                                           |
@@ -89,6 +90,13 @@ There are presets included for most of these actions.\
 Show Mode, Audition Window, Arm, and Autoload actions also have a Toggle option to invert the current setting of the cue.\
 For additional actions please raise a feature request at [github](https://github.com/bitfocus/companion-module-qlab-advance/issues)
 
+## New Action Format
+
+Some commands have been updated to a scoped configuration. Instead of three different 'stop' commands (global/cue number/cue id) the new commands have an option to choose which cues to apply the command.
+
+Commands implemented:
+**Go**, , **Start**, **Stop**, **Arm**
+
 ## Variables available (TCP mode only)
 
 | Variable                           | Description                                                                                                      |
@@ -101,13 +109,13 @@ For additional actions please raise a feature request at [github](https://github
 | **$(INSTANCENAME:n_type)**         | Cue Type of the current Playhead Cue                                                                             |
 | **$(INSTANCENAME:n_cont)**         | Continue mode of the Playhead Cue: <ul><li>`NoC`: No continue</li><li>`Con`: Continue</li><li>`Fol`: Follow</li> |
 | **$(INSTANCENAME:n_notes)**        | First 20 characters of the Note on the Playhead Cue                                                              |
-| **$(INSTANCENAME:n_stat)**         | Playhead Cue Status: "✕" if broken, "⏽" if loaded, "⏵" if running, "⏸" if paused, otherwise "·"                 |
+| **$(INSTANCENAME:n_stat)**         | Playhead Cue Status: "✕" if broken, "⏽" if loaded, "⏵" if running, "⏸" if paused, otherwise "·"                  |
 |                                    | QLab5 adds a status for Auditioning "❲⏵❳"                                                                        |
 | **$(INSTANCENAME:r_id)**           | UniqueID of the current Running Cue                                                                              |
 | **$(INSTANCENAME:r_name)**         | Name of the current Running Cue or [none]                                                                        |
 | **$(INSTANCENAME:r_num)**          | Number of the current Running Cue                                                                                |
 | **$(INSTANCENAME:r_notes)**        | First 20 characters of the Note on the running cue                                                               |
-| **$(INSTANCENAME:r_stat)**         | Running Cue Status: "✕" if broken, "⏽" if loaded, "⏵" if running, "⏸" if paused, otherwise "·"                  |
+| **$(INSTANCENAME:r_stat)**         | Running Cue Status: "✕" if broken, "⏽" if loaded, "⏵" if running, "⏸" if paused, otherwise "·"                   |
 |                                    | QLab5 adds a status for Auditioning "❲⏵❳"                                                                        |
 | **$(INSTANCENAME:r_hhmmss)**       | Remaining time for Running Cue as "HH:MM:SS"                                                                     |
 | **$(INSTANCENAME:r_hh)**           | Hours left for Running Cue                                                                                       |
@@ -135,6 +143,7 @@ To use these, replace INSTANCENAME with the name of your module instance.
 | **Show if ANY cue is runing**        | Set the button to show when any cue is running                                                 |
 | **Show Cue # is Running**            | Set the button to show when a specific cue is running                                          |
 | **Show Cue ID is Running**           | Set the button to show when a specific cue ID is running                                       |
+| **Show Cue is Armed**                | Set the button to show when a certain cues are Armed                                           |
 
 ## OSC
 
