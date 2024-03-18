@@ -155,6 +155,7 @@ Enter the IP address, port of the media player. If a password is required, enter
 ## Feedbacks
 - **Caution State**
 - **Device Select**
+- **End of Media**
 - **Error State**
 - **Incremental Play**
 - **Mecha Status**
@@ -165,6 +166,12 @@ Enter the IP address, port of the media player. If a password is required, enter
 - **Resume Play**
 
 ## Version History
+
+### Version 2.0.3
+- End of Media feedback
+- Track Number & Track Time variable fixes
+- Track Time mode saved to device config
+- Update companion-module-tools to 1.5.0
 
 ### Version 2.0.2
 - Minor fixes
