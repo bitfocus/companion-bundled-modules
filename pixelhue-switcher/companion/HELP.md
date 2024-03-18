@@ -4,7 +4,8 @@ This module will allow you to control the following Pixelhue products: F4, F4 Li
 
 ### Configuration
 
-- Enter the IP address of the device in the configuration settings.
+- Enter the IP address of the device in the configuration settings, and select the model of the device.
+- If an error is prompted after connecting: Please reconfigure the device connection information. You need to re-enter the configuration details, enter the account password and save again.
 
 **Available actions:**
 
