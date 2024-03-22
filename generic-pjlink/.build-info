@@ -1,4 +1,4 @@
 MODULE_NAME=generic-pjlink
-GIT_REF=v2.2.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7470854046
-UPDATE_DATE=2024-01-10
+GIT_REF=v2.2.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/8386438857
+UPDATE_DATE=2024-03-22
