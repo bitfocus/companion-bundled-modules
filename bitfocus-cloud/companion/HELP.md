@@ -1,4 +1,4 @@
-# Bitfocus Companion Cloud 
+# Bitfocus Companion Cloud
 
 This module serves as a client for the Bitfocus Companion Cloud system, a cloud-based solution that enables remote access to Companion servers without requiring VPNs or complex network configurations.
 
