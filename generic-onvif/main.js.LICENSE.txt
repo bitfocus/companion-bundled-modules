@@ -1,0 +1,70 @@
+/*! http://mths.be/fromcodepoint v0.1.0 by @mathias */
+
+/**
+ * @description Common module for ONVIF library
+ * @author Andrew D.Laptev <a.d.laptev@gmail.com>
+ * @licence MIT
+ */
+
+/**
+ * @namespace cam
+ * @description Common camera module
+ * @author Andrew D.Laptev <a.d.laptev@gmail.com>
+ * @licence MIT
+ */
+
+/**
+ * @namespace cam
+ * @description Device section for Cam class
+ * @author Andrew D.Laptev <a.d.laptev@gmail.com>
+ * @licence MIT
+ */
+
+/**
+ * @namespace cam
+ * @description Events section for Cam class
+ * @author Andrew D.Laptev <a.d.laptev@gmail.com>
+ * @licence MIT
+ */
+
+/**
+ * @namespace cam
+ * @description Media section for Cam class
+ * @author Andrew D.Laptev <a.d.laptev@gmail.com>
+ * @licence MIT
+ */
+
+/**
+ * @namespace cam
+ * @description PTZ section for Cam class
+ * @author Andrew D.Laptev <a.d.laptev@gmail.com>
+ * @licence MIT
+ */
+
+/**
+ * @namespace cam
+ * @description Recording section for Cam class
+ * @author Roger Hardiman <opensource@rjh.org.uk>
+ * @licence MIT
+ */
+
+/**
+ * @namespace cam
+ * @description Replay section for Cam class
+ * @author Roger Hardiman <opensource@rjh.org.uk>
+ * @licence MIT
+ */
+
+/**
+ * @namespace discovery
+ * @description Discovery module
+ * @author Andrew D.Laptev <a.d.laptev@gmail.com>
+ * @licence MIT
+ */
+
+/**
+ * @namespace utils
+ * @description Common utils module
+ * @author Andrew D.Laptev <a.d.laptev@gmail.com>
+ * @licence MIT
+ */
