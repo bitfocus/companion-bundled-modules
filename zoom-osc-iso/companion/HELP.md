@@ -1,5 +1,3 @@
-ZoomOSC/ISO Module
-
 # Introduction
 
 This module gives you deep control of Zoom from the convenience of controllers like the StreamDeck. Powered by ZoomOSC and ZoomISO, this module provides a bidirectional link to Zoom so that you can see the names of participants on the keys of your controller, and manage them effectively. This is a zero-code solution, so you don’t need to research any APIs. Everything is drag-and-drop from the module presets collection. Advanced users can build their own buttons with the actions and feedback available in this module directly without implementing the API commands for ZoomOSC and ZoomISO themselves.
@@ -41,46 +39,45 @@ First select user(s), then apply action(s).
 
 Managing the participants in a Zoom meeting often involves hunting through sub-menus or drop down lists, and this can be inefficient at scale, especially during quick transitions. With the ZoomOSC/ISO module, you can create a control surface for Zoom that is optimized for this use case. You can leverage the gallery-based participants list to make sure that the buttons automatically contain the names of the most relevant participants. Feedback available on the preset buttons will automatically change color based on video and audio status, and display a hand-raised icon.
 
-### Setting it up
+### Setting Up Moderating Zoom
 
-1.  Under Presets open the “Select from Gallery” category. Drag the buttons onto your StreamDeck, leaving room on the sides and bottom for actions![Presets](images/3.png)
+1. Under Presets open the “Select from Gallery” category. Drag the buttons onto your StreamDeck, leaving room on the sides and bottom for actions!
 
-2.  Set ZoomOSC/ISO to gallery view. It is important to remain in gallery view while using these buttons. You can resize the Zoom window so the number of rows and columns in the gallery view match the arrangement of gallery buttons on your StreamDeck.
+   ![Presets](images/3.png)
 
-3.  Explore the other preset categories and add action buttons for managing pin, spotlight, video, mute, etc. Add buttons to return to gallery view and toggle selection method. You can adjust the background color and key styling as needed.
+1. Set ZoomOSC/ISO to gallery view. It is important to remain in gallery view while using these buttons. You can resize the Zoom window so the number of rows and columns in the gallery view match the arrangement of gallery buttons on your StreamDeck.
+1. Explore the other preset categories and add action buttons for managing pin, spotlight, video, mute, etc. Add buttons to return to gallery view and toggle selection method. You can adjust the background color and key styling as needed.
 
-![Other presets](images/4.png)
+   ![Other presets](images/4.png)
 
-4.  To operate the page, you can select participants (their names will automatically appear based on the order of the gallery view) and then pick an action to apply to that individual or group.
+1. To operate the page, you can select participants (their names will automatically appear based on the order of the gallery view) and then pick an action to apply to that individual or group.
 
 ## ZoomISO Configuration
 
 ZoomISO can be controlled by this module to allow you to route participants to video outputs and audio channels easily. You can also change ZoomISO’s settings from this module, including control of the number of outputs and the state of the engine. For advanced users, the outputs and channels of ZoomISO are also selectable, so you can select participants and outputs in any order, and then match them to each other like a traditional video matrix.
 
-### Setting it up
+### Setting Up ZoomISO Configuration
 
-1.  Under Presets open the “Select from Participants” category. Drag the buttons onto your StreamDeck, leaving room on the sides and bottom for actions![ZoomISO Configuration](images/5.png)
+1. Under Presets open the “Select from Participants” category. Drag the buttons onto your StreamDeck, leaving room on the sides and bottom for actions![ZoomISO Configuration](images/5.png)
 
-2.  Ensure Companion is in single selection mode. We will assume ZoomISO has 8 outputs in this example. Output properties can be configured by Companion, or through the ZoomISO UI. Make sure that ZoomISO has the necessary permissions for raw data access.
+2. Ensure Companion is in single selection mode. We will assume ZoomISO has 8 outputs in this example. Output properties can be configured by Companion, or through the ZoomISO UI. Make sure that ZoomISO has the necessary permissions for raw data access.
 
-3.  Under the preset category "ZoomISO Actions" drag 8 copies of the button called “Set User to Output” and place them on the right side of the StreamDeck. Change the Output field of each button so it targets a unique ZoomISO output and rename the keys accordingly. You can also drag buttons for managing other ZoomISO properties, as well as some meeting management functions that could be helpful in combination with ZoomISO.![ZoomISO Actions](images/6.png)
-4.  To operate the page, select a participant and tap on an output to change who is being sent out of the ZoomISO outputs.
+3. Under the preset category "ZoomISO Actions" drag 8 copies of the button called “Set User to Output” and place them on the right side of the StreamDeck. Change the Output field of each button so it targets a unique ZoomISO output and rename the keys accordingly. You can also drag buttons for managing other ZoomISO properties, as well as some meeting management functions that could be helpful in combination with ZoomISO.![ZoomISO Actions](images/6.png)
+4. To operate the page, select a participant and tap on an output to change who is being sent out of the ZoomISO outputs.
 
 ## Personal Controls
 
 The ZoomOSC/ISO module is a great way to manage your own settings and controls within a Zoom call as a participant. Many of the actions can be configured to act upon your local settings, making it much easier to configure certain functions like audio and video controls without needing to navigate any menus. The Join Meeting button allows you to enter your recurring meetings and easily join them with a single button press. Together these actions can be an ergonomic management solution for self-participation in Zoom.
 
-### Setting it up
+### Setting Up Personal Controls
 
-1.  Under Presets select “Join/Leave/End Actions” and drag several copies of the “Join Meeting” button. Drag over a Leave Meeting button as well.
+1. Under Presets select “Join/Leave/End Actions” and drag several copies of the “Join Meeting” button. Drag over a Leave Meeting button as well.
+1. You can set a custom name for each button, and enter the Meeting ID, Password, and your Display Name into each button. You can use custom colors, or even upload your own images to represent the different meetings you want to access. Remember to sign into ZoomOSC/ISO if these meetings require registration.
+1. Return to Presets and drag buttons from “Video/Audio Actions” as well as “Devices & Settings Actions” onto your StreamDeck. For each button, set the properties appropriately. Importantly, in the username field, enter “Me” to make the button reference yourself. This is a macro keyword that will always reference you, regardless of your Zoom display name.
 
-2.  You can set a custom name for each button, and enter the Meeting ID, Password, and your Display Name into each button. You can use custom colors, or even upload your own images to represent the different meetings you want to access. Remember to sign into ZoomOSC/ISO if these meetings require registration.
+   ![Join Actions](images/7.png)
 
-![](images/)
-
-3.  Return to Presets and drag buttons from “Video/Audio Actions” as well as “Devices & Settings Actions” onto your StreamDeck. For each button, set the properties appropriately. Importantly, in the username field, enter “Me” to make the button reference yourself. This is a macro keyword that will always reference you, regardless of your Zoom display name.![](images/7.png)
-
-# Selections and Groups
+## Selections and Groups
 
 Selections are a key component of this module. With names of Zoom participants automatically appearing on your keys, selections allow you to designate which users to act upon. There are many workflows for selection, including single-selection, multi-selection, and groups.
 
