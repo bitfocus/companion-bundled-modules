@@ -15,5 +15,6 @@
 * **Stealth** on/off/toggle disable LED lights on projector
 * **Remote control** All remote buttons avalible
 * **Factory Reset** Factory Reset the device
+* **Activate Profile** Run a profile/macro on the device
 
 * **Presets availible for all included commands!**
