@@ -6,6 +6,7 @@ The endpoint must have HTTPS Upgrade disabled under the services tab.
 
 ## Actions
 - **Current Channel URI**
+- **Get Channel List**
 - **Mode**
 - **Mute**
 - **Teletext**
@@ -14,7 +15,9 @@ The endpoint must have HTTPS Upgrade disabled under the services tab.
 - **Volume Down**
 
 ## Variables
-- **CurrentChannel URI**
+- **Current Channel URI**
+- **Current Channel Name**
+- **Current Channel Number**
 - **Mode**
 - **Volume**
 
@@ -23,3 +26,12 @@ The endpoint must have HTTPS Upgrade disabled under the services tab.
 - **Mode**
 - **Mute**
 - **Teletext**
+
+## Version History
+
+### Version 1.1.0
+- Add channel list action & populate Current Channel URI dropdown
+- Add channel name, channel number variables.
+
+### Version 1.0.0
+- Initial release
