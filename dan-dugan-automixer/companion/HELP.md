@@ -1,4 +1,4 @@
-## Dan Dugan Sound Design Model Automixer
+## Dan Dugan Sound Design Automixer
 
 This module will control the Model M or N automixer. There are 64 Madi or Dante inputs & outputs, and 16 adat inputs and outputs.
 Many functions will work with the Dugan-MY16 and other units.
@@ -6,9 +6,33 @@ Many functions will work with the Dugan-MY16 and other units.
 - [Dugan Auto Mixer Product Page](https://www.dandugan.com/products/)
 
 ## Configuration
-Enter the IP address of the control NIC of the Automixer. The unit will accept connections on TCP:23 or TCP:9776 (and UDP:9776, not supported at present). This model defaults to TCP:23 for easiest integration with firewalls and complex networks. 
-Poll interval determines how frequenctly channel & scene names are checked, set to zero to turn off. 
-Enter the number of automix channels the unit is configured to for correct initialisation. Once connected if the unit reports a different number of configured channels the module will log the discrepancy and adapt. The messaging rate can be left at fast most of the time. If you find commands are getting lost or responses are missing, especially over a WAN you may try slowing it down. Similarly the metering rate determines how fast the level and gain meters are polled - this will only work with the Model M & N. Unsolicited message subscription determines if the dugan will inform companion about changes from other clients; in general this should be left on. Use of feedbacks will force subscriptions on if it is off. The Is Talking threshold sets the operational threshold for a simple function to identify the current active talker. The function returns the channel with the least gain reduction at any time, as long as they are at or above the set threshold, otherwise nothing is returned.
+**IP and Port**
+
+Enter the IP address of the control NIC. The unit will accept connections on TCP:23 or TCP:9776 (and UDP:9776, not supported). This module defaults to TCP:23.
+
+**Poll Interval** 
+
+Sets the frequency of channel and scene name updates, setting to zero turns off. 
+
+**Metering Rate**
+
+Determines how frequently the level and gain reduction meters are polled. Turn off when using with any dugan model other than a Model M or N.
+
+**Automix Channels**
+
+The Model M & N default to 64, but can be set to any value between 8 and 64. Once connected the channel count is checked and adapted to if it differs. Correct setting aids in easy offline programming.
+
+**Messaging Rate**
+
+Can be left at fast most of the time. If you find commands are getting lost or responses are missing, especially over a WAN you may try slowing it down. Similarly the metering rate determines how fast the level and gain meters are polled - this will only work with the Model M & N. The dugans are succeptable to crashing when they recieve messages too quickly. If you encounter this issue, try slowing the messaging rate.
+
+**Unsolicited message subscription**
+
+Determines if the dugan will inform companion about changes from other clients; in general this should be on. Feedbacks will force subscriptions on if they are off. 
+
+**Talking threshold**
+
+Sets the operational threshold for the Is Talking varibles. The function returns the channel with the least gain reduction at any time, as long as they are at or above the set threshold, otherwise nothing is returned. This function is part of the module and not native to the automixer. Metering must be enabled for this to function correctly.
 
 ## Actions
 - **Channel - Bypass** Query / Change Channel Bypass
@@ -87,11 +111,14 @@ Enter the number of automix channels the unit is configured to for correct initi
 
 - **Scene - Active** Active Scene name
 - **Scene - Active Index** Active scene index
-- **Scene - Active Has Changed** True if any parameter has been changed from the recalled Scene
+- **Scene - Active Has Changed**  True if any parameter has been changed from the recalled Scene
 - **Scene - Count** Number of saved scenes
 
-- **System** 
-System related Varaibles, many are read only. Several arent directly exposed in the dugan software.
+
+**System**
+
+  System related variables; many are read only. Several aren't directly exposed in the dugan software.
+
 - **Adat Mirror**
 - **Blink Mode**
 - **Channel Count**
@@ -122,7 +149,6 @@ System related Varaibles, many are read only. Several arent directly exposed in 
 - **TCPIP**
 - **TCP Clients** 
 - **UDP Clients**
-The units support a total of five simultaneous connections across TCP & UDP. The Dugan software and Model K connect via UDP.
 
 ## Feedbacks
 All feedbacks are boolean. Feedbacks will force the subscription level to at least the minimum required.
@@ -153,14 +179,18 @@ All feedbacks are boolean. Feedbacks will force the subscription level to at lea
 - **Matrix - Output Level**
 - **Matrix - Output Route**
 
-- **Scene - Has Changed** True when any parameter is changed from the saved state of the current scene
+- **Scene - Has Changed** 
 
 ## Support for other models
 Only the Model M & N are supported. With that said, the dugan units share a common api.
 The Model M & N represent a complete set of API commands. All other units (MY-16, Model-E3A, etc) support a subset of of these commands. The core channel controls are supported by all units.
-It is advised to set the the channel count to the appropriate value, turn the metering off, and dont use the functions not supported by your unit. This functionality is untested.
+Set the the channel count to the appropriate value, turn the metering off, and ignore functions not supported by your unit. This is untested.
 
 ## Version History
+
+### Version 1.0.3
+- Update help
+- Update companion-module-tools
 
 ### Version 1.0.1
 - Add timeout clearToTx (500ms).
