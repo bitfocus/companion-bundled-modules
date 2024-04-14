@@ -1,4 +1,4 @@
 MODULE_NAME=slack-webhooks
-GIT_REF=v2.0.4
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5055514678
-UPDATE_DATE=2023-05-23
+GIT_REF=v2.0.5
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/8677781545
+UPDATE_DATE=2024-04-14
