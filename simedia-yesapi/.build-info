@@ -1,4 +1,4 @@
 MODULE_NAME=simedia-yesapi
-GIT_REF=v1.0.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7620387038
-UPDATE_DATE=2024-01-23
+GIT_REF=v1.1.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/8688878572
+UPDATE_DATE=2024-04-15
