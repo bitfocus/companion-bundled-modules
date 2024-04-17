@@ -1,4 +1,4 @@
 MODULE_NAME=microsoft-teams
-GIT_REF=v1.0.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5827883529
-UPDATE_DATE=2023-08-11
+GIT_REF=v1.2.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/8726923968
+UPDATE_DATE=2024-04-17
