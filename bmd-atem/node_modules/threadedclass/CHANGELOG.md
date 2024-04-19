@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.2](https://github.com/nytamin/threadedClass/compare/1.2.1...1.2.2) (2024-04-10)
+
+
+### Bug Fixes
+
+* don't reply with an error if the child is not available anymore ([981b255](https://github.com/nytamin/threadedClass/commit/981b255c9530465461ac422ca7def1f15d606ca7))
+* handle throws in replyError ([c1c9183](https://github.com/nytamin/threadedClass/commit/c1c9183efb5ff57bbde47e2e839b7b05f0bc99eb))
+
 ### [1.2.1](https://github.com/nytamin/threadedClass/compare/1.2.0...1.2.1) (2022-12-07)
 
 
