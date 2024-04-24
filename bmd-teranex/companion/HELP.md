@@ -29,27 +29,28 @@ This module will connect to any Blackmagic Design Teranex device. Not all settin
 23. Genlock: Set Type
 
 **Feedback**
+
 1. Video input: Change background color
 2. Audio input: Change background color
 3. Signal is present
 
 **Variables**
 
-* Connection Status
+- Connection Status
 
-* Input Video Format
-* Selected Video Input
-* Selected Audio Input
-* Seelcted Video Output
+- Input Video Format
+- Selected Video Input
+- Selected Audio Input
+- Seelcted Video Output
 
-* Video Adjust Red/Green/Blue
-* Video Adjust Luma Low/High
-* Video Adjust Chroma Low/High
-* Video Adjust Aspect Fill Luma/Cb/Cr
+- Video Adjust Red/Green/Blue
+- Video Adjust Luma Low/High
+- Video Adjust Chroma Low/High
+- Video Adjust Aspect Fill Luma/Cb/Cr
 
-* Video Proc Amp Gain/Black/Saturation/Hue/RY/BY/Sharp
+- Video Proc Amp Gain/Black/Saturation/Hue/RY/BY/Sharp
 
-* Genlock Reference
-* Genlock Pixel/Line Offset
-* Genlock Signal Locked
-* Genlock Type
+- Genlock Reference
+- Genlock Pixel/Line Offset
+- Genlock Signal Locked
+- Genlock Type
