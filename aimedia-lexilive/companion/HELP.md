@@ -22,5 +22,8 @@ Instance State (Off/On)
 
 ## Version History
 
+### Version 1.1.0
+- Add instance start and stop presets
+
 ### Version 1.0.0
 - Initial release
