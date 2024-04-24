@@ -29,6 +29,9 @@ The endpoint must have HTTPS Upgrade disabled under the services tab.
 
 ## Version History
 
+### Version 1.2.0
+- Add set mute & channel presets
+
 ### Version 1.1.0
 - Add channel list action & populate Current Channel URI dropdown
 - Add channel name, channel number variables.
