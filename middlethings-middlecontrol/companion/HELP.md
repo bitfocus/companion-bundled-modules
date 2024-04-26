@@ -22,4 +22,6 @@ In that way, more people will get to benefit from this in the future, thanks.
 - Send Camera Action
 - Send Gimbal Action
 - Recall/Save Preset
-- Set Custom Pan/Tilt/Zoom Speed
+- Set Custom Camera & Pan/Tilt/Zoom Positions 
+- Set Custom Pan/Tilt/Zoom Speed 
+- Access Camera & Gimbal settings in realtime using Variables 
