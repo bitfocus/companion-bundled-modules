@@ -167,6 +167,9 @@ Enter the IP address, port of the media player. If a password is required, enter
 
 ## Version History
 
+### Version 2.1.0
+- Add device, status and transport presets
+
 ### Version 2.0.3
 - End of Media feedback
 - Track Number & Track Time variable fixes
