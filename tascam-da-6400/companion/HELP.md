@@ -171,6 +171,9 @@ This turns the record function of the controlled device on/off.
 
 ## Version History
 
+### Version 1.2.1
+- Add record preset
+
 ### Version 1.2.0
 - Add transport & status presets
 - Update companion-module-tools to 1.5.0
