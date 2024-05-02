@@ -167,6 +167,9 @@ Enter the IP address, port of the media player. If a password is required, enter
 
 ## Version History
 
+### Version 2.1.1
+- Add record preset
+
 ### Version 2.1.0
 - Add device, status and transport presets
 
