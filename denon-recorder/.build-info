@@ -1,4 +1,4 @@
 MODULE_NAME=denon-recorder
-GIT_REF=v2.2.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7466291364
-UPDATE_DATE=2024-01-09
+GIT_REF=v2.3.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/8932776377
+UPDATE_DATE=2024-05-03
