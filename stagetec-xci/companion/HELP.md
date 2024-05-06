@@ -1,5 +1,7 @@
 ## Stagetec Nexus XCI
 
+- [Stagetec XCI](https://www.stagetec.com/en/dsp-controller-en/nexus-xci)
+
 This module is a SNMP trap reciever optimised for the logic configurable traps from the Stagetec Nexus XCI. It allows boolean feedbacks to be created and used to trigger events in Companion based on Logic configured in Nexus Service.
 
 Each XCI card is capable of 256 logic configurable SNMP traps. NB. In the test system the 256th logic cell doesnt report an OID correctly.
@@ -38,3 +40,36 @@ Both the network settings and logic configuration must be uploaded to the nexus 
 ### Note on use
 
 Since this module just listens for SNMP traps, it does not pickup the state of logic cells at module initialisation. All feedbacks are initialised to false.
+
+### Actions
+- **Reset Latch**
+
+Reset the specified latch variable to false.
+### Variables
+
+- **Logic Cell Latch [ 1 - 256 ]**
+
+Goes true when a SNMP trap is recieved setting the cell to true. Stays true until reset.
+
+- **Most Recent Trigger**
+
+Returns the cell number of the most recently recieved true SNMP trap.
+
+### Feedbacks
+
+- **XCI SNMP Trap**
+
+Follows the state of the specified SNMP trap
+
+
+## Version History
+
+### Version 1.1.0
+- Accept variables for feedback cell input
+- Add 'most recent' variable, displays the cell number of most recently received positive going trap
+- Add cell latch variable, and reset action. Goes true when triggered by an SNMP trap, and stays that way until reset
+- Update companion-module-base to 1.8.0
+- Update net-snmp to 3.11.2
+
+### Version 1.0.2
+- Initial release

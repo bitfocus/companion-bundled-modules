@@ -1,4 +1,4 @@
 MODULE_NAME=stagetec-xci
-GIT_REF=1.0.2
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/8273694519
-UPDATE_DATE=2024-03-14
+GIT_REF=v1.1.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/8970813316
+UPDATE_DATE=2024-05-06
