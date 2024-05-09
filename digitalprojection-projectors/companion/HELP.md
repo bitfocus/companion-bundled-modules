@@ -2,16 +2,12 @@
 
 A companion module to control and monitor Digital Projection projectors.
 
-## Module overview
-
-        Actions, Variables and Presets are automatically generated from model chosen.
-        At connection creation, Initial requests to populate variables values are sent.
-
 ## Supported models
 
     Models supported by Projector Controller II
 
-    ["Satellite HIGHlite Head 4K-UHD", "Satellite HIGHlite Head WU", "Satellite Titan Head 4K-UHD", "Satellite Titan Head WU"],
+    ["Satellite HIGHlite Head 4K-UHD", "Satellite HIGHlite Head WU", \
+    "Satellite Titan Head 4K-UHD", "Satellite Titan Head WU"],
     ["Satellite Control Module"],
     ["MLS 10000", "MLS 20000", "MLS 30000"],
     ["Titan 47000 WU", "Titan 43000 WU", "Titan 42000 WU"],
@@ -38,6 +34,48 @@ A companion module to control and monitor Digital Projection projectors.
     ["EV5900_WU", "EV7010_WU"],
     ["EV5100_WU", "EV6110_WU"]
 
-## Supported commands
+## Module overview
 
-    List of available commands by model can be found on the [DigitalProjection](https://www.digitalprojection.com/) website.
+    Actions, Variables and Presets are automatically generated from model chosen.
+    At connection creation, Initial requests to populate variables values are sent.
+
+### Initial requests
+
+        At connection creation, Initial requests to populate variables values are sent.
+        This process may take some time, depending on the model chosen \
+        and the number of variables.
+        TCP protocol used by Digital Projection needs to resend a response \
+        for each request before next request can be received.
+        In the "Edit Connection" tab a `Initial requests polling rate (ms)` can be set.
+        Default value is `1100ms` based on test made with \
+        "Virtual Projectors" of "Controller Projector II" .
+
+### Presets
+
+        Presets are stored by categories:
+
+         - At first level by categories provided by the model chosen 
+           (for example "Input", "Picture","Alignment"...).
+
+         - At second level by category of actions:
+            . "ChoiceList" (a dropdown list of options)
+            . "ToggleList" (a switch between two options)
+            . "Value" (a numeric value)
+            . "Execute" (a simple command)
+
+        ChoiceList, ToggleList and Value presets labels are linked \
+        to their corresponding variable.
+        If the module receive a value from the target device, \
+        it will automatically update the corresponding variable and then \
+        the label of the corresponding preset will be also updated.
+
+        If no value is known or received for a variable,\
+        button background color stays "Orange".
+
+### Supported commands
+
+    A generic "Send Command"Action is also created to send non-standard \
+    commands to the target device.
+
+    List of available commands and detailed protocols by model \
+    can be found on the [DigitalProjection](https://www.digitalprojection.com/) website.
