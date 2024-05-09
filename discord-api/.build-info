@@ -1,4 +1,4 @@
 MODULE_NAME=discord-api
-GIT_REF=v1.2.3
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/8846704935
-UPDATE_DATE=2024-04-26
+GIT_REF=v1.3.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/9016988969
+UPDATE_DATE=2024-05-09
