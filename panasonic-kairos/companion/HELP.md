@@ -1,6 +1,8 @@
 ## Panasonic Kairos
 
 This module is for the Panasonic Kairos switcher.
+>> To connect make sure Kairos RestAPI mode is set to Basic
+>> Although it is pretty common, don't use special characters in your naming. This could result in errors or not being able to use such source/destination
 
 **Available commands in this module**
 
