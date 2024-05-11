@@ -148,7 +148,7 @@ This turns the record function of the controlled device on/off.
 - **Caution**
 - **Error**
 - **Mecha Status**
-- **PSU Error**  Undocumented and presumed only relevant for the DA-6400dp. Unknown how to query state, so module assumes device is OK on connect.
+- **PSU Error**  Undocumented. Presumed only relevant for the DA-6400dp. Unknown how to query state - module assumes device is OK on connect.
 - **Repeat Mode**
 - **Remote/Local Mode**
 - **Keyboard Type**
@@ -170,6 +170,11 @@ This turns the record function of the controlled device on/off.
 - **Digital Reference Level**
 
 ## Version History
+
+### Version 1.2.2
+- Better status updates
+- Transport preset layout
+- Update companion module base to 1.8.0
 
 ### Version 1.2.1
 - Add record preset
