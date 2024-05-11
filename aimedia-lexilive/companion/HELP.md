@@ -6,11 +6,11 @@ User credentials stored in the config are not secure.
 
 ### Actions
 
-Start and stop lexi live instances.
+Start and stop Lexi Live instances.
 
-The origin and reason fields, do not change the behaviour of the action, but are reflected in the Lexi Live logs. The default origin is companion_v(Module Version Number)@(User):(Host).
+The origin and reason fields are written to the Lexi Live logs. The default origin is companion_v(Module Version Number)@(User):(Host).
 
-Update Instance List will repopulate the drop down list of instances in the actions & feedbacks, and the instance name variables and their values.
+Update Instance List will repopulate the instances availalbe in the actions, feedbacks, variables and presets.
 
 ### Variables
 
@@ -21,6 +21,10 @@ Instance Names
 Instance State (Off/On)
 
 ## Version History
+
+### Version 1.1.1
+- Don't accept empty password
+- Update companion-module-base to 1.8.0
 
 ### Version 1.1.0
 - Add instance start and stop presets
