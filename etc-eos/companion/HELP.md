@@ -204,6 +204,24 @@ enc_form_mspeed
 enc_tint
 enc_color_temperature
 enc_color_mix_mode_2
+enc_color_crossfade
+enc_cie_x
+enc_cie_y
+enc_cie_x_2
+enc_cie_y_2
+enc_cie_x_3
+enc_cie_y_3
+enc_cie_x_4
+enc_cie_y_4
+enc_cie_x_5
+enc_cie_y_5
+enc_cie_x_6
+enc_cie_y_6
+enc_cie_x_7
+enc_cie_y_7
+enc_cie_x_8
+enc_cie_y_8
+
 
 ## Wheels - By category
 
@@ -231,6 +249,15 @@ the fixture selected
 | catX_wheel_Y_oscname         | OSC path value (from label)            |
 
 There is a sample Stream Deck + configuration file in the github repository that demonstrates how this can be used effectively to manage all encoders on a single Stream Deck + page.
+
+## Group labels
+
+To allow the use of buttons to select groups, and capture the group label for use on the buttons, there are a set of variables that hold this information.
+
+Currently the first 30 groups are captured:
+
+group_label_1 through group_label_30
+
 
 ## Feedbacks
 
