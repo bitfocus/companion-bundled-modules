@@ -25,6 +25,10 @@ Interrogate on Connect will interrogate all destinations when a connection is es
 
 ## Version History
 
+### Version 1.0.4
+- Better status updates
+- Update companion-module-base to 1.8.0
+
 ### Version 1.0.3
 - Fix typos
 - Update companion-module-tools
