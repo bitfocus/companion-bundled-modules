@@ -61,8 +61,15 @@ Returns the cell number of the most recently recieved true SNMP trap.
 
 Follows the state of the specified SNMP trap
 
+- **XCI SNMP Trap - Latched**
+
+Goes true when triggered by a Trap. Stays true until reset.
 
 ## Version History
+
+### Version 1.1.1
+- Add latching feedbacks to complement variables
+- Update status on absent XCI IP
 
 ### Version 1.1.0
 - Accept variables for feedback cell input
