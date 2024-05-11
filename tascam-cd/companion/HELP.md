@@ -167,6 +167,11 @@ Enter the IP address, port of the media player. If a password is required, enter
 
 ## Version History
 
+### Version 2.1.2
+- Better status updates
+- Better preset formatting
+- Update companion-module-base to 1.8.0
+
 ### Version 2.1.1
 - Add record preset
 
