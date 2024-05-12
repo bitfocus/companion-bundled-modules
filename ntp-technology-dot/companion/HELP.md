@@ -6,12 +6,12 @@ This module will control NTP Audio Routers that support DOT Protocol.
 
 ## Configuration
 Enter the IP address of the control port of the router controller. The default port is 10005.
-In the case of redundant router controllers, enter the secondary controller IP and port, and enable the redundant controllers switch. 
-When the module is enabled it will try and connect to the Primary, if this fails at anytime, it will try and connect to the Secondary, and visa versa. This process typically takes 20 seconds or so, as it relies on the TCP connection going into error before attempting connection to the other controller.
+In the case of redundant router controllers, enter the secondary controller IP and port, and enable the redundant controllers' switch. 
+When the module is enabled, it will try and connect to the Primary, if this fails it will try and connect to the Secondary, and visa-versa. This process typically takes 20 seconds or so, as it relies on the TCP connection going into error before attempting connection to the other controller.
 
 Configure the Source and Destination count, this should be equal to highest index number used for each. The system will limit values entered to the specified range. Refer to the VMC-Config app, Configure>Logical Lines to identify Index values.
 
-The alarms should match the number of configured alarm indexs in your system. Refer to VMC-Config, Configure>Messages. You can edit each entry and check/set the Number field to set the Alarm index.
+The alarms should match the number of configured alarm indexes in your system. Refer to VMC-Config, Configure>Messages. You can edit each entry and check/set the Number field to set the Alarm index.
 
 ## Actions
 
@@ -29,6 +29,13 @@ The alarms should match the number of configured alarm indexs in your system. Re
 - **Crosspoint** True if the specified crosspoint is connected
 
 ## Version History
+
+### Version 1.0.4
+- Hide redundant config fields when not required
+
+### Version 1.0.3
+- Better status updates
+- Update dependencies
 
 ### Version 1.0.2
 - Minor TCP improvements & fixes
