@@ -1,4 +1,4 @@
 MODULE_NAME=digitalprojection-projectors
-GIT_REF=v1.2.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/9042778595
-UPDATE_DATE=2024-05-11
+GIT_REF=v1.2.3
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/9054024749
+UPDATE_DATE=2024-05-12
