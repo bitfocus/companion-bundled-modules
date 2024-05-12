@@ -1,4 +1,4 @@
 MODULE_NAME=bss-soundweb
-GIT_REF=v1.0.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/8930927400
-UPDATE_DATE=2024-05-02
+GIT_REF=v1.0.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/9054004345
+UPDATE_DATE=2024-05-12
