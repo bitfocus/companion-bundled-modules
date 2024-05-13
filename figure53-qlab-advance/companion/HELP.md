@@ -6,7 +6,6 @@ When you are done designing, switch to “show mode” and run your show just by
 
 The software is available at [QLab.app](http://qlab.app). You can try QLab for 2 channel audio and 1 screen video without needing a license.
 
-This module adds a TCP mode option to the _QLab_ module.
 Due to the nature and volume of information feedback and variables are only available in TCP mode.
 This may cause a noticible increase in network traffic.
 
@@ -14,7 +13,7 @@ This is being updated and maintained for QLab5.
 QLab 4.7 compatibility is checked will be continued when possible.
 While QLab3 is detected, some features may not work.
 
-## Notice!
+## **Notice!**
 
 QLab versions 5.2 and onward will require version `2.1.0` or newer of this module!
 
@@ -78,6 +77,7 @@ Contributions for development and maintenance of this open source module are alw
 | **Set/Unset Infinite Loop**   | Set / Unset the Infinite Loop property of the selected cue.                                                                                                                                                                                              |
 | **Set/Unset Hold last frame** | Set / Unset the Hold last frame property of the selected cue.                                                                                                                                                                                            |
 | **Set/Unset Arm**             | Set / Unset the Arm property of the selected cue.                                                                                                                                                                                                        |
+| **Set/Unset Flag**            | Set / Unset the Flagged property of the selected cue.                                                                                                                                                                                                    |
 | **Set/Unset Autoload**        | Set / Unset the Autoload property of the selected cue.                                                                                                                                                                                                   |
 | **Set Continue Mode**         | Sets the continue mode of the selected cue.                                                                                                                                                                                                              |
 | **Set Cue Color**             | Sets the color of the selected cue.                                                                                                                                                                                                                      |
@@ -87,12 +87,12 @@ Contributions for development and maintenance of this open source module are alw
 The next action or feedback inserted will have the Unique ID already filled in.
 
 There are presets included for most of these actions.\
-Show Mode, Audition Window, Arm, and Autoload actions also have a Toggle option to invert the current setting of the cue.\
+Show Mode, Audition Window, Arm, Flag, and Autoload actions also have a Toggle option to invert the current setting of the cue.\
 For additional actions please raise a feature request at [github](https://github.com/bitfocus/companion-module-qlab-advance/issues)
 
 ## New Action Format
 
-Some commands have been updated to a scoped configuration. Instead of three different 'stop' commands (global/cue number/cue id) the new commands have an option to choose which cues to apply the command.
+Some commands have been updated to a consolidated/scoped mode. Instead of three different 'stop' commands (global/cue number/cue id) the new commands have an option to choose where to apply the command. More commands will be added when time permits.
 
 Commands implemented:
 **Go**, , **Start**, **Stop**, **Arm**
@@ -114,7 +114,7 @@ Commands implemented:
 | **$(INSTANCENAME:r_id)**           | UniqueID of the current Running Cue                                                                              |
 | **$(INSTANCENAME:r_name)**         | Name of the current Running Cue or [none]                                                                        |
 | **$(INSTANCENAME:r_num)**          | Number of the current Running Cue                                                                                |
-| **$(INSTANCENAME:r_notes)**        | First 20 characters of the Note on the running cue                                                               |
+| **$(INSTANCENAME:r_notes)**        | Note on the running cue                                                                                          |
 | **$(INSTANCENAME:r_stat)**         | Running Cue Status: "✕" if broken, "⏽" if loaded, "⏵" if running, "⏸" if paused, otherwise "·"                   |
 |                                    | QLab5 adds a status for Auditioning "❲⏵❳"                                                                        |
 | **$(INSTANCENAME:r_hhmmss)**       | Remaining time for Running Cue as "HH:MM:SS"                                                                     |
@@ -143,7 +143,8 @@ To use these, replace INSTANCENAME with the name of your module instance.
 | **Show if ANY cue is runing**        | Set the button to show when any cue is running                                                 |
 | **Show Cue # is Running**            | Set the button to show when a specific cue is running                                          |
 | **Show Cue ID is Running**           | Set the button to show when a specific cue ID is running                                       |
-| **Show Cue is Armed**                | Set the button to show when a certain cues are Armed                                           |
+| **Show Cue is Armed**                | Set the button to show when a requested cues are Armed                                           |
+| **Show Cue is Flagged**                | Set the button to show when a requested cues are Flagged                                           |
 
 ## OSC
 
