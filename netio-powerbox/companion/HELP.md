@@ -3,7 +3,8 @@
 This module will switch the power outlets on your NETIO PowerBOX
 
 ## Configuration
-In your NETIO setup (browse to the IP address, and log in). Make sure JSON API is on and remove any login/password information
+In your NETIO setup (browse to the IP address, and log in). And eitgher disable the Auth or use the username and password of write permissons in this Companion Plugin
+
 
 ## Actions
 Action | Description
