@@ -23,5 +23,5 @@ Add a button and choose the action you want to use.
 
 ### Tested Devices
 
-- Key Light (Firmware: 1.0.3/200)
+- Key Light (Firmware: 1.0.3/200, 1.0.3/218)
 - Key Light Air (Firmware: 1.0.3/195, 1.0.3/200)
