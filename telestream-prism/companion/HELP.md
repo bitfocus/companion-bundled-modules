@@ -75,6 +75,7 @@ Some actions require specific hardware models, or licensed software modules.
 - **IP Session Control**
 - **IP Video PHY Bit Rate**
 - **IP Video PHY FEC Mode** 
+- **Jitter HPF**
 - **Jitter Meter Enable**
 - **Jitter Meter Sweep Rate**
 - **Lightning Horizontal Gain - Fixed** 
