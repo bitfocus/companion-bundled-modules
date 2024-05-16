@@ -5,15 +5,15 @@ eMotimo is an industry leader in motion control. We specialize in makes multi ax
 
 Our flagship product the [ST4](https://emotimo.com/products/st4?variant=18140355887201) is a proven motion control head that has been used in numerous productions since 2016. With it you can control Pan/Tilt/Slide and a Turntable or a Focus motor. For even more control the upgraded [ST4.3](https://emotimo.com/products/st4?variant=42138608140469) that released mid 2022 frees up the M2 port so that it can be used for the Turntable and includes an additional Expansion Port that integrates with the popular Tilta Nucleus motors giving control of a full FIZ solution.
 
-![ST4](ST4.png)
+![ST4](ST4.jpg)
 
 
 The [SA2.6](https://emotimo.com/pages/sa2point6) is our latest motion control unit that we like to call the conductor. It gives you control of 2 Motor drivers for your Slide and Turntable, 3 Tilta motors for full FIZ control, and seemlessly integrates with DJI's RS3 Pro/RS3/RS2 Gimbals giving you control of Pan/Tilt/Roll and another option for Focus control. The SA2.6 is officially in production now and can be purchased from our [shop](https://emotimo.com/products/sa2-6-controller?_pos=2&_psq=SA&_ss=e&_v=1.0&variant=42925931462837)
 
-![SA2.6](SA2.6.png)
+![SA2.6](SA2.6.jpg)
 
 ## Setup and Release Notes 
-![StreamdeckArchitecture](StreamDeckArchitecture_092023.png)
+![StreamdeckArchitecture](StreamDeckArchitecture_092023.jpg)
 This module will allow you to control your [ST4](https://emotimo.com/products/st4?variant=18140355887201)/[ST4.3](https://emotimo.com/products/st4?variant=42138608140469) as well as the brand new [SA2.6](https://emotimo.com/pages/sa2point6)
 
 For steps on how to connect your eMotimo device check out our [Setup Article](https://support.emotimo.com/hc/en-us/articles/16468918293773-1-Getting-Started-ST4-ST4-3)
