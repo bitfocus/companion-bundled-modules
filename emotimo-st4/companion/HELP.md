@@ -28,4 +28,4 @@ Send us an email: info@emotimo.com
 
 Want to see how far you can push this module:
 
-Check out the [eMotimo API](https://support.emotimo.com/hc/en-us/articles/360007015111-The-eMotimo-ST4-API) and this modules [Repository](https://github.com/Jaboop8/companion-module-emotimo-st4-3) on github
+Check out the [eMotimo API](https://support.emotimo.com/hc/en-us/articles/360007015111-The-eMotimo-ST4-API) and this modules [Repository](https://github.com/bitfocus/companion-module-emotimo-st4) on github
