@@ -3,6 +3,7 @@ This module will allow you to blink a button based on the state of a variable's 
 
 ## Configuration
 * Enter the blink rate of the button.
+* Optionally specify custom on/off times.
 
 ## Actions
 * Change Blink Rate
