@@ -15,7 +15,7 @@ Much of the general behavior is configured here. Parts of the configuration can 
 * Automatic enter when formatted length is reached  
   same as above but with the length of the formatted data. This can be different because formatting may e.g. add separators or remove spaces
 * Automatic enter when regular expression matches  
-  This is a more davanced concept. A [regular expression](https://en.wikipedia.org/wiki/Regular_expression) or "regex" is a special pattern describing a variety of possibilities how a string may look like. Checking for a length is also possible with regex, but less conveniant. With regex you can check for a literal string, which means your data is entered automatically if you enter exactly that string. This could act like a password entry. Switch to the entry page and only if the correct data is entered, an automatic enter will happen and you can do the switch back to the last page. There are tons of possibilities as regex is very flexible. A complete guide to regex is way beyond this help page. Please look it up in the internet. This module uses the ECMA script flavour of regular expressions
+  This is a more davanced concept. A [regular expression](https://en.wikipedia.org/wiki/Regular_expression) or "regex" is a special pattern describing a variety of possibilities how a string may look like. Checking for a length is also possible with regex, but less convenient. With regex you can check for a literal string, which means your data is entered automatically if you enter exactly that string. This could act like a password entry. Switch to the entry page and only if the correct data is entered, an automatic enter will happen and you can do the switch back to the last page. There are tons of possibilities as regex is very flexible. A complete guide to regex is way beyond this help page. Please look it up in the internet. This module uses the ECMA script flavour of regular expressions
 * Automatic enter after inactivity timeout  
   If you activate this option, every time you make a change to the data a timer will be triggered and once the timer runs out, the data is entered automatically. This may be useful if you don't have much space on your buttons and don't want an enter button. Just type your data and wait a little time for them tho being entered automatically.
 * Enter Criteria  
@@ -27,7 +27,7 @@ Much of the general behavior is configured here. Parts of the configuration can 
   This can be used to specify how the formatted output should be formatted.  
 	There are a few different possibilities how formatting can be done:
 	- None  
-    Easy, there will be no formatting which gives the best performance obviously by just using the same result for farmatted as raw.
+    Easy, there will be no formatting which gives the best performance obviously by just using the same result for formatted as raw.
 	- ECMA-376  
     When you type data in a cell of your favorite spreadsheet application, it will try to format it for you. There are two parts to it, first it will try to detect what kind of data you are entering and then it will format it to your liking. Usually you can adjust the formatting with a magical syntax and that syntax is standardised in ECMA-376.  
 		You can use it with this module as well. If you choose 'automatic' it will try to automatically detect the type of the entered data as text, a number, a date or a time. If you don't want to have this guesswork, you can also deliberately choose one of the data types. Second you can set up how the data should be presented, exactly the way like you are used from spreadsheet apps. E.g. 0000.00 will always show a number with at least four digits and rounded to two decimals. [Here](https://support.microsoft.com/en-us/office/review-guidelines-for-customizing-a-number-format-c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5) is the full documentation.  
@@ -134,7 +134,7 @@ Much of the general behavior is configured here. Parts of the configuration can 
 * Modifier  
   this boolean feedback shows if a modifier is active
 * Valid  
-  Shows if data in entry raw matches a regular expression  
+  Shows if data matches a regular expression  
 	This can be used to give feedback of validity or also to distribute data more advanced when used in trigger condition
 
 ### Presets
