@@ -86,11 +86,16 @@ _Requires Mitti 2_
 - selectedCueName
 - selectedCueID (requires Mitti 2)
 - playStatus
-- cueTimeLeft **(-HH:MM:SS)**
+- cueTimeLeft (will shorten to MM:SS if less than 1 hour)
+- cueTimeLeft_hhmmss (will always show full HH:MM:SS timecode)
 - cueTimeLeft_h
 - cueTimeLeft_m
 - cueTimeLeft_s
-- currentCueTRT **Total Runtime (TRT) of Current Cue**
+- currentCueTRT (will shorten to MM:SS if less than 1 hour)
+- currentCueTRT_hhmmss (will always show full HH:MM:SS timecode)
+- currentCueTRT_h
+- currentCueTRT_m
+- currentCueTRT_s
 - currentCueAudio
 - currentCuePauseAtBeginning
 - currentCuePauseAtEnd
@@ -100,4 +105,5 @@ _Requires Mitti 2_
 - currentCueTransition
 - currentCueGoto
 - cue\_(number)\_cueName (requires Mitti 2)
+- cue\_(number)\_audio (requires Mitti 2)
 - video_outputs (requires Mitti 2)
