@@ -74,6 +74,14 @@ _Requires Mitti 2_
 - Cue ID - Playing
 - Cue ID - Active
 - Cue ID - Selected
+- Cue ID - Audio Enabled
+- Cue ID - Pause at Beginning Enabled
+- Cue ID - Pause at End Enabled
+- Cue ID - Fade In Enabled
+- Cue ID - Fade Out Enabled
+- Cue ID - Loop Enabled
+- Cue ID - Transition Enabled
+- Cue ID - Goto Enabled
 - Time Remaining on Playing Cue
 - Video Outputs Active (requires Mitti 2)
 
@@ -91,6 +99,11 @@ _Requires Mitti 2_
 - cueTimeLeft_h
 - cueTimeLeft_m
 - cueTimeLeft_s
+- cueTimeElapsed
+- cueTimeElapsed_hhmmss
+- cueTimeElapsed_h
+- cueTimeElapsed_m
+- cueTimeElapsed_s
 - currentCueTRT (will shorten to MM:SS if less than 1 hour)
 - currentCueTRT_hhmmss (will always show full HH:MM:SS timecode)
 - currentCueTRT_h
