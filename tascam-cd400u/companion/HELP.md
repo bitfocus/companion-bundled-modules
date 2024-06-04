@@ -100,6 +100,10 @@ RESUME PLAY SELECT turns the resume play mode of the controlled device on or off
 
 ## Version History
 
+### Version 1.1.3
+- Correct module name
+- Fix config password regex
+
 ### Version 1.1.2
 - Better preset layouts
 - Better status updates
