@@ -22,6 +22,10 @@ Instance State (Off/On)
 
 ## Version History
 
+### Version 1.1.2
+- Correct module name
+- Better error logging
+
 ### Version 1.1.1
 - Don't accept empty password
 - Update companion-module-base to 1.8.0
