@@ -29,6 +29,10 @@ The endpoint must have HTTPS Upgrade disabled under the services tab.
 
 ## Version History
 
+### Version 1.2.3
+- Rotary volume control preset
+- Better error logging
+
 ### Version 1.2.1
 - Add volume up, volume down and mode presets
 - Improve mute preset
