@@ -1,4 +1,4 @@
 MODULE_NAME=tascam-cd
-GIT_REF=v2.1.2
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/9042686259
-UPDATE_DATE=2024-05-11
+GIT_REF=v2.1.3
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/9377618537
+UPDATE_DATE=2024-06-05
