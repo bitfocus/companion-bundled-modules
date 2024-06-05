@@ -171,6 +171,9 @@ This turns the record function of the controlled device on/off.
 
 ## Version History
 
+### Version 1.2.3
+- Fix password regex
+
 ### Version 1.2.2
 - Better status updates
 - Transport preset layout
