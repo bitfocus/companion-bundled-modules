@@ -1,4 +1,6 @@
 name: Create Module Repo
+run-name: ${{ github.event.inputs.repo-name }} created by ${{ github.actor }}
+
 on: 
   workflow_dispatch:
     inputs:
@@ -23,14 +25,14 @@ jobs:
         id: create-repo
         with:
           repo-name: 'companion-module-${{ github.event.inputs.repo-name }}'
-          org-admin-token: '${{ secrets.GITHUB_TOKEN }}'
+          org-admin-token: '${{ secrets.CREATE_REPO_TOKEN }}'
       - name: Log URL to the repo
         run: echo "The new repo URL is ${{ steps.create-repo.outputs.repo-url }}"
       - name: Add Collaborators
         id: manager-collaborators-action
         uses: gateixeira/manage-collaborators-action@v1.0.1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.CREATE_REPO_TOKEN }}
           repositories: bitfocus/companion-module-${{ github.event.inputs.repo-name }}
           users: ${{ github.event.inputs.collaborators }}
           role: push
