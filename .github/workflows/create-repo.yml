@@ -1,0 +1,37 @@
+name: Create Module Repo
+on: 
+  workflow_dispatch:
+    inputs:
+      repo-name: 
+        description: 'Name of the repository to be created (companion-module- will be prepended to the name)'
+        required: true
+        default: ''
+      collaborators:
+        description: 'Comma separated list of GitHub users to be added as collaborators'
+        required: true
+        default: ''
+
+jobs:
+  create-repository:
+    runs-on: ubuntu-latest
+    name: Create Organization Repository
+    steps:
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+      - name: 'Creating GitHub Organization Repository: companion-module-${{ github.event.inputs.repo-name }}'
+        uses: repo-ctrl/create-repo-action@main 
+        id: create-repo
+        with:
+          repo-name: 'companion-module-${{ github.event.inputs.repo-name }}'
+          org-admin-token: '${{ secrets.GITHUB_TOKEN }}'
+      - name: Log URL to the repo
+        run: echo "The new repo URL is ${{ steps.create-repo.outputs.repo-url }}"
+      - name: Add Collaborators
+        id: manager-collaborators-action
+        uses: gateixeira/manage-collaborators-action@v1.0.1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repositories: bitfocus/companion-module-${{ github.event.inputs.repo-name }}
+          users: ${{ github.event.inputs.collaborators }}
+          role: push
+          action: add
