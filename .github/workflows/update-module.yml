@@ -44,6 +44,12 @@ jobs:
         run: |
           cd ${{ github.event.inputs.module-name }}
 
+          MANIFEST_ID=$(jq '.["id"]' companion/manifest.json)
+          if [ ! "$MANIFEST_ID" == "\"${{ github.event.inputs.module-name }}\"" ]; then
+            echo "Module manifest.json id does not match github repository name"
+            exit 99
+          fi
+
           if grep -q "companion-module-your-module-name" "companion/manifest.json"; then
             echo "Module manifest contains references to companion-module-your-module-name!"
             exit 99
