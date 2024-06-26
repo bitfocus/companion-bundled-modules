@@ -5,6 +5,8 @@ This module will allow you to control a Roland V-600UHD video switcher.
 ### Configuration
 * Enter the IP address of the device in the configuration settings.
 * The device will use TCP port 8023.
+* The password required by Roland since firmware 3.00.
+* Enable verbose debug logging.
 
 **Available actions:**
 * Select PGM channel
@@ -24,3 +26,7 @@ This module will allow you to control a Roland V-600UHD video switcher.
 * Adjust volume level for master out
 * Adjust volume level for AUX-bus audio
 * Call up memory
+
+**Variables:**
+* product - firmware hardware model
+* version - firmware version
