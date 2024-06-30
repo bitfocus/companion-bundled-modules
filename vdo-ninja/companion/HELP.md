@@ -4,9 +4,9 @@ Control [VDO.Ninja](https://vdo.ninja) settings remotely.
 
 ### Getting Started
 
-- Ensure you are using VDO.Ninja 23 or above
-- Add an API ID as a URL parameter (ex. `&api=xxxxxx`) to your VDO.Ninja URL
-- Enter the same API ID in the module settings
+- Think of an API ID to use for your production. It should be unique and difficult to guess
+- Add your API ID as a URL parameter (ex. `&api=your-unique-api-key`) to your VDO.Ninja URL
+- Add the same API ID in the Companion module settings
 
 ### Available Actions
 
@@ -68,4 +68,4 @@ Control [VDO.Ninja](https://vdo.ninja) settings remotely.
 - mic (Current mute status, either by stream ID or guest position)
 - camera (Current camera status, either by stream ID or guest position)
 - speaker (Available for the "Director" role only)
-- label (if specified, otherwise just the guest position number)
+- label (If specified, otherwise it will be the guest position number)
