@@ -9,7 +9,7 @@ Presets for timelines are build with feedback and also with variables for text. 
 Because Watchout 7 works with ID's, it is possible to use the same buttons in different shows, the timeline names will update on your buttons, because the ID's are re-used by Watchout.
 
 ### Avaiable actions
-* Timeline action (play/pause/stop)
+* Timeline action (play/pause/stop/toggle)
 * Jump to time (on timeline in miliseconds, select if you want to play direcly or pause)
 * Jump to cue (on timeline, select if you want to play direcly or pause)
 * Show information (it will manualy fetch timeline information, it will be done each 5 seconds also)
