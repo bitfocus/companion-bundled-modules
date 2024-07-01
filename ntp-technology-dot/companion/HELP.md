@@ -28,7 +28,13 @@ The alarms should match the number of configured alarm indexes in your system. R
 - **Alarm** True if the alarm index is asserted. Alarm text is written to the log. Warn level when asserted, Info level when removed.
 - **Crosspoint** True if the specified crosspoint is connected
 
+## Action Recorder
+The Action Recorder will translate any connection messages into new connect actions, to quickly build salvos. Other actions are not supported.
+
 ## Version History
+
+### Version 1.1.0
+- Add action recorder support
 
 ### Version 1.0.4
 - Hide redundant config fields when not required
