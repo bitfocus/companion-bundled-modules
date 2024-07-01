@@ -1,39 +1,10 @@
-# IPL Overlay Control Panel Module
+# ipl-overlay-controls module
 
-This Module allows for control and feedback from Inkling Performance Labs' Overlays Control Panel instance ran locally.
-_This module does not support nodeCG instances with login enabled_
+This module allows controlling many aspects of ipl-overlay-controls, a NodeCG bundle built by Inkling Performance Labs to control broadcast graphics for Splatoon tournaments.  
+Read more about ipl-overlay-controls [here.](https://ipl-overlay-controls.readthedocs.io/en/stable/)  
+_This module does not support NodeCG instances with login enabled_
 
 ### Configuration
 
-- `NodeCG host`: URL to IPL OCP NodeCG instance.
-- `Port`: The Port NodeCG is running on. (_default is `9090`_)
-
-### Available Actions
-
-- Set game win for team
-- Remove win from last team set
-- Cycle colour used on scoreboard
-- Swap colour on scoreboard
-- Show/Hide/Toggle Scoreboard
-- Show commentators
-- Import commentators from VC
-- Change break scene
-- Show predictions
-- Show/Hide/Toggle Music
-- Set next stage timer
-- Show/Hide/Toggle Timer
-- Begin next match
-
-### Available Feedback
-
-- Team Colour
-- Main Scene Visibility
-- Scoreboard Visibility
-- Music Visibility
-- Timer Visibility
-
-### Available Dynamic Fields
-
-- Team Scores
-- Team Names
-- Number of games in current set
+- `Target host`: URL to NodeCG server running ipl-overlay-controls
+- `Port`: The port NodeCG is running on (_default is `9090`_)
