@@ -23,7 +23,14 @@ Interrogate on Connect will interrogate all destinations when a connection is es
 ## Feedbacks
 - **Crosspoint** True when the specified crosspoint is connected
 
+## Action Recorder
+The Action Recorder will translate any recieved tally or connected messages into new connect actions, to quickly build salvos.
+
 ## Version History
+
+### Version 1.1.0
+- Action Recorder
+- Update dependencies
 
 ### Version 1.0.4
 - Better status updates
