@@ -43,7 +43,14 @@ They will not have a value assigned until used by an action.
 
 No feedbacks are provided. The native Internal Variable Check Value feedback is suitable for common feedback tasks such as mute tally when provided with a controls value or position variable.
 
+## Action Recorder
+The Action Recorder will translate any recieved numeric valueIs messages into Control Position Set (if RATCv2) or Control Set actions.
+
 ## Version History
+
+### Version 1.1.0
+- Action Recorder
+- Update dependencies
 
 ### Version 1.0.3
 - Minor fixes
