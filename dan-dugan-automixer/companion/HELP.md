@@ -181,6 +181,9 @@ All feedbacks are boolean. Feedbacks will force the subscription level to at lea
 
 - **Scene - Has Changed** 
 
+## Action Recorder
+The Action Recorder will record any channel, group or matrix changes when engaged.
+
 ## Support for other models
 Only the Model M & N are supported. With that said, the dugan units share a common api.
 The Model M & N represent a complete set of API commands. All other units (MY-16, Model-E3A, etc) support a subset of of these commands. The core channel controls are supported by all units.
@@ -188,8 +191,12 @@ Set the the channel count to the appropriate value, turn the metering off, and i
 
 ## Version History
 
+### Version 1.1.0
+- Action Recorder
+- Update companion-module-tools
+
 ### Version 1.0.4
-- Better status updates
+- Better status updatesgit pul
 - Update companion-module-base
 
 ### Version 1.0.3
