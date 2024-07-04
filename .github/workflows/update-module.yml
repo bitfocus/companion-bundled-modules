@@ -39,8 +39,6 @@ jobs:
         with:
           # TODO - should this be configurable?
           node-version: 18.x
-        env:
-          NODE_AUTH_TOKEN: ${{ github.token }}
 
       - name: Enable corepack
         run: |
@@ -69,11 +67,18 @@ jobs:
           GIT_HASH=$(git rev-parse HEAD)
           echo "git-hash=$GIT_HASH" >> $GITHUB_OUTPUT
 
-      - name: Prepare module
+      - name: Prepare module dependencies
         run: |
           cd ${{ github.event.inputs.module-name }}
 
-          yarn
+          yarn install
+        env:
+          NODE_AUTH_TOKEN: ${{ github.token }}
+
+      - name: Build module if needed
+        run: |
+          cd ${{ github.event.inputs.module-name }}
+
           # yarn build would be better, but lacks the --if-present property
           npm run build --if-present
 
