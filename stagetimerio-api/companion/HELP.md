@@ -42,13 +42,13 @@ The following Actions are available:
 **Message actions:**
 
 - **Message: Hide**  
-  Hide a message in the room
+    Hide a message in the room
 - **Message: Show**  
-  Show a message in the room
+    Show a message in the room
 - **Message: Toggle visibility**  
-  Show/hide a message in the room
+    Show/hide a message in the room
 - **Message: Create new message**  
-  Create a new message in the room
+    Create a new message in the room
 
 **Timer actions:**
 
@@ -61,7 +61,7 @@ The following Actions are available:
 - **Timer: Toggle playback**  
     Toggle (start/stop) a specific timer in the room
 - **Timer: Create new timer**  
-  Create a new timer in the room
+    Create a new timer in the room
 
 **Transport actions:**
 
@@ -77,6 +77,8 @@ The following Actions are available:
     Start/stop the highlighted timer in the room
 - **Transport: Stop**  
     Stop the highlighted timer in the room
+- **Transport: Reset**  
+    Reset or restart the currently highlighted timer.
 - **Transport: Subtract time**  
     Subtract an amount of time from the highlighted timer in the room.
 
@@ -112,21 +114,45 @@ The following Actions are available:
 
 ## Variables
 
-- `$(stagetimer:currentTimerAppearance)` -  Timer appearance ([Docs](https://stagetimer.io/docs/using-timers/#timer-appearances))
-- `$(stagetimer:currentTimerDuration)` - Timer duration
-- `$(stagetimer:currentTimerDurationAsMs)` - Timer duration (ms)
-- `$(stagetimer:currentTimerId)` - Timer ID
-- `$(stagetimer:currentTimerName)` - Timer name
-- `$(stagetimer:currentTimerNotes)` - Timer notes
+**Room**
+- `$(stagetimer:roomId)` - Room ID
+- `$(stagetimer:roomName)` - Room name
+- `$(stagetimer:roomTimezone)` - Room timezone ([Docs](https://stagetimer.io/docs/using-timers/#timezones))
+
+**Playback Snapshot**  
+The time display is equal to the Stagetimer output, taking [timer appearance](https://stagetimer.io/docs/using-timers/#timer-appearances) into account ([Docs](https://stagetimer.io/docs/viewer/#3-timer)). The current time remaining is always strictly a countdown.
+
+- `$(stagetimer:timeDisplay)` - Time Display
+- `$(stagetimer:timeDisplayHours)` - Time Display (hours)
+- `$(stagetimer:timeDisplayMinutes)` - Time Display (minutes)
+- `$(stagetimer:timeDisplaySeconds)` - Time Display (seconds)
 - `$(stagetimer:currentTimerRemaining)` - Timer remaining time
 - `$(stagetimer:currentTimerRemainingAsMs)` - Timer remaining time (ms)
 - `$(stagetimer:currentTimerRemainingHours)` - Timer remaining time (hours)
 - `$(stagetimer:currentTimerRemainingMinutes)` - Timer remaining time (minutes)
 - `$(stagetimer:currentTimerRemainingSeconds)` - Timer remaining time (seconds)
+
+**Current Timer**
+- `$(stagetimer:currentTimerId)` - Timer ID
+- `$(stagetimer:currentTimerName)` - Timer name
 - `$(stagetimer:currentTimerSpeaker)` - Timer speaker
-- `$(stagetimer:roomId)` - Room ID
-- `$(stagetimer:roomName)` - Room name
-- `$(stagetimer:roomTimezone)` - Room timezone ([Docs](https://stagetimer.io/docs/using-timers/#timezones))
+- `$(stagetimer:currentTimerNotes)` - Timer notes
+- `$(stagetimer:currentTimerAppearance)` – Timer appearance ([Docs](https://stagetimer.io/docs/using-timers/#timer-appearances))
+- `$(stagetimer:currentTimerStartTime12h)` - Hard start time (12h format, [Docs](https://stagetimer.io/docs/using-timers/#using-the-start-time-properly))
+- `$(stagetimer:currentTimerStartTime24h)`- Hard start time (24h format, [Docs](https://stagetimer.io/docs/using-timers/#using-the-start-time-properly))
+- `$(stagetimer:currentTimerDuration)` - Timer duration
+- `$(stagetimer:currentTimerDurationAsMs)` - Timer duration (ms)
+
+**Next Timer**
+- `$(stagetimer:nextTimerId)` - Timer ID
+- `$(stagetimer:nextTimerName)` - Timer name
+- `$(stagetimer:nextTimerSpeaker)` - Timer speaker
+- `$(stagetimer:nextTimerNotes)` - Timer notes
+- `$(stagetimer:nextTimerAppearance)` – Timer appearance ([Docs](https://stagetimer.io/docs/using-timers/#timer-appearances))
+- `$(stagetimer:nextTimerStartTime12h)` - Hard start time (12h format, [Docs](https://stagetimer.io/docs/using-timers/#using-the-start-time-properly))
+- `$(stagetimer:nextTimerStartTime24h)`- Hard start time (24h format, [Docs](https://stagetimer.io/docs/using-timers/#using-the-start-time-properly))
+- `$(stagetimer:nextTimerDuration)` - Timer duration
+- `$(stagetimer:nextTimerDurationAsMs)` - Timer duration (ms)
 
 ---
 
