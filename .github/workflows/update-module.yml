@@ -59,7 +59,7 @@ jobs:
           fi
 
           if ! jq -e '.products | arrays and length > 0' companion/manifest.json > /dev/null; then
-            echo "Module manifest product list is either empty or does not exist
+            echo "Module manifest product list is either empty or does not exist"
             exit 99
           fi
           
