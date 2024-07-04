@@ -14,8 +14,6 @@ on:
         description: Git ref to build (tag/commit)
         required: true
 
-permissions:
-  packages: read
 
 jobs:
   build:
@@ -24,6 +22,9 @@ jobs:
     # The first stage is to build their module
     # Remember that this is running user code, so we need to make sure not to leak any secrets
 
+    permissions:
+      packages: read
+      
     steps:
       - name: Report info
         run: |
@@ -38,6 +39,8 @@ jobs:
         with:
           # TODO - should this be configurable?
           node-version: 18.x
+        env:
+          NODE_AUTH_TOKEN: ${{ github.token }}
 
       - name: Enable corepack
         run: |
@@ -95,6 +98,9 @@ jobs:
     # only allow one workflow to run this step at a time
     concurrency: add-module-${{ github.ref }}
 
+    permissions:
+      contents: write
+      
     steps:
       - uses: actions/checkout@v4
         with:
