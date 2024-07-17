@@ -1,1 +1,1 @@
-{"name":"generic-tcp-serial","version":"2.3.1","license":"MIT","type":"commonjs","dependencies":{"@serialport/bindings-cpp":"10.8.0"}}
+{"name":"generic-tcp-serial","version":"2.4.0","license":"MIT","type":"commonjs","dependencies":{"@serialport/bindings-cpp":"10.8.0"}}
