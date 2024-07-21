@@ -1,4 +1,4 @@
 MODULE_NAME=behringer-x32
-GIT_REF=v3.1.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/6812819005
-UPDATE_DATE=2023-11-09
+GIT_REF=v3.2.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/10031318702
+UPDATE_DATE=2024-07-21
