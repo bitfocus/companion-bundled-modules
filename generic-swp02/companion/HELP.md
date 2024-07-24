@@ -28,6 +28,11 @@ The Action Recorder will translate any recieved tally or connected messages into
 
 ## Version History
 
+### Version 1.2.0
+- Allow variables in feedbacks
+- Fix typos
+- Update to ESM
+
 ### Version 1.1.0
 - Action Recorder
 - Update dependencies
