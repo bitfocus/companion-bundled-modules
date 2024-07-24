@@ -54,6 +54,7 @@ Contributions for development and maintenance of this open source module are alw
 | **Audition GO**               | 'Audition' the current cue QLab5 Only                                                                                                                                                                                                                    |
 | **Audition Preview**          | 'Audition' Preview the selected cue without moving the Playhead. QLab5 Only                                                                                                                                                                              |
 | **Toggle Pause**              | Pause/Unpause selected cue                                                                                                                                                                                                                               |
+| **Pause Toggle (Cue/ID)**     | Toggle pause mode for the selected cue. Unlike the built-in `togglePause` command, this one uses the state of the current cue                                                                                                                            |
 | **GoTo (Cue/ID)**             | Move the playhead to (Cue/ID). Does not start the cue.                                                                                                                                                                                                   |
 | **Start (Cue/ID)**            | Start (Cue/ID). Does not move the playhead. If the specified cue is playing, this command has no effect.                                                                                                                                                 |
 | **Stop (Cue/ID)**             | Stops (Cue/ID) if Playing. Does not move the playhead.                                                                                                                                                                                                   |
@@ -143,8 +144,8 @@ To use these, replace INSTANCENAME with the name of your module instance.
 | **Show if ANY cue is runing**        | Set the button to show when any cue is running                                                 |
 | **Show Cue # is Running**            | Set the button to show when a specific cue is running                                          |
 | **Show Cue ID is Running**           | Set the button to show when a specific cue ID is running                                       |
-| **Show Cue is Armed**                | Set the button to show when a requested cues are Armed                                           |
-| **Show Cue is Flagged**                | Set the button to show when a requested cues are Flagged                                           |
+| **Show Cue is Armed**                | Set the button to show when a requested cues are Armed                                         |
+| **Show Cue is Flagged**              | Set the button to show when a requested cues are Flagged                                       |
 
 ## OSC
 
