@@ -28,6 +28,9 @@ The Action Recorder will translate any recieved tally or connected messages into
 
 ## Version History
 
+### Version 1.2.1
+- Improvements to message TX and RX
+
 ### Version 1.2.0
 - Allow variables in feedbacks
 - Fix typos
