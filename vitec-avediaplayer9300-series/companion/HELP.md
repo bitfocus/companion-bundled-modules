@@ -29,6 +29,10 @@ The endpoint must have HTTPS Upgrade disabled under the services tab.
 
 ## Version History
 
+### Version 1.2.4
+- Quieten logging
+- Convert to ESM
+
 ### Version 1.2.3
 - Rotary volume control preset
 - Better error logging
