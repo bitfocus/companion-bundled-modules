@@ -1,4 +1,4 @@
 MODULE_NAME=raspberry-gpio
-GIT_REF=v1.3.3
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/10104471227
-UPDATE_DATE=2024-07-26
+GIT_REF=v1.3.4
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/10121648116
+UPDATE_DATE=2024-07-27
