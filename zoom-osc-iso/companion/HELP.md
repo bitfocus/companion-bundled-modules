@@ -2,9 +2,9 @@
 
 This module gives you deep control of Zoom from the convenience of controllers like the StreamDeck. Powered by ZoomOSC and ZoomISO, this module provides a bidirectional link to Zoom so that you can see the names of participants on the keys of your controller, and manage them effectively. This is a zero-code solution, so you don’t need to research any APIs. Everything is drag-and-drop from the module presets collection. Advanced users can build their own buttons with the actions and feedback available in this module directly without implementing the API commands for ZoomOSC and ZoomISO themselves.
 
-# Setup
+## Setup
 
-You are required to use a licensed version of ZoomOSC or ZoomISO when working with this module. The minimum versions that are compatible with this module are ZoomOSC 4.2 and ZoomISO 2.0.6. You can learn more about these products at [https://liminalet.com](https://liminalet.com)
+It is highly suggested that you a licensed version of ZoomOSC or ZoomISO when working with this module. The minimum versions that are compatible with this module are ZoomOSC 4.2 and ZoomISO 2.0.6. You can learn more about these products at [https://liminalet.com](https://liminalet.com)
 
 In the OSC Settings of ZoomOSC or ZoomISO, configure the following settings:
 
@@ -29,7 +29,7 @@ In the settings of the ZoomOSC/ISO Module in Companion:
 
 ![Module setup](images/2.png)
 
-# Basic Workflow Paths and Use Cases
+## Basic Workflow Paths and Use Cases
 
 There are many possible use-cases for this module. While not exhaustive, a few possible workflows are described below. In general, the module is designed for the following control pattern:
 
@@ -115,14 +115,14 @@ Groups can have a variety of purposes. For example, you might make a group calle
 
 There is a default group called “Hosts” created and managed by the module itself. Its members are the host and co-host(s) of the meeting. This membership is automatically managed, so you cannot add or remove members (unless you change who the host and co-host(s) are) or change the group properties.
 
-# Variables and Feedback
+## Variables and Feedback
 
 This module supports many variables and feedback properties. These are helpful for automatically changing key properties like the name and color of a button. Variables can also be used for basic automation systems in the Triggers workflow within Companion. Most preset buttons already contain the necessary feedback and variable mapping for dynamic buttons, but advanced users may wish to read deeper into the module to build customized buttons and workflows.
 
-# Support and Thanks
+## Support and Thanks
 
 The ZoomOSC/ISO Companion Module is not an official Zoom product. It is a community-driven project that utilizes the Open Sound Control public APIs of ZoomOSC and ZoomISO. While Zoom (and formerly Liminal) have designed its behavior, they hold no liability for this module or its upkeep. Ultimately it is managed by and the responsibility of the open-source Companion community, BitFocus, and its users.
 
 For support on this module, please utilize the GitHub and Slack for BitFocus Companion. If you have questions on ZoomOSC or ZoomISO, you can email [info@liminalet.com](mailto:info@liminalet.com) for Zoom’s official support of those products.
 
-This module is the result of several years of effort from multiple individuals and teams. This version of the module was created by Jeffrey Davidsz and designed by Andy Carluccio and Jonathan Kokotajlo from Zoom, the former co-founders of Liminal. The team is grateful for the work of several contributors to previous iterations of the module including Ash Green, Richard Williamson, Benjamin Antupit, and Johnny Estilles. The team would also like to thank the power users and beta testers whose contributions to the module have helped shape it over the years, with special recognition to Jeff Widgren, David Paskin, and Justin James.
+This module is the result of several years of effort from multiple individuals and teams. The initial version of the v3 version of the module was created by Jeffrey Davidsz and designed by Andy Carluccio and Jonathan Kokotajlo from Zoom, the former co-founders of Liminal. The team is grateful for the work of several contributors to previous iterations of the module including Ash Green, Richard Williamson, Benjamin Antupit, and Johnny Estilles. The team would also like to thank the power users and beta testers whose contributions to the module have helped shape it over the years, with special recognition to Jeff Widgren, David Paskin, and Justin James.
