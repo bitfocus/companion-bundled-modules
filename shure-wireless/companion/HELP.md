@@ -23,9 +23,6 @@ This module will connect to the Shure receivers below to provide feedback status
 | Set slot RF power level                                       | ADX only            |
 | <sup>x</sup> Dynamic variables can be used with these actions |                     |
 
-
-
-
 ### Available feedbacks
 
 | Title                  | Description                                                                                   | Model Support       |
