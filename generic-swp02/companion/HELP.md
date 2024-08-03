@@ -1,6 +1,6 @@
 ## ProBel SW-P-02 General Switcher Communication Protocol
 
-Implementation referenced to Document: SW-P-02 Issue 37. 07/09/2017.
+Implementation referenced to SW-P-02 Issue 37. 07/09/2017.
 
 This module implements the basic router controls of SW P 02. 
 
@@ -27,6 +27,9 @@ Interrogate on Connect will interrogate all destinations when a connection is es
 The Action Recorder will translate any recieved tally or connected messages into new connect actions, to quickly build salvos.
 
 ## Version History
+
+### Version 1.2.2
+- Better logging of recieved tally/connected messages
 
 ### Version 1.2.1
 - Improvements to message TX and RX
