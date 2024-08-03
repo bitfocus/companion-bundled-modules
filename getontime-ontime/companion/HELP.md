@@ -1,11 +1,14 @@
-# Ontime Companion Module
+## Ontime Companion Module
 
-This module gives control over Ontime's playback leveraging
-its [Websocket API](https://cpvalente.gitbook.io/ontime/control-and-feedback/websocket-api)
+This module gives control over Ontime leveraging its [WebSockets API](https://docs.getontime.no/api/protocols/websockets/)
 
-## Configuration
-
+### Requirements
 - This module version requires Ontime v3 or above
-- You can download ontime at [www.getontime.no](https://www.getontime.no/)
-- Ontime must be reachable through the network by the device running companion
+
+### Configuration
 - **Ontime server port** which is by default 4001. Keep in mind that this can be changed by the user
+
+### Links
+You can download ontime from the website [www.getontime.no](https://www.getontime.no/) \
+Read the docs at [http://docs.getontime.no](https://docs.getontime.no/) \
+Follow Ontime's development on [GitHub](https://github.com/cpvalente/ontime)
