@@ -17,6 +17,7 @@ Configuration fields:
 - Full path to Private Key file on local system (key-based authentication): Full path on local system to the private key file. Note: This only used when you want to use key-based authentication instead of a password.
 - Passphrase (key-based authentication): Passphrase to use to decrypt the private key (if private key encryption was used when the key was generated)
 - Keepalive Interval (in ms): Interval in ms to send ssh keepalive messages to ensure the connection doesn't close. Set to 0 to disable.
+- Handshake timeout (in ms): Timeout in milliseconds to wait for the SSH handshake to complete before timing out.
 
 ### Action Usage
 
