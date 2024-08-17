@@ -1,0 +1,4 @@
+MODULE_NAME=tieline-gateway
+GIT_REF=v1.0.3
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/10434710327
+UPDATE_DATE=2024-08-17
