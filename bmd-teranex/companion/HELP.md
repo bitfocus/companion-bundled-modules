@@ -6,7 +6,7 @@ This module will connect to any Blackmagic Design Teranex device. Not all settin
 
 1. Set video input
 2. Set audio input
-3. Recall preset
+3. Recall/Save preset
 4. Test pattern
 5. Output display
 6. Output format
@@ -27,12 +27,27 @@ This module will connect to any Blackmagic Design Teranex device. Not all settin
 21. Genlock: Line Offset to Top/Bottom of Range
 22. Genlock: Pixel Offset to Top/Bottom of Range
 23. Genlock: Set Type
+24. Noise Reduction:
+    - Enabled/Disabled
+    - Bias Level
+    - Split Screen Enabled/Disabled
+    - Red Overlay Enabled/Disabled
+25. Video Advanced
+    - Clean Cadence Enabled/Disabled
+    - Scenecut Detect Enabled/Disabled
+    - Source Type
+    - FRC Aperture
+    - Processing
 
-**Feedback**
+**Feedbacks**
 
-1. Video input: Change background color
-2. Audio input: Change background color
-3. Signal is present
+- Video input: Change background color
+- Audio input: Change background color
+- Signal is present
+- Noise Reduction
+  - Enabled/Disabled
+  - Split Screen Enabled/Disabled
+  - Red Overlay Enabled/Disabled
 
 **Variables**
 
@@ -54,3 +69,24 @@ This module will connect to any Blackmagic Design Teranex device. Not all settin
 - Genlock Pixel/Line Offset
 - Genlock Signal Locked
 - Genlock Type
+
+- Noise Reduction
+
+  - Enabled/Disabled
+  - Bias Level
+  - Split Screen Enabled/Disabled
+  - Red Overlay Enabled/Disabled
+
+- Video Advanced
+
+  - Clean Cadence Enabled/Disabled
+  - Scenecut Detect Enabled/Disabled
+  - Source Type
+  - FRC Aperture
+  - Processing
+
+- Variable Aspect Ratio
+  - Size X/Y Left/Right
+  - Pos X/Y Left/Right
+  - Trim X/Y Left/Right
+  - Zoom/Crop
