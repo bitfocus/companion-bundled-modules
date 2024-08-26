@@ -1,4 +1,4 @@
 MODULE_NAME=vaddio-ptz
-GIT_REF=v2.0.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4431977573
-UPDATE_DATE=2023-03-15
+GIT_REF=v2.0.2
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/10564426650
+UPDATE_DATE=2024-08-26
