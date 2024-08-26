@@ -1,4 +1,4 @@
 MODULE_NAME=radiodj-rest
-GIT_REF=v2.0.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/10564416300
+GIT_REF=v2.0.2
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/10565414193
 UPDATE_DATE=2024-08-26
