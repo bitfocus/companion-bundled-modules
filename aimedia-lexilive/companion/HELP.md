@@ -22,16 +22,29 @@ Instance State (Off/On)
 
 ## Version History
 
+### Version 1.1.4
+
+- Convert to ESM
+- Update dependencies
+
+### Version 1.1.3
+
+- Fix in error logging
+
 ### Version 1.1.2
+
 - Correct module name
 - Better error logging
 
 ### Version 1.1.1
+
 - Don't accept empty password
 - Update companion-module-base to 1.8.0
 
 ### Version 1.1.0
+
 - Add instance start and stop presets
 
 ### Version 1.0.0
+
 - Initial release
