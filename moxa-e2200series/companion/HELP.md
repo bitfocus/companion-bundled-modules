@@ -2,7 +2,6 @@
 
 DIO Control for the Moxa ioLogik e2210, e2212, e2214, e2242, e2260 and e2262 using HTTP.
 
-
 ### Actions
 
 - **Get DI Count**
@@ -42,4 +41,3 @@ All actions can be performed against multiple DIs/DOs at once.
 - **Model**
 - **Serial Number**
 - **Time**
-
