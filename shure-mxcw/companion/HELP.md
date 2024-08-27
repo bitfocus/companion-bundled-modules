@@ -27,6 +27,7 @@ This module will connect to the Shure MXCWAPT to provide feedback status as well
 - Set maximum number of delegates allowed in request list
 - Set maximum number of speakers allowed
 - Set microphone priority
+- Set microphone status
 - Set operation mode
 - Set retain seat information on reboot
 - Set RF power
