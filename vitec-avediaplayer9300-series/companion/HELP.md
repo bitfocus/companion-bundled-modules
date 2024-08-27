@@ -5,6 +5,7 @@ Control module for the AvediaPlayer 9300 series IPTV Endpoints
 The endpoint must have HTTPS Upgrade disabled under the services tab.
 
 ## Actions
+
 - **Current Channel URI**
 - **Get Channel List**
 - **Mode**
@@ -15,6 +16,7 @@ The endpoint must have HTTPS Upgrade disabled under the services tab.
 - **Volume Down**
 
 ## Variables
+
 - **Current Channel URI**
 - **Current Channel Name**
 - **Current Channel Number**
@@ -22,6 +24,7 @@ The endpoint must have HTTPS Upgrade disabled under the services tab.
 - **Volume**
 
 ## Feedbacks
+
 - **Current Channel**
 - **Mode**
 - **Mute**
@@ -29,25 +32,36 @@ The endpoint must have HTTPS Upgrade disabled under the services tab.
 
 ## Version History
 
+### Version 1.2.5
+
+- Update dependencies
+- Update status on Authentication Failure, stop polling
+
 ### Version 1.2.4
+
 - Quieten logging
 - Convert to ESM
 
 ### Version 1.2.3
+
 - Rotary volume control preset
 - Better error logging
 
 ### Version 1.2.1
+
 - Add volume up, volume down and mode presets
 - Improve mute preset
 - Companion-module-base > 1.8.0
 
 ### Version 1.2.0
+
 - Add set mute & channel presets
 
 ### Version 1.1.0
+
 - Add channel list action & populate Current Channel URI dropdown
 - Add channel name, channel number variables.
 
 ### Version 1.0.0
+
 - Initial release
