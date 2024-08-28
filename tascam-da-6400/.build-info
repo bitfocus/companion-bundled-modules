@@ -1,4 +1,4 @@
 MODULE_NAME=tascam-da-6400
-GIT_REF=v1.2.3
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/9373021692
-UPDATE_DATE=2024-06-04
+GIT_REF=v1.2.4
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/10605396052
+UPDATE_DATE=2024-08-28
