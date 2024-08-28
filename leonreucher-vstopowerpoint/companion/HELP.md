@@ -19,6 +19,11 @@ In the module configuration, enter the IP address of the PC running the PowerPoi
 - Switch to a specific slide
 - Switch to a specific presentation
 - Close all currently opened presentations
+- Show/Hide/Toggle the laser pointer
+- Blackout/Whiteout/Show the active presentation
+- Hide/Unhide specific slides
+- Unhide all slides
+- Erase drawings made by the presenter
 
 ### Feedbacks
 
