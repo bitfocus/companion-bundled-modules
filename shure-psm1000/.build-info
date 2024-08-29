@@ -1,4 +1,4 @@
 MODULE_NAME=shure-psm1000
-GIT_REF=v2.0.2
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/10565963364
-UPDATE_DATE=2024-08-26
+GIT_REF=v2.0.3
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/10608739114
+UPDATE_DATE=2024-08-29
