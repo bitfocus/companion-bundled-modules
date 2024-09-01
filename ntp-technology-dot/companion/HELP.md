@@ -5,8 +5,9 @@ This module will control NTP Audio Routers that support DOT Protocol.
 - [NTP Technology Page](https://www.ntp.dk/)
 
 ## Configuration
+
 Enter the IP address of the control port of the router controller. The default port is 10005.
-In the case of redundant router controllers, enter the secondary controller IP and port, and enable the redundant controllers' switch. 
+In the case of redundant router controllers, enter the secondary controller IP and port, and enable the redundant controllers' switch.
 When the module is enabled, it will try and connect to the Primary, if this fails it will try and connect to the Secondary, and visa-versa. This process typically takes 20 seconds or so, as it relies on the TCP connection going into error before attempting connection to the other controller.
 
 Configure the Source and Destination count, this should be equal to highest index number used for each. The system will limit values entered to the specified range. Refer to the VMC-Config app, Configure>Logical Lines to identify Index values.
@@ -22,37 +23,52 @@ The alarms should match the number of configured alarm indexes in your system. R
 - **Input - P48** Set input phantom power
 
 ## Variables
+
 - **Destination - Source** The source routed to a given destination
 
 ## Feedbacks
+
 - **Alarm** True if the alarm index is asserted. Alarm text is written to the log. Warn level when asserted, Info level when removed.
 - **Crosspoint** True if the specified crosspoint is connected
 
 ## Action Recorder
+
 The Action Recorder will translate any connection messages into new connect actions, to quickly build salvos. Other actions are not supported.
 
 ## Version History
 
+### Version 1.2.1
+
+- Debounce command queue
+- Update dependencies
+
 ### Version 1.2.0
+
 - Add variable support for crosspoint feedback
 - Convert to ESM
 - Minor fixes
 
 ### Version 1.1.0
+
 - Add action recorder support
 
 ### Version 1.0.4
+
 - Hide redundant config fields when not required
 
 ### Version 1.0.3
+
 - Better status updates
 - Update dependencies
 
 ### Version 1.0.2
+
 - Minor TCP improvements & fixes
 
 ### Version 1.0.1
+
 - Update dependencies
 
 ### Version 1.0.0
+
 - Initial Release
