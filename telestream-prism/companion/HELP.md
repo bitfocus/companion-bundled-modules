@@ -1,6 +1,6 @@
 ## Telestream Prism
 
-Control the [Telestream Prism](https://www.telestream.net/video/prism.htm) Waveform monitor. Minimum supported firmware 4.1.
+Control the [Telestream Prism](https://www.telestream.net/video/prism.htm) Waveform monitor. Minimum supported firmware 4.2.1.
 
 Connection is made via HTTP on TCP:9000.
 
@@ -12,73 +12,74 @@ Many actions require a scope to be defined, such as the application tile to perf
 
 Some actions require specific hardware models, or licensed software modules.
 
-
-- **Active Input** 
-- **AFD Graticule Color** 
-- **Analog Audio Output Mode** 
-- **Analog Aux Display Mode** 
-- **ANC Session Control** 
+- **Active Input**
+- **AFD Graticule Color**
+- **Analog Audio Output Mode**
+- **Analog Aux Display Mode**
+- **ANC Session Control**
 - **Audio Ballistic**
-- **Audio Display Loudness Meter** 
-- **Audio Downmix Mode** 
+- **Audio Display Loudness Meter**
+- **Audio Downmix Mode**
 - **Audio Input Type**
-- **Audio Program Surround Order** 
-- **Audio Session Control** 
+- **Audio Pair Aux Output Mode**
+- **Audio PCM Program**
+- **Audio Program Surround Order**
+- **Audio Session Control**
 - **Audio Session Display**
 - **Audio Solo Mode**
-- **AV Advanced Threshold** 
-- **AV Delayed Threshold** 
-- **AV Delay User Offset Mode** 
-- **Cam App Display Type** 
-- **Cam App Filter** 
-- **Cam App Gain** 
-- **Cam App Graticle Units** 
-- **Cam App Sweep** 
-- **Cam App Thumbnail** 
-- **Cam App Filter** 
-- **Cam App Graticle Color** 
-- **CIE Color Space** 
+- **AV Advanced Threshold**
+- **AV Delayed Threshold**
+- **AV Delay User Offset Mode**
+- **Cam App Display Type**
+- **Cam App Filter**
+- **Cam App Gain**
+- **Cam App Graticle Units**
+- **Cam App Sweep**
+- **Cam App Thumbnail**
+- **Cam App Filter**
+- **Cam App Graticle Color**
+- **CIE Color Space**
 - **CIE Trace Appearance**
-- **Closed Captions 608 Channel** 
+- **Closed Captions 608 Channel**
 - **Closed Captions 708 Service**
-- **Closed Captions ARIB Type** 
-- **Closed Captions Display** 
-- **Closed Captions Info Enable** 
+- **Closed Captions ARIB Type**
+- **Closed Captions Display**
+- **Closed Captions Info Enable**
 - **Closed Captions WST Page**
 - **Diagnostic URL Preset**
-- **Diamond LUT** 
+- **Diamond LUT**
 - **Diamond Mode**
-- **Dolby AES Pair** 
-- **Dolby DRC Mode** 
-- **Dolby Metadata Source** 
-- **Extended Display Mode** 
-- **Extended Status Bar Pinned Menu** 
+- **Dolby AES Pair**
+- **Dolby DRC Mode**
+- **Dolby Metadata Source**
+- **Extended Display Mode**
+- **Extended Status Bar Pinned Menu**
 - **External Reference Gain**
 - **External Reference Hmag**
-- **External Reference Out** 
-- **External Reference Sweep** 
+- **External Reference Out**
+- **External Reference Sweep**
 - **Eye Jitter Meter Enable**
-- **Eye Sweep Rate** 
-- **Front Panel Test Mode** 
+- **Eye Sweep Rate**
+- **Front Panel Test Mode**
 - **Gamut Alarm Thresholds Preset**
-- **Get Presets** 
+- **Get Presets**
 - **GPIO Preset Recall Enable**
 - **Graticle Brightness Level**
-- **HDR Alarms** 
-- **HDR Area Threshold** 
+- **HDR Alarms**
+- **HDR Area Threshold**
 - **HDR Brightest Area Threshold**
 - **HDR Darkest Area Threshold**
-- **HDR Total Area Threshold** 
+- **HDR Total Area Threshold**
 - **Ignore RTP Sequence Area**
-- **Input Edit Mode** 
+- **Input Edit Mode**
 - **IP Fast Switch**
 - **IP Session Control**
 - **IP Video PHY Bit Rate**
-- **IP Video PHY FEC Mode** 
+- **IP Video PHY FEC Mode**
 - **Jitter HPF**
 - **Jitter Meter Enable**
 - **Jitter Meter Sweep Rate**
-- **Lightning Horizontal Gain - Fixed** 
+- **Lightning Horizontal Gain - Fixed**
 - **Lightning Horizontal Gain - Variable Enable**
 - **Lightning LUT**
 - **Lightning Vertical Gain - Fixed**
@@ -191,6 +192,7 @@ Some actions require specific hardware models, or licensed software modules.
 - **Tile In Focus**
 
 ## Presets
+
 - **Input Select**
 - **Measurement Application**
 - **Preset**
