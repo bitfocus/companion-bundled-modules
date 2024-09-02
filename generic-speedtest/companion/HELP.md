@@ -1,16 +1,15 @@
 ## Generic Speedtest
 
-This module will allow you to conduct an internet speedtest from popular services Cloudflare or Speedtest.net
+This module will allow you to conduct an internet speed test from popular services Cloudflare or Speedtest.net
 
 ### Configuration
 
 - Select your preferred service in the module configuration
-
-_Note: In our testing, Cloudflare performs much faster than Speedtest.net_
+- Use the "Run Test" action to run a speed test. Until you run a test using the action, results will not be shown. When you run a new test, all previous results will be cleared until the new test results are received
 
 ### Available actions
 
-- Run Speedtest
+- Run Test
 
 ### Available feedbacks
 
