@@ -6,13 +6,14 @@ Many functions will work with the Dugan-MY16 and other units.
 - [Dugan Auto Mixer Product Page](https://www.dandugan.com/products/)
 
 ## Configuration
+
 **IP and Port**
 
 Enter the IP address of the control NIC. The unit will accept connections on TCP:23 or TCP:9776 (and UDP:9776, not supported). This module defaults to TCP:23.
 
-**Poll Interval** 
+**Poll Interval**
 
-Sets the frequency of channel and scene name updates, setting to zero turns off. 
+Sets the frequency of channel and scene name updates, setting to zero turns off.
 
 **Metering Rate**
 
@@ -28,13 +29,14 @@ Can be left at fast most of the time. If you find commands are getting lost or r
 
 **Unsolicited message subscription**
 
-Determines if the dugan will inform companion about changes from other clients; in general this should be on. Feedbacks will force subscriptions on if they are off. 
+Determines if the dugan will inform companion about changes from other clients; in general this should be on. Feedbacks will force subscriptions on if they are off.
 
 **Talking threshold**
 
 Sets the operational threshold for the Is Talking varibles. The function returns the channel with the least gain reduction at any time, as long as they are at or above the set threshold, otherwise nothing is returned. This function is part of the module and not native to the automixer. Metering must be enabled for this to function correctly.
 
 ## Actions
+
 - **Channel - Bypass** Query / Change Channel Bypass
 - **Channel - Group Assignment** Query / Change Channel Group Assignment
 - **Channel - Mode** Query / Change Channel Mode: Manual, Auto, Mute
@@ -85,20 +87,21 @@ Sets the operational threshold for the Is Talking varibles. The function returns
 - **System - Clock Source** Query / Change clock Source
 - **System - Name** Query / Change unit name. Accepts variables
 - **System - Network** Query / Change IP, Subnet or Gateway address
-- **System - Network DHCP** Query / Change DHCP 
+- **System - Network DHCP** Query / Change DHCP
 - **System - Name** Query / Change unit name. Accepts variables
 - **System - Subscribe Unsolicited** Query / Change unsolicited messages
 
 ## Variables
+
 - **Channel - Name** String
 - **Channel - Weight** Number (dB)
 - **Channel - Input Level** Number (dB)
 - **Channel - Output Level** Number (dB)
 - **Channel - Automix Gain Reduction** Number (dB)
 
-- **Group - Automix Depth**  Number (dB)
-- **Group - Music System Threshold**  Number (dB)
-- **Group - Music System Gain Reduction**  Number (dB)
+- **Group - Automix Depth** Number (dB)
+- **Group - Music System Threshold** Number (dB)
+- **Group - Music System Gain Reduction** Number (dB)
 - **Group - NOM Gain Limit** Number
 - **Group - NOM Gain Reduction** Number (dB)
 
@@ -111,13 +114,12 @@ Sets the operational threshold for the Is Talking varibles. The function returns
 
 - **Scene - Active** Active Scene name
 - **Scene - Active Index** Active scene index
-- **Scene - Active Has Changed**  True if any parameter has been changed from the recalled Scene
+- **Scene - Active Has Changed** True if any parameter has been changed from the recalled Scene
 - **Scene - Count** Number of saved scenes
-
 
 **System**
 
-  System related variables; many are read only. Several aren't directly exposed in the dugan software.
+System related variables; many are read only. Several aren't directly exposed in the dugan software.
 
 - **Adat Mirror**
 - **Blink Mode**
@@ -147,10 +149,11 @@ Sets the operational threshold for the Is Talking varibles. The function returns
 - **Subnet Mask**
 - **Switch Headroom**
 - **TCPIP**
-- **TCP Clients** 
+- **TCP Clients**
 - **UDP Clients**
 
 ## Feedbacks
+
 All feedbacks are boolean. Feedbacks will force the subscription level to at least the minimum required.
 
 - **Channel - Automix Gain Reduction**
@@ -179,35 +182,47 @@ All feedbacks are boolean. Feedbacks will force the subscription level to at lea
 - **Matrix - Output Level**
 - **Matrix - Output Route**
 
-- **Scene - Has Changed** 
+- **Scene - Has Changed**
 
 ## Action Recorder
+
 The Action Recorder will record any channel, group or matrix changes when engaged.
 
 ## Support for other models
+
 Only the Model M & N are supported. With that said, the dugan units share a common api.
 The Model M & N represent a complete set of API commands. All other units (MY-16, Model-E3A, etc) support a subset of of these commands. The core channel controls are supported by all units.
 Set the the channel count to the appropriate value, turn the metering off, and ignore functions not supported by your unit. This is untested.
 
 ## Version History
 
+## Version 1.1.1
+
+- Update companion-module-base
+- Update companion-module-tools
+
 ### Version 1.1.0
+
 - Action Recorder
 - Update companion-module-tools
 
 ### Version 1.0.4
+
 - Better status updatesgit pul
 - Update companion-module-base
 
 ### Version 1.0.3
+
 - Update help
 - Update companion-module-tools
 
 ### Version 1.0.1
+
 - Add timeout clearToTx (500ms).
 - Update help
 - Code refactor
 - Update companion-module-base & companion-module-tools
 
 ### Version 1.0.0
+
 - Initial release
