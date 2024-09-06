@@ -21,6 +21,8 @@ Controls CueTimer by [PresentationTools](https://presentationtools.com/).
 - Increase speed by 5%
 - Decrease speed by 5%
 - Fullscreen
+- Preview
+- Presenter
 - NDI
 - Message
 - Single Timer Mode
@@ -65,6 +67,8 @@ Variables can be used by putting $(instancename:variablename) e.g. $(cuetimer:ho
 - Available status
 
 - Fullscreen
+- Preview
+- Presenter
 - NDI
 - Message
 - Single Timer Mode
