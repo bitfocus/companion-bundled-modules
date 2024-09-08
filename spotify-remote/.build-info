@@ -1,4 +1,4 @@
 MODULE_NAME=spotify-remote
-GIT_REF=v2.2.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/10324661877
-UPDATE_DATE=2024-08-09
+GIT_REF=v2.2.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/10760592349
+UPDATE_DATE=2024-09-08
