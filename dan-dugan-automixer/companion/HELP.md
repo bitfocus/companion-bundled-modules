@@ -208,7 +208,7 @@ Set the the channel count to the appropriate value, turn the metering off, and i
 
 ### Version 1.0.4
 
-- Better status updatesgit pul
+- Better status updates
 - Update companion-module-base
 
 ### Version 1.0.3
