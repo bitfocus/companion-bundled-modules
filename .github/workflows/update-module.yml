@@ -134,6 +134,9 @@ jobs:
           EOF
            
           # TODO - verify module looks valid?
+
+          # make sure there isn't a legacy version
+          rm -Rf modules/_legacy/companion-module-${{ github.event.inputs.module-name }} || true
            
           rm -Rf modules/${{ github.event.inputs.module-name }} || true
 
