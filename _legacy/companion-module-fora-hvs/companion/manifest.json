@@ -1,0 +1,30 @@
+{
+	"id": "fora-hvs",
+	"name": "fora-hvs",
+	"shortname": "fora-hvs",
+	"description": "For.A Hanabi Video Switcher module for Companion.",
+	"version": "1.2.6",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-fora-hvs.git",
+	"bugs": "https://github.com/bitfocus/companion-module-fora-hvs/issues",
+	"maintainers": [
+		{
+			"name": "Michael Allen",
+			"email": "michael.allen@barefootchurch.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "For.A",
+	"products": [
+		"Hanabi Video Switchers"
+	],
+	"keywords": [
+		"Vision Mixer"
+	]
+}

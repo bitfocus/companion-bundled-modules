@@ -1,0 +1,34 @@
+{
+	"id": "opensong-api",
+	"name": "opensong-api",
+	"shortname": "OpenSong",
+	"description": "OpenSong plugin for companion",
+	"version": "1.0.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-opensong-api.git",
+	"bugs": "https://github.com/bitfocus/companion-module-opensong-api/issues",
+	"maintainers": [
+		{
+			"name": "Noah Callaway",
+			"email": "noah@thecallaways.net"
+		},
+		{
+			"name": "Yuri Vidal",
+			"email": "yu.ri.vidal@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "OpenSong",
+	"products": [
+		"API"
+	],
+	"keywords": [
+		"Software"
+	]
+}

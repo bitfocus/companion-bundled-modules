@@ -1,0 +1,32 @@
+{
+	"id": "tplink-kasasmartstrip",
+	"name": "tplink-kasasmartstrip",
+	"shortname": "tplink-kasasmartstrip",
+	"description": "Companion module for TP-Link Kasa Smart LED Strips",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-tplink-kasasmartstrip.git",
+	"bugs": "https://github.com/bitfocus/companion-module-tplink-kasasmartstrip/issues",
+	"maintainers": [
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "TP-Link",
+	"products": [
+		"Kasa Smart Strip"
+	],
+	"keywords": [
+		"strip",
+		"led",
+		"kasa"
+	]
+}

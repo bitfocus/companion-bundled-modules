@@ -1,0 +1,30 @@
+{
+	"id": "kramer-vp734",
+	"name": "kramer-vp734",
+	"shortname": "vp734",
+	"description": "Module to control Kramer VP 734",
+	"version": "1.0.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-kramer-vp734.git",
+	"bugs": "https://github.com/bitfocus/companion-module-kramer-vp734/issues",
+	"maintainers": [
+		{
+			"name": "Jeffrey Davidsz",
+			"email": "jeffrey.davidsz@vicreo.eu"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Kramer",
+	"products": [
+		"VP-734"
+	],
+	"keywords": [
+		"Image Processing"
+	]
+}

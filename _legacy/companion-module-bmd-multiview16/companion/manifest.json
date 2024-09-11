@@ -1,0 +1,30 @@
+{
+	"id": "bmd-multiview16",
+	"name": "bmd-multiview16",
+	"shortname": "mv16",
+	"description": "",
+	"version": "1.0.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-bmd-multiview16.git",
+	"bugs": "https://github.com/bitfocus/companion-module-bmd-multiview16/issues",
+	"maintainers": [
+		{
+			"name": "Keith Rocheck",
+			"email": "keith.rocheck@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Blackmagic Design",
+	"products": [
+		"Multiview 16"
+	],
+	"keywords": [
+		"Multiviewer"
+	]
+}

@@ -1,0 +1,32 @@
+{
+	"id": "lumens-visca",
+	"name": "lumens-visca",
+	"shortname": "Camera",
+	"description": "Module to control LUMENS cameras with Sony Visca protocol over IP",
+	"version": "1.0.4",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-lumens-visca.git",
+	"bugs": "https://github.com/bitfocus/companion-module-lumens-visca/issues",
+	"maintainers": [
+		{
+			"name": "Lumens Team"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Lumens",
+	"products": [
+		"PTZ Camera",
+		"Box Camera",
+		"Tracking Camera"
+	],
+	"keywords": [
+		"Camera",
+		"Lumens"
+	]
+}

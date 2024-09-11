@@ -1,0 +1,31 @@
+{
+	"id": "extron-dxp",
+	"name": "extron-dxp",
+	"shortname": "DXP",
+	"description": "DXP Matrix plugin for Companion",
+	"version": "1.0.9",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-extron-dxp.git",
+	"bugs": "https://github.com/bitfocus/companion-module-extron-dxp/issues",
+	"maintainers": [
+		{
+			"name": "Jeffrey Davidsz",
+			"email": "jeffrey.davidsz@vicreo.eu"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Extron",
+	"products": [
+		"DXP Matrix"
+	],
+	"keywords": [
+		"Protocol",
+		"Matrix"
+	]
+}

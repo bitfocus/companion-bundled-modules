@@ -1,0 +1,27 @@
+{
+	"id": "rgblink-x3",
+	"name": "rgblink-x3",
+	"shortname": "X3",
+	"description": "RGBlink Venus X3",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-rgblink-x3.git",
+	"bugs": "https://github.com/bitfocus/companion-module-rgblink-x3/issues",
+	"maintainers": [],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "RGBlink",
+	"products": [
+		"Venus X3"
+	],
+	"keywords": [
+		"rgblink",
+		"X3",
+		"Venus"
+	]
+}

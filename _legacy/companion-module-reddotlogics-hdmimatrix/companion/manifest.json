@@ -1,0 +1,35 @@
+{
+	"id": "reddotlogics-hdmimatrix",
+	"name": "reddotlogics-hdmimatrix",
+	"shortname": "MX1616/MX88",
+	"description": "Red Dot Logics 4k HDMI 2.0Matrix 8x8 & 16x16 non seamless Version",
+	"version": "1.0.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-reddotlogics-hdmimatrix.git",
+	"bugs": "https://github.com/bitfocus/companion-module-reddotlogics-hdmimatrix/issues",
+	"maintainers": [
+		{
+			"name": "Ritesh Patel",
+			"email": "Ritesh@RedDotLogics.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Red Dot Logics",
+	"products": [
+		"RDL-MX4k"
+	],
+	"keywords": [
+		"HDMI matrix",
+		"matrix",
+		"16x16",
+		"8x8",
+		"RDL",
+		"red dot logics"
+	]
+}

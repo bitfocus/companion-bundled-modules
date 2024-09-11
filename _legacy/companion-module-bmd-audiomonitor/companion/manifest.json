@@ -1,0 +1,31 @@
+{
+	"id": "bmd-audiomonitor",
+	"name": "bmd-audiomonitor",
+	"shortname": "AudioMonitor",
+	"description": "Rackmount audio monitoring from SDI, AES/EBU and analogue audio sources.",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-bmd-audiomonitor.git",
+	"bugs": "https://github.com/bitfocus/companion-module-bmd-audiomonitor/issues",
+	"maintainers": [
+		{
+			"name": "Peter Daniel"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Blackmagic Design",
+	"products": [
+		"Audio Monitor"
+	],
+	"keywords": [
+		"Audio",
+		"Monitoring",
+		"Meter"
+	]
+}

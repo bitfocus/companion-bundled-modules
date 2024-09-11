@@ -1,0 +1,28 @@
+{
+	"id": "sony-cled",
+	"name": "sony-cled",
+	"shortname": "cled",
+	"description": "",
+	"version": "1.0.2",
+	"license": "ISC",
+	"repository": "git+https://github.com/bitfocus/companion-module-sony-cled.git",
+	"bugs": "https://github.com/bitfocus/companion-module-sony-cled/issues",
+	"maintainers": [
+		{
+			"name": "Elliott C. Balsley",
+			"email": "ebalsley@netflix.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Sony",
+	"products": [
+		"CLED Display Controller ZRCT-200"
+	],
+	"keywords": []
+}

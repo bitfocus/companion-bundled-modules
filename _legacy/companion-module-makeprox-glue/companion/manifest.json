@@ -1,0 +1,34 @@
+{
+	"id": "makeprox-glue",
+	"name": "makeprox-glue",
+	"shortname": "Glue",
+	"description": "Module to connect to a MakeProX Glue instance.",
+	"version": "1.0.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-makeprox-glue.git",
+	"bugs": "https://github.com/bitfocus/companion-module-makeprox-glue/issues",
+	"maintainers": [
+		{
+			"name": "Hannes Rüger",
+			"email": "hannes@makeproaudio.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "MakeProX",
+	"products": [
+		"Glue"
+	],
+	"keywords": [
+		"controller",
+		"makeproaudio",
+		"makepro-x",
+		"makeprox",
+		"glue"
+	]
+}

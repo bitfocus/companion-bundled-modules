@@ -1,0 +1,31 @@
+{
+	"id": "digitalloggers-powercontroller",
+	"name": "digitalloggers-powercontroller",
+	"shortname": "digitallogger-power",
+	"description": "Companion module for Digital Loggers Power Controllers",
+	"version": "1.0.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-digitalloggers-powercontroller.git",
+	"bugs": "https://github.com/bitfocus/companion-module-digitalloggers-powercontroller/issues",
+	"maintainers": [
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Digital Loggers",
+	"products": [
+		"Power Controller"
+	],
+	"keywords": [
+		"power",
+		"outlet"
+	]
+}

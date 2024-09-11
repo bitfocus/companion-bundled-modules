@@ -1,0 +1,30 @@
+{
+	"id": "visualproductions-cuety",
+	"name": "visualproductions-cuety",
+	"shortname": "cuety",
+	"description": "",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-visualproductions-cuety.git",
+	"bugs": "https://github.com/bitfocus/companion-module-visualproductions-cuety/issues",
+	"maintainers": [
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Visual Productions",
+	"products": [
+		"Cuety"
+	],
+	"keywords": [
+		"Cuety"
+	]
+}

@@ -1,0 +1,44 @@
+{
+	"id": "biamp-tesira",
+	"name": "biamp-tesira",
+	"shortname": "tesira",
+	"description": "",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-biamp-tesira.git",
+	"bugs": "https://github.com/bitfocus/companion-module-biamp-tesira/issues",
+	"maintainers": [
+		{
+			"name": "Adrian Davis",
+			"email": "themusicnerd@gmail.com"
+		},
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		},
+		{
+			"name": "David Stevens",
+			"email": "teamjtf4@gmail.com"
+		},
+		{
+			"name": "Tim Terry",
+			"email": "timt@exit-the-plane.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Biamp",
+	"products": [
+		"Tesira"
+	],
+	"keywords": [
+		"biamp",
+		"tesira",
+		"forte"
+	]
+}

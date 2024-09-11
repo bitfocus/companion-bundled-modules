@@ -1,0 +1,33 @@
+{
+	"id": "tvone-corio",
+	"name": "tvone-corio",
+	"shortname": "Corio",
+	"description": "Companion module for TVOne Corio C2 scalers",
+	"version": "1.0.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-tvone-corio.git",
+	"bugs": "https://github.com/bitfocus/companion-module-tvone-corio/issues",
+	"maintainers": [
+		{
+			"name": "Peter Daniel"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "TVOne",
+	"products": [
+		"Corio C2"
+	],
+	"keywords": [
+		"Video Scaler",
+		"Video Converter",
+		"Video Processing",
+		"Format Conversion",
+		"Video"
+	]
+}

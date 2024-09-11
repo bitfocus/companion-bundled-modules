@@ -1,0 +1,31 @@
+{
+	"id": "roland-v1200hd",
+	"name": "roland-v1200hd",
+	"shortname": "v-1200hd",
+	"description": "",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-roland-v1200hd.git",
+	"bugs": "https://github.com/bitfocus/companion-module-roland-v1200hd/issues",
+	"maintainers": [
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Roland",
+	"products": [
+		"V-1200HD"
+	],
+	"keywords": [
+		"Video Switcher",
+		"Vision Mixer"
+	]
+}

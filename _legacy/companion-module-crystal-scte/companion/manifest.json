@@ -1,0 +1,30 @@
+{
+	"id": "crystal-scte",
+	"name": "crystal-scte",
+	"shortname": "crystal-scte",
+	"description": "crystal-scte",
+	"version": "1.0.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-crystal-scte.git",
+	"bugs": "https://github.com/bitfocus/companion-module-crystal-scte/issues",
+	"maintainers": [
+		{
+			"name": "Brad Rison",
+			"email": "brad.rison@crystalcc.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Crystal",
+	"products": [
+		"SCTE104 Inserts"
+	],
+	"keywords": [
+		"Protocol"
+	]
+}

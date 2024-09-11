@@ -1,0 +1,30 @@
+{
+	"id": "kramer-vs41h",
+	"name": "kramer-vs41h",
+	"shortname": "kramer-vs41h",
+	"description": "Module to control a Kramer VS-41H HDMI Switcher",
+	"version": "1.0.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-kramer-vs41h.git",
+	"bugs": "https://github.com/bitfocus/companion-module-kramer-vs41h/issues",
+	"maintainers": [
+		{
+			"name": "Steve Therrien",
+			"email": "git@stevetherrien.ca"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Kramer",
+	"products": [
+		"VS-41H"
+	],
+	"keywords": [
+		"Image Processing"
+	]
+}

@@ -1,0 +1,31 @@
+{
+	"id": "middleatlantic-racklink",
+	"name": "middleatlantic-racklink",
+	"shortname": "racklink",
+	"description": "Companion module for Middle Atlantic Racklink PDUs",
+	"version": "1.0.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-middleatlantic-racklink.git",
+	"bugs": "https://github.com/bitfocus/companion-module-middleatlantic-racklink/issues",
+	"maintainers": [
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "MiddleAtlantic",
+	"products": [
+		"Racklink"
+	],
+	"keywords": [
+		"MiddleAtlantic",
+		"Racklink"
+	]
+}

@@ -1,0 +1,31 @@
+{
+	"id": "eiki-wspprojector",
+	"name": "eiki-wspprojector",
+	"shortname": "eiki-pj",
+	"description": "Remote control of certain Eiki projectors.",
+	"version": "1.0.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-eiki-wspprojector.git",
+	"bugs": "https://github.com/bitfocus/companion-module-eiki-wspprojector/issues",
+	"maintainers": [
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Eiki",
+	"products": [
+		"WSP Projector"
+	],
+	"keywords": [
+		"Projector",
+		"Eiki"
+	]
+}

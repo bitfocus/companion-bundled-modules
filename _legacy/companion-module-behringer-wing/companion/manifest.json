@@ -1,0 +1,34 @@
+{
+	"id": "behringer-wing",
+	"name": "behringer-wing",
+	"shortname": "wing",
+	"description": "Module to control Behringer WING consoles",
+	"version": "1.0.8",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-behringer-wing.git",
+	"bugs": "https://github.com/bitfocus/companion-module-behringer-wing/issues",
+	"maintainers": [
+		{
+			"name": "John Knight, Jr",
+			"email": "istnv@ayesti.com"
+		}
+	],
+	"legacyIds": [
+		"wing"
+	],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Behringer",
+	"products": [
+		"WING"
+	],
+	"keywords": [
+		"Audio",
+		"Mixer",
+		"Console"
+	]
+}

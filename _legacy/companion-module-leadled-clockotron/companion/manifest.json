@@ -1,0 +1,30 @@
+{
+	"id": "leadled-clockotron",
+	"name": "leadled-clockotron",
+	"shortname": "Clockotron",
+	"description": "Send Clock and Timer values directly to vMix Text Inputs",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-leadled-clockotron.git",
+	"bugs": "https://github.com/bitfocus/companion-module-leadled-clockotron/issues",
+	"maintainers": [
+		{
+			"name": "Devon Lamond",
+			"email": "devon@leadled.io"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "LEAD LED",
+	"products": [
+		"Clockotron"
+	],
+	"keywords": [
+		"Vmix, Clock, Timer"
+	]
+}

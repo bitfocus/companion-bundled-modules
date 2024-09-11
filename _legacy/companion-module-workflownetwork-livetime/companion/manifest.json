@@ -1,0 +1,30 @@
+{
+	"id": "workflownetwork-livetime",
+	"name": "workflownetwork-livetime",
+	"shortname": "LiveTime",
+	"description": "Companion module for controling the LiveTime software from Workflow Network.",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-workflownetwork-livetime.git",
+	"bugs": "https://github.com/bitfocus/companion-module-workflownetwork-livetime/issues",
+	"maintainers": [
+		{
+			"name": "Michael Allen"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Workflow Network",
+	"products": [
+		"LiveTime"
+	],
+	"keywords": [
+		"clock",
+		"timer"
+	]
+}

@@ -1,0 +1,30 @@
+{
+	"id": "gammacontrol-gmaestro",
+	"name": "gammacontrol-gmaestro",
+	"shortname": "gmaestro",
+	"description": "",
+	"version": "1.0.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-gammacontrol-gmaestro.git",
+	"bugs": "https://github.com/bitfocus/companion-module-gammacontrol-gmaestro/issues",
+	"maintainers": [
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Gamma Control",
+	"products": [
+		"GMaestro"
+	],
+	"keywords": [
+		"Graphics"
+	]
+}

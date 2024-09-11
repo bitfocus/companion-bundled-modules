@@ -1,0 +1,31 @@
+{
+	"id": "roland-xs62s",
+	"name": "roland-xs62s",
+	"shortname": "xs-62s",
+	"description": "",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-roland-xs62s.git",
+	"bugs": "https://github.com/bitfocus/companion-module-roland-xs62s/issues",
+	"maintainers": [
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Roland",
+	"products": [
+		"XS-62S"
+	],
+	"keywords": [
+		"Vision Mixer",
+		"Matrix"
+	]
+}

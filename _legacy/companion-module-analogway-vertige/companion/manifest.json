@@ -1,0 +1,30 @@
+{
+	"id": "analogway-vertige",
+	"name": "analogway-vertige",
+	"shortname": "vertige",
+	"description": "provides basic preset recall control",
+	"version": "1.0.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-analogway-vertige.git",
+	"bugs": "https://github.com/bitfocus/companion-module-analogway-vertige/issues",
+	"maintainers": [
+		{
+			"name": "Tim Terry"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Analog Way",
+	"products": [
+		"Vertige"
+	],
+	"keywords": [
+		"Protocol",
+		"Image Processing"
+	]
+}

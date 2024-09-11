@@ -1,0 +1,31 @@
+{
+	"id": "metus-ingest",
+	"name": "metus-ingest",
+	"shortname": "Metus Ingest",
+	"description": "Ingest plugin for Companion",
+	"version": "1.2.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-metus-ingest.git",
+	"bugs": "https://github.com/bitfocus/companion-module-metus-ingest/issues",
+	"maintainers": [
+		{
+			"name": "Jeffrey Davidsz",
+			"email": "jeffrey.davidsz@vicreo.eu"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Metus Technology",
+	"products": [
+		"Ingest"
+	],
+	"keywords": [
+		"Protocol",
+		"Software"
+	]
+}

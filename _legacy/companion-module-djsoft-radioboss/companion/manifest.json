@@ -1,0 +1,31 @@
+{
+	"id": "djsoft-radioboss",
+	"name": "djsoft-radioboss",
+	"shortname": "radioboss",
+	"description": "Remote control of DJ Soft's Radio BOSS software.",
+	"version": "1.0.9",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-djsoft-radioboss.git",
+	"bugs": "https://github.com/bitfocus/companion-module-djsoft-radioboss/issues",
+	"maintainers": [
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "DJ Soft",
+	"products": [
+		"Radio BOSS"
+	],
+	"keywords": [
+		"Radio",
+		"DJ"
+	]
+}

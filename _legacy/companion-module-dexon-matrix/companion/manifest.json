@@ -1,0 +1,31 @@
+{
+	"id": "dexon-matrix",
+	"name": "dexon-matrix",
+	"shortname": "Matrix",
+	"description": "DEXON Matrix 4x4 & 8x4",
+	"version": "1.0.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-dexon-matrix.git",
+	"bugs": "https://github.com/bitfocus/companion-module-dexon-matrix/issues",
+	"maintainers": [
+		{
+			"name": "Andreas H. Thomsen",
+			"email": "mc-hauge@hotmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "DEXON",
+	"products": [
+		" Matrix 4x4 & 8x8"
+	],
+	"keywords": [
+		"Vision Mixer",
+		"Matrix"
+	]
+}

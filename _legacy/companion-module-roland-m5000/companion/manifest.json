@@ -1,0 +1,40 @@
+{
+	"id": "roland-m5000",
+	"name": "roland-m5000",
+	"shortname": "m5000",
+	"description": "For M-5000 and with serial bridge, M-2xx, M-3xx and M-4xx",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-roland-m5000.git",
+	"bugs": "https://github.com/bitfocus/companion-module-roland-m5000/issues",
+	"maintainers": [
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		},
+		{
+			"name": "James Rankin",
+			"email": "james@rankinfamily.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Roland",
+	"products": [
+		"M-5000",
+		"M-200i (via serial bridge)",
+		"M-300 (via serial bridge)",
+		"M-380 (via serial bridge)",
+		"M-400 (via serial bridge)",
+		"M-480 (via serial bridge)"
+	],
+	"keywords": [
+		"Audio Console",
+		"V-Mixer"
+	]
+}

@@ -1,0 +1,30 @@
+{
+	"id": "modelighting-edin",
+	"name": "modelighting-edin",
+	"shortname": "eDin",
+	"description": "eDin NPU plugin for Companion",
+	"version": "1.0.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-modelighting-edin.git",
+	"bugs": "https://github.com/bitfocus/companion-module-modelighting-edin/issues",
+	"maintainers": [
+		{
+			"name": "Noah Callaway",
+			"email": "noah@thecallaways.net"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "MODE Lighting",
+	"products": [
+		"eDin NPU"
+	],
+	"keywords": [
+		"Lighting"
+	]
+}

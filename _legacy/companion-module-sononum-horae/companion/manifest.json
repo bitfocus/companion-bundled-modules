@@ -1,0 +1,33 @@
+{
+	"id": "sononum-horae",
+	"name": "sononum-horae",
+	"shortname": "horae",
+	"description": "",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-sononum-horae.git",
+	"bugs": "https://github.com/bitfocus/companion-module-sononum-horae/issues",
+	"maintainers": [
+		{
+			"name": "Daniel Richert",
+			"email": "daniel.richert@svv.fi"
+		}
+	],
+	"legacyIds": [
+		"horae"
+	],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Sononum",
+	"products": [
+		"Horae"
+	],
+	"keywords": [
+		"Software",
+		"Timecode"
+	]
+}

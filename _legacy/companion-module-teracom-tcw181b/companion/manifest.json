@@ -1,0 +1,30 @@
+{
+	"id": "teracom-tcw181b",
+	"name": "teracom-tcw181b",
+	"shortname": "TCW181b",
+	"description": "Teracom TCW181b Relay",
+	"version": "1.0.4",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-teracom-tcw181b.git",
+	"bugs": "https://github.com/bitfocus/companion-module-teracom-tcw181b/issues",
+	"maintainers": [
+		{
+			"name": "Andreas H. Thomsen",
+			"email": "mc-hauge@hotmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Teracom",
+	"products": [
+		"TCW181b Relay"
+	],
+	"keywords": [
+		"Relay"
+	]
+}

@@ -1,0 +1,31 @@
+{
+	"id": "barco-eventmaster-xml",
+	"name": "barco-eventmaster-xml",
+	"shortname": "eventmaster xml",
+	"description": "Barco EventMaster xml plugin for Companion",
+	"version": "1.2.5",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-barco-eventmaster-xml.git",
+	"bugs": "https://github.com/bitfocus/companion-module-barco-eventmaster-xml/issues",
+	"maintainers": [
+		{
+			"name": "Jeffrey Davidsz",
+			"email": "jeffrey.davidsz@vicreo.eu"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Barco",
+	"products": [
+		"Event Master xml"
+	],
+	"keywords": [
+		"Protocol",
+		"Image Processing"
+	]
+}

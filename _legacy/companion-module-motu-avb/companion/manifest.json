@@ -1,0 +1,34 @@
+{
+	"id": "motu-avb",
+	"name": "motu-avb",
+	"shortname": "motu",
+	"description": "Module to Control MOTU AVB interfaces",
+	"version": "1.0.7",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-motu-avb.git",
+	"bugs": "https://github.com/bitfocus/companion-module-motu-avb/issues",
+	"maintainers": [
+		{
+			"name": "Per Røine",
+			"email": "per.roine@gmail.com"
+		},
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "MOTU",
+	"products": [
+		"AVB"
+	],
+	"keywords": [
+		"Audio"
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"id": "vizrt-tcp-engine-trio",
+	"name": "vizrt-tcp-engine-trio",
+	"shortname": "Viz Send CL",
+	"description": "vizRT Send Command Line",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": "https://github.com/bitfocus/companion-module-vizrt-tcp-engine-trio.git",
+	"bugs": "https://github.com/bitfocus/companion-module-vizrt-tcp-engine-trio/issues",
+	"maintainers": [
+		{
+			"name": "Christian Da Cruz",
+			"email": "christian.dacruz@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "vizRT",
+	"products": [
+		"Send Command Line"
+	],
+	"keywords": [
+		"Video",
+		"Software",
+		"Graphics",
+		"TCP Command Line"
+	]
+}

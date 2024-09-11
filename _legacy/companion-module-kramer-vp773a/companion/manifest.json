@@ -1,0 +1,25 @@
+{
+	"id": "kramer-vp773a",
+	"name": "kramer-vp773a",
+	"shortname": "vp773a",
+	"description": "Module to control Kramer VP-773A",
+	"version": "1.0.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-kramer-vp773a.git",
+	"bugs": "https://github.com/bitfocus/companion-module-kramer-vp773a/issues",
+	"maintainers": [],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Kramer",
+	"products": [
+		"VP-773A"
+	],
+	"keywords": [
+		"Image Processing"
+	]
+}

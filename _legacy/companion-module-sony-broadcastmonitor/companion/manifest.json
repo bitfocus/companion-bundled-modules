@@ -1,0 +1,32 @@
+{
+	"id": "sony-broadcastmonitor",
+	"name": "sony-broadcastmonitor",
+	"shortname": "SonyMonitor",
+	"description": "-",
+	"version": "1.0.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-sony-broadcastmonitor.git",
+	"bugs": "https://github.com/bitfocus/companion-module-sony-broadcastmonitor/issues",
+	"maintainers": [
+		{
+			"name": "Peter Daniel"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Sony",
+	"products": [
+		"Professional Video Monitor"
+	],
+	"keywords": [
+		"Video",
+		"Monitor",
+		"Broadcast",
+		"Production"
+	]
+}

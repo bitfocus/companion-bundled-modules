@@ -1,0 +1,29 @@
+{
+	"id": "newbluefx-titler",
+	"name": "newbluefx-titler",
+	"shortname": "Titler",
+	"description": " NewBlue Titler Live",
+	"version": "3.0.0",
+	"license": "MIT",
+	"repository": "https://github.com/bitfocus/companion-module-newbluefx-titler.git",
+	"bugs": "https://github.com/bitfocus/companion-module-newbluefx-titler/issues",
+	"maintainers": [
+		{
+			"name": "adam"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "NewBlue",
+	"products": [
+		"Titler Live"
+	],
+	"keywords": [
+		"Graphics"
+	]
+}

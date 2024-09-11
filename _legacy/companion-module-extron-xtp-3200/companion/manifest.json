@@ -1,0 +1,32 @@
+{
+	"id": "extron-xtp-3200",
+	"name": "extron-xtp-3200",
+	"shortname": "XTP 3200",
+	"description": "XTP 3200 plugin for Companion",
+	"version": "1.0.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-extron-xtp-3200.git",
+	"bugs": "https://github.com/bitfocus/companion-module-extron-xtp-3200/issues",
+	"maintainers": [
+		{
+			"name": "Jeffrey Davidsz",
+			"email": "jeffrey.davidsz@vicreo.eu"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Extron",
+	"products": [
+		"XTP II Crosspoint 3200 Matrix"
+	],
+	"keywords": [
+		"Protocol",
+		"Sis",
+		"Matrix"
+	]
+}

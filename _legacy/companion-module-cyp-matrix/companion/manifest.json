@@ -1,0 +1,30 @@
+{
+	"id": "cyp-matrix",
+	"name": "cyp-matrix",
+	"shortname": "V8H8HPA",
+	"description": "Matrix switch 8x8",
+	"version": "1.0.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-cyp-matrix.git",
+	"bugs": "https://github.com/bitfocus/companion-module-cyp-matrix/issues",
+	"maintainers": [
+		{
+			"name": "James Rankin",
+			"email": "james@rankinfamily.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "CYP",
+	"products": [
+		"V8H8HPA"
+	],
+	"keywords": [
+		"HDMI Matrix"
+	]
+}

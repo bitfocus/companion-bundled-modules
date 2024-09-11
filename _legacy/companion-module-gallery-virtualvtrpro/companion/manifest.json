@@ -1,0 +1,29 @@
+{
+	"id": "gallery-virtualvtrpro",
+	"name": "gallery-virtualvtrpro",
+	"shortname": "virtual-vtr",
+	"description": "Module to control Gallery Virtual VTR Software",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-gallery-virtualvtrpro.git",
+	"bugs": "https://github.com/bitfocus/companion-module-gallery-virtualvtrpro/issues",
+	"maintainers": [
+		{
+			"name": "Jonathan Bond"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Gallery",
+	"products": [
+		"Virtual VTR"
+	],
+	"keywords": [
+		"VTR"
+	]
+}

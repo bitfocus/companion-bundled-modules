@@ -1,0 +1,37 @@
+{
+	"id": "allenheath-qu",
+	"name": "allenheath-qu",
+	"shortname": "QU",
+	"description": "Allen & Heath QU module for Companion",
+	"version": "1.0.9",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-allenheath-qu.git",
+	"bugs": "https://github.com/bitfocus/companion-module-allenheath-qu/issues",
+	"maintainers": [
+		{
+			"name": "Max Kiusso"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Allen & Heath",
+	"products": [
+		"QU16",
+		"QU24",
+		"QU32",
+		"QUSB",
+		"QUPAC"
+	],
+	"keywords": [
+		"QU16",
+		"QU24",
+		"QU32",
+		"QUSB",
+		"QUPAC"
+	]
+}

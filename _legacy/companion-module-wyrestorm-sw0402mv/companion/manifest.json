@@ -1,0 +1,32 @@
+{
+	"id": "wyrestorm-sw0402mv",
+	"name": "wyrestorm-sw0402mv",
+	"shortname": "wyrestorm",
+	"description": "Module to control the Wyrestorm SW-0402-mv Multiviewer",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-wyrestorm-sw0402mv.git",
+	"bugs": "https://github.com/bitfocus/companion-module-wyrestorm-sw0402mv/issues",
+	"maintainers": [
+		{
+			"name": "Per Røine",
+			"email": "per.roine@gmail.com"
+		}
+	],
+	"legacyIds": [
+		"wyrestorm-sw0402mv"
+	],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Wyrestorm",
+	"products": [
+		"SW-0402-MV"
+	],
+	"keywords": [
+		"Multiviewer"
+	]
+}

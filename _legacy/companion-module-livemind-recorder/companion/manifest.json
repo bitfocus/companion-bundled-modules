@@ -1,0 +1,32 @@
+{
+	"id": "livemind-recorder",
+	"name": "livemind-recorder",
+	"shortname": "recorder",
+	"description": "A module to control Livemind Recorder",
+	"version": "1.0.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-livemind-recorder.git",
+	"bugs": "https://github.com/bitfocus/companion-module-livemind-recorder/issues",
+	"maintainers": [
+		{
+			"name": "Chad Carpenter",
+			"email": "ccarpenter@absolutepros.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Livemind",
+	"products": [
+		"Recorder"
+	],
+	"keywords": [
+		"Livemind Recorder",
+		"Recording",
+		"NDI"
+	]
+}

@@ -1,0 +1,35 @@
+{
+	"id": "ifelseware-avkey",
+	"name": "ifelseware-avkey",
+	"shortname": "avkey",
+	"description": "AV-Key plugin module for Companion",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-ifelseware-avkey.git",
+	"bugs": "https://github.com/bitfocus/companion-module-ifelseware-avkey/issues",
+	"maintainers": [
+		{
+			"name": "Greg Meisel",
+			"email": "greg@ifelseware.com"
+		}
+	],
+	"legacyIds": [
+		"AV-Key"
+	],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "IEW Solutions (aka ifelseWare)",
+	"products": [
+		"AV-Key"
+	],
+	"keywords": [
+		"AV-Key",
+		"Automation",
+		"Remote Control",
+		"Software"
+	]
+}

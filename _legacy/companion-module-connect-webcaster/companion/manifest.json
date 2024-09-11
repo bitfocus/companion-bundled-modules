@@ -1,0 +1,29 @@
+{
+	"id": "connect-webcaster",
+	"name": "connect-webcaster",
+	"shortname": "webcaster",
+	"description": "Connect Webcaster Module",
+	"version": "1.0.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-connect-webcaster.git",
+	"bugs": "https://github.com/bitfocus/companion-module-connect-webcaster/issues",
+	"maintainers": [
+		{
+			"name": "Rose O"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Public-i",
+	"products": [
+		"Connect Webcaster"
+	],
+	"keywords": [
+		"Software"
+	]
+}

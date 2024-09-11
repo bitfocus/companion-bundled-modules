@@ -1,0 +1,28 @@
+{
+	"id": "ifelseware-avplayback",
+	"name": "ifelseware-avplayback",
+	"shortname": "avplayback",
+	"description": "Control module for AV-Playback",
+	"version": "1.0.4",
+	"license": "ISC",
+	"repository": "git+https://github.com/bitfocus/companion-module-ifelseware-avplayback.git",
+	"bugs": "https://github.com/bitfocus/companion-module-ifelseware-avplayback/issues",
+	"maintainers": [],
+	"legacyIds": [
+		"AV-Playback"
+	],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "IEW Solutions (aka ifelseWare)",
+	"products": [
+		"AV-Playback"
+	],
+	"keywords": [
+		"Video",
+		"Software"
+	]
+}

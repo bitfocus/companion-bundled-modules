@@ -1,0 +1,30 @@
+{
+	"id": "magewell-ultrastream",
+	"name": "magewell-ultrastream",
+	"shortname": "magewell",
+	"description": "Magewell Ultra Stream plugin for companion",
+	"version": "0.0.6",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-magewell-ultrastream.git",
+	"bugs": "https://github.com/bitfocus/companion-module-magewell-ultrastream/issues",
+	"maintainers": [
+		{
+			"name": "Aart Jan Kaptijn",
+			"email": "aartjan@kaptijn.online"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Magewell",
+	"products": [
+		"Ultra Stream"
+	],
+	"keywords": [
+		"Stream"
+	]
+}

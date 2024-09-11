@@ -1,0 +1,29 @@
+{
+	"id": "olzzon-ndicontroller",
+	"name": "olzzon-ndicontroller",
+	"shortname": "ndi-controller",
+	"description": "Companion module for Olzzon NDI Controller",
+	"version": "1.0.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-olzzon-ndicontroller.git",
+	"bugs": "https://github.com/bitfocus/companion-module-olzzon-ndicontroller/issues",
+	"maintainers": [
+		{
+			"name": "Olzzon"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Olzzon",
+	"products": [
+		"NDI Controller"
+	],
+	"keywords": [
+		"ndi"
+	]
+}

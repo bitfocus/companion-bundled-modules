@@ -1,0 +1,31 @@
+{
+	"id": "dsan-perfectcue",
+	"name": "dsan-perfectcue",
+	"shortname": "Perfectcue",
+	"description": "Module to control Dsan Perfectcue via Global Cashe TP2SL",
+	"version": "1.0.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-dsan-perfectcue.git",
+	"bugs": "https://github.com/bitfocus/companion-module-dsan-perfectcue/issues",
+	"maintainers": [
+		{
+			"name": "Per Røine",
+			"email": "per.roine@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Dsan",
+	"products": [
+		"Perfectcue"
+	],
+	"keywords": [
+		"Software",
+		"Show Control"
+	]
+}

@@ -1,0 +1,31 @@
+{
+	"id": "extron-smp111",
+	"name": "extron-smp111",
+	"shortname": "SMP 111",
+	"description": "SMP-111 plugin for Companion",
+	"version": "1.0.5",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-extron-smp111.git",
+	"bugs": "https://github.com/bitfocus/companion-module-extron-smp111/issues",
+	"maintainers": [
+		{
+			"name": "Nigel Brown",
+			"email": "eventreplay@outlook.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Extron",
+	"products": [
+		"SMP-111"
+	],
+	"keywords": [
+		"Stream",
+		"Recording"
+	]
+}

@@ -1,0 +1,30 @@
+{
+	"id": "protopie-bridge",
+	"name": "protopie-bridge",
+	"shortname": "protopie-bridge",
+	"description": "",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-protopie-bridge.git",
+	"bugs": "https://github.com/bitfocus/companion-module-protopie-bridge/issues",
+	"maintainers": [
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "ProtoPie",
+	"products": [
+		"Bridge"
+	],
+	"keywords": [
+		"ProtoPie"
+	]
+}

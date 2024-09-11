@@ -1,0 +1,31 @@
+{
+	"id": "modulo",
+	"name": "modulo",
+	"shortname": "modulo",
+	"description": "Module to contol Modulo Media server ",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-modulo.git",
+	"bugs": "https://github.com/bitfocus/companion-module-modulo/issues",
+	"maintainers": [
+		{
+			"name": "Per Røine",
+			"email": "per.roine@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Modulo",
+	"products": [
+		"Media Server"
+	],
+	"keywords": [
+		"Software",
+		"Media Server"
+	]
+}

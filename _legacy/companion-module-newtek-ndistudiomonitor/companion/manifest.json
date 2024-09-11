@@ -1,0 +1,30 @@
+{
+	"id": "newtek-ndistudiomonitor",
+	"name": "newtek-ndistudiomonitor",
+	"shortname": "NDIMonitor",
+	"description": "newtek-ndistudiomonitor",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-newtek-ndistudiomonitor.git",
+	"bugs": "https://github.com/bitfocus/companion-module-newtek-ndistudiomonitor/issues",
+	"maintainers": [
+		{
+			"name": "Alberto Righetto"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "NewTek",
+	"products": [
+		"NDI Studio Monitor"
+	],
+	"keywords": [
+		"Video",
+		"Software"
+	]
+}

@@ -1,0 +1,31 @@
+{
+	"id": "vimeo-livestreamstudio6",
+	"name": "vimeo-livestreamstudio6",
+	"shortname": "studio",
+	"description": "A module to control Vimeo Livestream Studio 6",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": "https://github.com/bitfocus/companion-module-vimeo-livestreamstudio6.git",
+	"bugs": "https://github.com/bitfocus/companion-module-vimeo-livestreamstudio6/issues",
+	"maintainers": [
+		{
+			"name": "Chad Carpenter",
+			"email": "ccarpenter@absolutepros.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Vimeo Livestream",
+	"products": [
+		"Studio 6"
+	],
+	"keywords": [
+		"Vinmeo Livestream Studio 6",
+		"Software Production Switcher"
+	]
+}

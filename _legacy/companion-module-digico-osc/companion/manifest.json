@@ -1,0 +1,34 @@
+{
+	"id": "digico-osc",
+	"name": "digico-osc",
+	"shortname": "DiGiCo OSC",
+	"description": "DiGiCo plugin for Companion",
+	"version": "1.0.4",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-digico-osc.git",
+	"bugs": "https://github.com/bitfocus/companion-module-digico-osc/issues",
+	"maintainers": [
+		{
+			"name": "Jeffrey Davidsz",
+			"email": "jeffrey.davidsz@vicreo.eu"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "DiGiCo",
+	"products": [
+		"osc support",
+		"SD",
+		"Quantum",
+		"S"
+	],
+	"keywords": [
+		"Audio",
+		"Sound"
+	]
+}

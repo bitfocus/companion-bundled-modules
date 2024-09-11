@@ -1,0 +1,30 @@
+{
+	"id": "leafcoders-titler",
+	"name": "leafcoders-titler",
+	"shortname": "titler",
+	"description": "leafcoders-titler",
+	"version": "1.0.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-leafcoders-titler.git",
+	"bugs": "https://github.com/bitfocus/companion-module-leafcoders-titler/issues",
+	"maintainers": [
+		{
+			"name": "Mats Ahlbom mats@ahlbom.nu"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "LeafCoders",
+	"products": [
+		"Titler"
+	],
+	"keywords": [
+		"Streaming",
+		"Title"
+	]
+}

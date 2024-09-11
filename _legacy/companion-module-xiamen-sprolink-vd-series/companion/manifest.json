@@ -1,0 +1,30 @@
+{
+	"id": "xiamen-sprolink-vd-series",
+	"name": "xiamen-sprolink-vd-series",
+	"shortname": "sprolink-vd",
+	"description": "Xiamen SPROLINK",
+	"version": "1.0.3",
+	"license": "ISC",
+	"repository": "git+https://github.com/bitfocus/companion-module-xiamen-sprolink-vd-series.git",
+	"bugs": "https://github.com/bitfocus/companion-module-xiamen-sprolink-vd-series/issues",
+	"maintainers": [
+		{
+			"name": "William Viker",
+			"email": "william@bitfocus.io"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Xiamen SPROLINK",
+	"products": [
+		"VD Series"
+	],
+	"keywords": [
+		"LED Processing"
+	]
+}

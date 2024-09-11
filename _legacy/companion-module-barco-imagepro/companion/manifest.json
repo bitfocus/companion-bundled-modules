@@ -1,0 +1,32 @@
+{
+	"id": "barco-imagepro",
+	"name": "barco-imagepro",
+	"shortname": "imagepro",
+	"description": "Module to control ImagePro 1/HD and ImagePro II",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-barco-imagepro.git",
+	"bugs": "https://github.com/bitfocus/companion-module-barco-imagepro/issues",
+	"maintainers": [
+		{
+			"name": "Per Røine",
+			"email": "per.roine@gmail.com"
+		}
+	],
+	"legacyIds": [
+		"imagepro"
+	],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Barco",
+	"products": [
+		"ImagePro"
+	],
+	"keywords": [
+		"Image Processing"
+	]
+}

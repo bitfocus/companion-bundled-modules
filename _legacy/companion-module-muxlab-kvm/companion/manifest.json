@@ -1,0 +1,30 @@
+{
+	"id": "muxlab-kvm",
+	"name": "muxlab-kvm",
+	"shortname": "muxlab-kvm",
+	"description": "Module to control Muxlab KVM",
+	"version": "1.0.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-muxlab-kvm.git",
+	"bugs": "https://github.com/bitfocus/companion-module-muxlab-kvm/issues",
+	"maintainers": [
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Muxlab",
+	"products": [
+		"KVM"
+	],
+	"keywords": [
+		"KVM"
+	]
+}

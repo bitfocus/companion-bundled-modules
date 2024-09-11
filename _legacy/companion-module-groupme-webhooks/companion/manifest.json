@@ -1,0 +1,30 @@
+{
+	"id": "groupme-webhooks",
+	"name": "groupme-webhooks",
+	"shortname": "groupme",
+	"description": "Module to send messages to GroupMe",
+	"version": "1.0.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-groupme-webhooks.git",
+	"bugs": "https://github.com/bitfocus/companion-module-groupme-webhooks/issues",
+	"maintainers": [
+		{
+			"name": "Darin Pope",
+			"email": "darin@planetpope.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Microsoft",
+	"products": [
+		"GroupMe"
+	],
+	"keywords": [
+		"Webhooks"
+	]
+}

@@ -1,0 +1,30 @@
+{
+	"id": "pangolin-beyond",
+	"name": "pangolin-beyond",
+	"shortname": "Beyond",
+	"description": "Module for controlling pangolin beyond laser software over OSC",
+	"version": "1.0.4",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-pangolin-beyond.git",
+	"bugs": "https://github.com/bitfocus/companion-module-pangolin-beyond/issues",
+	"maintainers": [
+		{
+			"name": "Nijs Jonas"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Pangolin",
+	"products": [
+		"Beyond"
+	],
+	"keywords": [
+		"Protocol",
+		"Generic"
+	]
+}

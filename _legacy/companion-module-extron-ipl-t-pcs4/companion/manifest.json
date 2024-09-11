@@ -1,0 +1,31 @@
+{
+	"id": "extron-ipl-t-pcs4",
+	"name": "extron-ipl-t-pcs4",
+	"shortname": "Extron IPL T PCS4",
+	"description": "Extron IPL plugin for Companion",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-extron-ipl-t-pcs4.git",
+	"bugs": "https://github.com/bitfocus/companion-module-extron-ipl-t-pcs4/issues",
+	"maintainers": [
+		{
+			"name": "Nigel Brown",
+			"email": "eventreplay@outlook.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Extron",
+	"products": [
+		"IPL T PCS4"
+	],
+	"keywords": [
+		"Protocol",
+		"Matrix"
+	]
+}

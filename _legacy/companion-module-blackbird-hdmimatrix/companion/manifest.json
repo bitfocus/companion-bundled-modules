@@ -1,0 +1,30 @@
+{
+	"id": "blackbird-hdmimatrix",
+	"name": "blackbird-hdmimatrix",
+	"shortname": "hdmimatrix",
+	"description": "Backbird HDMI Matrix module for Companion",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-blackbird-hdmimatrix.git",
+	"bugs": "https://github.com/bitfocus/companion-module-blackbird-hdmimatrix/issues",
+	"maintainers": [
+		{
+			"name": "JohnnyEstilles",
+			"email": "johnny@estilles.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Blackbird",
+	"products": [
+		"HDMI Matrix"
+	],
+	"keywords": [
+		"keyword"
+	]
+}

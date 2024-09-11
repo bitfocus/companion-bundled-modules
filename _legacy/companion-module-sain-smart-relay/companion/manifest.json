@@ -1,0 +1,32 @@
+{
+	"id": "sain-smart-relay",
+	"name": "sain-smart-relay",
+	"shortname": "Sain Relay",
+	"description": "Sain Smart Relay",
+	"version": "1.0.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-sain-smart-relay.git",
+	"bugs": "https://github.com/bitfocus/companion-module-sain-smart-relay/issues",
+	"maintainers": [
+		{
+			"name": "Andreas H. Thomsen",
+			"email": "mc-hauge@hotmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Sain Smart Relay",
+	"products": [
+		"4CH",
+		"8CH",
+		"16Ch"
+	],
+	"keywords": [
+		"Relay"
+	]
+}

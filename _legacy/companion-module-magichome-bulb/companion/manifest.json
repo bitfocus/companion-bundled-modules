@@ -1,0 +1,31 @@
+{
+	"id": "magichome-bulb",
+	"name": "magichome-bulb",
+	"shortname": "magichome-bulb",
+	"description": "Companion module for Magic Home Bulbs",
+	"version": "1.0.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-magichome-bulb.git",
+	"bugs": "https://github.com/bitfocus/companion-module-magichome-bulb/issues",
+	"maintainers": [
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Magic Home",
+	"products": [
+		"Bulb"
+	],
+	"keywords": [
+		"bulb",
+		"magic home"
+	]
+}

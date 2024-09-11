@@ -1,0 +1,30 @@
+{
+	"id": "analogway-eks500",
+	"name": "analogway-eks500",
+	"shortname": "Eikos",
+	"description": "Analog Way Eikos 500 plugin for Companion",
+	"version": "1.0.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-analogway-eks500.git",
+	"bugs": "https://github.com/bitfocus/companion-module-analogway-eks500/issues",
+	"maintainers": [
+		{
+			"name": "Adrian Davis",
+			"email": "themusicnerd@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Analog Way",
+	"products": [
+		"EKS 500"
+	],
+	"keywords": [
+		"Image Processing"
+	]
+}

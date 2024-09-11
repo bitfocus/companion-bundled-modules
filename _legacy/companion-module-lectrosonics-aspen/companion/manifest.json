@@ -1,0 +1,32 @@
+{
+	"id": "lectrosonics-aspen",
+	"name": "lectrosonics-aspen",
+	"shortname": "ASPEN",
+	"description": "Aspen Audio Processor plugin for Companion",
+	"version": "1.0.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-lectrosonics-aspen.git",
+	"bugs": "https://github.com/bitfocus/companion-module-lectrosonics-aspen/issues",
+	"maintainers": [
+		{
+			"name": "Bert Bredewold",
+			"email": "bbredewold@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Lectrosonics",
+	"products": [
+		"ASPEN"
+	],
+	"keywords": [
+		"Aspen",
+		"Audio",
+		"Processor"
+	]
+}

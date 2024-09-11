@@ -1,0 +1,30 @@
+{
+	"id": "blustream-hdmimatrix",
+	"name": "blustream-hdmimatrix",
+	"shortname": "BLUSTREAM-MATRIX",
+	"description": "BLUSTREAM HDMI MATRIX SWITCH 4x4",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-blustream-hdmimatrix.git",
+	"bugs": "https://github.com/bitfocus/companion-module-blustream-hdmimatrix/issues",
+	"maintainers": [
+		{
+			"name": "James Rankin",
+			"email": "james@rankinfamily.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "BLUSTREAM",
+	"products": [
+		"BLUSTREAM-MATRIX"
+	],
+	"keywords": [
+		"HDMI Matrix"
+	]
+}

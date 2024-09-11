@@ -1,0 +1,31 @@
+{
+	"id": "shure-dis-ccu",
+	"name": "shure-dis-ccu",
+	"shortname": "dis-ccu",
+	"description": "",
+	"version": "1.0.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-shure-dis-ccu.git",
+	"bugs": "https://github.com/bitfocus/companion-module-shure-dis-ccu/issues",
+	"maintainers": [
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Shure",
+	"products": [
+		"DIS CCU"
+	],
+	"keywords": [
+		"Microphone",
+		"Audio"
+	]
+}

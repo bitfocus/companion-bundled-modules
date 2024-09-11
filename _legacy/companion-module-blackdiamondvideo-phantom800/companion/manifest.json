@@ -1,0 +1,31 @@
+{
+	"id": "blackdiamondvideo-phantom800",
+	"name": "blackdiamondvideo-phantom800",
+	"shortname": "Phantom-800",
+	"description": "Phantom 800 plugin for Companion",
+	"version": "1.0.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-blackdiamondvideo-phantom800.git",
+	"bugs": "https://github.com/bitfocus/companion-module-blackdiamondvideo-phantom800/issues",
+	"maintainers": [
+		{
+			"name": "Karsten Wolf",
+			"email": "karsten.t.wolf@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Black Diamond Video",
+	"products": [
+		"Phantom 800"
+	],
+	"keywords": [
+		"Protocol",
+		"Matrix"
+	]
+}

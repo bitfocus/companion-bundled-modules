@@ -1,0 +1,33 @@
+{
+	"id": "barco-dcs",
+	"name": "barco-dcs",
+	"shortname": "dcs",
+	"description": "Module to controll Barco dcs 100/200",
+	"version": "1.0.6",
+	"license": "ISC",
+	"repository": "git+https://github.com/bitfocus/companion-module-barco-dcs.git",
+	"bugs": "https://github.com/bitfocus/companion-module-barco-dcs/issues",
+	"maintainers": [
+		{
+			"name": "Per Røine",
+			"email": "per.roine@gmail.com"
+		}
+	],
+	"legacyIds": [
+		"barco-dcs",
+		"dcs"
+	],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Barco",
+	"products": [
+		"DCS 100/200"
+	],
+	"keywords": [
+		"Image Processing"
+	]
+}

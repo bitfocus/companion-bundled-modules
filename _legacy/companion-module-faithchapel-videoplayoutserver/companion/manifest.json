@@ -1,0 +1,33 @@
+{
+	"id": "faithchapel-videoplayoutserver",
+	"name": "faithchapel-videoplayoutserver",
+	"shortname": "Video playback",
+	"description": "Fauth Chapels Video Plyback plugin for Companion",
+	"version": "1.0.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-faithchapel-videoplayoutserver.git",
+	"bugs": "https://github.com/bitfocus/companion-module-faithchapel-videoplayoutserver/issues",
+	"maintainers": [
+		{
+			"name": "Jeffrey Davidsz",
+			"email": "jeffrey.davidsz@vicreo.eu"
+		}
+	],
+	"legacyIds": [
+		"faith-chapels-video-playout"
+	],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Faith Chapel",
+	"products": [
+		"Video playback"
+	],
+	"keywords": [
+		"Software",
+		"Media Server"
+	]
+}

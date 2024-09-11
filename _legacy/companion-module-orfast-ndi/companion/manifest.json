@@ -1,0 +1,30 @@
+{
+	"id": "orfast-ndi",
+	"name": "orfast-ndi",
+	"shortname": "orfast-ndi",
+	"description": "Module to control Orfast NDI Viewer",
+	"version": "1.0.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-orfast-ndi.git",
+	"bugs": "https://github.com/bitfocus/companion-module-orfast-ndi/issues",
+	"maintainers": [
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Orfast",
+	"products": [
+		"NDI Viewer"
+	],
+	"keywords": [
+		"NDI"
+	]
+}

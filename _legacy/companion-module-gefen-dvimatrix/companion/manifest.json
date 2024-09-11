@@ -1,0 +1,30 @@
+{
+	"id": "gefen-dvimatrix",
+	"name": "gefen-dvimatrix",
+	"shortname": "dvi-matrix",
+	"description": "",
+	"version": "1.0.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-gefen-dvimatrix.git",
+	"bugs": "https://github.com/bitfocus/companion-module-gefen-dvimatrix/issues",
+	"maintainers": [
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Gefen",
+	"products": [
+		"DVI Matrix"
+	],
+	"keywords": [
+		"Matrix"
+	]
+}

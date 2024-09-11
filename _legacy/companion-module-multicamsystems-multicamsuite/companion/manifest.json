@@ -1,0 +1,32 @@
+{
+	"id": "multicamsystems-multicamsuite",
+	"name": "multicamsystems-multicamsuite",
+	"shortname": "MCS",
+	"description": "API FOR MULTICAM SYSTEMS",
+	"version": "1.0.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-multicamsystems-multicamsuite.git",
+	"bugs": "https://github.com/bitfocus/companion-module-multicamsystems-multicamsuite/issues",
+	"maintainers": [
+		{
+			"name": "Vincent Berry",
+			"email": "v.berry@multicam-systems.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Multicam Systems",
+	"products": [
+		"Multicam Suite"
+	],
+	"keywords": [
+		"Vision Mixer",
+		"ptz",
+		"Video"
+	]
+}

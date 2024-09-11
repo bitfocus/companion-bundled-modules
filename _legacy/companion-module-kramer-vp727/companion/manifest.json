@@ -1,0 +1,32 @@
+{
+	"id": "kramer-vp727",
+	"name": "kramer-vp727",
+	"shortname": "vp747",
+	"description": "Module to control Kramer VP 727 XL Presentation Scaler",
+	"version": "1.0.4",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-kramer-vp727.git",
+	"bugs": "https://github.com/bitfocus/companion-module-kramer-vp727/issues",
+	"maintainers": [
+		{
+			"name": "Per Røine",
+			"email": "per.roine@gmail.com"
+		}
+	],
+	"legacyIds": [
+		"vp727"
+	],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Kramer",
+	"products": [
+		"VP-747"
+	],
+	"keywords": [
+		"Image Processing"
+	]
+}

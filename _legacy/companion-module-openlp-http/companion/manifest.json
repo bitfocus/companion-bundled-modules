@@ -1,0 +1,32 @@
+{
+	"id": "openlp-http",
+	"name": "openlp-http",
+	"shortname": "openlp",
+	"description": "OpenLP integration for Companion",
+	"version": "0.1.7",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-openlp-http.git",
+	"bugs": "https://github.com/bitfocus/companion-module-openlp-http/issues",
+	"maintainers": [
+		{
+			"name": "Daniel Lang",
+			"email": "ldaniell14260@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "OpenLP",
+	"products": [
+		"HTTP API"
+	],
+	"keywords": [
+		"Presentation",
+		"Songs",
+		"Lyrics"
+	]
+}

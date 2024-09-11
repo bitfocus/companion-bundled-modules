@@ -1,0 +1,30 @@
+{
+	"id": "dalite-scb",
+	"name": "dalite-scb",
+	"shortname": "SCB",
+	"description": "Module to control Da-Lite NET200 SCB.",
+	"version": "1.0.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-dalite-scb.git",
+	"bugs": "https://github.com/bitfocus/companion-module-dalite-scb/issues",
+	"maintainers": [
+		{
+			"name": "Miguel Santana",
+			"email": "santana1053@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "LegendAV",
+	"products": [
+		"Da-Lite Screen Control Board"
+	],
+	"keywords": [
+		"Projector Screen"
+	]
+}

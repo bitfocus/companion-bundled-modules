@@ -1,0 +1,33 @@
+{
+	"id": "analogway-vio",
+	"name": "analogway-vio",
+	"shortname": "vio4k",
+	"description": "Analog Way multiformat converter VIO 4K plugin for Companion",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-analogway-vio.git",
+	"bugs": "https://github.com/bitfocus/companion-module-analogway-vio/issues",
+	"maintainers": [
+		{
+			"name": "Dorian Meid",
+			"email": "meid@backstage.org"
+		}
+	],
+	"legacyIds": [
+		"analogway_vio",
+		"vio"
+	],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Analog Way",
+	"products": [
+		"VIO 4K"
+	],
+	"keywords": [
+		"Image Processing"
+	]
+}

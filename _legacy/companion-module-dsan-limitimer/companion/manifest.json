@@ -1,0 +1,31 @@
+{
+	"id": "dsan-limitimer",
+	"name": "dsan-limitimer",
+	"shortname": "Limitimer",
+	"description": "Module to control Dsan Limitimer via Global Cashe TP2SL",
+	"version": "1.1.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-dsan-limitimer.git",
+	"bugs": "https://github.com/bitfocus/companion-module-dsan-limitimer/issues",
+	"maintainers": [
+		{
+			"name": "Per Røine",
+			"email": "per.roine@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Dsan",
+	"products": [
+		"Limitimer"
+	],
+	"keywords": [
+		"Software",
+		"Timing"
+	]
+}

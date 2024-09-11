@@ -1,0 +1,30 @@
+{
+	"id": "disguise",
+	"name": "disguise",
+	"shortname": "d3osc",
+	"description": "Disguise OSC Control",
+	"version": "1.1.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-disguise.git",
+	"bugs": "https://github.com/bitfocus/companion-module-disguise/issues",
+	"maintainers": [
+		{
+			"name": "William Viker",
+			"email": "william@bitfocus.io"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Disguise",
+	"products": [
+		"Disguise - OSC"
+	],
+	"keywords": [
+		"Media Server"
+	]
+}

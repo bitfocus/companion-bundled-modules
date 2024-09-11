@@ -1,0 +1,43 @@
+{
+	"id": "tallyma-wirelesstally",
+	"name": "tallyma-wirelesstally",
+	"shortname": "Wireless Tally",
+	"description": "Module to control the Tally-MA Wireless Tally",
+	"version": "1.0.5",
+	"license": "MIT",
+	"repository": "git+ssh://git@github.com/bitfocus/companion-module-tallyma-wirelesstally.git",
+	"bugs": "https://github.com/bitfocus/companion-module-tallyma-wirelesstally/issues",
+	"maintainers": [
+		{
+			"name": "João Lima"
+		},
+		{
+			"name": "Andreas H. Thomsen",
+			"email": "mc-hauge@hotmail.com"
+		},
+		{
+			"name": "Andrew Broughton",
+			"email": "andy@checkcheckonetwo.com"
+		},
+		{
+			"name": "John A Knight Jr",
+			"email": "istnv@ayesti.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Tally-MA",
+	"products": [
+		"Wireless Tally"
+	],
+	"keywords": [
+		"wireless",
+		"tally",
+		"tally-ma"
+	]
+}

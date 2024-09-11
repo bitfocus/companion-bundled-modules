@@ -1,0 +1,30 @@
+{
+	"id": "prsi-ipower",
+	"name": "prsi-ipower",
+	"shortname": "iPower",
+	"description": "Companion module for iPower PDU",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-prsi-ipower.git",
+	"bugs": "https://github.com/bitfocus/companion-module-prsi-ipower/issues",
+	"maintainers": [
+		{
+			"name": "Peter Daniel"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "PRSI",
+	"products": [
+		"iPower PDU"
+	],
+	"keywords": [
+		"Power",
+		"Control"
+	]
+}

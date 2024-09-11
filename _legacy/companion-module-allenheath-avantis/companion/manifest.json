@@ -1,0 +1,31 @@
+{
+	"id": "allenheath-avantis",
+	"name": "allenheath-avantis",
+	"shortname": "Avantis",
+	"description": "Module to control Allen & Heath Avantis Mixer",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": "https://github.com/bitfocus/companion-module-allenheath-avantis.git",
+	"bugs": "https://github.com/bitfocus/companion-module-allenheath-avantis/issues",
+	"maintainers": [
+		{
+			"name": "Shaun Brown",
+			"email": "Shaunhbrown@outlook.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Allen & Heath",
+	"products": [
+		"Avantis"
+	],
+	"keywords": [
+		"Software",
+		"Allen & Heath Mixer"
+	]
+}

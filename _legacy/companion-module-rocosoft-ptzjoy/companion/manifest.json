@@ -1,0 +1,30 @@
+{
+	"id": "rocosoft-ptzjoy",
+	"name": "rocosoft-ptzjoy",
+	"shortname": "PTZJoy",
+	"description": "Companion module for Rocosoft PTZJoy controller",
+	"version": "1.0.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-rocosoft-ptzjoy.git",
+	"bugs": "https://github.com/bitfocus/companion-module-rocosoft-ptzjoy/issues",
+	"maintainers": [
+		{
+			"name": "Peter Daniel"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Rocosoft",
+	"products": [
+		"PTZJoy"
+	],
+	"keywords": [
+		"Camera",
+		"PTZ"
+	]
+}

@@ -1,0 +1,32 @@
+{
+	"id": "cisco-cms",
+	"name": "cisco-cms",
+	"shortname": "cms",
+	"description": "Module to control Cisco CMS",
+	"version": "1.0.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-cisco-cms.git",
+	"bugs": "https://github.com/bitfocus/companion-module-cisco-cms/issues",
+	"maintainers": [
+		{
+			"name": "Yuri Vidal",
+			"email": "yuri.vidal@gmail.com"
+		}
+	],
+	"legacyIds": [
+		"cms"
+	],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Cisco",
+	"products": [
+		"CMS Meeting Server"
+	],
+	"keywords": [
+		"Video Conferencing"
+	]
+}

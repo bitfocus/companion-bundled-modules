@@ -1,0 +1,31 @@
+{
+	"id": "rossvideo-caprica",
+	"name": "rossvideo-caprica",
+	"shortname": "Caprica",
+	"description": "Control Ross Video Caprica, part of Ross Overdrive",
+	"version": "1.0.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-rossvideo-caprica.git",
+	"bugs": "https://github.com/bitfocus/companion-module-rossvideo-caprica/issues",
+	"maintainers": [
+		{
+			"name": "Noah Callaway",
+			"email": "noah@thecallaways.net"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Ross Video",
+	"products": [
+		"Caprica"
+	],
+	"keywords": [
+		"Protocol",
+		"Software"
+	]
+}

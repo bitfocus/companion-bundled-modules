@@ -1,0 +1,31 @@
+{
+	"id": "optoma-z28s",
+	"name": "optoma-z28s",
+	"shortname": "optoma-z28s",
+	"description": "Optoma z28s plugin for Companion",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-optoma-z28s.git",
+	"bugs": "https://github.com/bitfocus/companion-module-optoma-z28s/issues",
+	"maintainers": [
+		{
+			"name": "William Viker",
+			"email": "william@bitfocus.io"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Optoma",
+	"products": [
+		"Z28S",
+		"ZH400UST"
+	],
+	"keywords": [
+		"Projector"
+	]
+}

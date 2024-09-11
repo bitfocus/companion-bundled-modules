@@ -1,0 +1,29 @@
+{
+	"id": "analogway-pls300",
+	"name": "analogway-pls300",
+	"shortname": "pulse",
+	"description": "Analog Way Pulse 300 plugin for Companion",
+	"version": "1.0.5",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-analogway-pls300.git",
+	"bugs": "https://github.com/bitfocus/companion-module-analogway-pls300/issues",
+	"maintainers": [
+		{
+			"name": "Tyler Krupa"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Analog Way",
+	"products": [
+		"PLS 300"
+	],
+	"keywords": [
+		"Image Processing"
+	]
+}

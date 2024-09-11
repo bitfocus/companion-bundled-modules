@@ -1,0 +1,31 @@
+{
+	"id": "barco-matrixpro",
+	"name": "barco-matrixpro",
+	"shortname": "MatrixPro-II",
+	"description": "Matrix plugin for Companion",
+	"version": "1.1.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-barco-matrixpro.git",
+	"bugs": "https://github.com/bitfocus/companion-module-barco-matrixpro/issues",
+	"maintainers": [
+		{
+			"name": "Jeffrey Davidsz",
+			"email": "jeffrey.davidsz@vicreo.eu"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Barco",
+	"products": [
+		"MatrixPro-II"
+	],
+	"keywords": [
+		"Protocol",
+		"Matrix"
+	]
+}

@@ -1,0 +1,30 @@
+{
+	"id": "lumens-mediaprocessor",
+	"name": "lumens-mediaprocessor",
+	"shortname": "MediaProcessor",
+	"description": "Lumens Media Processor",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-lumens-mediaprocessor.git",
+	"bugs": "https://github.com/bitfocus/companion-module-lumens-mediaprocessor/issues",
+	"maintainers": [
+		{
+			"name": "Lumens Team"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Lumens",
+	"products": [
+		"Media Processor"
+	],
+	"keywords": [
+		"Lumens",
+		"Encode"
+	]
+}

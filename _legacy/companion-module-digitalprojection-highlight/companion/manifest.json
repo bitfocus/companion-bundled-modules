@@ -1,0 +1,32 @@
+{
+	"id": "digitalprojection-highlight",
+	"name": "digitalprojection-highlight",
+	"shortname": "dp highlite",
+	"description": "Digital Projection HIGHlite plugin for Companion",
+	"version": "1.0.4",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-digitalprojection-highlight.git",
+	"bugs": "https://github.com/bitfocus/companion-module-digitalprojection-highlight/issues",
+	"maintainers": [
+		{
+			"name": "Per Røine",
+			"email": "per.roine@gmail.com"
+		}
+	],
+	"legacyIds": [
+		"dphighlight"
+	],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Digital Projection",
+	"products": [
+		"HIGHlite"
+	],
+	"keywords": [
+		"Projector"
+	]
+}

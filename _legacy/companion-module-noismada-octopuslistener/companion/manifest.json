@@ -1,0 +1,32 @@
+{
+	"id": "noismada-octopuslistener",
+	"name": "noismada-octopuslistener",
+	"shortname": "octopus",
+	"description": "Module to control the Octopus App",
+	"version": "1.0.5",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-noismada-octopuslistener.git",
+	"bugs": "https://github.com/bitfocus/companion-module-noismada-octopuslistener/issues",
+	"maintainers": [
+		{
+			"name": "Per Røine",
+			"email": "per.roine@gmail.com"
+		}
+	],
+	"legacyIds": [
+		"octopusapp"
+	],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Octopus",
+	"products": [
+		"App"
+	],
+	"keywords": [
+		"Software"
+	]
+}

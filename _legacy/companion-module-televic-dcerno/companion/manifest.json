@@ -1,0 +1,31 @@
+{
+	"id": "televic-dcerno",
+	"name": "televic-dcerno",
+	"shortname": "d-cerno",
+	"description": "",
+	"version": "1.0.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-televic-dcerno.git",
+	"bugs": "https://github.com/bitfocus/companion-module-televic-dcerno/issues",
+	"maintainers": [
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Televic",
+	"products": [
+		"D-CERNO"
+	],
+	"keywords": [
+		"Microphone",
+		"Audio"
+	]
+}

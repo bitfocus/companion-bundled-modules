@@ -1,0 +1,30 @@
+{
+	"id": "brightsign-player",
+	"name": "brightsign-player",
+	"shortname": "BrightSign",
+	"description": "BrightSign plugin for Companion",
+	"version": "1.1.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-brightsign-player.git",
+	"bugs": "https://github.com/bitfocus/companion-module-brightsign-player/issues",
+	"maintainers": [
+		{
+			"name": "Jeffrey Davidsz",
+			"email": "jeffrey.davidsz@vicreo.eu"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "BrightSign",
+	"products": [
+		"Player"
+	],
+	"keywords": [
+		"Media"
+	]
+}

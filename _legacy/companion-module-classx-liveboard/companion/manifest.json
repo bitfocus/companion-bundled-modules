@@ -1,0 +1,31 @@
+{
+	"id": "classx-liveboard",
+	"name": "classx-liveboard",
+	"shortname": "LiveBoard",
+	"description": "Module to interact with ClassX LiveBoard",
+	"version": "1.0.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-classx-liveboard.git",
+	"bugs": "https://github.com/bitfocus/companion-module-classx-liveboard/issues",
+	"maintainers": [
+		{
+			"name": "Pablo García",
+			"email": "pablomorpheo@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "ClassX",
+	"products": [
+		"LiveBoard"
+	],
+	"keywords": [
+		"ClassX",
+		"LiveBoard"
+	]
+}

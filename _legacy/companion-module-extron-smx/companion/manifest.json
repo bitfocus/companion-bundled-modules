@@ -1,0 +1,31 @@
+{
+	"id": "extron-smx",
+	"name": "extron-smx",
+	"shortname": "SMX",
+	"description": "SMX Matrix plugin for Companion",
+	"version": "1.0.5",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-extron-smx.git",
+	"bugs": "https://github.com/bitfocus/companion-module-extron-smx/issues",
+	"maintainers": [
+		{
+			"name": "Nigel Brown",
+			"email": "eventreplay@outlook.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Extron",
+	"products": [
+		"SMX Matrix"
+	],
+	"keywords": [
+		"Protocol",
+		"Matrix"
+	]
+}

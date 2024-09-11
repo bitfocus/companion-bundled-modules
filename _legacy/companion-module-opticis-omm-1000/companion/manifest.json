@@ -1,0 +1,31 @@
+{
+	"id": "opticis-omm-1000",
+	"name": "opticis-omm-1000",
+	"shortname": "OMM 1000",
+	"description": "OMM 1000 Matrix plugin for Companion",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-opticis-omm-1000.git",
+	"bugs": "https://github.com/bitfocus/companion-module-opticis-omm-1000/issues",
+	"maintainers": [
+		{
+			"name": "Jeffrey Davidsz",
+			"email": "jeffrey.davidsz@vicreo.eu"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Opticis",
+	"products": [
+		"OMM 1000 Matrix"
+	],
+	"keywords": [
+		"Protocol",
+		"Matrix"
+	]
+}

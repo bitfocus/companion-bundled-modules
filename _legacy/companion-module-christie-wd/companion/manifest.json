@@ -1,0 +1,32 @@
+{
+	"id": "christie-wd",
+	"name": "christie-wd",
+	"shortname": "WD",
+	"description": "Christie Widget Designer UDP/TCP Remoting",
+	"version": "1.0.8",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-christie-wd.git",
+	"bugs": "https://github.com/bitfocus/companion-module-christie-wd/issues",
+	"maintainers": [
+		{
+			"name": "Daniel Kaminski",
+			"email": "daniel@dk-production.de"
+		}
+	],
+	"legacyIds": [
+		"christiewd"
+	],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Christie Digital Systems",
+	"products": [
+		"Widget Designer"
+	],
+	"keywords": [
+		"Media Server"
+	]
+}

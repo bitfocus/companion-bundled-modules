@@ -1,0 +1,30 @@
+{
+	"id": "obsidiancontrol-onyx",
+	"name": "obsidiancontrol-onyx",
+	"shortname": "onyx",
+	"description": "A Companion module to control Onyx and M-Series based lighting systems",
+	"version": "1.0.5",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-obsidiancontrol-onyx.git",
+	"bugs": "https://github.com/bitfocus/companion-module-obsidiancontrol-onyx/issues",
+	"maintainers": [
+		{
+			"name": "Oliver Herrmann",
+			"email": "oliver@monoxane.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "obsidiancontrol",
+	"products": [
+		"ONYX"
+	],
+	"keywords": [
+		"Lighting"
+	]
+}

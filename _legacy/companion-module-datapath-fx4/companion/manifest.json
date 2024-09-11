@@ -1,0 +1,30 @@
+{
+	"id": "datapath-fx4",
+	"name": "datapath-fx4",
+	"shortname": "fx4",
+	"description": "Module to control Datapath FX4",
+	"version": "1.0.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-datapath-fx4.git",
+	"bugs": "https://github.com/bitfocus/companion-module-datapath-fx4/issues",
+	"maintainers": [
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Datapath",
+	"products": [
+		"FX4"
+	],
+	"keywords": [
+		"Display Controller"
+	]
+}

@@ -1,0 +1,32 @@
+{
+	"id": "7thsensedesign-delta",
+	"name": "7thsensedesign-delta",
+	"shortname": "delta",
+	"description": "Module to control 7th Sense Delta Media Server",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-7thsensedesign-delta.git",
+	"bugs": "https://github.com/bitfocus/companion-module-7thsensedesign-delta/issues",
+	"maintainers": [
+		{
+			"name": "Per Røine",
+			"email": "per.roine@gmail.com"
+		}
+	],
+	"legacyIds": [
+		"7thsensedelta"
+	],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "7thSense Design",
+	"products": [
+		"Delta Media Server"
+	],
+	"keywords": [
+		"Media Server"
+	]
+}

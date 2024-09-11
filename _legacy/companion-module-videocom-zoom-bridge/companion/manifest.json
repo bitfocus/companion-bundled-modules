@@ -1,0 +1,31 @@
+{
+	"id": "videocom-zoom-bridge",
+	"name": "videocom-zoom-bridge",
+	"shortname": "zoombridge",
+	"description": "Zoom Bridge NDI plugin for companion ",
+	"version": "1.0.1",
+	"license": "MIT",
+	"repository": "https://github.com/bitfocus/companion-module-videocom-zoom-bridge.git",
+	"bugs": "https://github.com/bitfocus/companion-module-videocom-zoom-bridge/issues",
+	"maintainers": [
+		{
+			"name": "JeffreyDavidsz",
+			"email": "jeffrey.davidsz@vicreo.eu"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "videocom",
+	"products": [
+		"Zoom Bridge"
+	],
+	"keywords": [
+		"NDI",
+		"zoom"
+	]
+}

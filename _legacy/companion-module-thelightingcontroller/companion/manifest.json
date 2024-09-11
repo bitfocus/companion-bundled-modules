@@ -1,0 +1,30 @@
+{
+	"id": "thelightingcontroller",
+	"name": "thelightingcontroller",
+	"shortname": "QuickDMX",
+	"description": "The Lighting Controller (aka Showtec QuickDMX, Chauvet ShowXpress, Sweetlight Controller, Live Mobile)",
+	"version": "1.1.4",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-thelightingcontroller.git",
+	"bugs": "https://github.com/bitfocus/companion-module-thelightingcontroller/issues",
+	"maintainers": [
+		{
+			"name": "Craig Dean",
+			"email": "thargy@yahoo.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "thelightingcontroller.com, Chauvet, Showtec, Sweetlight",
+	"products": [
+		"QuickDMX, ShowXPress"
+	],
+	"keywords": [
+		"Lighting"
+	]
+}

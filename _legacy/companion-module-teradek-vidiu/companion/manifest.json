@@ -1,0 +1,30 @@
+{
+	"id": "teradek-vidiu",
+	"name": "teradek-vidiu",
+	"shortname": "vidiu",
+	"description": "",
+	"version": "1.0.5",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-teradek-vidiu.git",
+	"bugs": "https://github.com/bitfocus/companion-module-teradek-vidiu/issues",
+	"maintainers": [
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Teradek",
+	"products": [
+		"VidiU"
+	],
+	"keywords": [
+		"Stream"
+	]
+}

@@ -1,0 +1,32 @@
+{
+	"id": "rationalacoustics-smaart4",
+	"name": "rationalacoustics-smaart4",
+	"shortname": "Smaart-V4",
+	"description": "Rational Acoustics Smaart(API V4) for Companion.",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-rationalacoustics-smaart4.git",
+	"bugs": "https://github.com/bitfocus/companion-module-rationalacoustics-smaart4/issues",
+	"maintainers": [
+		{
+			"name": "Todd Murphy",
+			"email": "murphytodd4@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Rational Acoustics",
+	"products": [
+		"Smaart Suite V9",
+		"Smaart LE V9",
+		"Smaart RT V9"
+	],
+	"keywords": [
+		"Audio"
+	]
+}

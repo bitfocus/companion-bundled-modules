@@ -1,0 +1,31 @@
+{
+	"id": "vislink-ulrx-ld",
+	"name": "vislink-ulrx-ld",
+	"shortname": "ulrx",
+	"description": "vislink-ulrx-ld",
+	"version": "1.0.4",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-vislink-ulrx-ld.git",
+	"bugs": "https://github.com/bitfocus/companion-module-vislink-ulrx-ld/issues",
+	"maintainers": [
+		{
+			"name": "Leopold Strobl",
+			"email": "leopold.strobl@vt-media.de"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Vislink",
+	"products": [
+		"ULRX-LD"
+	],
+	"keywords": [
+		"hcam",
+		"ulrx"
+	]
+}

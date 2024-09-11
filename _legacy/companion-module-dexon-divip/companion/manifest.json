@@ -1,0 +1,31 @@
+{
+	"id": "dexon-divip",
+	"name": "dexon-divip",
+	"shortname": "Divip",
+	"description": "DEXON DIVIP-Pro",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-dexon-divip.git",
+	"bugs": "https://github.com/bitfocus/companion-module-dexon-divip/issues",
+	"maintainers": [
+		{
+			"name": "Andreas H. Thomsen",
+			"email": "mc-hauge@hotmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "DEXON",
+	"products": [
+		"DIVIP"
+	],
+	"keywords": [
+		"Vision Mixer",
+		"Matrix"
+	]
+}

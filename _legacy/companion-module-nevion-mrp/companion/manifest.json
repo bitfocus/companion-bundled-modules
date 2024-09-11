@@ -1,0 +1,25 @@
+{
+	"id": "nevion-mrp",
+	"name": "nevion-mrp",
+	"shortname": "nevion",
+	"description": "Nevion Modular Routing protocol support",
+	"version": "2.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-nevion-mrp.git",
+	"bugs": "https://github.com/bitfocus/companion-module-nevion-mrp/issues",
+	"maintainers": [],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Nevion",
+	"products": [
+		"MRP / Multicon"
+	],
+	"keywords": [
+		"Matrix"
+	]
+}

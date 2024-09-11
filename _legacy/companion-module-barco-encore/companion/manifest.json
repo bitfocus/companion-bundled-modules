@@ -1,0 +1,30 @@
+{
+	"id": "barco-encore",
+	"name": "barco-encore",
+	"shortname": "encore",
+	"description": "Barco Encore",
+	"version": "1.0.3",
+	"license": "ISC",
+	"repository": "git+https://github.com/bitfocus/companion-module-barco-encore.git",
+	"bugs": "https://github.com/bitfocus/companion-module-barco-encore/issues",
+	"maintainers": [
+		{
+			"name": "William Viker",
+			"email": "william@bitfocus.io"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Barco",
+	"products": [
+		"Encore"
+	],
+	"keywords": [
+		"Image Processing"
+	]
+}

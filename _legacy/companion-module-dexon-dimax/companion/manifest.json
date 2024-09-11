@@ -1,0 +1,31 @@
+{
+	"id": "dexon-dimax",
+	"name": "dexon-dimax",
+	"shortname": "Dimax",
+	"description": "DEXON DIMAX-Pro",
+	"version": "1.0.4",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-dexon-dimax.git",
+	"bugs": "https://github.com/bitfocus/companion-module-dexon-dimax/issues",
+	"maintainers": [
+		{
+			"name": "Andreas H. Thomsen",
+			"email": "mc-hauge@hotmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "DEXON",
+	"products": [
+		"DIMAX"
+	],
+	"keywords": [
+		"Vision Mixer",
+		"Matrix"
+	]
+}

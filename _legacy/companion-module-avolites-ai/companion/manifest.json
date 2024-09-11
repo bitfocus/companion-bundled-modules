@@ -1,0 +1,31 @@
+{
+	"id": "avolites-ai",
+	"name": "avolites-ai",
+	"shortname": "ai",
+	"description": "Avolites AI module",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-avolites-ai.git",
+	"bugs": "https://github.com/bitfocus/companion-module-avolites-ai/issues",
+	"maintainers": [
+		{
+			"name": "Nijs Jonas"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Avolites",
+	"products": [
+		"AI"
+	],
+	"keywords": [
+		"Vision Mixer",
+		"Media Server",
+		"Software"
+	]
+}

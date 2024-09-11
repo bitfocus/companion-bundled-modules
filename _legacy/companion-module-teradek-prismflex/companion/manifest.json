@@ -1,0 +1,31 @@
+{
+	"id": "teradek-prismflex",
+	"name": "teradek-prismflex",
+	"shortname": "teradek-prismflex",
+	"description": "Companion module for Teradek Prism Flex",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-teradek-prismflex.git",
+	"bugs": "https://github.com/bitfocus/companion-module-teradek-prismflex/issues",
+	"maintainers": [
+		{
+			"name": "Michael Larsen",
+			"email": "michael.larsen91@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Teradek",
+	"products": [
+		"Prism Flex"
+	],
+	"keywords": [
+		"prism flex",
+		"encoder"
+	]
+}

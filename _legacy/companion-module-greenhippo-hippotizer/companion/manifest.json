@@ -1,0 +1,32 @@
+{
+	"id": "greenhippo-hippotizer",
+	"name": "greenhippo-hippotizer",
+	"shortname": "Hippotizer",
+	"description": "Plugin for Hippotizer by GreenHippo",
+	"version": "1.0.4",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-greenhippo-hippotizer.git",
+	"bugs": "https://github.com/bitfocus/companion-module-greenhippo-hippotizer/issues",
+	"maintainers": [
+		{
+			"name": "Erik Carnemalm"
+		}
+	],
+	"legacyIds": [
+		"greenhippo",
+		"green-hippo-hippotizer"
+	],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Green Hippo",
+	"products": [
+		"Hippotizer"
+	],
+	"keywords": [
+		"Media Server"
+	]
+}

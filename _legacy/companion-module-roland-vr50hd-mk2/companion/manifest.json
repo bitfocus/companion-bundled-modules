@@ -1,0 +1,30 @@
+{
+	"id": "roland-vr50hd-mk2",
+	"name": "roland-vr50hd-mk2",
+	"shortname": "vr50hd",
+	"description": "",
+	"version": "1.0.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-roland-vr50hd-mk2.git",
+	"bugs": "https://github.com/bitfocus/companion-module-roland-vr50hd-mk2/issues",
+	"maintainers": [
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Roland",
+	"products": [
+		"VR-50HD MK II"
+	],
+	"keywords": [
+		"Vision Mixer"
+	]
+}

@@ -1,0 +1,31 @@
+{
+	"id": "sonoran-coyote",
+	"name": "sonoran-coyote",
+	"shortname": "coyote",
+	"description": "Sonoran Video Systems Coyote",
+	"version": "1.0.2",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-sonoran-coyote.git",
+	"bugs": "https://github.com/bitfocus/companion-module-sonoran-coyote/issues",
+	"maintainers": [
+		{
+			"name": "Andreas H. Thomsen",
+			"email": "mc-hauge@hotmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Sonoran",
+	"products": [
+		"Coyote"
+	],
+	"keywords": [
+		"Vision Mixer",
+		"Matrix"
+	]
+}

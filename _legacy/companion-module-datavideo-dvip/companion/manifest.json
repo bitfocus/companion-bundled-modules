@@ -1,0 +1,29 @@
+{
+	"id": "datavideo-dvip",
+	"name": "datavideo-dvip",
+	"shortname": "dvip",
+	"description": "datavideo-dvip",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-datavideo-dvip.git",
+	"bugs": "https://github.com/bitfocus/companion-module-datavideo-dvip/issues",
+	"maintainers": [
+		{
+			"name": "Rose O"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Datavideo",
+	"products": [
+		"DVIP"
+	],
+	"keywords": [
+		"Vision Mixer"
+	]
+}

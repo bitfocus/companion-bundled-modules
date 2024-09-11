@@ -1,0 +1,30 @@
+{
+	"id": "panasonic-lumix",
+	"name": "panasonic-lumix",
+	"shortname": "panasonic-lumix",
+	"description": "Companion module for Panasonic Lumix cameras",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-panasonic-lumix.git",
+	"bugs": "https://github.com/bitfocus/companion-module-panasonic-lumix/issues",
+	"maintainers": [
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Panasonic",
+	"products": [
+		"Lumix"
+	],
+	"keywords": [
+		"Camera"
+	]
+}

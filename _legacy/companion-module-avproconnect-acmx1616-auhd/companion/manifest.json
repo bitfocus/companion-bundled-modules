@@ -1,0 +1,30 @@
+{
+	"id": "avproconnect-acmx1616-auhd",
+	"name": "avproconnect-acmx1616-auhd",
+	"shortname": "AC-MX1616",
+	"description": "AVProconnect AC-MX1616-AUHD",
+	"version": "1.0.1",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-avproconnect-acmx1616-auhd.git",
+	"bugs": "https://github.com/bitfocus/companion-module-avproconnect-acmx1616-auhd/issues",
+	"maintainers": [
+		{
+			"name": "Andreas H. Thomsen",
+			"email": "mc-hauge@hotmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.10.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "AVProconnect",
+	"products": [
+		" AC-MX1616-AUHD"
+	],
+	"keywords": [
+		"Matrix"
+	]
+}
