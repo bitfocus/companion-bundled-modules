@@ -1,38 +1,14 @@
 # Companion Legacy Modules
 
-This is a wrapper to wrap a Companion 2.4 module to run through the new Companion 3.0 module api.
+This is a wrapper to wrap Companion 2.4 modules to run through the new Companion 3.0 module api.
 
-### Removed modules
+## Status
 
-The following modules had issues when imported into this wrapper
+This wrapper and the modules it contains are frozen, and should not get any further updates.
+A built version of these modules has been added to the main branch of this repository, the expectation is that the folder of these will be trimmed down over time.
+This wrapper can then be discarded once that process has completed.
 
-- analogway-awj
-- barco-clickshare
-- bitfocus-snapshot
-- cisco-webex-websocket
-- discord-api
-- ecamm-live
-- esphome-api
-- generic-emberplus
-- generic-pjlink
-- google-sheets
-- ipl-ocp
-- linkbox-remote
-- magewell-ultrastream
-- olzzon-ndicontroller
-- panasonic-kairos
-- seervision-suite
-- sennheiser-evolutionwireless
-- sonos-speakers
-- soundcraft-ui
-- studiocoast-vmix
-- theatrixx-xpresscue
-- twitch-api
-- ventuz-director
-- videocom-zoom-bridge
-- vystem-api
-- youtube-live
-- zoom-osc-iso
+## Old notes
 
 ### Potential issues
 
