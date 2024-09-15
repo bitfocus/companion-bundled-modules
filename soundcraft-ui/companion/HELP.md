@@ -17,8 +17,8 @@ If you're missing a feature, feel free to [open an issue](https://github.com/bit
 | SOLO/Headphone Volume | Set and change the volume of SOLO and Headphone buses            |
 | MUTE Groups           | Enable, disable and toggle MUTE groups                           |
 | Media Player          | Control media player transport, load playlists and tracks        |
-| 2-Track Recording     | Control the Dual-Track Recorder (Ui24R only)                     |
-| Multi-Track Recording | Control the Multi-Track Recorder (Ui24R only)                    |
+| 2-Track Recording     | Control the dual-track recorder (Ui24R only)                     |
+| Multitrack Recording  | Control the multitrack recorder (Ui24R only)                     |
 | Dim Master            | Dim the master bus (incl. feedback) (Ui24R only)                 |
 | Shows                 | Load shows, snapshots and cues                                   |
 | Phantom Power         | Switch phantom power on hardware channels                        |
