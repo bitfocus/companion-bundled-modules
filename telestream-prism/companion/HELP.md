@@ -89,9 +89,12 @@ Some actions require specific hardware models, or licensed software modules.
 - **Loudness Ballistic**
 - **Loudness Full Scale Unit**
 - **Loudness Load Preset**
+- **Loudness Loud Level**
 - **Loudness Metering Mode**
+- **Loudness Quiet Level**
 - **Loudness Session Control**
 - **Loudness Short Gating Window**
+- **Loudness Target Level**
 - **Loudness True Peak DC Blocking Filter**
 - **Loudness True Peak Emphasis**
 - **Measure Assign**
