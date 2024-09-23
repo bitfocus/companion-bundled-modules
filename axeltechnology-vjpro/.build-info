@@ -1,4 +1,4 @@
 MODULE_NAME=axeltechnology-vjpro
-GIT_REF=v1.0.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/8326057326
-UPDATE_DATE=2024-03-18
+GIT_REF=v1.0.3
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/11003733879
+UPDATE_DATE=2024-09-23
