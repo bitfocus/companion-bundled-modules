@@ -14,7 +14,6 @@ on:
         description: Git ref to build (tag/commit)
         required: true
 
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,7 +23,7 @@ jobs:
 
     permissions:
       packages: read
-      
+
     steps:
       - name: Report info
         run: |
@@ -34,11 +33,24 @@ jobs:
         run: |
           git clone https://github.com/bitfocus/companion-module-${{ github.event.inputs.module-name }} -b "${{ github.event.inputs.git-ref }}" "${{ github.event.inputs.module-name }}"
 
-      - name: Use Node.js 18.x
+      - name: Determine nodejs version
+        id: determine-nodejs
+        run: |
+          NODE_VERSION=$(jq '.runtime.type' ${{ github.event.inputs.module-name }}/companion/manifest.json)
+          echo "Node.js version: $NODE_VERSION"
+
+          if [ "$NODE_VERSION" == "\"node18\"" ]; then
+            echo "Using Node.js 18.x"
+            echo "version=18.x" >> $GITHUB_OUTPUT
+          elif [ "$NODE_VERSION" == "\"node22\"" ]; then
+            echo "Using Node.js 22.x"
+            echo "version=22.x" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Use Node.js ${{ steps.determine-nodejs.outputs.version }}
         uses: actions/setup-node@v4
         with:
-          # TODO - should this be configurable?
-          node-version: 18.x
+          node-version: ${{ steps.determine-nodejs.outputs.version }}
 
       - name: Enable corepack
         run: |
@@ -63,7 +75,7 @@ jobs:
             echo "Module manifest product list is either empty or does not exist"
             exit 99
           fi
-          
+
           GIT_HASH=$(git rev-parse HEAD)
           echo "git-hash=$GIT_HASH" >> $GITHUB_OUTPUT
 
@@ -106,7 +118,7 @@ jobs:
 
     permissions:
       contents: write
-      
+
     steps:
       - uses: actions/checkout@v4
         with:
