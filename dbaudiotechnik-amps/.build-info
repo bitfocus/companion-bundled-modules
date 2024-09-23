@@ -1,0 +1,4 @@
+MODULE_NAME=dbaudiotechnik-amps
+GIT_REF=1.0.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/11002423068
+UPDATE_DATE=2024-09-23
