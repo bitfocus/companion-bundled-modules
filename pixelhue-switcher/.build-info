@@ -1,4 +1,4 @@
 MODULE_NAME=pixelhue-switcher
-GIT_REF=v1.2.2
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/8325953448
-UPDATE_DATE=2024-03-18
+GIT_REF=v1.3.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/11002076495
+UPDATE_DATE=2024-09-23

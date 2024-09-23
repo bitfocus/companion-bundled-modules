@@ -15,9 +15,19 @@ This module will allow you to control the following Pixelhue products: F4, F4 Li
 - Freeze
 - Preset
 - Preset Destination
+- Screens
+- Layers
+- Sources
+- SwapCopy
+- MatchPgm
+- Take Time-
+- Take Time+
+- Mapping
 
 **Available Feedbacks:**
 
 - FTB Status Detection
 - Freeze Status Detection
 - PGM Status Detection
+- SwapCopy Status Detection
+- Mapping Status Detection
