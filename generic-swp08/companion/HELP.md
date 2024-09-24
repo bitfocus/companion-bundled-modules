@@ -5,18 +5,20 @@ The SW-P-08 protocol is implemented by many broadcast routers and control system
 [Please log suggestions and issues on github.](https://github.com/bitfocus/companion-module-generic-swp08/issues)
 
 ## Configuration
+
 These settings must be entered before the module can be used.
 
-- **IP Address** of the router or controller 
-- **Port** of the router of controller 
+- **IP Address** of the router or controller
+- **Port** of the router of controller
 - **Matrix** This will probably be 1 in most systems
 - **Levels** This number controls the levels offered in the level selection menus. It is not verified against the hardware and only affects the user interface. All levels are enabled by default, use the Levels actions to modify the selection.
 - **Router has more than 1024 sources or destinations** If you have a large router enable this option to ensure all source and destination names are retrieved. If you don't need the names from the router or your router doesn't support names then this option can be ignored.
-- **Request Supported Commands** By default Companion will ask the router which SW-P-08 commands and responses it supports. If this check fails then it can be disabled using this option. 
+- **Request Supported Commands** By default Companion will ask the router which SW-P-08 commands and responses it supports. If this check fails then it can be disabled using this option.
 - **Request Names** When connection is made to the router ask for the names. Not supported by all routers.
 - **Name Length** Ask the router to return names of this length. Not supported by all routers.
 
 ## Action Commands
+
 There are multiple ways of making crosspoint buttons to cater for different applications. For basic operation where one button makes one pre-defined route only **Set Crosspoint** is required.
 
 - **Select Levels** Add the level(s) in the action to the level selection for the next take
@@ -31,6 +33,7 @@ There are multiple ways of making crosspoint buttons to cater for different appl
 - **Refresh Source and Destination names** Ask the router for the current set of names and update
 
 ## Feedbacks
+
 Button background colours can be changed to show current selection status.
 
 - **Crosspoint Connected**
@@ -42,6 +45,7 @@ Button background colours can be changed to show current selection status.
 - **Source routed to selected Destination**
 
 ## Variables
+
 Some dynamic information is stored in variables which you can access through the Companion user interface.
 
 - **Number of Source names** reported by router
@@ -49,19 +53,21 @@ Some dynamic information is stored in variables which you can access through the
 - **Selected Destination** set by actions
 - **Selected Source** set by actions
 - **Selected Destination Source** and **Selected Destination Source Name** When a destination is selected the variable updates by interrogating the router. If multiple levels are defined then there is a variable for each level.
-- **Source_?** The name of each source as defined in the the router
-- **Destination_?** The name of each destination as defined in the router
-
+- **Source\_?** The name of each source as defined in the the router
+- **Destination\_?** The name of each destination as defined in the router
 
 ## Action Recorder
+
 Tally and connected messages recieved from the router will create new set crosspoint actions, allowing for easy creation of salvos.
 
 ## Version History
 
 ### Version 1.0.0
+
 - First Release
 
 ### Version 1.0.1
+
 - Reworked levels to be more flexible
 - Added route source by name action
 - Added toggle level action
@@ -71,6 +77,7 @@ Tally and connected messages recieved from the router will create new set crossp
 - Fixed packaging of bytes sent to router
 
 ### Version 1.0.2
+
 - Reworked incoming data processing
 - Reworked name decoding to support larger routers
 - Added module config option for name length
@@ -78,19 +85,23 @@ Tally and connected messages recieved from the router will create new set crossp
 - Added variables for selected destination source
 
 ### Version 1.0.3
+
 - Added module config option to disable the supported commands check
 
 ### Version 1.0.4
+
 - Added support for more than 16 levels
 - Added support for more then 1024 sources/destinations
 - Tidy up config page layout
 - Add more supported device types to the module properties
 
 ### Version 1.0.5
+
 - Added presets for some actions
 - Added feedback Source routed to selected Destination
 
 ### Version 2.0.0
+
 - Update for Companion Version 3
 - Add connection keep alive
 - Accept variables for Select Source Name, Select Destination Name, Set Crosspoint by Name
@@ -99,3 +110,13 @@ Tally and connected messages recieved from the router will create new set crossp
 - Select Source and Destination Presets now generated according to router size (up to 256)
 - Select Source and Destination Presets now with names
 - Select Source presets have 2nd Source Routed to Destination feedback
+
+### Version 2.0.1
+
+- Add TX message queue 
+- Update dependencies
+- Update package manager
+
+### Version 2.0.2
+
+- Fix typo in variable-parsing function
