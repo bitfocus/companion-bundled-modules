@@ -1,4 +1,4 @@
 MODULE_NAME=canon-ptz
-GIT_REF=v2.2.3
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/10518022516
-UPDATE_DATE=2024-08-23
+GIT_REF=v2.3.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/11058546754
+UPDATE_DATE=2024-09-26
