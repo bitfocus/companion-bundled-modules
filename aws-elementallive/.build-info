@@ -1,4 +1,4 @@
 MODULE_NAME=aws-elementallive
-GIT_REF=v1.0.2
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/10659345753
-UPDATE_DATE=2024-09-02
+GIT_REF=v1.1.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/11115397970
+UPDATE_DATE=2024-09-30

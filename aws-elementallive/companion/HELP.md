@@ -17,17 +17,14 @@ _Note: At this time, encoders with authentication enabled are currently not supp
 - Reset Live Event
 - Mute/Unmute Audio
 - Set Audio Gain
+- Insert SCTE35
 
 ## Feedback
 
 - Live Event Status
-- System Status
 
 ## Variables
 
-- system_cpu
-- system_memory
-- system_gpu
 - event\__id_\_name
 - event\__id_\_status
-- event\__id_\_duration
+- event\__id_\_average_fps
