@@ -318,7 +318,7 @@
     </div>
 <div class="footer">
     <div onclick="submitData(event)" ontouchstart="activate(event, '#ffffff', '#008a77')" ontouchend="deactivate(event, '#292929', '#e6e6e6')">Submit Data</div>
-    <u onclick="importCSV()">Import CSV</u>
+    <u onclick="importFile()">Import Table</u>
     <u onclick="requestCurrentData()">Request Current Data</u>
     <u onclick="exportCSV()">Export CSV</u>
 </div>
@@ -359,11 +359,10 @@
     const baseUrl = window.location.pathname.split('/').slice(0, 3).join('/')
     document.title = `Companion Table - "${baseUrl.split('/').slice(-1)[0]}"`
 
-    await addScript(baseUrl + '/scripts/fileManager.js')
-    await addScript(baseUrl + '/scripts/popupManager.js')
     await addScript(baseUrl + '/scripts/crypto.js')
-
-    console.log(document.body.children)
+    await addScript(baseUrl + '/scripts/fileManager.js')
+    await addScript(baseUrl + '/scripts/jsZip.js')
+    await addScript(baseUrl + '/scripts/popupManager.js')
 
     const MENU = {
         columnMenu: document.getElementById('contextMenuColumn'),
@@ -391,6 +390,7 @@
 
         window.submitData = submitData
         window.importCSV = importCSV
+        window.importFile = importFile
         window.requestCurrentData = requestCurrentData
         window.exportCSV = exportCSV
 
@@ -507,7 +507,7 @@
                 label = String.fromCharCode((index % 26) + 65) + label
                 index = Math.floor(index / 26) - 1;
             }
-            headers[i].innerHTML = label
+            headers[i].textContent = label
         }
     }
 
@@ -564,7 +564,7 @@
         MENU.columnClipboardSingleUse = singleUse
         MENU.columnClipboard = []
 
-        for (const row of TABLE.htmlBody.children) MENU.columnClipboard.push(row.children[index].innerHTML)
+        for (const row of TABLE.htmlBody.children) MENU.columnClipboard.push(row.children[index].textContent)
     }
 
 
@@ -581,7 +581,7 @@
 
         for (let i=0; i<TABLE.htmlBody.children.length; i++) {
             if (i === MENU.columnClipboard.length) break
-            TABLE.htmlBody.children[i].children[index].innerHTML = MENU.columnClipboard[i]
+            TABLE.htmlBody.children[i].children[index].textContent = MENU.columnClipboard[i]
         }
         if (MENU.columnClipboardSingleUse === true) MENU.columnClipboard = undefined
 
@@ -593,7 +593,7 @@
         const index = [ ...TABLE.htmlHead.children[0].children ].indexOf(MENU.targetColumn)
         if (index === -1) return
 
-        for (const row of TABLE.htmlBody.children) row.children[index].innerHTML = ''
+        for (const row of TABLE.htmlBody.children) row.children[index].textContent = ''
 
         saveLocaleData('table', await getTableData())
     }
@@ -655,7 +655,7 @@
         MENU.rowMenu.children[3].style.display = (headers.length <= 1) ? 'none' : 'block'
         MENU.rowMenu.children[6].style.display = (headers.length <= 1) ? 'none' : 'block'
 
-        for (let i=0; i<headers.length; i++) headers[i].children[0].innerHTML = i+1
+        for (let i=0; i<headers.length; i++) headers[i].children[0].textContent = i+1
     }
 
 
@@ -669,7 +669,7 @@
         else if (selection.type === 'Range' && selection.direction === 'forward') {
             text = selection.focusNode.nodeValue.slice(selection.anchorOffset, selection.focusOffset)
         }
-        else text = MENU.targetCell.innerHTML
+        else text = MENU.targetCell.textContent
         
         MENU.clipboard = text
         if (navigator.clipboard !== undefined) navigator.clipboard.writeText(text)
@@ -680,13 +680,13 @@
         const paste = (text) => {
             const selection = window.getSelection()
             if (selection.rangeCount <= 0) {
-                MENU.targetCell.innerHTML = text
+                MENU.targetCell.textContent = text
                 return
             }
             const range = selection.getRangeAt(0)
-            const before = MENU.targetCell.innerHTML.slice(0, range.startOffset)
-            const after = MENU.targetCell.innerHTML.slice(range.endOffset)
-            if (text !== '') MENU.targetCell.innerHTML = before + text + after
+            const before = MENU.targetCell.textContent.slice(0, range.startOffset)
+            const after = MENU.targetCell.textContent.slice(range.endOffset)
+            if (text !== '') MENU.targetCell.textContent = before + text + after
         }
         if (navigator.clipboard !== undefined) navigator.clipboard.readText().then(paste)
         else paste(MENU.clipboard)
@@ -694,7 +694,7 @@
 
 
     function clearCell() {
-        MENU.targetCell.innerHTML = ''
+        MENU.targetCell.textContent = ''
         MENU.targetCell.focus()
     }
 
@@ -751,7 +751,7 @@
         MENU.rowClipboard = []
         for (const cell of MENU.targetRow.parentNode.children) {
             if (cell.tagName.toLowerCase() === 'th') continue
-            MENU.rowClipboard.push(cell.innerHTML)
+            MENU.rowClipboard.push(cell.textContent)
         }
     }
     
@@ -767,7 +767,7 @@
         for (let i=1; i<MENU.targetRow.parentNode.children.length; i++) {
             if (i > MENU.rowClipboard.length) break
             else if (MENU.targetRow.parentNode.children[i].tagName.toLowerCase() === 'th') continue
-            MENU.targetRow.parentNode.children[i].innerHTML = MENU.rowClipboard[i-1]
+            MENU.targetRow.parentNode.children[i].textContent = MENU.rowClipboard[i-1]
         }
         if (MENU.rowClipboardSingleUse === true) MENU.rowClipboard = undefined
         saveLocaleData('table', await getTableData())
@@ -777,7 +777,7 @@
     async function clearRow() {
         for (const cell of MENU.targetRow.parentNode.children) {
             if (cell.tagName.toLowerCase() === 'th') continue
-            cell.innerHTML = ''
+            cell.textContent = ''
         }
         saveLocaleData('table', await getTableData())
     }
@@ -938,8 +938,71 @@
     }
 
 
-    async function importCSV() {
-        setData(await parseCSV(await readFile('.csv')))
+    function getCellPosition(cellId) {
+        const match = cellId.match(/^([A-Z]+)(\d+)$/)
+        if (!match) {
+            throw new Error("Invalid cell identifier format")
+        }
+
+        const letters = match[1]
+        const row = parseInt(match[2], 10) - 1
+
+        let col = 0
+        for (let i = 0; i < letters.length; i++) {
+            col *= 26
+            col += letters.charCodeAt(i) - 'A'.charCodeAt(0) + 1
+        }
+
+        return [ row, col-1 ]
+    }
+
+
+    async function importCSV(file) {
+        setData(await parseCSV(file))
+    }
+
+
+    async function importXLSX(file) {
+        const arrayBuffer = await file.arrayBuffer()
+        const zip = await JSZip.loadAsync(arrayBuffer)
+
+        const sharedStrings = zip.file('xl/sharedStrings.xml')
+        if (!sharedStrings) return
+
+        const sharedStrings_xmlString = await sharedStrings.async('string')
+        const sharedStrings_parser = new DOMParser()
+        const sharedStrings_xmlDoc = sharedStrings_parser.parseFromString(sharedStrings_xmlString, 'text/xml')
+        const sharedStrings_elements = []
+
+        for (const element of sharedStrings_xmlDoc.getElementsByTagName('si')) {
+            const elementText = element.getElementsByTagName('t')[0]
+            sharedStrings_elements.push(elementText ? elementText.textContent : '')
+        }
+
+        const sheet1 = zip.file('xl/worksheets/sheet1.xml')
+        if (!sheet1) return
+
+        const sheet1_xmlString = await sheet1.async('string')
+        const sheet1_parser = new DOMParser()
+        const sheet1_xmlDoc = sheet1_parser.parseFromString(sheet1_xmlString, 'text/xml')
+        const data = []
+
+        for (const cell of sheet1_xmlDoc.getElementsByTagName('c')) {
+            const [ row, column ] = getCellPosition(cell.getAttribute('r'))
+            const cellValueElement = cell.getElementsByTagName('v')[0]
+            const cellTextContent = cellValueElement ? cellValueElement.textContent : ''
+            const cellValueText = (cell.getAttribute('t') === 's') ? sharedStrings_elements[parseInt(cellTextContent, 10)] : cellTextContent
+            if (data.length === row) data.push([])
+            data[row][column] = cellValueText
+        }
+
+        setData(data)
+    }
+
+    async function importFile() {
+        const file = await readFile('.csv,.xlsx')
+        if (file.fileType.toLowerCase() === 'csv') await importCSV(file)
+        else if (file.fileType.toLowerCase() === 'xlsx') await importXLSX(file)
     }
 
 
@@ -989,7 +1052,6 @@
             const script = document.createElement('script')
             script.setAttribute('src', src)
             document.body.appendChild(script)
-            console.log(script)
             script.onload = () => res(true)
             script.onerror = () => res(false)
         })
@@ -1038,7 +1100,7 @@
         const rangeStart = range.startOffset
         const rangeEnd = range.endOffset
 
-        cell.innerHTML = cell.innerText.slice(0, rangeStart) + text + cell.innerText.slice(rangeEnd)
+        cell.textContent = cell.innerText.slice(0, rangeStart) + text + cell.innerText.slice(rangeEnd)
         
         const newRange = document.createRange()
         const textNode = cell.childNodes[0]
@@ -1059,8 +1121,9 @@
         const range = selection.getRangeAt(0)
 
         const cursorPosition = range.startOffset
-        const text = cell.innerText
-        cell.innerHTML = text
+        const text = cell.textContent
+        // console.log(text, cell.textContent)
+        // cell.textContent = text
 
         const newRange = document.createRange()
         const textNode = cell.childNodes[0]
