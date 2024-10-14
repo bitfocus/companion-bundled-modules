@@ -11,6 +11,7 @@ Check out the [TheatreMix website](https://theatremix.com/) for further informat
 **Preset buttons are defined for all of the supported actions below, simply drag and drop them into your button layout.**
 
 - Go / Back / Jump to cue
+- Mark cue and add notes
 - Jump to cue using numeric keypad
 - Move edit selector
 - Insert / Clone / Delete selected cue
