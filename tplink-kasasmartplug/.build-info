@@ -1,4 +1,4 @@
 MODULE_NAME=tplink-kasasmartplug
-GIT_REF=v2.2.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/10745874869
-UPDATE_DATE=2024-09-06
+GIT_REF=v2.2.2
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/11378952455
+UPDATE_DATE=2024-10-17
