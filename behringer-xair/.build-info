@@ -1,4 +1,4 @@
 MODULE_NAME=behringer-xair
-GIT_REF=v2.4.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/11407972106
-UPDATE_DATE=2024-10-18
+GIT_REF=v2.4.2
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/11414100812
+UPDATE_DATE=2024-10-19
