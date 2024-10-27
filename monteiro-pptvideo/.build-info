@@ -1,4 +1,4 @@
 MODULE_NAME=monteiro-pptvideo
-GIT_REF=v1.0.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/10692497394
-UPDATE_DATE=2024-09-03
+GIT_REF=v1.0.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/11541965459
+UPDATE_DATE=2024-10-27
