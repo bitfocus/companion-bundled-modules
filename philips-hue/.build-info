@@ -1,0 +1,4 @@
+MODULE_NAME=philips-hue
+GIT_REF=v1.1.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/11543628265
+UPDATE_DATE=2024-10-27
