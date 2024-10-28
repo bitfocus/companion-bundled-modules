@@ -1,4 +1,4 @@
 MODULE_NAME=malighting-grandma3
-GIT_REF=v1.0.2
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/7716529855
-UPDATE_DATE=2024-01-30
+GIT_REF=v1.1.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/11558203098
+UPDATE_DATE=2024-10-28
