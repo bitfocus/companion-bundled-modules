@@ -119,6 +119,14 @@ There is a default group called “Hosts” created and managed by the module it
 
 This module supports many variables and feedback properties. These are helpful for automatically changing key properties like the name and color of a button. Variables can also be used for basic automation systems in the Triggers workflow within Companion. Most preset buttons already contain the necessary feedback and variable mapping for dynamic buttons, but advanced users may wish to read deeper into the module to build customized buttons and workflows.
 
+### callStatusNumber variable meaning
+
+When joining flow is 1 = Connecting, 8 = Audio Ready, 3 = Connected.
+
+When leaving flow is 4 = Disconnected, 7 = Ended.
+
+> Note: If module is restarted while in a meeting 0 = Not In meeting and 1 = In Meeting
+
 ## Support and Thanks
 
 The ZoomOSC/ISO Companion Module is not an official Zoom product. It is a community-driven project that utilizes the Open Sound Control public APIs of ZoomOSC and ZoomISO. While Zoom (and formerly Liminal) have designed its behavior, they hold no liability for this module or its upkeep. Ultimately it is managed by and the responsibility of the open-source Companion community, BitFocus, and its users.
