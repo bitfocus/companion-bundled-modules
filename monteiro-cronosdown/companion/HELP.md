@@ -1,4 +1,5 @@
 ## CronosDown
+
 On the control page, you will have the timer activations.
 Start - Starts the countdown
 Stop - Pauses the countdown
