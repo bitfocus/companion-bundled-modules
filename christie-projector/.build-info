@@ -1,4 +1,4 @@
 MODULE_NAME=christie-projector
-GIT_REF=v4.0.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5232790922
-UPDATE_DATE=2023-06-11
+GIT_REF=v4.1.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/11746994372
+UPDATE_DATE=2024-11-08
