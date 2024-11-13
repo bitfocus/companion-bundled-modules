@@ -10,12 +10,13 @@ Due to the nature and volume of information feedback and variables are only avai
 This may cause a noticible increase in network traffic.
 
 This is being updated and maintained for QLab5.
-QLab 4.7 compatibility is checked will be continued when possible.
+QLab 4.7 compatibility is checked and will be continued when possible.
 While QLab3 is detected, some features may not work.
 
 ## **Notice!**
 
 QLab versions 5.2 and onward will require version `2.1.0` or newer of this module!
+See below for OSC passcode warnings.
 
 ---
 
@@ -56,6 +57,7 @@ Contributions for development and maintenance of this open source module are alw
 | **Toggle Pause**              | Pause/Unpause selected cue                                                                                                                                                                                                                               |
 | **Pause Toggle (Cue/ID)**     | Toggle pause mode for the selected cue. Unlike the built-in `togglePause` command, this one uses the state of the current cue                                                                                                                            |
 | **GoTo (Cue/ID)**             | Move the playhead to (Cue/ID). Does not start the cue.                                                                                                                                                                                                   |
+| **Select (Cue/ID)**           | Select (Cue/ID).                                                                                                                                                                                                                                         |
 | **Start (Cue/ID)**            | Start (Cue/ID). Does not move the playhead. If the specified cue is playing, this command has no effect.                                                                                                                                                 |
 | **Stop (Cue/ID)**             | Stops (Cue/ID) if Playing. Does not move the playhead.                                                                                                                                                                                                   |
 | **Panic (Cue/ID)**            | Panic (Cue/ID) if Playing. Does not move the playhead.                                                                                                                                                                                                   |
@@ -100,32 +102,34 @@ Commands implemented:
 
 ## Variables available (TCP mode only)
 
-| Variable                           | Description                                                                                                      |
-| ---------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| **$(INSTANCENAME:q_ver)**          | Version of QLab attached                                                                                         |
-| **$(INSTANCENSME:ws_id)**          | Unique ID of the Default (first) workspace (May not be the 'frontmost' in QLab)                                  |
-| **$(INSTANCENAME:n_id)**           | UniqueID of the current Playhead Cue                                                                             |
-| **$(INSTANCENAME:n_name)**         | Name of the current Playhead Cue or [none]                                                                       |
-| **$(INSTANCENAME:n_num)**          | Number of the current Playhead Cue                                                                               |
-| **$(INSTANCENAME:n_type)**         | Cue Type of the current Playhead Cue                                                                             |
-| **$(INSTANCENAME:n_cont)**         | Continue mode of the Playhead Cue: <ul><li>`NoC`: No continue</li><li>`Con`: Continue</li><li>`Fol`: Follow</li> |
-| **$(INSTANCENAME:n_notes)**        | First 20 characters of the Note on the Playhead Cue                                                              |
-| **$(INSTANCENAME:n_stat)**         | Playhead Cue Status: "✕" if broken, "⏽" if loaded, "⏵" if running, "⏸" if paused, otherwise "·"                  |
-|                                    | QLab5 adds a status for Auditioning "❲⏵❳"                                                                        |
-| **$(INSTANCENAME:r_id)**           | UniqueID of the current Running Cue                                                                              |
-| **$(INSTANCENAME:r_name)**         | Name of the current Running Cue or [none]                                                                        |
-| **$(INSTANCENAME:r_num)**          | Number of the current Running Cue                                                                                |
-| **$(INSTANCENAME:r_notes)**        | Note on the running cue                                                                                          |
-| **$(INSTANCENAME:r_stat)**         | Running Cue Status: "✕" if broken, "⏽" if loaded, "⏵" if running, "⏸" if paused, otherwise "·"                   |
-|                                    | QLab5 adds a status for Auditioning "❲⏵❳"                                                                        |
-| **$(INSTANCENAME:r_hhmmss)**       | Remaining time for Running Cue as "HH:MM:SS"                                                                     |
-| **$(INSTANCENAME:r_hh)**           | Hours left for Running Cue                                                                                       |
-| **$(INSTANCENAME:r_mm)**           | Minutes left for Running Cue                                                                                     |
-| **$(INSTANCENAME:r_ss)**           | Seconds left for Running Cue                                                                                     |
-| **$(INSTANCENAME:r_left)**         | Shortest display time left for Running Cue. Shows .1 increments if tenths option set.                            |
-| **$(INSTANCENAME:q\_{num}\_name)** | Name of the QLab cue number {num}. See below for certain restrictions.                                           |
-| **$(INSTANCENAME:id\_{ID}\_name)** | Name of the QLab cue ID {ID}. See below for certain restrictions.                                                |
-| **$(INSTANCENAME:min_go)**         | Current value of double-go protection (in seconds)                                                               |
+| Variable                              | Description                                                                                                      |
+| ------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| **$(INSTANCENAME:q_ver)**             | Version of QLab attached                                                                                         |
+| **$(INSTANCENSME:ws_id)**             | Unique ID of the Default (first) workspace (May not be the 'frontmost' in QLab)                                  |
+| **$(INSTANCENAME:n_id)**              | UniqueID of the current Playhead Cue                                                                             |
+| **$(INSTANCENAME:n_name)**            | Name of the current Playhead Cue or [none]                                                                       |
+| **$(INSTANCENAME:n_num)**             | Number of the current Playhead Cue                                                                               |
+| **$(INSTANCENAME:n_type)**            | Cue Type of the current Playhead Cue                                                                             |
+| **$(INSTANCENAME:n_cont)**            | Continue mode of the Playhead Cue: <ul><li>`NoC`: No continue</li><li>`Con`: Continue</li><li>`Fol`: Follow</li> |
+| **$(INSTANCENAME:n_notes)**           | First 20 characters of the Note on the Playhead Cue                                                              |
+| **$(INSTANCENAME:n_stat)**            | Playhead Cue Status: "✕" if broken, "⏽" if loaded, "⏵" if running, "⏸" if paused, otherwise "·"                  |
+|                                       | QLab5 adds a status for Auditioning "❲⏵❳"                                                                        |
+| **$(INSTANCENAME:r_id)**              | UniqueID of the current Running Cue                                                                              |
+| **$(INSTANCENAME:r_name)**            | Name of the current Running Cue or [none]                                                                        |
+| **$(INSTANCENAME:r_num)**             | Number of the current Running Cue                                                                                |
+| **$(INSTANCENAME:r_notes)**           | Note on the running cue                                                                                          |
+| **$(INSTANCENAME:r_stat)**            | Running Cue Status: "✕" if broken, "⏽" if loaded, "⏵" if running, "⏸" if paused, otherwise "·"                   |
+|                                       | QLab5 adds a status for Auditioning "❲⏵❳"                                                                        |
+| **$(INSTANCENAME:r_hhmmss)**          | Remaining time for Running Cue as "HH:MM:SS"                                                                     |
+| **$(INSTANCENAME:r_hh)**              | Hours left for Running Cue                                                                                       |
+| **$(INSTANCENAME:r_mm)**              | Minutes left for Running Cue                                                                                     |
+| **$(INSTANCENAME:r_ss)**              | Seconds left for Running Cue                                                                                     |
+| **$(INSTANCENAME:r_left)**            | Shortest display time left for Running Cue. Shows .1 increments if tenths option set.                            |
+| **$(INSTANCENAME:min_go)**            | Current value of double-go protection (in seconds)                                                               |
+| **$(INSTANCENAME:q\_{num}\_name)**    | Name of cue number {num}. See below for certain restrictions.                                                    |
+| **$(INSTANCENAME:id\_{ID}\_name)**    | Name of cue ID {ID}. See below for certain restrictions.                                                         |
+| **$(INSTANCENAME:q\_{num}\_elapsed)** | Elapsed time in seconds cue number {num}. See below for certain restrictions.                                    |
+| **$(INSTANCENAME:id\_{ID}\_elapsed)** | Elapsed time in seconds of cue ID {ID}. See below for certain restrictions.                                      |
 
 To use these, replace INSTANCENAME with the name of your module instance.
 
@@ -144,8 +148,9 @@ To use these, replace INSTANCENAME with the name of your module instance.
 | **Show if ANY cue is runing**        | Set the button to show when any cue is running                                                 |
 | **Show Cue # is Running**            | Set the button to show when a specific cue is running                                          |
 | **Show Cue ID is Running**           | Set the button to show when a specific cue ID is running                                       |
-| **Show Cue is Armed**                | Set the button to show when a requested cues are Armed                                         |
-| **Show Cue is Flagged**              | Set the button to show when a requested cues are Flagged                                       |
+| **Show Cue is Armed**                | Set the button to show when a specific cue is Armed                                            |
+| **Show Cue is Flagged**              | Set the button to show when a specific cue is Flagged                                          |
+| **Show Cue is Selected**             | Set the button to show when a specific cue is Selected                                         |
 
 ## OSC
 
@@ -156,6 +161,10 @@ From QLab preferences OSC controls tab make sure you have the "Use OSC controls"
 
 QLab 5 configuration is under the **Network / OSC Access** page on the Workspace Settings window.
 ![QLab5](images/QLab5.jpg?raw=true 'QLab5')
+
+### **Note**
+
+QLab 5 creates new workspaces with a random OSC passcode which changes the module startup procedure. As a security measure, QLab will ignore any commands if an incorrect passcode is sent too many times in a row. This module has been designed to be robust and automatically recover from most network errors. To prevent QLab from locking out, this restart/retry function will stop when detecting an incorrect passcode. You will need to enter and save the correct passcode to restart the module.
 
 ### Running cue examples
 
