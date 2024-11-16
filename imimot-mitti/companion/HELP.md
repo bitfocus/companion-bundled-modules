@@ -9,7 +9,7 @@
 
 - In Mitti > Settings... > OSC/UDP Controls, select **Custom** from the **Feedback To** dropdown
 - For **IP** enter the IP address of the computer running Companion
-- For **Port** enter the port number that is present on the configuration page for the Mitti module in Companion. By default port `1234` is used
+- For **Port** enter the port number that is present on the configuration page for the Mitti module in Companion. By default port `51001` is used
 
 ![Mitti](images/mitti.png?raw=true 'Mitti')
 
