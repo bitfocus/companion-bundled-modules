@@ -1,5 +1,5 @@
-name: Update Module
-run-name: ${{ github.event.inputs.module-name }} updated to ${{ github.event.inputs.git-ref }} by ${{ github.actor }}
+name: Portal - Build module
+run-name: ${{ github.event.inputs.module-name }} updated to ${{ github.event.inputs.git-ref }}(${{ github.event.inputs.git-sha }}) by ${{ github.actor }}
 
 # Controls when the workflow will run
 on:
@@ -11,7 +11,11 @@ on:
         required: true
       git-ref:
         type: string
-        description: Git ref to build (tag/commit)
+        description: Git ref to build
+        required: true
+      git-sha:
+        type: string
+        description: Git sha to build
         required: true
 
 jobs:
@@ -27,11 +31,11 @@ jobs:
     steps:
       - name: Report info
         run: |
-          echo "Updating **${{ github.event.inputs.module-name }}** to ${{ github.event.inputs.git-ref }} :rocket:" >> $GITHUB_STEP_SUMMARY
+          echo "Updating **${{ github.event.inputs.module-name }}** to ${{ github.event.inputs.git-ref }}(${{ github.event.inputs.git-sha }}) :rocket:" >> $GITHUB_STEP_SUMMARY
 
       - name: Clone module
         run: |
-          git clone https://github.com/bitfocus/companion-module-${{ github.event.inputs.module-name }} -b "${{ github.event.inputs.git-ref }}" "${{ github.event.inputs.module-name }}"
+          git clone https://github.com/bitfocus/companion-module-${{ github.event.inputs.module-name }} -b "${{ github.event.inputs.git-sha }}" "${{ github.event.inputs.module-name }}"
 
       - name: Determine nodejs version
         id: determine-nodejs
@@ -107,55 +111,56 @@ jobs:
           path: ${{ github.event.inputs.module-name }}/pkg.tgz
           retention-days: 1
 
-  commit:
-    runs-on: ubuntu-latest
-    needs: build
+  # TODO - replace with correct flow
+  # commit:
+  #   runs-on: ubuntu-latest
+  #   needs: build
 
-    # The second stage is to commit the module to the repository
+  #   # The second stage is to commit the module to the repository
 
-    # only allow one workflow to run this step at a time
-    concurrency: add-module-${{ github.ref }}
+  #   # only allow one workflow to run this step at a time
+  #   concurrency: add-module-${{ github.ref }}
 
-    permissions:
-      contents: write
+  #   permissions:
+  #     contents: write
 
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          path: modules
-          ref: ${{ github.ref_name }}
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #       with:
+  #         path: modules
+  #         ref: ${{ github.ref_name }}
 
-      - uses: actions/download-artifact@v4
-        with:
-          name: pkg
+  #     - uses: actions/download-artifact@v4
+  #       with:
+  #         name: pkg
 
-      - name: Package module
-        run: |
-          tar -xvzf pkg.tgz
+  #     - name: Package module
+  #       run: |
+  #         tar -xvzf pkg.tgz
 
-          UPDATE_DATE=$(date +%Y-%m-%d)
+  #         UPDATE_DATE=$(date +%Y-%m-%d)
 
-          # cleanup some junk
-          rm -Rf pkg/.yarn || true
+  #         # cleanup some junk
+  #         rm -Rf pkg/.yarn || true
 
-          tee -a pkg/.build-info <<EOF
-          MODULE_NAME=${{ github.event.inputs.module-name }}
-          GIT_REF=${{ github.event.inputs.git-ref }}
-          RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/${{ github.run_id	}}
-          UPDATE_DATE=$UPDATE_DATE
-          EOF
+  #         tee -a pkg/.build-info <<EOF
+  #         MODULE_NAME=${{ github.event.inputs.module-name }}
+  #         GIT_REF=${{ github.event.inputs.git-ref }}
+  #         RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/${{ github.run_id	}}
+  #         UPDATE_DATE=$UPDATE_DATE
+  #         EOF
            
-          # TODO - verify module looks valid?
+  #         # TODO - verify module looks valid?
 
-          # make sure there isn't a legacy version
-          rm -Rf modules/_legacy/companion-module-${{ github.event.inputs.module-name }} || true
+  #         # make sure there isn't a legacy version
+  #         rm -Rf modules/_legacy/companion-module-${{ github.event.inputs.module-name }} || true
            
-          rm -Rf modules/${{ github.event.inputs.module-name }} || true
+  #         rm -Rf modules/${{ github.event.inputs.module-name }} || true
 
-          mv pkg modules/${{ github.event.inputs.module-name }}
+  #         mv pkg modules/${{ github.event.inputs.module-name }}
 
-      - name: Commit updated module
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          repository: modules
-          commit_message: "update ${{ github.event.inputs.module-name }} to ${{ github.event.inputs.git-ref }}"
+  #     - name: Commit updated module
+  #       uses: stefanzweifel/git-auto-commit-action@v5
+  #       with:
+  #         repository: modules
+  #         commit_message: "update ${{ github.event.inputs.module-name }} to ${{ github.event.inputs.git-ref }}"
