@@ -1,4 +1,4 @@
-name: Portal - Build module
+name: Update Module
 run-name: ${{ github.event.inputs.module-name }} updated to ${{ github.event.inputs.git-ref }}(${{ github.event.inputs.git-sha }}) by ${{ github.actor }}
 
 # Controls when the workflow will run
