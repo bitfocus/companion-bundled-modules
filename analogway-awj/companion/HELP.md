@@ -316,6 +316,7 @@ There are a few special mechanisms in this module, which will greatly ease the w
 Available at: LivePremier, Alta 4K, Midra 4K  
 This is the get equivalent to the "Send custom AWJ replace command" action. You can send any AWJ get command to your device, retrieve the value and store it to a custom variable.
 Variable parsing for the path is possible and the Learn button for the path acts exactly like at the custom AWJ replace command. Please refer to the documentation there.  
+It is possible to get data that is constantly updated, like temperature or time. But because of the periodically updates this data is masked from the learn button and action recorder. If you want to get such data, you have to enter the AWJ path manually.  
 The value will be stored in a custom variable.  
 The type of the retrieved value can optionally be stored in another custom variable.
 If no value can be found at the path the returned value and the type will both be "undefined".
@@ -488,6 +489,7 @@ screenA1timePGM | the transtion time for the aux and preset
 screenA1timePVW | the transtion time for the aux and preset
 selectedPreset	| PGM or PVW
 timer1_status | Running or Stopped and so on
+timer1 | current time of timer in milliseconds. Only available at LivePremier since v4.3 
 tally_S1_pgm_LIVE_1 | the tally state (0 or 1) of the source LIVE_1 in S1 program
 ----
 
