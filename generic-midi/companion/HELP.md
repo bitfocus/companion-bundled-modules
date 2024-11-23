@@ -1,4 +1,4 @@
-## Generic MIDI module for Companion - v1.1.7
+## Generic MIDI module for Companion - v1.3.0
 
 Please visit https://discourse.checkcheckonetwo.com for help, discussions, suggestions, etc.
 
@@ -22,10 +22,10 @@ _Andrew Broughton 2024_
 
 - MacOS, Windows, Linux Support
 - MIDI over LAN via rtpMIDI (Network-MIDI on MacOS)
+- Using incoming Midi Timestamp with Action Recorder
 
 ### To Do:
 
-- Add timing to Action Recordings
 - Long Sysex message support
 - Filtering of Real-Time messages
 - MSC support?
