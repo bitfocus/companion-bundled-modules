@@ -127,6 +127,27 @@ When leaving flow is 4 = Disconnected, 7 = Ended.
 
 > Note: If module is restarted while in a meeting 0 = Not In meeting and 1 = In Meeting
 
+### Social Stream Ninja Integration
+
+One of the configuration options, is to send chat messages to Social Stream Ninja. In order for this to work, you need to provide your social stream ninja session id in the module configuration.
+
+Once the integration is turned on, you will need to update the urls you are using for your Social Stream Ninja browser source within OBS or other streaming software.
+
+The &server parameter in the url is the key to making it work as it tells it to listen to incoming API messages.
+
+Here is how to use it in OBS.
+
+1. Create a Custom Browser Dock and replace XXXXXXXX with your social stream id
+
+   - `https://socialstream.ninja/dock.html?session=XXXXXXXXX&server&server2&sync&label=main&limit=300`
+
+2. Create a browser source on a scene and use the following url and replace XXXXXXXX with your social stream id
+
+   - `https://socialstream.ninja/index.html?session=XXXXXXXXX&aligntop&server&server2`
+   - Width: 1200
+   - Height: 300
+   - Shutdown source when not visible
+
 ## Support and Thanks
 
 The ZoomOSC/ISO Companion Module is not an official Zoom product. It is a community-driven project that utilizes the Open Sound Control public APIs of ZoomOSC and ZoomISO. While Zoom (and formerly Liminal) have designed its behavior, they hold no liability for this module or its upkeep. Ultimately it is managed by and the responsibility of the open-source Companion community, BitFocus, and its users.
