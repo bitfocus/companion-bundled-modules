@@ -1,0 +1,8 @@
+OK prminfo 0 "io:current/inch/48von" 2 1 0 1 0 "" integer unlatchsw rw 1
+OK prminfo 1 "io:current/inch/hpfon" 2 1 0 1 0 "" integer unlatchsw rw 1
+OK prminfo 2 "io:current/inch/hagain" 2 1 0 67 0 "dB" integer knob rw 1
+-- prminfo 3 "io:current/dev/muteon" 1 1 0 0 0 "" integer unlatchsw rw 1
+OK prminfo 4 "io:event/dev/identify" 1 1 0 1 0 "" integer any w 1
+OK prminfo 5 "io:current/dev/errorstatus" 1 1 0 0 0 "" any any r 1
+OK prminfo 6 "io:current/inch/errorstatus" 1 1 0 0 0 "" any any r 1
+OK prminfo 7 "io:current/outch/errorstatus" 1 1 0 0 0 "" any any r 1
