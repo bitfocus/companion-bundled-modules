@@ -1,25 +1,42 @@
 # ProPresenter API
 
-This "ProPresenter API" module ia NEW module that allows you to remotely control ProPresenter via it's <a href="https://openapi.propresenter.com" target="_blank">public API</a>  
+This "**ProPresenter API**" module allows you to remotely control ProPresenter via it's <a href="https://openapi.propresenter.com" target="_blank">public API</a>  
   
-Please note that this NEW module does not work with older versions of ProPresenter that do not have this new public API. Instead, the OLD ProPresenter module used a *reverse-engineered* remote control protocol to control _older versions of ProPresenter_.  
+Please note that this "**ProPresenter API**" module does not work with older versions of ProPresenter that do not have the ProPresenter API. For older versions of ProPresenter, you have to continue to use the old ProPresenter module which uses an *unsupported reverse-engineered* remote protocol.  
   
-### There are now TWO ProPresenter modules - OLD and NEW ###  
-This NEW module works with ProPresenter versions 7.9 and later...  
-The OLD module works with ProPresenter versions 7.8 and earlier (including version 6).  
+This means there are now two Companion modules that work with ProPresenter:  
+1. The old module called "**ProPresenter**" 
+2. This new module called "**ProPresenter API**"
+  
+___
+### Notes for existing users of the old ProPresenter module: ###  
+While it would have been ideal to simply update the old module to use both the old reverse-engineered remote protocol as well as the vendor supported API, it was decided to make a completely new seperate module that ONLY uses the officially supported API. This does mean that all of your actions from the old module in your current setup will not be upgraded or imported into the new module and they remain part of the old module.  
+While this is not a good upgrade experience - the main reason for this decision is to make ongoing support much more manageable, **ensuring users receive better and more reliable support going forward.**  
+  
+**New "API" Module:**
+- **Name:** ProPresenter API
+- **Support Level:** ✅ Actively Supported
+- **Works With ProPresenter Versions:** 7.9 to Current
+- **Connection Method:** ✅ Vendor Supported API
 
-Of course, it would have been ideal to simply update the old module to support both the old reverse engineered remote control protocol and the new API. But, for a bunch of boring technical reasons, it was much cleaner/easier to develop as seperate modules.
+**Old Module:**
+- **Name:** ProPresenter
+- **Support Level:** Minimal
+- **Works With ProPresenter Versions:** ✅ 6.0 to Current
+- **Connection Method:** ❗️Unsupported Reversed-Engineered Protocol
   
-### 😱 Existing/OLD module users - DON'T PANIC!! 😱
-**NO! - You don't have to move all your buttons/triggers over to this new module now!  
-YES! - You can run both the old and new modules side-by-side, connected to the SAME ProPresenter!**  
   
-**Relax** and take your time to explore the new actions and features that the new module offers.  See if there is any new functionality that you want to add to your setup and over time, when you are ready, slowly replace your old buttons with new ones from the new module.  
+**😱 Old Module Users - DON'T PANIC!! 😱**  
+It's perfectly fine to run BOTH the old and new modules side-by-side, connected to the SAME ProPresenter!  
+There is no pressure to re-create your whole setup with actions from the new module.  
+
+Take your time to explore the new actions and features that the new module offers.  See if there is any new functionality that you want to add to your setup and over time, when you are ready, slowly add the new actions to your old buttons and disable the old actions while testing.  Once you have proven the new actions work for you, you can remove the old actions.  
   
-Tip: Checkout the library of ready-made Preset buttons - There are a quite a few, with some nice icons ready to drag and drop and use right away. This is a great way to explore some of the new actions with very little effort.  While this new module does have some new actions/features and will be actively developed going forward, please note that the old module does have a few actions/features that are not (yet) supported in the ProPresenter API and therefore there are a couple of old actions "missing" in this new module.  
+Also, please note that the old module does have a few actions that are not (yet) supported in the official ProPresenter API and if you use those actions, you will want to keep using the old module alongside the new module.
   
 **Remember - You don't have to choose!**  
-It's important to know that you can run both modules at same time - connected to same instance of ProPresenter.  Keep running the old version as long as you like or need to.  Explore the cool new features in the new version.  
+Please dopn't forget that you can run both modules at same time - connected to same instance of ProPresenter.  Keep running the old module version as long as you like or need to.  Explore the cool new features in the new module version.  
+___  
   
 ### 🚧 BETA! - WORK IN PROGESSS 🚧  
 The module is still a work in progress - so you will find it's missing some things that you might expect. But it is complete "enough" to be tested by "early adopters" and it has some nice new features/actions. Over time, more features will be added. Please also note that this documentation is also a work in progress.  
@@ -46,25 +63,29 @@ There are more optional and advanced settings that you may come back and configu
 ## Getting Started:
 ### Button Presets:
 The fastest and easiest way to define buttons is to use presets.  
+This new module has quite a good number nice presets to get you started. (With more on the way in future updates) 
   
-Button presets are ready-made already built for you with text, actions, feedback and some with nice icons. They are ready for youu to simply drag and drop onto your StreamDeck pages.  
-There are quite a good number nice presets to get you started. (With more on the way in future updates)  
+These button presets are ready-made buttons with text, actions, feedback and some with nice icons. They are ready for you to simply drag and drop onto your StreamDeck pages.  
+ 
 Even if you prefer manually building button actions and feedbacks yourself, the presets have some nice starting points (and icons) you might like to start with on your buttons.  
-___
-❗️ Please note that all the presets are built to suit FULL BUTTON display with the "TopBar" turned off in Companion settings. You will have to re-format the text on the preset buttons if you like the TopBar on your buttons.  
-___
+
+❗️IMPORTANT NOTE ABOUT PRESETS❗️  
+Please note that all the presets are built to suit FULL BUTTON display with the "TopBar" turned off in Companion settings.  
+If you like to show the topbar on your buttons, you will have to re-format the text and images on the preset buttons.  
+
   
 ### Actions:
 For those that want to build their own buttons (and triggers) - you will want to explore and get familiar with all the available actions that you can add to your buttons and triggers.
   
-**ACTIVE vs FOCUSED (and SPECIFIED)**  
-❗️ Before you get started building buttons with actions, it's important to become familiar the concept of **ACTIVE vs FOCUSED** in ProPresenter.  
+❗️ACTIVE vs FOCUSED vs SPECIFIED❗️  
+Before you get started building buttons with actions, it's important to become familiar the concept of **ACTIVE vs FOCUSED vs SPECIFIED** in ProPresenter.  This is described below:  
   
-When you trigger a slide in a presentation, that presentation becomes the "ACTIVE Presentation". The slide has an Orange (or Green) border to show it's triggered/live. Did you know that you can click on another presentation to view it while the slide that you previously triggered  **stays live**?...  
+>When you trigger a slide in a presentation, that presentation becomes the "ACTIVE Presentation".  
+
+The slide has an Orange (or Green) border to show it's triggered/live.  
+Did you know that you can click on another presentation to view it while the slide that you previously triggered  **stays live**?... This is not a common thing you might do - but you *can* go "wandering off" and look at other presentations while your triggered slide in the "ACTIVE Presentation" **stays live**.  With that in mind, let's introduce the concept of the FOCUSED presentation:  
   
-This is not a common thing you might do - but you *can* go "wandering off" and look at other presentations while your triggered slide in the "ACTIVE Presentation" **stays live**.  With that in mind, let's introduce the concept of the FOCUSED presentation:  
-  
-Any Presentation that you are *looking at* is the "FOCUSED Presentation".  
+>Any Presentation that you are *looking at* is the "FOCUSED Presentation".  
   
 You can focus (click to look at) any presentation you want without making it ACTIVE.  It becomes the ACTIVE Presentation if/when you click a slide in that presentation. Also, note that if you clear the slide/all, the ACTIVE presentation at the time of clearing, stays the ACTIVE presentation.  
   
@@ -139,15 +160,18 @@ A momentary flash of warning symbol will appear on all buttons with ProPresenter
 Looks are identified by name or index.... UUID of live look does not match any UUID of the list of configured looks. So we can't use UUID for identifying a look to trigger.  TODO: Does this need any more explanation.  
   
   
-## 🎹 Optional MIDI Listener:  
-There is an optional MIDI listener to enable remote control (pushing buttons) of Companion through MIDI. You can send a **Note-On** message to Companion through a shared MIDI-Port to cause a remote button press.
+## 🎹 Simple MIDI Button Pusher:  
+There is an optional feature added to this module which enables remote pushing of Companion buttons via MIDI.  
+If you enable it, you can send a **Note-On** message to this module through a shared MIDI-Port and cause a button press.  
+This feature uses a very simple mapping of Note-On MIDI messages to buttons in Companion:
 
 Midi Channel = Button Page.  
 The numerical value of the Note-On = Row of button.  
 Note-On Intensity = Column of button.  
 
-In the config section, choose an existing MIDI port in the "Midi Port" dropdown OR pick the last option in the dropdown "Custom Virtual Port" to create a local (non-networked) custom virtual port with any name you choose.  
+In the module config, enable the MIDI Button Pushing and then choose an existing MIDI port in the "Midi Port" dropdown.
+If you like, pick the last option in the Midi-Port Name dropdown called "Custom Virtual Port" to create a local (non-networked) custom virtual port with any name you choose.  
+
 You need to enter the port number that your Companion is configured to listen to (if you have changed it from the default of 8000) as there is no way for this module to "know" what port your Companion is listening on.  (This Port is configured in the main window of Companion).  
-Note: On MacOS the MIDI portname will be the Device Name + a space + the Port Name. For Example: If you were using the IAC Driver with the default device name of "IAC Driver" and with a custom port named "Pro7Companion", the full portname would be "IAC Driver Pro7Companion".  
-  
-Tip: Make sure that the MIDI port you setup for this is only used as a destination and NOT a source in Pro7 MIDI settings - otherwise you will probably feedback MIDI notes that you intend to send out to Companion, straight back into Pro7, and they will trigger unintended actions within Pro7 itself.
+   
+Tip: You can setup as many MIDI ports are you like in MacOS or Windows (Windows needs 3rd party software). Make sure that the MIDI port you setup for this is just for Companion and ProPresenter.  Also, make sure it is only used as a *destination* and NOT a *source* in ProPresenter MIDI settings - otherwise you will probably feedback MIDI notes that you intend to send out to this module, straight back into ProPresenter, and they will trigger unintended actions within ProPresenter itself.
