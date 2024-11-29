@@ -1,10 +1,14 @@
 name: Update Module
-run-name: ${{ github.event.inputs.module-name }} updated to ${{ github.event.inputs.git-ref }}(${{ github.event.inputs.git-sha }}) by ${{ github.actor }}
+run-name: "${{ github.event.inputs.run-id }}: ${{ github.event.inputs.module-name }} updated to ${{ github.event.inputs.git-ref }}(${{ github.event.inputs.git-sha }})"
 
 # Controls when the workflow will run
 on:
   workflow_dispatch:
     inputs:
+      run-id:
+        type: string
+        description: Unique identifer for this workflow run
+        required: true
       module-name:
         type: string
         description: Name of the module (eg bmd-atem)
