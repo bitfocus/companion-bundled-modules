@@ -28,6 +28,10 @@ The Action Recorder will translate any recieved tally or connected messages into
 
 ## Version History
 
+### Version 1.2.3
+- Use Node 22
+- Update dependencies
+
 ### Version 1.2.2
 - Better logging of recieved tally/connected messages
 
