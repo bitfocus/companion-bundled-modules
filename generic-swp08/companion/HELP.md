@@ -113,10 +113,15 @@ Tally and connected messages recieved from the router will create new set crossp
 
 ### Version 2.0.1
 
-- Add TX message queue 
+- Add TX message queue
 - Update dependencies
 - Update package manager
 
 ### Version 2.0.2
 
 - Fix typo in variable-parsing function
+
+### Version 2.0.3
+
+- Use Node 22
+- Update dependencies
