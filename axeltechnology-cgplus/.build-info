@@ -1,4 +1,4 @@
 MODULE_NAME=axeltechnology-cgplus
-GIT_REF=v1.0.4
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/11003729863
-UPDATE_DATE=2024-09-23
+GIT_REF=v1.0.6
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/12242842219
+UPDATE_DATE=2024-12-09
