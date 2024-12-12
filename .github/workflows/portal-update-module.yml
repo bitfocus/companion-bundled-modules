@@ -233,9 +233,9 @@ jobs:
             "moduleType": "companion-connection",
             "moduleName": "${{ github.event.inputs.module-name }}",
             "logUrl": "https://github.com/bitfocus/companion-bundled-modules/actions/runs/${{ github.run_id }}",
-            "pkgUrl": "${{ steps.upload.outputs.artifact-url }}/${{ steps.upload.outputs.artifact-name }}",
+            "pkgDirUrl": "${{ steps.upload.outputs.artifact-url }}",
+            "pkgName": "${{ steps.upload.outputs.artifact-name }}",
             "pkgSha": "'${PKG_SHA256}'",
-            "helpDirUrl": "${{ steps.upload.outputs.artifact-url }}",
             "gitTag": "${{ github.event.inputs.git-ref }}",
             "gitSha": "${{ github.event.inputs.git-sha }}",
             "manifestJson": "'${MANIFEST_JSON}'"
