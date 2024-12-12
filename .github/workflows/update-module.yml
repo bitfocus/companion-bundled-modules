@@ -217,7 +217,7 @@ jobs:
 
           tar -xvzf pkg.tgz
           MANIFEST_JSON=$(cat pkg/companion/manifest.json)
-          # MANIFEST_JSON=${MANIFEST_JSON//\"/\\\"}
+          MANIFEST_JSON=${MANIFEST_JSON//\"/\\\"}
 
           # TODO: dynamic module type
           # TODO: rename logUrl property
@@ -232,7 +232,9 @@ jobs:
             "moduleName": "${{ github.event.inputs.module-name }}",
             "logUrl": "${{ github.run_id }}",
             "pkgUrl": "${{ steps.upload.outputs.artifact-url }}",
-            "pkgSha": "$PKG_SHA256",
-            "manifestJson": "$MANIFEST_JSON"
+            "pkgSha": "'${PKG_SHA256}'",
+            "gitTag": "${{ github.event.inputs.git-ref }}",
+            "gitSha": "${{ github.event.inputs.git-sha }}",
+            "manifestJson": "'${MANIFEST_JSON}'"
           }'
 
