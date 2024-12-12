@@ -187,19 +187,30 @@ jobs:
         with:
           name: pkg
 
-      - name: Upload build
-        id: upload
-        uses: bitfocus/actions/upload-artifact@main
-        with:
-          artifact: pkg.tgz
-          artifact-filename: ${{ github.event.inputs.module-name }}-${{ github.event.inputs.git-ref }}-${{ github.event.inputs.git-sha }}.tgz
-         
-          s3-host: ${{ secrets.S3_HOST }}
-          s3-bucket: ${{ secrets.S3_BUCKET }}
-          s3-access-key: ${{ secrets.S3_KEY }}
-          s3-secret-key: ${{ secrets.S3_SECRET }}
+      - name: Download minio client
+        shell: bash
+        run: |
+          wget -q https://dl.min.io/client/mc/release/linux-amd64/mc
+          chmod +x mc
 
-          run-id: ${{ github.run_id }}
+      - name: Upload
+        id: upload
+        shell: bash
+        run: |
+          # extract the package
+          tar -xvzf pkg.tgz
+
+          # copy the package to the companion directory
+          cp pkg.tgz "pkg/companion/pkg.tgz"
+
+          ARTIFACT_NAME="${{ github.event.inputs.module-name }}-${{ github.event.inputs.git-ref }}-${{ github.event.inputs.git-sha }}"
+
+          export HOME="$(pwd)" MC_CONFIG_DIR="$(pwd)"
+          ./mc alias set remote/ https://${{ secrets.S3_HOST }} ${{ secrets.S3_KEY }} ${{ secrets.S3_SECRET }}
+
+          ./mc cp "pkg/companion" "remote/${{ secrets.S3_BUCKET }}/${ARTIFACT_NAME}"
+
+          echo "artifact-url=https://${{ secrets.S3_HOST }}/${{ secrets.S3_BUCKET }}/${{ inputs.run-id }}/${ARTIFACT_NAME}" >> $GITHUB_OUTPUT
 
       - name: Report to api
         shell: bash
@@ -208,9 +219,7 @@ jobs:
 
           PKG_SHA256=$(sha256sum pkg.tgz | awk '{print $1}')
           echo "With SHA256=${PKG_SHA256}" >> $GITHUB_STEP_SUMMARY
-          
 
-          tar -xvzf pkg.tgz
           MANIFEST_JSON=$(cat pkg/companion/manifest.json)
           MANIFEST_JSON=${MANIFEST_JSON//\"/\\\"}
 
