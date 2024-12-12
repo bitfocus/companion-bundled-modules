@@ -45,6 +45,13 @@ jobs:
           # cd ${{ github.event.inputs.module-name }}
           # git checkout ${{ github.event.inputs.git-sha }}
 
+          GIT_HASH=$(git rev-parse HEAD)
+          echo "Git sha: $GIT_HASH"
+          if [ ! "$GIT_HASH" == "\"${{ github.event.inputs.git-sha }}\"" ]; then
+            echo "Git sha does not match requested ref"
+            exit 99
+          fi
+
       - name: Determine nodejs version
         id: determine-nodejs
         run: |
@@ -71,12 +78,6 @@ jobs:
       - name: Collect info
         run: |
           cd ${{ github.event.inputs.module-name }}
-
-          GIT_HASH=$(git rev-parse HEAD)
-          if [ ! "$GIT_HASH" == "\"${{ github.event.inputs.git-sha }}\"" ]; then
-            echo "Module manifest.json id does not match github repository name"
-            exit 99
-          fi
 
           MANIFEST_ID=$(jq '.["id"]' companion/manifest.json)
           if [ ! "$MANIFEST_ID" == "\"${{ github.event.inputs.module-name }}\"" ]; then
