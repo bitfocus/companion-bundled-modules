@@ -45,6 +45,7 @@ jobs:
           # cd ${{ github.event.inputs.module-name }}
           # git checkout ${{ github.event.inputs.git-sha }}
 
+          cd ${{ github.event.inputs.module-name }}
           GIT_HASH=$(git rev-parse HEAD)
           echo "Git sha: $GIT_HASH"
           if [ ! "$GIT_HASH" == "\"${{ github.event.inputs.git-sha }}\"" ]; then
