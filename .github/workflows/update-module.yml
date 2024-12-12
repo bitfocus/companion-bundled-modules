@@ -221,13 +221,8 @@ jobs:
 
           # TODO: dynamic module type
           # TODO: rename logUrl property
-          
-          curl -X 'PUT' \
-            'https://developer-staging.bitfocus.io/api/v1/modules' \
-            -H 'accept: application/json' \
-            -H 'Content-Type: application/json' \
-            -H 'Authorization: Bearer ${{ secrets.DEVELOPER_API_KEY }}' \
-            -d '{
+
+          PUT_PAYLOAD='{
             "moduleType": "companion-connection",
             "moduleName": "${{ github.event.inputs.module-name }}",
             "logUrl": "${{ github.run_id }}",
@@ -237,4 +232,13 @@ jobs:
             "gitSha": "${{ github.event.inputs.git-sha }}",
             "manifestJson": "'${MANIFEST_JSON}'"
           }'
+
+          echo "PUT_PAYLOAD=$PUT_PAYLOAD"
+          
+          curl -X 'PUT' \
+            'https://developer-staging.bitfocus.io/api/v1/modules' \
+            -H 'accept: application/json' \
+            -H 'Content-Type: application/json' \
+            -H 'Authorization: Bearer ${{ secrets.DEVELOPER_API_KEY }}' \
+            -d ${PUT_PAYLOAD}
 
