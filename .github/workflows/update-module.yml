@@ -200,15 +200,16 @@ jobs:
           # extract the package
           tar -xvzf pkg.tgz
 
-          # copy the package to the companion directory
-          cp pkg.tgz "pkg/companion/pkg.tgz"
-
           ARTIFACT_NAME="${{ github.event.inputs.module-name }}-${{ github.event.inputs.git-ref }}-${{ github.event.inputs.git-sha }}"
+
+          # copy the package to the companion directory
+          cp pkg.tgz "pkg/companion/${ARTIFACT_NAME}.tgz"
+
 
           export HOME="$(pwd)" MC_CONFIG_DIR="$(pwd)"
           ./mc alias set remote/ https://${{ secrets.S3_HOST }} ${{ secrets.S3_KEY }} ${{ secrets.S3_SECRET }}
 
-          ./mc cp "pkg/companion" "remote/${{ secrets.S3_BUCKET }}/${ARTIFACT_NAME}" --recursive
+          ./mc cp "pkg/companion/" "remote/${{ secrets.S3_BUCKET }}/${ARTIFACT_NAME}" --recursive
 
           echo "artifact-url=https://${{ secrets.S3_HOST }}/${{ secrets.S3_BUCKET }}/${{ inputs.run-id }}/${ARTIFACT_NAME}" >> $GITHUB_OUTPUT
 
