@@ -39,7 +39,11 @@ jobs:
 
       - name: Clone module
         run: |
-          git clone https://github.com/bitfocus/companion-module-${{ github.event.inputs.module-name }} -b "${{ github.event.inputs.git-sha }}" "${{ github.event.inputs.module-name }}"
+          git clone https://github.com/bitfocus/companion-module-${{ github.event.inputs.module-name }} -b "${{ github.event.inputs.git-ref }}" "${{ github.event.inputs.module-name }}"
+
+          # # checkout the specific sha
+          # cd ${{ github.event.inputs.module-name }}
+          # git checkout ${{ github.event.inputs.git-sha }}
 
       - name: Determine nodejs version
         id: determine-nodejs
@@ -68,6 +72,12 @@ jobs:
         run: |
           cd ${{ github.event.inputs.module-name }}
 
+          GIT_HASH=$(git rev-parse HEAD)
+          if [ ! "$GIT_HASH" == "\"${{ github.event.inputs.git-sha }}\"" ]; then
+            echo "Module manifest.json id does not match github repository name"
+            exit 99
+          fi
+
           MANIFEST_ID=$(jq '.["id"]' companion/manifest.json)
           if [ ! "$MANIFEST_ID" == "\"${{ github.event.inputs.module-name }}\"" ]; then
             echo "Module manifest.json id does not match github repository name"
@@ -83,9 +93,6 @@ jobs:
             echo "Module manifest product list is either empty or does not exist"
             exit 99
           fi
-
-          GIT_HASH=$(git rev-parse HEAD)
-          echo "git-hash=$GIT_HASH" >> $GITHUB_OUTPUT
 
       - name: Setup Github packages auth
         run: |
@@ -168,3 +175,36 @@ jobs:
   #       with:
   #         repository: modules
   #         commit_message: "update ${{ github.event.inputs.module-name }} to ${{ github.event.inputs.git-ref }}"
+
+  publish:
+    runs-on: ubuntu-latest
+    needs: build
+
+    # This final stage is to publish the module to the api
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: pkg
+
+      - name: Upload build
+        id: upload
+        uses: bitfocus/actions/upload-artifact@main
+        with:
+          artifact: pkg.tgz
+          artifact-filename: ${{ github.event.inputs.module-name }}-${{ github.event.inputs.git-ref }}-${{ github.event.inputs.git-sha }}.tgz
+         
+          s3-host: ${{ secrets.S3_HOST }}
+          s3-bucket: ${{ secrets.S3_BUCKET }}
+          s3-access-key: ${{ secrets.AWS_S3_ACCESSKEY }}
+          s3-secret-key: ${{ secrets.AWS_S3_SECRET }}
+
+          run-id: ${{ github.run_id }}
+
+      - name: Report to api
+        run: |
+          # TODO - call api to report the new build
+
