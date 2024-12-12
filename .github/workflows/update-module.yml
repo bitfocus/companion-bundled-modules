@@ -48,7 +48,7 @@ jobs:
           cd ${{ github.event.inputs.module-name }}
           GIT_HASH=$(git rev-parse HEAD)
           echo "Git sha: $GIT_HASH"
-          if [ ! "$GIT_HASH" == "\"${{ github.event.inputs.git-sha }}\"" ]; then
+          if [ ! "$GIT_HASH" == "${{ github.event.inputs.git-sha }}" ]; then
             echo "Git sha does not match requested ref"
             exit 99
           fi
