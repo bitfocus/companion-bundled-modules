@@ -207,6 +207,32 @@ jobs:
           run-id: ${{ github.run_id }}
 
       - name: Report to api
+        shell: bash
         run: |
-          # TODO - call api to report the new build
+          echo "Uploaded build to ${{ steps.upload.outputs.artifact-url }}" >> $GITHUB_STEP_SUMMARY
+
+          PKG_SHA256=$(sha256sum pkg.tgz | awk '{print $1}')
+          echo "With SHA256=${PKG_SHA256}" >> $GITHUB_STEP_SUMMARY
+          
+
+          tar -xvzf pkg.tgz
+          MANIFEST_JSON=$(cat pkg/companion/manifest.json)
+          # MANIFEST_JSON=${MANIFEST_JSON//\"/\\\"}
+
+          # TODO: dynamic module type
+          # TODO: rename logUrl property
+          
+          curl -X 'PUT' \
+            'https://developer-staging.bitfocus.io/api/v1/modules' \
+            -H 'accept: application/json' \
+            -H 'Content-Type: application/json' \
+            -H 'Authorization: Bearer ${{ secrets.DEVELOPER_API_KEY }}' \
+            -d '{
+            "moduleType": "companion-connection",
+            "moduleName": "${{ github.event.inputs.module-name }}",
+            "logUrl": "${{ github.run_id }}",
+            "pkgUrl": "${{ steps.upload.outputs.artifact-url }}",
+            "pkgSha": "$PKG_SHA256",
+            "manifestJson": "$MANIFEST_JSON"
+          }'
 
