@@ -1,7 +1,7 @@
 {
 	"extends": "@tsconfig/node18/tsconfig.json",
 	"compilerOptions": {
-		"module": "es2022",
+		"module": "CommonJS",
 		"moduleResolution": "node",
 		"sourceMap": false,
 		"outDir": "dist",
@@ -14,7 +14,7 @@
 		"pretty": true,
 		"types": ["node", "jest"]
 	},
-	"include": ["src/**/*.ts", "scripts/**/*.ts"],
+	"include": ["src/**/*.ts", "scripts/**/*.ts", "scripts/generate-manifests.mts"],
 	"compileOnSave": false,
 	"exclude": ["node_modules/**"]
 }

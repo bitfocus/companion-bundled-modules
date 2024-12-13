@@ -1,15 +1,16 @@
 const path = require('path')
 const fs = require('fs')
+const webpack = require('webpack')
 
 const entries = {
-	'legacy-base': './dist/index.js',
+	// 'legacy-base': './dist/index.js',
 }
 
 const outerDir = './entrypoints'
 const dirs = fs.readdirSync(outerDir)
 
 for (const file of dirs) {
-	entries[`companion-module-${path.parse(file).name}/index`] = `./entrypoints/${file}`
+	entries[`${path.parse(file).name}/index`] = `./entrypoints/${file}`
 }
 
 module.exports = {
@@ -22,7 +23,7 @@ module.exports = {
 	target: 'node',
 	externals: {
 		// Avoid bundling the common code into all the modules
-		'../../dist/index.js': 'commonjs2 ../legacy-base.js',
+		// '../../dist/index.js': 'commonjs2 ../legacy-base.js',
 
 		// Native libs that are needed
 		// TODO - these need to be made available at runtime
@@ -48,4 +49,9 @@ module.exports = {
 			// },
 		],
 	},
+	plugins: [
+		new webpack.optimize.LimitChunkCountPlugin({
+			maxChunks: 1,
+		}),
+	],
 }

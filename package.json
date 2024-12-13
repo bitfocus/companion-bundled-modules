@@ -2,16 +2,15 @@
   "name": "@companion-module/proxy",
   "version": "1.0.0",
   "main": "dist/index.js",
-  "type": "module",
   "license": "MIT",
   "scripts": {
     "build": "rimraf dist && yarn build:main",
     "build:main": "tsc -p tsconfig.build.json",
     "build:watch": "tsc -p tsconfig.build.json --watch",
-    "generate-manifests": "node --loader ts-node/esm scripts/generate-manifests.ts"
+    "generate-manifests": "tsx scripts/generate-manifests.mts"
   },
   "dependencies": {
-    "@companion-module/base": "~1.10.0",
+    "@companion-module/base": "~1.11.2",
     "@tsconfig/node18": "^18.2.4",
     "@types/debug": "^4.1.12",
     "@types/ws": "^8.5.10",
@@ -204,6 +203,7 @@
     "proxy-agent": "^6.4.0",
     "shortid": "^2.2.16",
     "tslib": "^2.3.1",
+    "tsx": "^4.19.2",
     "websocket": "^1.0.26"
   },
   "devDependencies": {
@@ -212,9 +212,8 @@
     "@types/parse-author": "^2.0.3",
     "parse-author": "^2.0.0",
     "rimraf": "^5.0.5",
-    "ts-node": "^10.9.2",
     "typescript": "~5.3",
-    "zx": "^7.2.3"
+    "zx": "^8.2.4"
   },
   "resolutions": {
     "@types/node": "^14.18.63"

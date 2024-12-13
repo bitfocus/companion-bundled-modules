@@ -3,6 +3,8 @@
 import { fs, path, $ } from 'zx'
 import parseAuthor from 'parse-author'
 
+$.verbose = true
+
 import type { ModuleManifest, ModuleManifestMaintainer } from '@companion-module/base'
 const moduleBasePkgStr = fs
 	.readFileSync(new URL('../node_modules/@companion-module/base/package.json', import.meta.url))
@@ -37,8 +39,9 @@ const ignoreNames: string[] = [
 
 for (const folder of dirs) {
 	if (folder.match(/companion-module-/) && !ignoreNames.includes(folder)) {
+		const folderShort = folder.slice('companion-module-'.length)
 		const moduleDir = path.join(outerDir, folder)
-		const moduleNewDir = path.join(outerManifest, folder)
+		const moduleNewDir = path.join(outerManifest, folderShort)
 		const manifestDir = path.join(moduleNewDir, 'companion')
 
 		const pkgJsonStr = await fs.readFile(path.join(moduleDir, 'package.json'))
@@ -118,8 +121,8 @@ for (const folder of dirs) {
 global.modulePkg = require('companion-module-${pkgJson.name}/package.json')
 global.moduleFactory = require('companion-module-${pkgJson.name}')
 global.moduleName = "${pkgJson.name}"
-import('../../dist/index.js')
-			`,
+require('../dist/index.js')
+			`
 		)
 	}
 }
