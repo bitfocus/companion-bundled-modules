@@ -1,4 +1,4 @@
-name: Update Module
+name: DO NOT USE - Old Update Module
 run-name: ${{ github.event.inputs.module-name }} updated to ${{ github.event.inputs.git-ref }} by ${{ github.actor }}
 
 # Controls when the workflow will run
