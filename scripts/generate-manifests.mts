@@ -154,6 +154,8 @@ for (const moduleName of createdNames) {
 		const manifestJsonStr = await fs.readFile(path.join('pkg', 'companion', 'manifest.json'))
 		const manifestJson = JSON.parse(manifestJsonStr.toString())
 
+		await fs.copy('pkg/companion', `packages/${moduleName}-${manifestJson.version}`)
+
 		// Create tgz of the build
 		await new Promise<void>((resolve, reject) => {
 			tar
@@ -163,7 +165,11 @@ for (const moduleName of createdNames) {
 					},
 					['pkg']
 				)
-				.pipe(fs.createWriteStream(`packages/${moduleName}-${manifestJson.version}.tgz`))
+				.pipe(
+					fs.createWriteStream(
+						`packages/${moduleName}-${manifestJson.version}/${moduleName}-${manifestJson.version}.tgz`
+					)
+				)
 				.on('finish', () => {
 					resolve()
 				})
