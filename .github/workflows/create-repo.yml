@@ -1,4 +1,4 @@
-name: Create Module Repo
+name: DO NOT USE - Old Create Module Repo
 run-name: ${{ github.event.inputs.repo-name }} created by ${{ github.actor }}
 
 on: 
