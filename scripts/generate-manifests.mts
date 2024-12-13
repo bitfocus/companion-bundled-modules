@@ -2,6 +2,7 @@
 
 import { fs, path, $ } from 'zx'
 import parseAuthor from 'parse-author'
+import * as tar from 'tar'
 
 $.verbose = true
 
@@ -36,6 +37,8 @@ const ignoreNames: string[] = [
 	// 'companion-module-something'
 	'companion-module-figure53-go-button', // Uses ../../lib/resources/icons.js
 ]
+
+const createdNames = []
 
 for (const folder of dirs) {
 	if (folder.match(/companion-module-/) && !ignoreNames.includes(folder)) {
@@ -115,6 +118,8 @@ for (const folder of dirs) {
 				await fs.copy(path.join(moduleDir, 'documentation'), path.join(manifestDir, 'documentation'))
 		}
 
+		createdNames.push(pkgJson.name)
+
 		await fs.writeFile(
 			path.join(outerEntrypoints, `${pkgJson.name}.cjs`),
 			`
@@ -135,3 +140,36 @@ await fs.writeFile(`manifests/package.json`, '{}')
 
 // const useDir = await fs.pathExists('./module/legacy')
 // const baseDir = useDir ? './module/legacy' : './node_modules/companion-wrapped-module'
+
+await fs.rm('packages', { recursive: true }).catch(() => {})
+await fs.mkdir('packages')
+
+for (const moduleName of createdNames) {
+	try {
+		console.log('starting', moduleName)
+		await fs.rm(`pkg`, { recursive: true }).catch(() => {})
+		// await fs.mkdir('pkg')
+		await fs.copy(path.join('manifests', moduleName), 'pkg')
+
+		const manifestJsonStr = await fs.readFile(path.join('pkg', 'companion', 'manifest.json'))
+		const manifestJson = JSON.parse(manifestJsonStr.toString())
+
+		// Create tgz of the build
+		await new Promise<void>((resolve, reject) => {
+			tar
+				.create(
+					{
+						gzip: true,
+					},
+					['pkg']
+				)
+				.pipe(fs.createWriteStream(`packages/${moduleName}-${manifestJson.version}.tgz`))
+				.on('finish', () => {
+					resolve()
+				})
+				.on('error', reject)
+		})
+	} catch (e) {
+		console.error('Error creating tgz', e)
+	}
+}

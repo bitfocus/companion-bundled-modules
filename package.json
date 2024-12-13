@@ -212,6 +212,7 @@
     "@types/parse-author": "^2.0.3",
     "parse-author": "^2.0.0",
     "rimraf": "^5.0.5",
+    "tar": "^7.4.3",
     "typescript": "~5.3",
     "zx": "^8.2.4"
   },
