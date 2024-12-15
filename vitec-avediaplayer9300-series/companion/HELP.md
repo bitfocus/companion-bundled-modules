@@ -32,6 +32,12 @@ The endpoint must have HTTPS Upgrade disabled under the services tab.
 
 ## Version History
 
+### Version 1.2.6
+
+- Add message queue
+- Update dependencies
+- Use Node 22
+
 ### Version 1.2.5
 
 - Update dependencies
