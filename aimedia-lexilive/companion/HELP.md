@@ -22,6 +22,13 @@ Instance State (Off/On)
 
 ## Version History
 
+### Version 1.1.6
+
+- Message queue
+- Update dependencies
+- Node 22
+- Yarn 4
+
 ### Version 1.1.4
 
 - Convert to ESM
