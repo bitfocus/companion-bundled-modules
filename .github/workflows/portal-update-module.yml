@@ -24,7 +24,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    name: Build module
 
     # The first stage is to build their module
     # Remember that this is running user code, so we need to make sure not to leak any secrets
@@ -32,93 +32,10 @@ jobs:
     permissions:
       packages: read
 
-    steps:
-      - name: Report info
-        run: |
-          echo "Updating **${{ github.event.inputs.module-name }}** to ${{ github.event.inputs.git-ref }}(${{ github.event.inputs.git-sha }}) :rocket:" >> $GITHUB_STEP_SUMMARY
-
-      - name: Clone module
-        run: |
-          git clone https://github.com/bitfocus/companion-module-${{ github.event.inputs.module-name }} -b "${{ github.event.inputs.git-ref }}" "${{ github.event.inputs.module-name }}"
-
-          cd ${{ github.event.inputs.module-name }}
-          GIT_HASH=$(git rev-parse HEAD)
-          echo "Git sha: $GIT_HASH"
-          if [ ! "$GIT_HASH" == "${{ github.event.inputs.git-sha }}" ]; then
-            echo "Git sha does not match requested ref"
-            exit 99
-          fi
-
-      - name: Determine nodejs version
-        id: determine-nodejs
-        run: |
-          NODE_VERSION=$(jq '.runtime.type' ${{ github.event.inputs.module-name }}/companion/manifest.json)
-          echo "Node.js version: $NODE_VERSION"
-
-          if [ "$NODE_VERSION" == "\"node18\"" ]; then
-            echo "Using Node.js 18.x"
-            echo "version=18.x" >> $GITHUB_OUTPUT
-          elif [ "$NODE_VERSION" == "\"node22\"" ]; then
-            echo "Using Node.js 22.x"
-            echo "version=22.x" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Use Node.js ${{ steps.determine-nodejs.outputs.version }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ steps.determine-nodejs.outputs.version }}
-
-      - name: Enable corepack
-        run: |
-          corepack enable
-
-      - name: Collect info
-        run: |
-          cd ${{ github.event.inputs.module-name }}
-
-          MANIFEST_ID=$(jq '.["id"]' companion/manifest.json)
-          if [ ! "$MANIFEST_ID" == "\"${{ github.event.inputs.module-name }}\"" ]; then
-            echo "Module manifest.json id does not match github repository name"
-            exit 99
-          fi
-
-          if grep -q "companion-module-your-module-name" "companion/manifest.json"; then
-            echo "Module manifest contains references to companion-module-your-module-name!"
-            exit 99
-          fi
-
-          if ! jq -e '.products | arrays and length > 0' companion/manifest.json > /dev/null; then
-            echo "Module manifest product list is either empty or does not exist"
-            exit 99
-          fi
-
-      - name: Setup Github packages auth
-        run: |
-          # TODO: support yarn3 with something like (needs a syntax check)
-          # yarn config set npmRegistries.//npm.pkg.github.com.npmAuthToken $NPM_AUTH_TOKEN
-
-          echo "//npm.pkg.github.com/:_authToken=${{ github.token }}" >> ~/.npmrc
-
-      - name: Prepare module
-        run: |
-          cd ${{ github.event.inputs.module-name }}
-
-          yarn install
-
-          # yarn build would be better, but lacks the --if-present property
-          npm run build --if-present
-
-      - name: Package module
-        run: |
-          cd ${{ github.event.inputs.module-name }}
-
-          yarn companion-module-build
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: pkg
-          path: ${{ github.event.inputs.module-name }}/pkg.tgz
-          retention-days: 1
+    uses: bitfocus/actions/.github/workflows/module-checks.yaml@main
+    with:
+      repository-name: bitfocus/companion-module-${{ github.event.inputs.module-name }}
+      upload-artifact: true
 
   commit:
     runs-on: ubuntu-latest
