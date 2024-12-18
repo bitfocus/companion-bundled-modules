@@ -35,6 +35,8 @@ jobs:
     uses: bitfocus/actions/.github/workflows/module-checks.yaml@main
     with:
       repository-name: bitfocus/companion-module-${{ github.event.inputs.module-name }}
+      git-ref: ${{ github.event.inputs.git-ref }}
+      git-sha-check: ${{ github.event.inputs.git-sha }}
       upload-artifact: true
 
   commit:
@@ -50,6 +52,10 @@ jobs:
       contents: write
 
     steps:
+      - name: Report info
+        run: |
+          echo "Updating **${{ github.event.inputs.repository-name }}** to ${{ github.event.inputs.git-ref }}(${{ github.event.inputs.git-sha }}) :rocket:" >> $GITHUB_STEP_SUMMARY
+
       - uses: actions/checkout@v4
         with:
           path: modules
