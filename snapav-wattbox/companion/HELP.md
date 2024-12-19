@@ -5,7 +5,7 @@ This module will allow you to control the WattBox family of devices using compan
 ### Configuration
 
 - The WattBox must be powered on and connected to the same network as the computer that is running Companion.
-- This module controls the WattBox through REST on port 80  or Telnet on port 23.
+- This module controls the WattBox through REST on port 80 or Telnet on port 23.
 
 #### Static Network Configuration (optional)
 
@@ -23,14 +23,17 @@ Add a button and choose the action you want to use.
 - Turning audio reboot off
 
 **Available Presets**
+
 - Outlet On
 - Outlet Off
 
 **Available Feedbacks**
+
 - Outlet On
 - Outlet Off
 
 **Available Variables**
+
 - Outlet Name
 - Outlet State
 - Device Name
