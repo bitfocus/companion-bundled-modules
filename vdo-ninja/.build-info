@@ -1,4 +1,4 @@
 MODULE_NAME=vdo-ninja
-GIT_REF=v2.2.2
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/9734021360
-UPDATE_DATE=2024-06-30
+GIT_REF=v2.3.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/12469203813
+UPDATE_DATE=2024-12-23

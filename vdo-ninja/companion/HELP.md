@@ -62,6 +62,7 @@ Control [VDO.Ninja](https://vdo.ninja) settings remotely.
 - Mic Status
 - Camera Status
 - Speaker Status
+- Guest in Scene
 
 ### Available Variables
 
@@ -69,3 +70,4 @@ Control [VDO.Ninja](https://vdo.ninja) settings remotely.
 - camera (Current camera status, either by stream ID or guest position)
 - speaker (Available for the "Director" role only)
 - label (If specified, otherwise it will be the guest position number)
+- scenes (List of scenes a guest is currently active in)
