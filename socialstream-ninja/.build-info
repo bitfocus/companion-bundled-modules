@@ -1,4 +1,4 @@
 MODULE_NAME=socialstream-ninja
-GIT_REF=v1.0.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/10069129762
-UPDATE_DATE=2024-07-24
+GIT_REF=v1.1.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/12475556648
+UPDATE_DATE=2024-12-24

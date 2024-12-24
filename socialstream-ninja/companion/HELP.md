@@ -10,11 +10,16 @@ Control and monitor [Social Stream Ninja](https://socialstream.ninja/landing).
 
 ### Available Actions
 
-- Clear Current Featured Message
-- Stop and clear all messages
-- Next in Queue
+- Clear featured message
+- Clear all messages
+- Next in queue
 - Toggle auto-show
 - Feature next un-featured
+- Reset Poll
+- Close Poll
+- Waitlist Controls
+- Text to Speech (TTS) Controls
+- Send Chat Message
 
 ### Available Variables
 
