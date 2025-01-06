@@ -55,3 +55,12 @@ None
 - **1.0.0**
 
 Initial Release
+
+- **1.0.1**
+
+Add outbound message queue
+Avoid unnecessary status updates
+Support consecutive actions
+Use Node 22
+Use Yarn 4.5
+Update Dependencies
