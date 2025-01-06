@@ -1,4 +1,4 @@
 MODULE_NAME=resolume-arena
-GIT_REF=v3.9.3
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/12267308422
-UPDATE_DATE=2024-12-11
+GIT_REF=v3.10.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/12640081570
+UPDATE_DATE=2025-01-06
