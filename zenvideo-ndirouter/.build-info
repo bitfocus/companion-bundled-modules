@@ -1,4 +1,4 @@
 MODULE_NAME=zenvideo-ndirouter
-GIT_REF=v2.4.2
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/9923692100
-UPDATE_DATE=2024-07-13
+GIT_REF=v2.4.3
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/12683091874
+UPDATE_DATE=2025-01-09
