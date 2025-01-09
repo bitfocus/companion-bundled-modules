@@ -1,4 +1,4 @@
 MODULE_NAME=dataton-watchout-json
-GIT_REF=v1.3.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/9747196567
-UPDATE_DATE=2024-07-01
+GIT_REF=v2.0.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/12698251822
+UPDATE_DATE=2025-01-09

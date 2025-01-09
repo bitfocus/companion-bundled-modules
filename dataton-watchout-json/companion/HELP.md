@@ -19,12 +19,18 @@ Because Watchout 7 works with ID's, it is possible to use the same buttons in di
 * Asset manager (on which machine is it running)
 * Director (on which machine is it running)
 * All available timelines names
+* All available snapshot names
 
 ### Presets
 * Basic - Jump to Cue
 * Basic - Jump to Time
 * Basic - Update timelines
-* Play - Play button for all timelines incl feedback for play/pause
-* Pause - Pause button for all timelines incl feedback for play/pause
-* Stop - Stop button for all timelines incl feedback for play/pause
+* Play - Play button for all timelines incl feedback for play
+* Pause - Pause button for all timelines incl feedback for pause
+* Stop - Stop button for all timelines incl feedback for stop
+* Toggle - Toggle button for all timelines incl feedback for play/pause
+* Toggle snapshot - Toggle button for all snapshots incl feedback for active
+* Clear snapshots - deactivate all active snapshots
+* Shutdown - Shutdown a node incl a 2 sec delay for safety (needs IP address)
 
+>> Be aware this module is tested on Watchout version 7.5.1 Older versions might not work correctly because of newer API
