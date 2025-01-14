@@ -1,4 +1,4 @@
 MODULE_NAME=imimot-mitti
-GIT_REF=v3.7.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/10569875361
-UPDATE_DATE=2024-08-27
+GIT_REF=v3.7.2
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/12777924767
+UPDATE_DATE=2025-01-14
