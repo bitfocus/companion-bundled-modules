@@ -8,12 +8,14 @@ The authorization 'password' sequence generates a random number used a control t
 
 ----------
 
-## **Available commands for PJLink**
+## **Available Commands for PJLink**
 
 - Power On/Off Projector
 - AV Mute Projector
 - Freeze / Unfreeze Input
 - Change Input (Dynamic Input Names from Projector)
+- Speaker Volume Up by 1
+- Speaker Volume Down by 1
 - **Note:**
 <br>Class 2 projectors provide actual input names
 <br>Class 1 Projectors will create generic names based on the input type:
@@ -24,7 +26,7 @@ The authorization 'password' sequence generates a random number used a control t
   - 5: Network (HD-BaseT, NDI)
   - 6: Internal (Flash memory Logo or still)
 
-## **Available variables for PJLink**
+## **Available Variables for PJLink**
 
 - Projector Class
 - Projector Name
@@ -49,7 +51,7 @@ The authorization 'password' sequence generates a random number used a control t
 - Projector Input
 - **Note:** Some variables are only available with Class 2 protocol. These will show as 'N/A' on a Class 1 projector.
 
-## **Available feedback for PJLink**
+## **Available Feedback for PJLink**
 
 - Error Status
 - Freeze Status
