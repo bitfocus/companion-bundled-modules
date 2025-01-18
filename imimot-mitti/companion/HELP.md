@@ -7,9 +7,11 @@
 
 **Enabling Button Variables & Feedback**
 
-- In Mitti > Settings... > OSC/UDP Controls, select **Custom** from the **Feedback To** dropdown
-- For **IP** enter the IP address of the computer running Companion
-- For **Port** enter the port number that is present on the configuration page for the Mitti module in Companion. By default port `51001` is used
+- In Mitti > Settings... > OSC/UDP Controls, select **Companion-Mitti-Module** from the **Feedback To** dropdown
+- If **Companion-Mitti-Module** is not an option, select **Custom** then follow the next steps:
+  - For **IP** enter the IP address of the computer running Companion
+  - For **Port** enter the port number that is present on the configuration page for the Mitti module in Companion. By default port `51001` is used
+- _Optional: Enable **Feedback Alert** in the Companion module settings. This will show an error when Companion does not receive feedback from Mitti. Disable this feature if you do not plan on using the Feedback features._
 
 ![Mitti](images/mitti.png?raw=true 'Mitti')
 
@@ -64,6 +66,7 @@ _Requires Mitti 2_
 - Set Goto after End Cue
 - Master Fader
 - Adjust Playhead
+- Set In/Out from Playhead
 
 **Available Feedback**
 
