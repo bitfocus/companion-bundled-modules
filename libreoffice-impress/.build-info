@@ -1,0 +1,4 @@
+MODULE_NAME=libreoffice-impress
+GIT_REF=v1.1.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/12854552795
+UPDATE_DATE=2025-01-19
