@@ -1,4 +1,4 @@
 MODULE_NAME=roland-p20hd
-GIT_REF=v1.0.5
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/4075075012
-UPDATE_DATE=2023-02-02
+GIT_REF=v1.1.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/12859037964
+UPDATE_DATE=2025-01-20
