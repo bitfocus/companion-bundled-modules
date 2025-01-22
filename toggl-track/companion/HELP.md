@@ -12,13 +12,13 @@ Paste this token into the config page of this module and click save. If all is w
 
 ## Actions
 
-**Start New Timer** 
+**Start New Timer**
 
 Start a new timer running with the description set in the action and store the ID. If a list of projects has been retrieved on startup you can choose a project. By default a new timer can't be started if one is already running. This behaviour can be changed by ticking the 'Always Start' option in the module configuration.
 
 **Get Current Timer**
 
-Companion only knows the ID of timers it has started, if a timer is started from another application or the toggle website then this action will get the ID so Companion knows about it.
+Companion only knows the ID of timers it has started. If you did not enable time entry poller you can use this action to poll the current time entry, if a timer is started from another application or the toggle website so Companion knows about it.
 
 **Stop Current Timer**
 
@@ -35,29 +35,38 @@ Presets are available for **Start Timer** and **Stop Timer**.
 ## History
 
 ### Version 1.0.0
-First release
+
+- First release
 
 ### Version 1.0.1
-Fix broken link
+
+- Fix broken link
 
 ### Version 1.0.2
-Allow a project to be specified when starting a new timer button
 
-Add an action to refresh the project list
-
-Add 'Always start' configuration option
+- Allow a project to be specified when starting a new timer button
+- Add an action to refresh the project list
+- Add 'Always start' configuration option
 
 ### Version 1.0.3
-Add variables for timerId and timerDescription
+
+- Add variables for timerId and timerDescription
 
 ### Version 2.0.0
-Updated for Companion version 3
 
-Updated for toggl API version 9
+- Updated for Companion version 3
+- Updated for toggl API version 9
 
 ### Version 2.0.1
-Make the API token config field required
 
-Fix manifest file
+- Make the API token config field required
+- Fix manifest file
 
+### Version 2.1.0
 
+- rewrite module in typescript
+- use module toggl-track instead of implementing api on our own
+- add status reports for some failure cases in connections dashboard
+- add configurable time entry poller
+- add feedback for currently running project and client
+- update timerDuration to contain the correct duration formatted as time string
