@@ -3,7 +3,7 @@
 This module controls a Denon USB/SD recorder over Ethernet.
 Includes DN-700R, DN-900R, DN-500R, DN-F450R, DN-F650R
 
-The older RS232 only models (DN-500R, DN-F450R, DN-F650R) can be controlled with a USB to RS232 adapter via the `generic-tcp-udp` module in Companion or an external Ethernet to RS232 adapter.
+The older RS232 only models (DN-500R, DN-F450R, DN-F650R) can be controlled with a USB to RS232 adapter via the `Generic: TCP Serial Port` module in Companion or an external Ethernet to RS232 adapter.
 
 **Available commands:**
 
