@@ -38,6 +38,10 @@ TV Connection
 
 It should be paired now (you can see it on the device).
 
+## Re-Pairing
+1. To un-pair the TV, uncheck the **Paired** checkbox in the Module Configuration and hit save button.
+2. Try the Pairing process again with the instructions above.
+
 This module supports:
 * Pairing the device
 * Power on/off
