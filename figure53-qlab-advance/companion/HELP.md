@@ -129,14 +129,16 @@ Commands implemented:
 | **$(INSTANCENAME:e_Secs)**            | Totals seconds elapsed for Running Cue. Can be manipuated with Companion functions                               |
 | **$(INSTANCENAME:s_count)**           | Number of cues currently selected                                                                                |
 | **$(INSTANCENAME:s_id)**              | Unique ID of the selected cue (or the first ID if more than one cue is selected)                                 |
-| **$(INSTANCENAME:s_ids)**             | List of Unique IDs of all cues selected, separated by ':'                                                            |
+| **$(INSTANCENAME:s_ids)**             | List of Unique IDs of all cues selected, separated by ':'                                                        |
 | **$(INSTANCENAME:min_go)**            | Current value of double-go protection (in seconds)                                                               |
 | **$(INSTANCENAME:q\_{num}\_name)**    | Name of cue number {num}. See below for certain restrictions.                                                    |
 | **$(INSTANCENAME:id\_{ID}\_name)**    | Name of cue ID {ID}. See below for certain restrictions.                                                         |
 | **$(INSTANCENAME:q\_{num}\_elapsed)** | Elapsed time in seconds cue number {num}. See below for certain restrictions.                                    |
 | **$(INSTANCENAME:id\_{ID}\_elapsed)** | Elapsed time in seconds of cue ID {ID}. See below for certain restrictions.                                      |
+| **$(INSTANCENAME:q\_{num}\_id)**      | Unique ID of cue number {num}. See below for certain restrictions.                                               |
+| **$(INSTANCENAME:id\_{ID}\_num)**     | Cue number cue ID {ID}. May be blank. See below for certain restrictions.                                                      |
 
-To use these, replace INSTANCENAME with the name of your module instance.
+To use these, replace INSTANCENAME with the name of your module instance which starts as `qlabfb` unless you change it.
 
 ## Feedback available (TCP mode only)
 
