@@ -1,4 +1,4 @@
 MODULE_NAME=soundcraft-ui
-GIT_REF=v3.6.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/11525397883
-UPDATE_DATE=2024-10-25
+GIT_REF=v3.7.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/12930512923
+UPDATE_DATE=2025-01-23

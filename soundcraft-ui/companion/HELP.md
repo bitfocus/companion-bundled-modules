@@ -24,3 +24,4 @@ If you're missing a feature, feel free to [open an issue](https://github.com/bit
 | Phantom Power          | Switch phantom power on hardware channels                        |
 | Automix                | Enable/disable automix groups, assign channels to groups         |
 | FX Settings            | Set parameters and BPM for FX processors                         |
+| Patching               | Change patch config (Ui24R only)                                 |
