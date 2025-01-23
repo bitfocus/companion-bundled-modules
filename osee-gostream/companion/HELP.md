@@ -1,8 +1,6 @@
 ## GoStreamDeck
 
-Should work with all models of GoStreamDeck.
-
-Firmware versions 7.5.2 and later are known to work, other versions may experience problems.
+Should work with all models of GoStream devices; Deck and Duet.
 
 Devices must be controlled over a network, USB control is NOT supported.
 
