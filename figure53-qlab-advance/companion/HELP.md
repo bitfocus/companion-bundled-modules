@@ -125,8 +125,9 @@ Commands implemented:
 | **$(INSTANCENAME:r_mm)**              | Minutes left for Running Cue                                                                                     |
 | **$(INSTANCENAME:r_ss)**              | Seconds left for Running Cue                                                                                     |
 | **$(INSTANCENAME:r_left)**            | Shortest display time left for Running Cue. Shows .1 increments if tenths option set.                            |
-| **$(INSTANCENAME:r_secs)**            | Totals seconds left for Running Cue. Can be manipuated with Companion functions                                  |
-| **$(INSTANCENAME:e_Secs)**            | Totals seconds elapsed for Running Cue. Can be manipuated with Companion functions                               |
+| **$(INSTANCENAME:r_secs)**            | Seconds left for Running Cue. Can be manipuated with Companion functions                                         |
+| **$(INSTANCENAME:e_secs)**            | Seconds elapsed for Running Cue. Can be manipuated with Companion functions                                      |
+| **$(INSTANCENAME:e_total)**           | Total run time (seconds) for Running Cue. Can be manipuated with Companion functions                             |
 | **$(INSTANCENAME:s_count)**           | Number of cues currently selected                                                                                |
 | **$(INSTANCENAME:s_id)**              | Unique ID of the selected cue (or the first ID if more than one cue is selected)                                 |
 | **$(INSTANCENAME:s_ids)**             | List of Unique IDs of all cues selected, separated by ':'                                                        |
@@ -136,7 +137,7 @@ Commands implemented:
 | **$(INSTANCENAME:q\_{num}\_elapsed)** | Elapsed time in seconds cue number {num}. See below for certain restrictions.                                    |
 | **$(INSTANCENAME:id\_{ID}\_elapsed)** | Elapsed time in seconds of cue ID {ID}. See below for certain restrictions.                                      |
 | **$(INSTANCENAME:q\_{num}\_id)**      | Unique ID of cue number {num}. See below for certain restrictions.                                               |
-| **$(INSTANCENAME:id\_{ID}\_num)**     | Cue number cue ID {ID}. May be blank. See below for certain restrictions.                                                      |
+| **$(INSTANCENAME:id\_{ID}\_num)**     | Cue number cue ID {ID}. May be blank. See below for certain restrictions.                                        |
 
 To use these, replace INSTANCENAME with the name of your module instance which starts as `qlabfb` unless you change it.
 
