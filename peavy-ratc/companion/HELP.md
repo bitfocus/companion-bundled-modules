@@ -49,6 +49,11 @@ The Action Recorder will translate any recieved numeric valueIs messages into Co
 
 ## Version History
 
+### Version 1.1.2
+
+- Use Node 22
+- Update dependencies
+
 ### Version 1.1.1
 
 - Minor fixes
