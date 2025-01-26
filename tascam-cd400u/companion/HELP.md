@@ -120,6 +120,11 @@ RESUME PLAY SELECT turns the resume play mode of the controlled device on or off
 
 ## Version History
 
+### Version 1.1.5
+
+- Use Node 22
+- Update dependencies
+
 ### Version 1.1.4
 
 - Update dependencies
