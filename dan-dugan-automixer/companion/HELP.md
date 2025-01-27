@@ -196,6 +196,12 @@ Set the the channel count to the appropriate value, turn the metering off, and i
 
 ## Version History
 
+## Version 1.1.3
+
+- Use Node 22
+- Update companion-module-base
+- Update companion-module-tools
+
 ## Version 1.1.1
 
 - Update companion-module-base
