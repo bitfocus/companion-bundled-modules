@@ -21,3 +21,7 @@ This module supports NEXO NXAMP Power Amplifiers. Please submit a feature reques
 
 - Add feedbacks
 - Update dependencies
+
+## Version 2.1.2
+
+- USe Node 22
