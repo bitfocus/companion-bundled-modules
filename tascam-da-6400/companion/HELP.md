@@ -213,6 +213,10 @@ This turns the record function of the controlled device on/off.
 
 ## Version History
 
+### Version 1.2.5
+
+- Use Node 22
+
 ### Version 1.2.4
 
 - Update dependencies
