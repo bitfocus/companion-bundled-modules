@@ -113,18 +113,18 @@ All feedbacks are booleans, which allows them to be used in triggers.
 - `$(RCV:overlay_G_name)`
 
 ##### Wireless Device Status
-- `$(RCV:wireless_1_connected)`
-- `$(RCV:wireless_1_signal)`
-- `$(RCV:wireless_1_battery)`
-- `$(RCV:wireless_1_charging)`
-- `$(RCV:wireless_1_muted)`
-- `$(RCV:wireless_1_record)`
-- `$(RCV:wireless_2_connected)`
-- `$(RCV:wireless_2_signal)`
-- `$(RCV:wireless_2_battery)`
-- `$(RCV:wireless_2_charging)`
-- `$(RCV:wireless_2_muted)`
-- `$(RCV:wireless_2_record)`
+- `$(RCV:wireless1_connected)`
+- `$(RCV:wireless1_signal)`
+- `$(RCV:wireless1_battery)`
+- `$(RCV:wireless1_charging)`
+- `$(RCV:wireless1_muted)`
+- `$(RCV:wireless1_record)`
+- `$(RCV:wireless2_connected)`
+- `$(RCV:wireless2_signal)`
+- `$(RCV:wireless2_battery)`
+- `$(RCV:wireless2_charging)`
+- `$(RCV:wireless2_muted)`
+- `$(RCV:wireless2_record)`
 
 ##### Storage Information
 - `$(RCV:storage_usb_data_used)`
