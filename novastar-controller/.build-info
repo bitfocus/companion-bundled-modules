@@ -1,4 +1,4 @@
 MODULE_NAME=novastar-controller
-GIT_REF=v2.3.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/9010917638
-UPDATE_DATE=2024-05-09
+GIT_REF=v2.4.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/13038269511
+UPDATE_DATE=2025-01-29
