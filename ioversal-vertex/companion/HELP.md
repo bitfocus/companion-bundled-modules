@@ -1,6 +1,6 @@
 ## Available commands
 
-* Run Script
+* Run Script/Command
 * Play
 * Pause
 * Stop
