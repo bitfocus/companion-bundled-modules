@@ -1,4 +1,4 @@
 MODULE_NAME=renewedvision-propresenter-api
-GIT_REF=v1.0.3
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/12039221972
-UPDATE_DATE=2024-11-26
+GIT_REF=v1.0.4
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/13052608440
+UPDATE_DATE=2025-01-30
