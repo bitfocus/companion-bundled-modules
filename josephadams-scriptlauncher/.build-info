@@ -1,0 +1,4 @@
+MODULE_NAME=josephadams-scriptlauncher
+GIT_REF=v1.0.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/13072244479
+UPDATE_DATE=2025-01-31
