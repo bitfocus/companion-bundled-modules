@@ -156,3 +156,9 @@ The following controls or feedbacks are not supported by the SSC API.
 #### 1.0.0
 
 Initial Release
+
+#### 1.0.6
+
+Support sequential actions
+
+Use Node 22
