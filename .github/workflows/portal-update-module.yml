@@ -21,6 +21,11 @@ on:
         type: string
         description: Git sha to build
         required: true
+      prerelease:
+        type: boolean
+        description: "If set, this is a prerelease"
+        required: false
+        default: false
 
 jobs:
   build:
@@ -38,6 +43,7 @@ jobs:
       git-ref: ${{ github.event.inputs.git-ref }}
       git-sha-check: ${{ github.event.inputs.git-sha }}
       upload-artifact: true
+      prerelease: ${{ github.event.inputs.prerelease }}
 
   commit:
     runs-on: ubuntu-latest
