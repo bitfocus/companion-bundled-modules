@@ -1,4 +1,4 @@
 MODULE_NAME=greengo-intercom
-GIT_REF=v1.0.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5298144390
-UPDATE_DATE=2023-06-17
+GIT_REF=v1.0.2
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/13199657869
+UPDATE_DATE=2025-02-07
