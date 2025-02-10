@@ -1,4 +1,4 @@
 MODULE_NAME=monospace-lightkey
-GIT_REF=v2.2.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5579640466
-UPDATE_DATE=2023-07-17
+GIT_REF=v2.2.2
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/13252538931
+UPDATE_DATE=2025-02-10
