@@ -43,7 +43,7 @@ jobs:
       git-ref: ${{ github.event.inputs.git-ref }}
       git-sha-check: ${{ github.event.inputs.git-sha }}
       upload-artifact: true
-      prerelease: "${{ github.event.inputs.prerelease }}"
+      prerelease: ${{ github.event.inputs.prerelease == "true" }}
 
   commit:
     runs-on: ubuntu-latest
