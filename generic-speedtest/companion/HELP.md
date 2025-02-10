@@ -1,10 +1,11 @@
 ## Generic Speedtest
 
-This module will allow you to conduct an internet speed test from popular services Cloudflare or Speedtest.net
+This module will allow you to conduct an internet speed test using Ookla's speedtest.net.
+
+_Note: As of v2.0.0, Cloudflare is no longer provided as an option due to support being dropped by the underlying speedtest library and Cloudflare's library not being compatible with Node.js._
 
 ### Configuration
 
-- Select your preferred service in the module configuration
 - Use the "Run Test" action to run a speed test. Until you run a test using the action, results will not be shown. When you run a new test, all previous results will be cleared until the new test results are received
 
 ### Available actions
