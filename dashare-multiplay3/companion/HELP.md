@@ -39,11 +39,11 @@ This module controls the program by OSC messages as described on the [on-line he
 
 <strong>FEEDBACKS</strong>
 
-> <strong>Note:</strong> To get an accurate state of the program, start companion mudule before open Multiplay or activete 'GO' and move playhead across the cue list to force Multiplay to send status messages.
+> <strong>Note:</strong> To get an accurate state of the program, start companion mudule before open Multiplay or activate 'GO' and move playhead across the cue list to force Multiplay to send status messages.
 
 - TIME REMAINING (and warning time)
 - TIME ELAPSED
-- AVALIABILITY OF THE GLOBAL ACTIONS (go, stop all, fade all, move to next cue, back to previous cue)
+- AVAILABILITY OF THE GLOBAL ACTIONS (go, stop all, fade all, move to next cue, back to previous cue)
 - ACTIVATION STATUS OF CURRENT CUE
 
 <strong>PRESETS</strong>
