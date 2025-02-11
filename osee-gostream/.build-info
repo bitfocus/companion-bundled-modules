@@ -1,4 +1,4 @@
 MODULE_NAME=osee-gostream
-GIT_REF=v1.3.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/12930033006
-UPDATE_DATE=2025-01-23
+GIT_REF=v1.3.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/13270301785
+UPDATE_DATE=2025-02-11
