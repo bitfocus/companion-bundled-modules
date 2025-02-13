@@ -17,6 +17,8 @@ You can download it from: http://github.com/josephdadams/scriptlauncher
 - Reboot
 - Send Alert
 - Execute Custom Script
+- Stop System Info - stops gathering metrics
+- Start System Info - restarts gathering metrics
 
 ## Feedbacks
 
