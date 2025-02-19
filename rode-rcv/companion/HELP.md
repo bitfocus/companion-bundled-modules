@@ -61,6 +61,10 @@ All feedbacks are booleans, which allows them to be used in triggers.
 	- Provides feedback based on an input's keying status.
 - **Video Outputs**
 	- Provides feedback based on video output state.
+- **Audio Meters**
+	- Show Audio Meters for live mix channels.
+- **Visual Switcher**
+	- Show a visual representative of the main RCV buttons.
 
 
 ### Variables
