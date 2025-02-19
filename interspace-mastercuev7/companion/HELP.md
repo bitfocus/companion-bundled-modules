@@ -17,6 +17,7 @@ After configuring the MasterCueV7 Connection, you have several options to custom
 - Set Technician Mode : Set Cues to Full or Lights Only
 - Suspend All : Suspends all Outputs
 - Resume All : Resumes all Outputs
+- Configure Handset : Configures a specified Handset
 - Clear Handsets : Removes all Handsets
 - Factory Reset : Resets all V7 settings to defaults
 
