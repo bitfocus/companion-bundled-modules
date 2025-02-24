@@ -32,6 +32,10 @@ This module can be used to communicate with a RØDECaster Video switcher.
 	- Enable/disable keying on input sources.
 - **Video Outputs**
 	- Controls video outputs.
+- **Set Media Bank**
+	- Change Media bank settings
+- **Set Overlay Bank**
+	- Change Overlay bank settings
 
 
 ### Feedbacks
