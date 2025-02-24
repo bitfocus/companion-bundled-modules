@@ -1,4 +1,4 @@
 MODULE_NAME=colorlight-processor
-GIT_REF=v1.1.2
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/12787016669
-UPDATE_DATE=2025-01-15
+GIT_REF=v1.1.3
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/13501268873
+UPDATE_DATE=2025-02-24
