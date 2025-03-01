@@ -26,6 +26,7 @@ Contributions for maintenance and development of this open source module are alw
 Setting | Description
 -----------------|---------------
 **Listen Port** | Enter the IP Port number to listen for a TCP connection. Defaults to 32100 and will need to be changed if more than one serial port is to be configured.
+**Show Native (non-USB) Ports** | Include native (on-board) ports in selection [3]
 **Serial Port** | Choose the Serial port attached to the device [1] [2]
 **Baud Rate** | Choose the baud rate for the serial port
 **Data Bits** | Choose the data bits for the serial port
@@ -44,3 +45,5 @@ This is a helper to assist other modules. There are no actions.
 [1] When the module first starts up, it will scan the system for serial ports. Until ports are found, the configuration drop-down menu will be empty or not available. The log will show 'No serial port configured' when the scan is complete.
 
 [2] You can optionally type the full path to the OS locaton of the serial device. Incorrect values will not work.
+
+[3] On Linux (and Pi) this will show many 'phantom' ports that are not connected to anything.
