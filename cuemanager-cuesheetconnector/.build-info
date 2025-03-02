@@ -1,4 +1,4 @@
 MODULE_NAME=cuemanager-cuesheetconnector
-GIT_REF=v1.2.5
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/13346363359
-UPDATE_DATE=2025-02-15
+GIT_REF=v1.3.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/13617585677
+UPDATE_DATE=2025-03-02
