@@ -2,7 +2,7 @@
 
 **Available commands for LynTec RPC**
 
-* Breaker On
-* Breaker Off
-* Zone On
-* Zone Off
+- Breaker On
+- Breaker Off
+- Zone On
+- Zone Off
