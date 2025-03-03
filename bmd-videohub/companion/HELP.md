@@ -19,3 +19,5 @@ Instead you can take one of the existing presets and update it to the correct in
 - Clear (when enabled)
 - Write routes to a disk file
 - Read routes from a disk file
+- Lock/Unlock output
+- Lock/Unlock serial port (when present)
