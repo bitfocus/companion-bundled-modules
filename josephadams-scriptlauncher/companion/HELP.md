@@ -19,12 +19,14 @@ You can download it from: http://github.com/josephdadams/scriptlauncher
 - Execute Custom Script
 - Stop System Info - stops gathering metrics
 - Start System Info - restarts gathering metrics
+- Rename/Move/Copy a File
 
 ## Feedbacks
 
 ## Variables
 
 - Connection State
+- Platform / OS
 
 The program also monitors system information of the computer running ScriptLauncher, so you have these variables available as well:
 
