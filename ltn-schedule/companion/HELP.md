@@ -72,6 +72,8 @@ the api user role to it. You can then use it to connect through this companion m
 | **totalRemainingTime**   | Shows a timer with the total remaining time of the rundown                                         |
 | **totalDuration**        | Shows the total duration of the rundown                                                            |
 | **adRemainingTime**      | Shows a timer with the remaining time of the current longest ad break, or empty if none is running |
+| **elementRunning**       | Shows the ID of the current element running                                                        |
+| **elementRunningIndex**  | Shows the index of the current element running                                                     |
 
 ## Presets
 
