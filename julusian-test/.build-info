@@ -1,4 +1,4 @@
 MODULE_NAME=julusian-test
-GIT_REF=v0.1.2
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/13699240078
+GIT_REF=v0.1.4
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/13699560424
 UPDATE_DATE=2025-03-06
