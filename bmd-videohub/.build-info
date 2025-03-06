@@ -1,4 +1,4 @@
 MODULE_NAME=bmd-videohub
-GIT_REF=v2.4.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/13631834046
-UPDATE_DATE=2025-03-03
+GIT_REF=v2.5.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/13697349601
+UPDATE_DATE=2025-03-06
