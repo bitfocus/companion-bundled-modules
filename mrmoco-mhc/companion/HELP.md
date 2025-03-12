@@ -3,7 +3,7 @@
 
 This module will allow you to remotely operate MHC through its API.
 
-Supported MHC versions: 3.3.3.14 onwards.
+Supported MHC versions: 3.5.0+
 
 ## Configuration
 
@@ -19,4 +19,10 @@ Add an action to a button and select the action you wish to use.
 
 - Recall Preset
 - Recall Move
-- Stop All
+- Robot Enable/Disable
+- Robot Tracking On/Off
+- Set Move Options
+- Set Pan Bar Input On/Off
+- Stop All Robots
+- Stop Robot
+
