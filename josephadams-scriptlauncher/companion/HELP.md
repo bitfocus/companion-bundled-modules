@@ -20,6 +20,7 @@ You can download it from: http://github.com/josephdadams/scriptlauncher
 - Stop System Info - stops gathering metrics
 - Start System Info - restarts gathering metrics
 - Rename/Move/Copy a File
+- Move Dated File in Folder
 
 ## Feedbacks
 
