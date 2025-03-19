@@ -110,7 +110,9 @@ This same concept of ACTIVE vs FOCUSED is also true for all presentation playlis
 This is an important concept to understand when choosing to add an action to add to a button (or trigger). Start with this question in mind: "Which one of these do I want to take an action on - the ACTIVE thing or the FOCUSED thing"  
 
 The actions are named to be clear about which they work with.  
-eg "**Active** Presentation Operation" vs "**Focused** Presentation Operation".  
+eg  
+**Active Presentation Operation** will provide you a list of operations you can perform on the ACTIVE presentation.  
+While **Focused Presentation Operation** will provide you a list of operations you can perform on the FOCUSED presentation.  
   
 To really see the difference you might experiment and explore the difference between triggering the "next" slide in the Active presentation vs the "next" slide in the Focused presentation. Try these both while one presentation is active and a different presentation is in focus!
   
@@ -190,6 +192,6 @@ Note-On Intensity = Column of button.
 In the module config, enable the MIDI Button Pushing and then choose an existing MIDI port in the "Midi Port" dropdown.
 If you like, pick the last option in the Midi-Port Name dropdown called "Custom Virtual Port" to create a local (non-networked) custom virtual port with any name you choose.  
 
-You need to enter the port number that your Companion is configured to listen to (if you have changed it from the default of 8000) as there is no way for this module to "know" what port your Companion is listening on.  (This Port is configured in the main window of Companion).  
+You need to make sure the Companion is listening on 127.0.0.1 (or "All Interfaces" 0.0.0.0). Also you will need to enter the port number that your Companion is configured to listen to, *if you have changed it from the default of 8000*, as there is no way for this module to "know" what port your Companion is listening on.  (This Port is configured in the main window of Companion).  
    
 Tip: You can setup as many MIDI ports are you like in MacOS or Windows (Windows needs 3rd party software). Make sure that the MIDI port you setup for this is just for Companion and ProPresenter.  Also, make sure it is only used as a *destination* and NOT a *source* in ProPresenter MIDI settings - otherwise you will probably feedback MIDI notes that you intend to send out to this module, straight back into ProPresenter, and they will trigger unintended actions within ProPresenter itself.  
