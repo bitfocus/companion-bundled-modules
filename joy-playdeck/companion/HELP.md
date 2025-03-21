@@ -1,45 +1,54 @@
-A generic module for performing simple actions in Playdeck (Video Playout Software)
+Module for JOY Event & Media's Playdeck player. Now it support all versions up to 3.8b13.
+You can choose appropriate version. The module automatically adjusts the set of commands in accordance with your chosen version.
 
-#### Available commands for Playdeck:
+**Available commands (for Playdeck 3.8b13) (version dependent):**
 
-- **Play** - PLAY the selected Clip in the Playlist.
-- **Pause** - PAUSE the Playback of the Playlist.
-- **Stop** - STOP the Playback of the Playlist.
-- **Next** Clip - The Playback jumps to the NEXT available Clip in the Playlist and also skips Block Separators (e.g. Pause, Stop).
-- **Previous Clip** - The Playback jumps to the PREVIOUS available Clip BEFORE the current Clip in the Playlist and also skips Block Separators.
-- **Restart Clip** - The Playback RESTARTS the current played Clip.
-- **Jump** - JUMP to the end of the Clip in the Playlist with a certain amount of SECONDS left (set in Playdeck).
-- **Fade In** - FADE IN of the current selected Clip in the Playlist.
-- **Fade Out** - FADE OUT the Playback of the Playlist.
-- **Mute Audio** - MUTE all Audio output of the Playlist.
-- **Unmute Audio** - UNMUTE the Audio output of the Playlist.
-- **Activate All** - ACTIVATE all Clips in the Playlist.
-- **Stop All Overlays**- HIDE a certain Overlay.
-- **Play Overlay** - SHOW one or more Overlays.
-- **Stop Overlay** - HIDE a certain Overlay.
-- **Play Action** - SHOW a certain Action.
-- **Select Block** - SELECT a certain BLOCK (all Clips) in the Playlist.
-- **Activate Block** - ACTIVATE a certain Block (all Clips) in the Playlist.
-- **Deactivate Block** - DEACTIVATE a certain Block (all Clips) in the Playlist.
-- **Select Clip** - SELECT a certain Clip in the Playlist.
-- **Activate Clip** - ACTIVATE a certain Clip in the Playlist.
-- **Deactivate Clip** - DEACTIVATE a certain Clip in the Playlist.
-- **Cue** - CUE a certain Clip in the Playlist.
-- **Cue And Play** - CUE AND PLAY a certain Clip in the Playlist.
-- **Start Recording** - START a new recording.
-- **Stop Recording** - STOP the current recording.
-- **Custom command** - sends a custom command (shold be formatted like `<{command}|{playlidID}|{blockID}|{clipID}>`)
+**CONTROL**: CROSSFADE, CUE, CUE and PLAY, CUE and PLAY (Sync), CUE FLEX, CUE FLEX and PLAY, CUE FLEX and PLAY (Sync), CUE NEXT, CUE NEXT and PLAY, CUE NEXT BLOCK, CUE NEXT BLOCK and PLAY, FADE IN, FADE OUT, JUMP to end, JUMP to start, PAUSE, PLAY, PLAY previous, RESTART, STOP;
 
-#### Available feedbacks (become active after some actions):
+**EDITING**: ACTIVATE all clips, ACTIVATE clip/block, APPEND clip, CHANGE clip, De-ACTIVATE clip/block, DELETE block, DELETE clip, DESELECT, INSERT clip, LOAD Playlist, SELECT block, SELECT clip;
+
+**AUDIO**: MUTE, Un-MUTE;
+
+**OVERLAY**: PLAY, STOP, STOP ALL, TOGGLE;
+
+**SCRIPTS**: RESTART;
+
+**ACTIONS**: PLAY, PLAY (Sync);
+
+**DESKTOP**: TOGGLE;
+
+**NOTES**: HIDE;
+
+**STREAM**: START, STOP;
+
+**RECORDING**: START, STOP;
+
+**Custom command** - sends a custom command (shold be formatted like `<{command}|{playlidID}|{blockID}|{clipID}>`)
+
+**Available feedbacks (become active after some actions):**
 
 - **Current state of playlist** with options:
   - _Playlist_: Left or Rigth
   - _State_: _**STOP**_, _**PAUSE**_, _**PLAY**_, _**CUE**_
-  - _Block ID_: 0 for any
-  - _Clip ID_: 0 for any
+  - _Block ID/Name_: 0 for any
+  - _Clip ID/Name_: 0 for any
 
-#### Available variables (_null_ if no feedbacks):
+**Available variables (for Playdeck 3.8b13) (_null_ if no feedbacks):**
 
-- `playlist_{n}_state` - State of **_n_** (1 for Left, 2 for Right) playlist
-- `playlist_{n}_block` - Current block of **_n_** playlist
-- `playlist_{n}_clip` - Current clip of **_n_** playlist (number in block)
+- `general_active_channels` - Number of active channels
+- `general_playlist_file` - Current playlist file
+- `general_production_mode` Production Mode state
+- `general_recording` Recording state
+- `general_recording_duration` Recording duration in seconds
+- `playlist_{n}_block_id` Current block of **_n_** playlist
+- `playlist_{n}_block_name` Current block name of **_n_** playlist
+- `playlist_{n}_block_time_end` Time when block of **_n_** playlist ends
+- `playlist_{n}_clip_duration` Current clip duration in seconds in **_n_** playlist
+- `playlist_{n}_clip_id` Current clip in **_n_** playlist
+- `playlist_{n}_clip_name` Current clip name in **_n_** playlist
+- `playlist_{n}_clip_position` Current clip elapsed time in seconds in **_n_** playlist
+- `playlist_{n}_clip_progress` Current clip progress in percents in **_n_** playlist
+- `playlist_{n}_clip_remaining` Current clip remaining time in seconds in **_n_** playlist
+- `playlist_{n}_clip_time_end` Time when current clip in **_n_** playlist ends
+- `playlist_{n}_clip_type` Current clip type in **_n_** playlist
+- `playlist_{n}_state` State of **_n_** playlist
