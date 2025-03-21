@@ -118,7 +118,7 @@ OK prminfo 116 "MIXER:Current/Fx/Label/Icon" 2 2 0 12 0 "" binary any rw 1
 OK prminfo 117 "MIXER:Current/Fx/Label/Category" 2 2 0 16 0 "" binary any rw 1
 OK prminfo 118 "MIXER:Current/Fx/Label/Name" 2 2 0 64 0 "" binary any rw 1
 OK prminfo 119 "MIXER:Setup/MonitorMix/Password" 1 1 0 24 0 "" binary any rw 1
-OK prminfo 120 "MIXER:Current/MuteGrpCtrl/On" 6 1 0 1 0 "" integer any r 1
+OK prminfo 120 "MIXER:Current/MuteGrpCtrl/On" 6 1 0 1 0 "" integer any rw 1
 OK prminfo 121 "MIXER:Current/MuteGrpCtrl/Label/Name" 6 1 0 64 0 "" string any rw 1
    prminfo 122 "MIXER:Current/InputChLink/InCh/Assign" 16 1 0 9 0 "" integer any rw 1
    prminfo 123 "MIXER:Current/InputChLink/StInCh/Assign" 2 1 0 9 0 "" integer any rw 1
@@ -181,4 +181,4 @@ OK mtrinfo 2001 "MIXER:Current/Meter/StInCh" 2 3 0 127 0 "dB" mtr any r 1 "PreEQ
 OK mtrinfo 2002 "MIXER:Current/Meter/FxRtnCh" 4 2 0 127 0 "dB" mtr any r 1 "PreFader|PostOn"
 OK mtrinfo 2100 "MIXER:Current/Meter/Mix" 6 3 0 127 0 "dB" mtr any r 1 "PreEQ|PreFader|PostOn"
 OK mtrinfo 2101 "MIXER:Current/Meter/Mtrx" 2 3 0 127 0 "dB" mtr any r 1 "PreEQ|PreFader|PostOn"
-OK mtrinfo 2102 "MIXER:Current/Meter/St" 1 3 0 127 0 "dB" mtr any r 1 "PreEQ|PreFader|PostOn"
+OK mtrinfo 2102 "MIXER:Current/Meter/St" 2 3 0 127 0 "dB" mtr any r 1 "PreEQ|PreFader|PostOn"
