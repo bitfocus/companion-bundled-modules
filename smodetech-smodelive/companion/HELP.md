@@ -1,7 +1,7 @@
 # Smode Tech | Smode Live
 
 This module connects to a Smode Live device.
-Version control 1.1.1
+Version control 1.1.2
 
 ## Configuration
 * Smode Live Version 10 at least
