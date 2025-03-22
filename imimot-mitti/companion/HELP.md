@@ -35,6 +35,7 @@
 - Play Selected Cue
 - Play cue with number / ID
 - Play cue with name
+- Play cue at index
 - Toggle Fullscreen
 - Fullscreen On
 - Fullscreen Off
@@ -58,15 +59,19 @@ _Requires Mitti 2_
 - Cue Brightness
 - Cue Contrast
 - Cue Opacity
-- Cue Volume
+- Set Cue Volume to Value
 - Cue Playback Speed
+- Adjust Current Cue Volume
 - Toggle Goto Cue after End
 - Goto after End On
 - Goto after End Off
 - Set Goto after End Cue
 - Master Fader
+- Toggle / On / Off Video Outputs
+- Toggle / On / Off Audio Outputs
 - Adjust Playhead
-- Set In/Out from Playhead
+- Scrub Playhead with Timecode
+- Set In / Out from Playhead
 
 **Available Feedback**
 
@@ -85,8 +90,10 @@ _Requires Mitti 2_
 - Cue ID - Loop Enabled
 - Cue ID - Transition Enabled
 - Cue ID - Goto Enabled
+- Set In / Out from Playhead Available
 - Time Remaining on Playing Cue
 - Video Outputs Active (requires Mitti 2)
+- Audio Outputs Active (requires Mitti 2)
 
 **Available Variables**
 
@@ -123,3 +130,4 @@ _Requires Mitti 2_
 - cue\_(number)\_cueName (requires Mitti 2)
 - cue\_(number)\_audio (requires Mitti 2)
 - video_outputs (requires Mitti 2)
+- audio_outputs (requires Mitti 2)
