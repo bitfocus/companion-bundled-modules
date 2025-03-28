@@ -2,6 +2,10 @@
 
 This module will allow you to control a Roland VR-120HD.
 
+You must set the password on the VR-120HD in order to make a connection.
+
+[MENU] Button > “Network” > “LAN Setup” > Use the [VALUE] knob to select “Network Password”, and press the [VALUE] knob. The Network Password screen appears.
+
 ## Configuration
 
 - Enter the IP address of the device in the configuration settings.
