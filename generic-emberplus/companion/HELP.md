@@ -26,7 +26,7 @@ Paths defined here will be registed with the host on initialisation, they are av
 
 ## Paths
 
-Central to the concept of ember+ is the address or path of the data element you wish to monitor or change. There are several ways to enter this in the module.
+Central to the concept of ember+ is the address or path of the data element you wish to monitor or change. There are several ways to represent these in the module. Principally as decimals and strings. Regardless of the preferred method, one should be consistent - undesired behaviour can occur if the same path is specified in both methods across different actions and feedbacks.
 
 - #### Decimal: 1.2.3.4
 
@@ -34,7 +34,7 @@ Central to the concept of ember+ is the address or path of the data element you 
 
 - #### String: Path.To.Ember.Node
 
-  Paths can also be entered as a period seperated string. Such as _Path.To.Ember.Node_. These text paths can be found in Ember Plus Viewer, however they need to be reformatted to use period seperators rather than forward slashes. Note: The '#' character used in ember paths are not supported for use in variables by companion, and will be replaced by '\_' in variable ids - the path can still be used in actions and feedbacks however.
+  Paths can also be entered as a period seperated string. Such as _Path.To.Ember.Node_. These text paths can be found in Ember Plus Viewer, however they need to be reformatted to use period seperators rather than forward slashes. Note: ' ' & '#' characters used in ember paths are not supported for use in variables by companion, and will be replaced by '\_' in variable ids - the path can still be used in actions and feedbacks however.
 
 - #### Decimal in Brackets: My Useful Ember Path [1.2.3.4]
 
@@ -47,15 +47,12 @@ Central to the concept of ember+ is the address or path of the data element you 
 
 For Set Value Actions one must ensure the correct data type is selected. In particular confusion can occur between Integer and ENUM types.
 
-For both actions and feedbacks, values are treated 'raw' - that is the transform specified in the _factor_ field is not applied. Companion expressions can be used to perform these transforms if necessary.
-Similarly ENUMS are always refered to by Integer Index .
-
 ## Actions
 
 - Set Value Integer
 - Set Value Real
 - Set Value Boolean
-- Set Value ENUM (as Integer)
+- Set Value ENUM
 - Set Value String
 - Matrix Connect
 - Matrix Disconnect
@@ -69,13 +66,14 @@ Similarly ENUMS are always refered to by Integer Index .
 
 - Parameter Compare Number
 - Parameter Equals String
+- Parameter ENUM Equals String
 - Parameter True
 - Take is possible
 - Clear is possible
 - Source Background If Selected
 - Target Background if Selected
 
-Parameter Compare Number, Parameter Equals String, and Parameter True type coerce all data to the respective data type, thus can be used on any node type. Ie, you can check a boolean node with the Parameter Equals String feedback by setting the Value to _true_. Prior to version 2.5 all data was coerced to strings prior to equality tests. The path field for Parameter Compare Number and Parameter Equals String presents a dropdown of registered paths. New paths (including variables) can be entered and if valid will be automatically registered and added to the dropdowns and variable list.
+Parameter Compare Number, Parameter Equals String, and Parameter True type coerce all data to the respective data type, thus can be used on any node type. Ie, you can check a boolean node with the Parameter Equals String feedback by setting the Value to _true_. However, the path dropdown for each feedback is filtered to parameters of the appropriate type(s) for ease of use. Prior to version 2.5 all data was coerced to strings prior to equality tests. The path field for Parameter Compare Number and Parameter Equals String presents a dropdown of registered paths. New paths (including variables) can be entered and if valid will be automatically registered and added to the dropdowns and variable list.
 
 ## Presets
 
@@ -84,4 +82,4 @@ Parameter Compare Number, Parameter Equals String, and Parameter True type coerc
 
 ## Action Recorder
 
-The Action Recorder can record Set Value actions for ember nodes you are currently subscribed to.
+The Action Recorder can record Set Value actions for ember parameters you are currently subscribed to.
