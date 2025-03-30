@@ -1,0 +1,4 @@
+MODULE_NAME=zowietek-api
+GIT_REF=v1.0.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/14155599288
+UPDATE_DATE=2025-03-30
