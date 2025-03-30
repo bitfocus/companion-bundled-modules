@@ -6,11 +6,11 @@ User credentials stored in the config are not secure.
 
 ### Actions
 
-Start and stop Lexi Live instances.
+Start, stop and modify Lexi Live instances.
 
 The origin and reason fields are written to the Lexi Live logs. The default origin is companion_v(Module Version Number)@(User):(Host).
 
-Update Instance List will repopulate the instances availalbe in the actions, feedbacks, variables and presets.
+Update Instance List will repopulate the base models, custom models, engines and instances availalbe in the actions, feedbacks, variables and presets.
 
 ### Variables
 
@@ -20,7 +20,16 @@ Instance Names
 
 Instance State (Off/On)
 
+Instance Configuration
+
 ## Version History
+
+### Version 1.2.0
+- New Action: Modify Instance
+- New Feedback: Instance Configuration
+- Improvement: Polling instances no longer retrieves instance history
+- Improvement: Parse local variables
+- Fix: Update Instance List action
 
 ### Version 1.1.6
 
