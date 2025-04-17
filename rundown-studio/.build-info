@@ -1,4 +1,4 @@
 MODULE_NAME=rundown-studio
-GIT_REF=v1.0.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/8531776500
-UPDATE_DATE=2024-04-03
+GIT_REF=v1.2.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/14512911962
+UPDATE_DATE=2025-04-17

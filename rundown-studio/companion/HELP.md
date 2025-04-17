@@ -6,7 +6,7 @@ Learn more about our [API on our documentation](https://rundownstudio.app/docs/r
 
 You will need to enter your API Token. API tokens can be generated from within the Rundown Studio dashboard in the API Section. Only team admins can generate and regenerate these tokens, however anyone on your team can read and use the token.
 
-You will also need the ID of your particular Rundown that you wish to use in this module. You can retrieve this ID by opening a rundown and looking at the URL of the page. For example: `https://live.rundownstudio.app/rundown/<rundown_id>`
+You will also need the ID of your particular Rundown that you wish to use in this module. You can retrieve this ID by opening a rundown and looking at the URL of the page. For example: `https://app.rundownstudio.app/rundown/<rundown_id>`
 
 If necessary, there is an Advanced Configuration area of the module which allows you to configure the following:
 
@@ -24,8 +24,7 @@ The following Actions are available:
 - Start rundown
 - Pause rundown
 - Go to next cue
-- Add time to current cue
-- Remove time from current cue
+- Go to previous cue
 
 ### Module Feedbacks
 
