@@ -12,6 +12,8 @@ Functions that only accept \<node\>.\<port\> addresses only work in the same \<n
 
 ### Actions
 
+- Conference - Get All
+- Conference - Edit
 - Crosspoint - Get All Active
 - Crosspoint - Set
 - Crosspoint - Set Volume
@@ -58,7 +60,7 @@ Set Crosspoint, Set GP Output always created with decimal address.
 
 Does not work when destination port is connected to an Artist-1024.
 
-- Get All IFB, Logic Sources, Ports
+- Get All Conference, IFB, Logic Sources, Ports
 
 These repopulate the drop down lists in actions & feedbacks.
 
