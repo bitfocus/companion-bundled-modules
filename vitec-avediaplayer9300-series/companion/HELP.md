@@ -32,6 +32,15 @@ The endpoint must have HTTPS Upgrade disabled under the services tab.
 
 ## Version History
 
+### Version 1.2.9
+
+- Reduce error logging 
+- Parse variables with context object
+
+### Version 1.2.8
+
+- Check status before updating
+
 ### Version 1.2.7
 
 - Support sequential actions
