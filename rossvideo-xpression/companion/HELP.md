@@ -1,6 +1,6 @@
 ## Ross Xpression
 
-For additional help with Xpression commands, please reference [this guide](http://help.rossvideo.com/carbonite-device/Topics/Protocol/RossTalk/XPN/RT-XPN-Comm.html).
+For additional help with Xpression commands, please reference [this guide](https://help.rossvideo.com/acuity-device/Topics/Protocol/External/XPN/RT-XPN-Comm.html).
 
 ### Configuration
 
@@ -30,3 +30,4 @@ For additional help with Xpression commands, please reference [this guide](http:
 - Take sequencer item to air and advance next (NEXT)
 - Take take item off air (SEQO)
 - Trigger simulated GPI (GPI)
+- Send a custom command
