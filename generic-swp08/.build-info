@@ -1,4 +1,4 @@
 MODULE_NAME=generic-swp08
-GIT_REF=v2.0.6
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/14675585988
+GIT_REF=v2.0.7
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/14675841655
 UPDATE_DATE=2025-04-26
