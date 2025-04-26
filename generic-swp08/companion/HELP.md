@@ -133,11 +133,3 @@ Tally and connected messages recieved from the router will create new set crossp
 ### Version 2.0.5
 
 - Parse variables with context object (for local variables)
-
-### Version 2.0.6
-
-- Reworked data processing
-- Fixed issue with not getting labels if "Request supported commands" config option was disabled
-- Fixed issue where labels were duplicated and in wrong order if router had labels on multiple levels
-- Fixed initial label request (non-extended mode) to use the correct format according to specification
-- Fixed issue where not all source labels were received, fixes issue #31
