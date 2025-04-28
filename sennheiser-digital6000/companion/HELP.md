@@ -162,3 +162,7 @@ Initial Release
 Support sequential actions
 
 Use Node 22
+
+#### 1.0.7
+
+Parse local variables
