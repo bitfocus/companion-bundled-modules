@@ -4,7 +4,7 @@ This module controls TP-Link Tapo Smart Plugs and Bulbs.
 
 ## Actions:
 
-* Power On/Off
+* Power On/Off/Toggle
 * Set Bulb Brightness
 * Set Bulb Color
 
