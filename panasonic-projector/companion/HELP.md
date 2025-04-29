@@ -22,3 +22,5 @@ Known supported models:
 * Display Grid Lines
 * Color Matching (3 and 7 Colors mode)
 * Brightness Control
+* Picture Mode
+* Operating Mode
