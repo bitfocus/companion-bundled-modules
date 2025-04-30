@@ -1,20 +1,18 @@
-/*!
- * cookie
- * Copyright(c) 2012-2014 Roman Shtylman
- * Copyright(c) 2015 Douglas Christopher Wilson
- * MIT Licensed
+/**
+ * @fileOverview Implementation of a doubly linked-list data structure
+ * @author Jason S. Jones
+ * @license MIT
  */
 
-/*!
- * mime-db
- * Copyright(c) 2014 Jonathan Ong
- * Copyright(c) 2015-2022 Douglas Christopher Wilson
- * MIT Licensed
+/**
+ * @fileOverview Implementation of a queue (FIFO) data structure
+ * @author Jason S. Jones
+ * @license MIT
  */
 
-/*!
- * mime-types
- * Copyright(c) 2014 Jonathan Ong
- * Copyright(c) 2015 Douglas Christopher Wilson
- * MIT Licensed
+/**
+ * @fileOverview Implementation of an iterator for a linked list
+ *               data structure
+ * @author Jason S. Jones
+ * @license MIT
  */
