@@ -1,8 +1,8 @@
-## Generic MIDI module for Companion - v1.3.0
+## Generic MIDI module for Companion - v1.3.2
 
 Please visit https://discourse.checkcheckonetwo.com for help, discussions, suggestions, etc.
 
-_Andrew Broughton 2024_
+_Andrew Broughton 2025_
 
 ---
 
