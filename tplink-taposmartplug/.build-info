@@ -1,4 +1,4 @@
 MODULE_NAME=tplink-taposmartplug
-GIT_REF=v2.2.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/14736016315
-UPDATE_DATE=2025-04-29
+GIT_REF=v2.2.2
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/14772522776
+UPDATE_DATE=2025-05-01
