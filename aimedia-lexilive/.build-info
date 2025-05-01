@@ -1,4 +1,4 @@
 MODULE_NAME=aimedia-lexilive
-GIT_REF=v1.2.3
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/14155629793
-UPDATE_DATE=2025-03-30
+GIT_REF=v1.2.4
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/14773011659
+UPDATE_DATE=2025-05-01
