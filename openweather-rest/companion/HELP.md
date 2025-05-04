@@ -1,28 +1,30 @@
-## <a href="https://openweathermap.org/"> <img src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png" width=150></a>
 
-Retrieve and display weather information. <br>
+# <a href="https://openweathermap.org/" style="background-color:rgba(163, 163, 163, 0.05)"> <img src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png" width=150 alt="OpenWeathermap Logo"></a>
+
+## Retrieve and display weather information. <br>
 
 Stuck backstage in some cold, dark ballroom, running A/V support for meetings?<br>
 Do you wonder what the weather is like outside?<br>
 Display the current weather information on a Companion button!<br>
 
-This module requires an active internet connection and you will need your own API key from here: <a href="https://openweathermap.org/home/sign_up" title="OpenWeather">OpenWeather.com</a>.<br>
+This module requires an active internet connection and you will need your own API key from here: <a href="https://openweathermap.org/home/sign_up" title="OpenWeather">OpenWeathermap.org</a>.<br>
 
 ---
 
 Contributions for maintenance and development of this open source module are always welcome
-https://github.com/sponsors/istnv
+<https://github.com/sponsors/istnv>
 
 ---
 
 ## Configuration
 
-| **Setting**           | **Description**                                             |
-| --------------------- | ----------------------------------------------------------- |
-| **API Key**           | Enter your API Key from OpenWeather                         |
-| **Location**          | Enter the weather location <sup>\*2</sup>                   |
-| **Measurement Units** | Select to display Celsius & kPH, otherwise Fahrenheit & MPH |
-| **Refresh Frequency** | How often to update the weather info in Minutes             |
+| **Setting**           | **Description**                                                                               |
+| --------------------- | --------------------------------------------------------------------------------------------- |
+| **API Key**           | Enter your API Key from OpenWeather                                                           |
+| **Location**          | Enter the weather location <sup>\*2</sup>                                                     |
+| **Measurement Units** | Default variables use Celsius & kPH, otherwise Fahrenheit & MPH                               |
+| **Timezone**          | Select timezone for variables (here, there, UTC). Defaults to 'Here' to match prior releases. |
+| **Refresh Frequency** | How often to update the weather info in Minutes                                               |
 
 ---
 
@@ -55,6 +57,8 @@ Replace `ow` with the actual instance label.
 | `$(ow:l_localtime)`   | Local Time                              |
 | _Current Information_ | &nbsp;                                  |
 | `$(ow:c_time)`        | Time last updated                       |
+| `$(ow:c_sunrise)`     | Sunrise Time                            |
+| `$(ow:c_sunset)`      | Sunset time                             |
 | `$(ow:c_temp)`        | Temperature in selected _units_         |
 | `$(ow:c_tempf)`       | Temperature Farenheit                   |
 | `$(ow:c_tempc)`       | Temperature Celsius                     |
@@ -68,7 +72,7 @@ Replace `ow` with the actual instance label.
 | `$(ow:c_inhg)`        | Barometric Pressure inHg                |
 | `$(ow:c_mmhg)`        | Barometric Pressure mmHg                |
 | `$(ow:c_hpa)`         | Barometric Pressure in hPa              |
-| `$(ow:c_humid)`       | /relative Humidity                      |
+| `$(ow:c_humid)`       | Relative Humidity                       |
 | `$(ow:c_text)`        | Condition description                   |
 | `$(ow:c_wind)`        | Wind speed in selected _units_          |
 | `$(ow:c_windi)`       | Wind speed MPH                          |
