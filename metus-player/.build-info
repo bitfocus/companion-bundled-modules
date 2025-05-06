@@ -1,4 +1,4 @@
 MODULE_NAME=metus-player
-GIT_REF=v1.0.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/14512097914
-UPDATE_DATE=2025-04-17
+GIT_REF=v1.0.5
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/14861803267
+UPDATE_DATE=2025-05-06
