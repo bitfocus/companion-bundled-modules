@@ -1,0 +1,65 @@
+/*! fetch-blob. MIT License. Jimmy Wärting <https://jimmy.warting.se/opensource> */
+
+/*! formdata-polyfill. MIT License. Jimmy Wärting <https://jimmy.warting.se/opensource> */
+
+/*! node-domexception. MIT License. Jimmy Wärting <https://jimmy.warting.se/opensource> */
+
+/*!********************!*\
+  !*** ./src/fxp.js ***!
+  \********************/
+
+/*!*********************!*\
+  !*** ./src/util.js ***!
+  \*********************/
+
+/*!**************************!*\
+  !*** ./src/validator.js ***!
+  \**************************/
+
+/*!*********************************!*\
+  !*** ./src/ignoreAttributes.js ***!
+  \*********************************/
+
+/*!**********************************!*\
+  !*** ./src/xmlparser/xmlNode.js ***!
+  \**********************************/
+
+/*!************************************!*\
+  !*** ./src/xmlbuilder/json2xml.js ***!
+  \************************************/
+
+/*!************************************!*\
+  !*** ./src/xmlparser/XMLParser.js ***!
+  \************************************/
+
+/*!************************************!*\
+  !*** ./src/xmlparser/node2json.js ***!
+  \************************************/
+
+/*!***************************************!*\
+  !*** ./node_modules/strnum/strnum.js ***!
+  \***************************************/
+
+/*!****************************************!*\
+  !*** ./src/xmlparser/DocTypeReader.js ***!
+  \****************************************/
+
+/*!*****************************************!*\
+  !*** ./src/xmlbuilder/orderedJs2Xml.js ***!
+  \*****************************************/
+
+/*!*****************************************!*\
+  !*** ./src/xmlparser/OptionsBuilder.js ***!
+  \*****************************************/
+
+/*!*******************************************!*\
+  !*** ./src/xmlparser/OrderedObjParser.js ***!
+  \*******************************************/
+
+/**
+ * @license
+ * web-streams-polyfill v3.3.3
+ * Copyright 2024 Mattias Buelens, Diwank Singh Tomer and other contributors.
+ * This code is released under the MIT license.
+ * SPDX-License-Identifier: MIT
+ */
