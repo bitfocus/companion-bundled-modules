@@ -1,147 +1,150 @@
 # Exaplay Control Module
 
-This module enables control of Exaplay via TCP commands and provides feedback to monitor the playback status as well as other parameters. Additionally, variables are provided that reflect the current state of each composition. Although commands use a composition identifier with the `"comp"` prefix, the module internally creates and updates variables using the new naming convention (`"comp-id"`).
+This module enables control of Exaplay via TCP commands and provides feedback and variables to monitor and automate playback, cue/clip selection, volume, and more.
 
 ---
 
-## Supported Commands / Actions
+## Actions
 
-The following actions can be executed through the module:
+All actions require you to enter the correct **Composition ID**.  
+You can enter either just the number (e.g. `1`) or the full ID (e.g. `comp1`).  
+**For every action and every step in multi-step actions, you must fill in the Composition ID field.**
+
+### Available Actions
 
 - **Transport Mode**  
-  Toggles playback for a selected composition.  
-  Examples:  
-  - `play,comp1`  
-  - `pause,comp1`  
-  - `stop,comp1`  
-  *(Note: The command still uses "comp1" as an identifier. The module internally maps these commands to variable names with the "comp-id" prefix.)*
+  *What to do:*  
+  - Select the action "Transport Mode"  
+  - Enter the desired Composition ID (e.g. `1` or `comp1`)  
+  - Choose the command: Play, Pause, or Stop
 
-- **Go to Cue**  
-  Sets the cue index for a selected composition to jump to a specific cue.  
-  Example:  
-  - `set:cue,comp1,2`  
-    (The cue index is stored in the internal variable `cue_index_comp-id1` and displayed via the corresponding feedback.)
-
-- **Play Cuelist Clip**  
-  Plays a specific clip from the cuelist by setting a manual clip index.  
-  Example:  
-  - `set:cue,comp1,3`  
-    (The clip index is stored in the internal variable `clip_index_comp-id1` and displayed via the corresponding feedback. This prevents the device-reported cue index from overwriting the manual setting.)
+- **Set Cue**  
+  *What to do:*  
+  - Select the action "Set Cue"  
+  - Enter the desired Composition ID (e.g. `1` or `comp1`)  
+  - Enter the cue/clip number you want to jump to (e.g. `2`)  
 
 - **Set Volume**  
-  Sets the volume for a selected composition to a specified value (0 to 100).  
-  Example:  
-  - `set:vol,comp1,60`
+  *What to do:*  
+  - Select the action "Set Volume"  
+  - Enter the desired Composition ID (e.g. `1` or `comp1`)  
+  - Enter the volume value (0–100)
 
 - **Volume Adjust +/-**  
-  Increases or decreases the volume of a selected composition by 10%.  
-  Examples:  
-  - Increase using the "+" option  
-  - Decrease using the "-" option
+  *What to do:*  
+  - Select the action "Volume Adjust +/-"  
+  - Enter the desired Composition ID (e.g. `1` or `comp1`)  
+  - Choose whether to increase (+10%) or decrease (-10%) the volume
 
 - **Jump to Time**  
-  Sets the cue time for a selected composition to a specific point in seconds.  
-  Example:  
-  - `set:cuetime,comp1,2.0`
+  *What to do:*  
+  - Select the action "Jump to Time"  
+  - Enter the desired Composition ID (e.g. `1` or `comp1`)  
+  - Enter the time in seconds (e.g. `12.5`)  
 
 ---
 
 ## Feedbacks
 
-The module provides several feedbacks to visualize the current status and parameters:
+All feedbacks require you to enter the correct **Composition ID** (e.g. `1` or `comp1`).  
+If you want to monitor a specific cue/clip, you must also enter the cue/clip number.
+
+> **Note:**  
+> Feedbacks only become active and display correct information after the corresponding action (whose feedback you want to monitor) has been triggered at least once for the selected composition. For example, the "Cue/Clip Active Feedback" will only work after you have used the "Set Cue" action for that composition.
+
+### Available Feedbacks
 
 - **Transport Mode Feedback**  
-  Compares the current playback status (converted from numeric values: `1` → "playing", `2` → "paused", otherwise "stop") with an expected value and changes the button color accordingly.
+  - Enter the Composition ID  
+  - Choose the transport mode to compare (Playing, Paused, Stop)
+
+- **Cue/Clip Active Feedback**  
+  - Enter the Composition ID  
+  - Enter the cue/clip number to monitor
+
+- **Cue/Clip Index Display Feedback**  
+  - Enter the Composition ID  
+  - Optionally set background and text color
 
 - **Volume Display Feedback**  
-  Displays the current volume level of the selected composition.
-
-- **Clip Index Display Feedback**  
-  Displays the clip index that is manually set via the "Play Cuelist Clip" action.
-
-- **Cue Index Display Feedback**  
-  Shows the cue index set via the "Go to Cue" action.
+  - Enter the Composition ID  
+  - Optionally set background and text color
 
 - **Current Time Feedback**  
-  Displays the current playback time when a defined threshold is exceeded.
+  - Enter the Composition ID  
+  - Enter the time in seconds to compare  
+  - Optionally set background and text color
 
 - **Frame Index Display Feedback**  
-  Displays the current frame index.
+  - Enter the Composition ID  
+  - Optionally set background and text color
 
 - **Combined Info Feedback**  
-  Bundles all of the above information into one multi-line display, including the transport mode, volume, clip index, cue index, current time, frame index, and total composition duration.
+  - Enter the Composition ID  
+  - Optionally set background and text color
 
 ---
 
 ## Presets
 
-In addition to actions and feedbacks, the module comes with pre-configured presets to simplify user interaction:
+Preset buttons are provided for common tasks.  
+**You must always enter the correct Composition ID in the preset options for each button, even if the preset contains multiple steps.**
+
+### Examples
 
 - **Play/Pause Preset**  
-  This preset displays a button that toggles between playing and pausing the selected composition (e.g., comp1). It uses different feedback styles based on the current transport mode (playing, paused, or stopped). For example, when the composition is playing, a specific background color is displayed, and the button text shows the corresponding variable (e.g., `$(Exaplay:playback_status_comp-id1)`).
+  - Enter the Composition ID in the preset options  
+  - The button will show the playback status for the selected composition
 
-- **Stop Preset**  
-  This preset provides a dedicated stop function. The button is styled to indicate the stop state and updates its appearance based on the transport mode feedback.
+  *Tip:*  
+  In the button text, you can display the variable for the desired composition by adding the composition number before the last parenthesis.  
+  Example:  
+  ```
+  $(vioso-exaplay:playback_status_comp1)
+  ```
+  Replace `1` with your desired composition number.
 
-*(These presets are defined within the module's code and can be adjusted by the user or extended with additional presets.)*
+- **Set Cue/Clip Preset**  
+  - Enter the Composition ID  
+  - Enter the cue/clip number
+
+- **Volume +/- Presets**  
+  - Enter the Composition ID
+
+- **Jump to Time Preset**  
+  - Enter the Composition ID  
+  - Enter the time in seconds
+
+- **Feedback Display Presets**  
+  - Enter the Composition ID (and cue/clip number if needed)
 
 ---
 
 ## Variables
 
-For each composition, the module automatically creates and updates a set of variables. These variables are generated with a new naming convention using the `"comp-id"` prefix, even though the composition identifiers in the commands remain as `"comp1"`, `"comp2"`, etc.
+For each composition, the module automatically creates and updates variables.  
+You must use the correct composition ID in variable references.
 
-The following variables are generated:
-
-- `playback_status_comp-idX`  
-  (e.g., `playback_status_comp-id1` – holds the current playback status as text: "playing", "paused", "stop", or "unknown")
-
-- `current_time_comp-idX`  
-  (e.g., `current_time_comp-id1` – contains the current playback time in seconds)
-
-- `frame_index_comp-idX`  
-  (e.g., `frame_index_comp-id1` – contains the current frame index)
-
-- `cue_index_comp-idX`  
-  (e.g., `cue_index_comp-id1` – holds the cue index updated via the "Go to Cue" action)
-
-- `clip_index_comp-idX`  
-  (e.g., `clip_index_comp-id1` – holds the clip index set via the "Play Cuelist Clip" action)
-
-- `composition_duration_comp-idX`  
-  (e.g., `composition_duration_comp-id1` – contains the total duration of the composition)
-
-- `current_volume_comp-idX`  
-  (e.g., `current_volume_comp-id1` – contains the current volume level)
-
-*Note: The module internally converts the composition identifier from the `"comp"` format to the `"comp-id"` format when defining and updating variables.*
+**Examples:**  
+- `$(vioso-exaplay:playback_status_comp1)` — Shows the playback status for composition 1  
+- `$(vioso-exaplay:cue_index_comp2)` — Shows the current cue index for composition 2  
+- `$(vioso-exaplay:current_volume_comp1)` — Shows the current volume for composition 1
 
 ---
 
-## Function Summary
+## Important Notes
 
-- **Actions**:  
-  - **Transport Mode**: Starts, pauses, or stops playback for a composition.  
-  - **Go to Cue**: Jumps to a specific cue within a composition by updating the cue index.  
-  - **Play Cuelist Clip**: Sets a manual clip index to play a specified clip.  
-  - **Set Volume**: Adjusts the volume of a composition to a specific value.  
-  - **Volume Adjust**: Increases or decreases the volume by 10%.  
-  - **Jump to Time**: Moves playback to a specific time within the composition.
+- Always enter the correct Composition ID for every action, feedback, and preset button.
+- This applies even if an action or preset contains multiple steps.
+- For all feedbacks, the Composition ID is required.
+- When using variables in button texts, you can display the value for a specific composition by adding the desired number before the last parenthesis, e.g.:  
+  ```
+  $(vioso-exaplay:playback_status_comp1)
+  ```
+- The "Set Cue" action replaces both "Go to Cue" and "Play Cuelist Clip". Use the cue/clip number as needed.
+- **Feedbacks only become active after the corresponding action has been triggered at least once for the selected composition.**
 
-- **Feedbacks**:  
-  - **Transport Mode Feedback**: Indicates whether the composition’s playback status matches the expected value.  
-  - **Volume Display Feedback**: Shows the current volume level.  
-  - **Clip Index Display Feedback**: Displays the manually set clip index.  
-  - **Cue Index Display Feedback**: Shows the current cue index.  
-  - **Current Time Feedback**: Displays the current time if a specified threshold is exceeded.  
-  - **Frame Index Display Feedback**: Shows the current frame index.  
-  - **Combined Info Feedback**: Consolidates all key parameters (transport mode, volume, clip index, cue index, current time, frame index, and composition duration) in one display.
-
-- **Variables**:  
-  The module automatically creates and updates variables to represent the current status of each composition. These variables now use the `"comp-id"` prefix (for example, `playback_status_comp-id1`) to distinguish them from command identifiers.
-
-- **Presets**:  
-  Pre-configured button presets (such as Play/Pause and Stop) are provided to facilitate control of the module. These presets utilize the actions, feedbacks, and variables described above to deliver clear, visual feedback of the module's state.
+If you have any questions or need further customization, please refer to the module documentation or contact support.
 
 
 
