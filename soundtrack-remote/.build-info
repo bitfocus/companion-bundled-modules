@@ -1,4 +1,4 @@
 MODULE_NAME=soundtrack-remote
-GIT_REF=v1.0.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/3869124564
-UPDATE_DATE=2023-01-08
+GIT_REF=v2.0.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/14928351525
+UPDATE_DATE=2025-05-09
