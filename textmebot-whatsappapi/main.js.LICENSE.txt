@@ -1,0 +1,9 @@
+/*! node-domexception. MIT License. Jimmy Wärting <https://jimmy.warting.se/opensource> */
+
+/**
+ * @license
+ * web-streams-polyfill v3.3.3
+ * Copyright 2024 Mattias Buelens, Diwank Singh Tomer and other contributors.
+ * This code is released under the MIT license.
+ * SPDX-License-Identifier: MIT
+ */
