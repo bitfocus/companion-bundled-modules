@@ -1,7 +1,7 @@
 ## Setting up the module
 
 In the FreeShow application, go to the settings, and click "Connection".
-Please make sure the option "Bitfocus Companion" is enabled.
+Please make sure the "API" option is enabled.
 
 The port should be 5505 by default, you can change it, but make sure it matches in both the app and here.
 Also make sure you set the "Destination IP" to the same IP as the receiving computer.
