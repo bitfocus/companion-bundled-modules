@@ -1,0 +1,4 @@
+MODULE_NAME=pynch-nexa
+GIT_REF=v1.9.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/14928174848
+UPDATE_DATE=2025-05-09
