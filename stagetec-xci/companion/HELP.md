@@ -76,6 +76,10 @@ Goes true when triggered by a Trap. Stays true until reset.
 
 ## Version History
 
+### Version 1.2.2
+
+- Parse local variables
+
 ### Version 1.2.1
 
 - Use Node 22
