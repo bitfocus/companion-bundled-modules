@@ -1,4 +1,4 @@
 MODULE_NAME=vioso-exaplay
-GIT_REF=v1.2.2
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/14929046060
-UPDATE_DATE=2025-05-09
+GIT_REF=v1.2.3
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/14967460531
+UPDATE_DATE=2025-05-12
