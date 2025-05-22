@@ -1,4 +1,4 @@
 MODULE_NAME=generic-snmp
-GIT_REF=v2.1.3
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/14716527397
-UPDATE_DATE=2025-04-28
+GIT_REF=v2.2.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/15187568624
+UPDATE_DATE=2025-05-22
