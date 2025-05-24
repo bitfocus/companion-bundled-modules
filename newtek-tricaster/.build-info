@@ -1,4 +1,4 @@
 MODULE_NAME=newtek-tricaster
-GIT_REF=v2.1.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/10570235960
-UPDATE_DATE=2024-08-27
+GIT_REF=v2.2.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/15229081184
+UPDATE_DATE=2025-05-24
