@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/nytamin/threadedClass/compare/1.2.2...1.3.0) (2025-04-07)
+
+
+### Features
+
+* remove manual electron asar loader ([e94d4da](https://github.com/nytamin/threadedClass/commit/e94d4da96f9ae410049780d33afd90e3fa0610e8))
+
 ### [1.2.2](https://github.com/nytamin/threadedClass/compare/1.2.1...1.2.2) (2024-04-10)
 
 

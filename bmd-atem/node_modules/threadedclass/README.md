@@ -202,13 +202,6 @@ When calling a method of your threaded instance (`threaded.myMethod()`), there a
 * Non-JSON-encodable types, such as objects with *cyclic references* (except when in worker_threads, then it's fine).
 * Instances of classes (the instance will be serialized as JSON and piped through, but its methods will not).
 
-### Using with electron
-Electron does not properly support asar files with worker_threads. When loading a file to execute, it must reside on disk and not inside of the asar file containing all of your application code.
-
-ThreadedClass can workaround this, by using a small preloader that is loaded from disk by the parent, and evaled by the worker_thread. The default electron loader utilises the [asar-node](https://www.npmjs.com/package/asar-node) package to provide support for reading from the asar to the new thread. This preloader is only used for electron when it is detected that the code to load is inside an asar file, and if a custom loader is not specified.
-
-The loader can be overridden by defining the `THREADEDCLASS_WORKERTHREAD_LOADER` environment variable containing an absolute path to the desired loader. This can be done inside node before the thread is created. This file can reside inside an asar, or anywhere else the parent can load via `fs.readFileSync`. It is recommended to bundle this file with browserify or webpack. See [asar-loader.ts](/src/asar-loader.ts) as an example
-
 ## Known limitations
 * The to-be-threaded class must not be referencing any global variables, as the class is run in its own sandbox.
 * **No garbage-collection of callback-functions**
