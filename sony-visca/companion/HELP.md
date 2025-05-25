@@ -7,8 +7,17 @@ This module uses the Sony VISCA protocol to control PTZ cameras.
 ## Configuration
 
 - Type in the IP address of the device.
-- Type in the port of the device (default is 52381).
-- You can also specify the Camera ID.
+- Type in the port of the device (default is 52381)
+- You can also specify the Camera ID  
+  (In most cases **id 1** is the best choice)
+
+## Enabling VISCA over IP on your camera
+
+Several Sony PTZ camera models do not enable VISCA over IP by default. On some models you can enable it using the on screen menu.
+
+Most models have dip switches on the back of the cameras with descriptions of their functions on the bottom of the camera. In many cases, such as the "IMLE-FR7" setting switch three to the on position and re-powering the camera enables VISCA over IP.
+
+Please refer to the manual for your camera for specific instructions.
 
 ## Actions Implemented
 
@@ -82,6 +91,7 @@ This module uses the Sony VISCA protocol to control PTZ cameras.
 - Save Preset
 - Recall Preset
 - Preset Drive Speed (individual)
+- Set Preset Selector
 - Modify Preset Selector
 
 ### Miscellaneous Actions
@@ -91,8 +101,9 @@ This module uses the Sony VISCA protocol to control PTZ cameras.
 - Menu (on/off/enter)
 - Video Latency (normal/low)
 - Button Feedback (highlight/clear)
+- Recording Button (press/release)
 - Override VISCA ID (serial only)
-- Custom Command - *If you use a custom command that may be a useful action for others please let us know at [Issues - Custom Commands #35](https://github.com/bitfocus/companion-module-sony-visca/issues/35)*
+- Custom Command - _If you use a custom command that may be a useful action for others please let us know at [Issues - Custom Commands #35](https://github.com/bitfocus/companion-module-sony-visca/issues/35)_
 
 ## Presets Implemented
 
@@ -170,13 +181,14 @@ This module uses the Sony VISCA protocol to control PTZ cameras.
 - Camera Power Off
 - Menu/Back Button
 - Menu Enter Button
+- Recording Button (press/release)
 
 ### Camera Presets
 
 - Presets 1-64 are available
-- Tap to recall or hold for 2 seconds to save. When a camera preset button is held for 2 seconds, all camera preset buttons will highlight yellow indicating the preset is saved and you can let go.*
+- Tap to recall or hold for 2 seconds to save. When a camera preset button is held for 2 seconds, all camera preset buttons will highlight yellow indicating the preset is saved and you can let go.\*
 - Presets using presetSelector variable
-- Preset Select Increment and Decrement
+- Preset Selector Set, Increment and Decrement
 
 ### Rotation Enabled Presets
 
@@ -192,23 +204,23 @@ This module uses the Sony VISCA protocol to control PTZ cameras.
 - Zoom Speed - tap for standard (1)
 - Focus Speed - tap for standard (1)
 
-*Rotation enabled presets are intended for devices like the Stream Deck+ and the Loupe Deck Live that have knobs. Rotate Left decreases the value, Rotate Right increases, and Tapping the knob defaults the setting.*
+_Rotation enabled presets are intended for devices like the Stream Deck+ and the Loupe Deck Live that have knobs. Rotate Left decreases the value, Rotate Right increases, and Tapping the knob defaults the setting._
 
 ## Variables Implemented
 
-| Id | Name |
-|----|------|
-| ptSlowMode | Pan/Tilt Slow mode (slow/normal) |
-| panSpeed | Pan Speed |
-| tiltSpeed | Tilt Speed |
-| zoomSpeed | Zoom Speed |
-| focusSpeed | Focus Speed |
-| zoomMode | Zoom Mode (optical/digital/clr img) |
-| focusMode | Focus Mode (auto/manual) |
-| expMode | Exposure Mode |
-| expCompOnOff | Exposure Compensation (on/off) |
-| backlightComp | Backlight Compensation (on/off) |
-| spotlightComp | Spotlight Compensation (on/off) |
-| presetSelector | Preset Selection Variable |
-| viscaId | Specific ViscaID to interact with (serial only) |
-| lastCmdSent | Last Command Sent (hex values) |
+| Id             | Name                                            |
+| -------------- | ----------------------------------------------- |
+| ptSlowMode     | Pan/Tilt Slow mode (slow/normal)                |
+| panSpeed       | Pan Speed                                       |
+| tiltSpeed      | Tilt Speed                                      |
+| zoomSpeed      | Zoom Speed                                      |
+| focusSpeed     | Focus Speed                                     |
+| zoomMode       | Zoom Mode (optical/digital/clr img)             |
+| focusMode      | Focus Mode (auto/manual)                        |
+| expMode        | Exposure Mode                                   |
+| expCompOnOff   | Exposure Compensation (on/off)                  |
+| backlightComp  | Backlight Compensation (on/off)                 |
+| spotlightComp  | Spotlight Compensation (on/off)                 |
+| presetSelector | Preset Selection Variable                       |
+| viscaId        | Specific ViscaID to interact with (serial only) |
+| lastCmdSent    | Last Command Sent (hex values)                  |
