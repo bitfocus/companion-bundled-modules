@@ -4,7 +4,7 @@ This module will allow you to control all variants of the following Marshall IP 
 * CV355, CV420, CV420e, CV620, CV630, CV730
 
 Please make sure, that you install the latest firmware for your camera, because not all firmwares support remote control with this module.
-<br>You can select you IP camera <a href="https://marshall-usa.com/cameras/#IPTV" target="_blank">here</a> and download the latest firmware.
+<br>You can select your IP camera <a href="https://marshall-usa.com/cameras/#IPTV" target="_blank">here</a> and download the latest firmware.
 
 ### Configuration
 * Enter the IP address of the device as well as the username and password in the configuration settings.
