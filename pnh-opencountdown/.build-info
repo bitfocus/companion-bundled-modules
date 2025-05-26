@@ -1,4 +1,4 @@
 MODULE_NAME=pnh-opencountdown
-GIT_REF=v2.0.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5787156997
-UPDATE_DATE=2023-08-07
+GIT_REF=v2.0.2
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/15262860810
+UPDATE_DATE=2025-05-26
