@@ -1,4 +1,4 @@
 MODULE_NAME=tractus-ndirouter
-GIT_REF=v1.0.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/14716733710
-UPDATE_DATE=2025-04-28
+GIT_REF=v2.0.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/15278710558
+UPDATE_DATE=2025-05-27
