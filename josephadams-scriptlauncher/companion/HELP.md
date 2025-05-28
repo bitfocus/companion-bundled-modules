@@ -70,8 +70,43 @@ This module communicates with ScriptLauncher — a free local automation tool yo
 - **Mac: Create Note** (in the Notes app)
 - **Mac: Open URL in Default Browser**
 - **Mac: Capture Screenshot to Desktop**
+- **Mac: Restart Dock**
+- **Mac: Restart Finder**
+- **Mac: Restart SystemUIServer (Menu Bar)**
+- **Mac: Force Kill App**
+- **Mac: Restart CoreAudio**
+- **Mac: Logout**
+- **Mac: Change Wallpaper**
 
 > 🧠 Most macOS utilities use native AppleScript or shell commands and do not require any additional setup.
+
+## Deep Link / URI Actions
+
+- **Open Deep Link / URI:** Open any URI (e.g., st-business://, zoommtg://, slack://, etc.) using the system default handler.
+- **Open Splashtop Connection:** Open a Splashtop session for a specific machine using your account email and the machine’s MAC address.
+- **Join Zoom Meeting:** Launch Zoom and join a meeting with ID and optional passcode.
+- **Open Teams Chat:** Open a Microsoft Teams chat by email address.
+- **Start FaceTime Call:** Initiate a FaceTime call to a phone number or Apple ID.
+- **Open Slack Channel:** Open a Slack channel by workspace and channel ID.
+- **Compose Email:** Open the default mail client to compose a new email with optional recipient, subject, and body pre-filled.
+- **Open File or Folder:** Open a local file or folder using the system’s default application.
+- **Open VNC Connection:** Open a VNC connection to a specified host and port.
+- **Open WhatsApp Chat:** Open a WhatsApp chat with a phone number and optional message.
+- **Open Skype Chat:** Start a Skype chat with a specific username.
+- **Open Telegram Chat:** Open a Telegram chat by username.
+- **Start Google Meet:** Launch a new Google Meet session in the browser.
+- **Play YouTube Video:** Open a specific YouTube video by its video ID in the browser.
+- **Play Apple Music Track:** Open a specific Apple Music track by its track ID.
+
+## Spotify Actions
+
+- **Spotify: Open Track** Open a specific Spotify track by its track ID.
+- **Spotify: Open Album** Open a specific Spotify album by its album ID.
+- **Spotify: Open Artist** Open a specific Spotify artist page by its artist ID.
+- **Spotify: Open Playlist** Open a specific Spotify playlist by its playlist ID.
+- **Spotify: Search** Perform a search in the Spotify app using a search query.
+- **Spotify: Open Show** Open a specific Spotify podcast show by its show ID.
+- **Spotify: Open Episode** Open a specific Spotify podcast episode by its episode ID.
 
 ---
 
