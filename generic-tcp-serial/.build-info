@@ -1,4 +1,4 @@
 MODULE_NAME=generic-tcp-serial
-GIT_REF=v2.5.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/13609829653
-UPDATE_DATE=2025-03-01
+GIT_REF=v2.6.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/15478146640
+UPDATE_DATE=2025-06-05
