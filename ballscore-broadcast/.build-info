@@ -1,4 +1,4 @@
 MODULE_NAME=ballscore-broadcast
-GIT_REF=v1.0.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/15522292017
-UPDATE_DATE=2025-06-08
+GIT_REF=v1.0.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/15595479236
+UPDATE_DATE=2025-06-11
