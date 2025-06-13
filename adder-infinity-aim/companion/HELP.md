@@ -11,7 +11,7 @@ This module connects to an [Adder Infinity AIM](https://www.adder.com/en/infinit
     4. [Disconnect Receiver](#disconnect-receiver)
     5. [Disconnect Preset](#disconnect-preset)
 3. [Feedback](#feedback)
-    1. [Channel Connection Status](#channel-connection-status)
+    1. [Channel Connection Status Pre-Configured](#channel-connection-status)
     2. [Channel Connection Status Boolean](#channel-connection-status-boolean)
 
 
@@ -43,6 +43,7 @@ Option | help
 **Receiver** | Receiver that should be connected.
 **Channel** | Channel to connect to.
 **Connection Mode** | The connection mode to connect to the channel. User must have permission and connection mode must be available for the channel. Default is "Shared"
+**Force** | Allows the user to Force the connection even if someone else is logged into the receiver. This requires the API user to be an admin or for the server setting "Grant All Users Force Disconnect"
 
 <br>
 <br>
@@ -61,6 +62,7 @@ Option | help
 **Learn** | Refreshes available presets.
 **Preset** | Name of the Preset to connect.
 **Connection Mode**| The connection mode to connect the preset in. User must have permission and connection mode must be available for the channel. Default is "Shared"
+**Force** | Allows the preset to be force connected even if a receiver is in use.
 
 <br>
 <br>
@@ -102,9 +104,13 @@ State | Explanation
 <br>
 
 #### Channel Connection Status Boolean
-A simplified status based on a Boolean. Will return True if the channel(s)/Preset is connected and False if disconnected or errored. This allows for customization beyond background and text but does not provide feedback beyond connected/disconnected.
+A selection of Boolean Feedbacks have been made available for those who want more customization of the styling of buttons. The boolean feedbacks will return True if a condition is met:
+Feedback | Explanation
+------ | -------
+**Connected** | Will return True if the channel(s)/Preset have all been connected.
+**Error** | Will return True if all of the channels/preset have returned errors.
+**Partial** | Will return True if the preset returns partial or if some of the channel actions have returned a none successful connection.
+**Disconnected** | Will return True if all channels or presets return as Disconnected.
 
 <br>
-
-Additional Tips:
-- Two feedbacks can be used to create a connection status. One for a successful connection, one for a failed connection (Must be inverted).
+You can utilize these feedbacks in combination to create a similar effect as the pre-configured feedback, but with more flexibility to add different styling beyond background colours.
