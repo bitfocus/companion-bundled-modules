@@ -1,15 +1,16 @@
-## Adder Infinity AIM Companion Module
-This module connects to an [Adder Infinity AVM Receiver](https://www.adder.com/en/kvm-solutions/adderview-matrix-c1100-user-station) and allows for connecting and disconnecting presets. Logs have been added to identify connection errors.
+## Adder AVM Companion Module
+This module connects to an [Adder AVM Receiver](https://www.adder.com/en/kvm-solutions/adderview-matrix-c1100-user-station) and allows for connecting and disconnecting presets. Logs have been added to identify connection errors.
 
 **This module is provided "as is" without any warranties, express or implied. The developer assumes no responsibility for any issues, malfunctions, or damages that may arise from its use. By using this module, you acknowledge that you do so at your own risk. Compatibility with future versions of Bitfocus Companion and Adder AVM is not guaranteed.**
 
 1. [Basic Configuration](#basic-configuration)
 2. [Actions](#actions)
-    1. [Refresh Channels](#refresh-presets)
+    1. [Refresh Presets](#refresh-presets)
     3. [Connect Preset](#connect-preset)
     5. [Disconnect](#disconnect)
 3. [Feedback](#feedback)
-    1. [Channel Connection Status](#preset-connection-status)
+    1. [Preset Connection Status](#preset-connection-status)
+    2. [Boolean Feedbacks](#boolean-feedbacks)
 
 
 
@@ -17,27 +18,6 @@ This module connects to an [Adder Infinity AVM Receiver](https://www.adder.com/e
 
 Configuration | Help 
 --------------|----------
-**Label**  | Your friendly name for the AVM Receiver
-**AIM IP** | Target IP Address for the AVM Receiver
-**password** | User password if required
-**Listen for Events** | Enable/Disable Event Listening websocket to listen for Video Loss Events
-
-<br>
-
-### Actions
-#### Refresh Presets
-
-Requests the current list of presets from the receiver and saves them into your configuration. Included as a button action if needed, but is also found as the 'Learn' function in the [Connect Preset](#connect-preset) Action.
-
-#### Connect Preset
-Connects the receiver to a preset defined in it's preset list.
-
-Option | help
--------|------
-**Learn** | Refreshes available presets.
-**Preset** | Name of the Preset to connect.
-
-<br>
 <br>
 
 Additional Help and Tips:
@@ -55,7 +35,28 @@ Additional Help and Tips:
 A Feedback option that allows for different button background/text colours based on the state of the connections specified in the Actions. These colours can be customized.
 
 - When does feedback get updated?
-Feedback will get updated whenever the Action is attempted. When Listening for Events is enabled, the Buttons feedback will get refreshed whenever a message is received.
+Feedback will get updated whenever the Action is attempted. When Listening for Events 
+**Label**  | Your friendly name for the AVM Receiver
+**Receiver IP** | Target IP Address for the AVM Receiver
+**password** | User password if required
+**Listen for Events** | Enable/Disable Event Listening websocket to listen for Video Loss Events
+
+<br>
+
+### Actions
+#### Refresh Presets
+
+Requests the current list of presets from the receiver and saves them into your configuration. Included as a button action if needed, but is also found as the 'Learn' function in the [Connect Preset](#connect-preset) Action. When using Bitfocus Companion, you will need to use this action to get the current state.
+
+#### Connect Preset
+Connects the receiver to a preset defined in it's preset list.
+
+Option | help
+-------|------
+**Learn** | Refreshes available presets. (Only available on Companion)
+**Preset** | Name of the Preset to connect.
+
+<br>is enabled, the Buttons feedback will get refreshed whenever a message is received.
 
 - What does this feedback provide?
 Whenever a connection is attempted, the receiver will return a success or failure. The feedback will change the background based on this state. It will also provide feedback for a video loss event if configured. These are possible states:
@@ -68,6 +69,20 @@ State | Explanation
 
 <br>
 <br>
+
+#### Boolean Feedbacks
+Two boolean feedbacks have been provided to allow for further customization and for compatibility with Bitfocus Buttons. These are the "Preset Connection Status - Boolean" and "Video Status - Boolean".
+
+##### Preset Connection Status - Boolean
+Returns "true" if a success message is received while connecting. By combining two of these, one inverted, you can track when a preset is connected or disconnected. This will also return "true" if the preset is connected with no video.
+
+##### Video Status - Boolean
+Returns "true" if a Video Loss event is detected. You can use this to track if Video Loss is detected and add custom styling.
+
+
+Tips:
+- Combining multiple boolean feedbacks will give you similar results to the advanced feedback but with more customization.
+- Order is important, the last feedback will take precedent. For example, if you want to have a Green Background when connected, but an orange background when Video Loss occurs, Video Loss should come after Connection Status.
 
 
 ### Additional Tips
