@@ -6,6 +6,23 @@ The OBSBOT OSC standard protocol is based on the touchOSC protocol. It can be ap
 
 Additionally, the OSC can be independently applied to OBSBOT Tail 2, and OBSBOT Tail Air.
 
+Please file any issues you have with the connection on the [Github repo here](https://github.com/bitfocus/companion-module-obsbot-osc/issues)
+
+## Getting started
+
+There are two ways to connect to your OBSBOT camera:
+
+1. Connecting directly via IP to the Tail 2 or Tail Air
+2. Connecting via OSC to the OBSBOT Center app (Tail 2, Tail Air, Tiny, Tiny 4K, Tiny 2, Tiny 2 Lite, Tiny SE, Meet, Meet 4K, Meet SE)
+
+### Direct connection
+
+In order to connect directly to the Tail 2 or Tail Air, find the IP of the device in the OBSBOT Center app and enter it into the Device IP Address field in the configuration for the OBSBOT connection. You can leave the ports at the default.
+
+### OBSBOT Center Connection
+
+If you wish to connect to the Tiny series or Meet series of OBSBOT cameras you will need to run the OBSBOT Center app on your computer and enable the OSC server. After enabling the OSC server, update the port and IP in the OBSBOT connection config to match the Receive Port set in the OBSBOT Center app
+
 ## Configuration
 
 - Device IP Address and Port

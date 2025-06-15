@@ -1,4 +1,4 @@
 MODULE_NAME=obsbot-osc
-GIT_REF=v1.0.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/15392217395
-UPDATE_DATE=2025-06-02
+GIT_REF=v1.0.3
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/15664750176
+UPDATE_DATE=2025-06-15
