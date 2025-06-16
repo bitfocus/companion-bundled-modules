@@ -141,3 +141,20 @@ Tally and connected messages recieved from the router will create new set crossp
 - Fixed issue where labels were duplicated and in wrong order if router had labels on multiple levels
 - Fixed initial label request (non-extended mode) to use the correct format according to specification
 - Fixed issue where not all source labels were received, fixes issue #31
+
+### Version 2.0.7
+
+- Removed untested config option for tally dumping
+
+### Version 2.0.8
+
+- Added support for tally dumps, which allows the module to have a full overview of the currently routed crosspoints.
+- Add support for tally variables per layer
+- Fix issues with name responses, remove "self" usage.
+- Added extra caching of variables so we don't update more variables than needed.
+- Don't push variable definitions unless they have changed.
+- Handle "supported commands" data from device better.
+- Use interval for keepalive timer, and fix the invalid dummy packet we were sending.
+- Make sure names are cached, fix bug in definition caching, and move source/dest count to same throttling
+- Make sure the number of levels in dropdowns in actions/feedbacks represent the current config settings
+- Update manifest with kewywords
