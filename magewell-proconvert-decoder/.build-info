@@ -1,0 +1,4 @@
+MODULE_NAME=magewell-proconvert-decoder
+GIT_REF=v3.0.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/15685308260
+UPDATE_DATE=2025-06-16
