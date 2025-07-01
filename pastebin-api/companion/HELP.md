@@ -1,19 +1,19 @@
-## Pastebin
+# Pastebin
 
 Create, get and delete pastes.
 
-### Actions
+## Actions
 
 - Create Paste
 - Delete Paste
 - Get Pastes
 - Get Raw Paste (returns data to a custom variable)
 
-### Variables
+## Variables
 
 - URL of most recently create paste
 
-#### Per Paste:
+### Per Paste
 
 - Format
 - Key
