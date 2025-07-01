@@ -14,7 +14,4 @@ The following can be shown in Companion:
 
 - Captions Running
 - Captions Stopped
-
-FUTURE Development:
-
-In the future we hope to show you the last word that was captioned on your device.
+- Supports Variables for the last captioned word
