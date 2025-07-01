@@ -80,6 +80,19 @@ This module communicates with ScriptLauncher — a free local automation tool yo
 
 > 🧠 Most macOS utilities use native AppleScript or shell commands and do not require any additional setup.
 
+### Windows Utilities
+
+- **Windows: Run PowerShell Script** Executes a `.ps1` script using PowerShell with optional arguments and input.
+- **Windows: Speak Text** Uses the system voice to speak the given text (PowerShell-based TTS).
+- **Windows: Kill Application** Force-kills a process by name (e.g., `notepad`, `obs64`).
+- **Windows: Run Scheduled Task** Triggers a Windows Task Scheduler task by name.
+- **Windows: Launch Application** Starts an application using its name or full path (e.g., `notepad.exe`, `C:\App\app.exe`).
+- **Windows: Run Script File** Executes `.bat`, `.vbs`, or `.exe` files with optional arguments.
+- **Windows: Take Screenshot** Uses Snipping Tool to capture a screenshot to the clipboard (`/clip` mode).
+- **Windows: Set Wallpaper** Changes the desktop wallpaper using the Windows API via PowerShell.
+- **Windows: Open File or Folder** Opens a file or folder in Explorer.
+- **Windows: Toggle Mute** Mutes or unmutes system audio.
+
 ## Deep Link / URI Actions
 
 - **Open Deep Link / URI:** Open any URI (e.g., st-business://, zoommtg://, slack://, etc.) using the system default handler.
@@ -112,9 +125,14 @@ This module communicates with ScriptLauncher — a free local automation tool yo
 
 ## Feedbacks
 
-Currently not implemented — but future support may include:
-
-- Script completion feedback
+- "X" Font is Installed
+- CPU Load
+- CPU Temp (⚠️ Note: CPU Temperature is not available on Apple Silicon Macs.)
+- Disk Usage
+- GPU Load (⚠️ Note: GPU Load is not available on all computers.)
+- Memory Usage
+- Network Interface Utilization/Load
+- Network Interface is Up/Down
 
 ---
 
