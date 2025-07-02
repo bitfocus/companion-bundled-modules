@@ -1,8 +1,8 @@
-## companion-module-generic-snmp
+# companion-module-generic-snmp
 
-Generic modules is only for use with custom applications. If you use this module to control a device or software on the market that more than you are using, <strong>PLEASE let us know</strong> about this software, so we can make a proper module for it. If we already support this and you use this to trigger a feature our module doesnt support, please let us know. We want companion to be as easy as possible to use for anyone.
+Generic modules is only for use with custom applications. If you use this module to control a device or software on the market that more than you are using, please let us know about this software, so we can make a proper module for it. If we already support this and you use this to trigger a feature our module doesnt support, please let us know. We want companion to be as easy as possible to use for anyone.
 
-### Configuration
+## Configuration
 
 To configure this module you will need:
 
@@ -11,11 +11,11 @@ To configure this module you will need:
 3. SNMP Version - The version of SNMP used by the agent. This will dictate how this module will authenticate with the agent
 4. Poll Interval - The poll interval for Get OID actions with update enabled.
 
-#### SNMP versions v1/v2c
+### SNMP versions v1/v2c
 
 If you selected SNMP version `v1` or `v2c` you will also need to configure a `community` string with suffucient access for the actions you wish to perform.
 
-#### SNMP versions v3
+### SNMP versions v3
 
 If you selected SNMP version `v3` you will also need to configure the following:
 
@@ -32,13 +32,12 @@ If you selected SNMP version `v3` you will also need to configure the following:
 5. Auth Key - The message authentication key. (Available if Security Lavel is `authNoPriv` or `authPriv`)
 6. Priv Protocol - The encryption algorith. (Available if Security Lavel is `authPriv`)
    - `No Priv` - use if your agent's security level is `AuthNoPriv`
-   - `DES` - for DES encryption (CBC-DES)
    - `AES` - for 128-bit AES encryption (CFB-AES-128)'
    - `AES256B` - for 256-bit AES encryption (CFB-AES-256) with "Blumenthal" key localiztaion
    - `AES256R` - 256-bit AES encryption (CFB-AES-256) with "Reeder" key localiztaion
 7. `Priv Key` - Encryption Key (Available if Security Lavel is `authPriv`)
 
-### Actions
+## Actions
 
 You can perform the following actions with this module:
 
