@@ -1,6 +1,6 @@
-## PixelHue
+## Pixelhue mediaserver
 
-This module will allow you to control the following PixelHue media server products: MS3.
+This module will allow you to control the following Pixelhue media server products: MS3. MS3 Pro
 
 ### Configuration
 
@@ -9,14 +9,14 @@ This module will allow you to control the following PixelHue media server produc
 **Available actions:**
 
 - Program
-- Pause_program
-- Play_program
-- Stop_program
-- Open_ftb
-- Close_ftb
-- Open_volume
-- Close_volume
-- ppt_pgup
-- ppt_pgdn
-- Volume_up
-- Volume_down
+- Pause
+- Play
+- Stop
+- FTB
+- Volume
+- Brightness
+- PPT page up/down
+- OFF Test PIC
+- On Test PIC
+- Prev Program
+- Next Program
