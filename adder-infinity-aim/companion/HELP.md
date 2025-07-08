@@ -5,14 +5,15 @@ This module connects to an [Adder Infinity AIM](https://www.adder.com/en/infinit
 
 1. [Basic Configuration](#basic-configuration)
 2. [Actions](#actions)
-    1. [Refresh Channels](#refresh-channels)
+    1. [Refresh Devices and Presets](#refresh-devices-and-presets)
     2. [Connect Channel](#connect-channel)
     3. [Connect Preset](#connect-preset)
     4. [Disconnect Receiver](#disconnect-receiver)
     5. [Disconnect Preset](#disconnect-preset)
 3. [Feedback](#feedback)
-    1. [Channel Connection Status Pre-Configured](#channel-connection-status)
-    2. [Channel Connection Status Boolean](#channel-connection-status-boolean)
+    1. [Channel Connection Status Pre-Configured (Companion Only)](#channel-connection-status-pre-configured-companion-only)
+    2. [Channel Connection Status](#channel-connection-status)
+    3. [Preset Connection Status](#preset-connection-status)
 
 
 ### Basic Configuration
@@ -29,9 +30,9 @@ Configuration | Help
 <br>
 
 ### Actions
-#### Refresh Channels
+#### Refresh devices and presets
 
-Requests the current list of Channels and Receivers from the AIM server and saves them into your configuration. Included as a button action if needed, but is also found as the 'Learn' function in the [Connect Channel](#connect-channel) Action.
+Requests the current list of Channels, Receivers and Presets from the AIM server and saves them into your configuration. Included as a button action if needed, but is also found as the 'Learn' function in the [Connect Channel](#connect-channel) Action.
 
 #### Connect Channel
 Connects a Single Receiver to a Channel with the specified connection mode. 
@@ -84,8 +85,10 @@ Additional Help and Tips:
 <br>
 
 ### Feedback
-#### Channel Connection Status
+#### Channel Connection Status Pre-Configured (Companion Only)
 A Feedback option that allows for different button background/text colours based on the state of the connections specified in the Actions. These colours can be customized.
+
+*_This pre-configured feedback only works in Companion and is not supported in Buttons_
 
 - When does feedback get updated?
 When Polling is disabled, Feedback will get updated whenever the Action is attempted. When polling is enabled, the Buttons feedback will get refreshed whenever the server is polled.
@@ -103,14 +106,31 @@ State | Explanation
 <br>
 <br>
 
-#### Channel Connection Status Boolean
-A selection of Boolean Feedbacks have been made available for those who want more customization of the styling of buttons. The boolean feedbacks will return True if a condition is met:
+#### Channel Connection Status
+A Boolean Feedback has been made available for those who want more customization of the styling of buttons based on channel connection status. The boolean feedbacks will return True if a condition is met:
 Feedback | Explanation
 ------ | -------
-**Connected** | Will return True if the channel(s)/Preset have all been connected.
-**Error** | Will return True if all of the channels/preset have returned errors.
-**Partial** | Will return True if the preset returns partial or if some of the channel actions have returned a none successful connection.
-**Disconnected** | Will return True if all channels or presets return as Disconnected.
+**Receiver** | Receiver feedback is tracking for.
+**Channel** | Channel to track connection with receiver.
+**Connection State** | Returns True if the Receiver and Channel match the given connection state. Options are _Connected, Error, Disconnected_
+**Learn Values** | Will update the list of Channels and Receivers
 
 <br>
-You can utilize these feedbacks in combination to create a similar effect as the pre-configured feedback, but with more flexibility to add different styling beyond background colours.
+
+
+- You can utilize these feedbacks in combination to create a similar effect as the pre-configured feedback, but with more flexibility to add different styling beyond background colours.
+- Utilizing the "Internal - Logic: Operation" Feedback, you can combine multiple feedbacks in to a Logical AND or Logical OR operation. Using this, you can combine multiple Receiver/Channel connections for feedback.
+
+#### Prest Connection Status
+A Boolean Feedback have been made available for those who want more customization of the styling of buttons based on preset connection status. The boolean feedbacks will return True if a condition is met:
+Feedback | Explanation
+------ | -------
+**Preset** | The Preset feedback is tracking for.
+**Connection State** | Returns True if the Receiver and Channel match the given connection state. Options are _Connected, Error, Disconnected, Partial Connection_
+**Learn Values** | Will update the list of Channels and Receivers
+
+<br>
+
+
+- You can utilize these feedbacks in combination to create a similar effect as the pre-configured feedback, but with more flexibility to add different styling beyond background colours.
+- Utilizing the "Internal - Logic: Operation" Feedback, you can combine multiple feedbacks in to a Logical AND or Logical OR operation. Using this, you can combine multiple action connections for feedback.
