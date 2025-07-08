@@ -7,7 +7,9 @@ See https://www.foscam.es/descarga/Foscam-IPCamera-CGI-User-Guide-AllPlatforms-2
 Only basic PTZ commands of this API are implemented.
 
 ### Configuration
+
 Set IP address, port, and password.
 
 ### URL stream
+
 Stream to use in OBS: rtsp://your-username:your-password@your-ipaddress:554/videoMain
