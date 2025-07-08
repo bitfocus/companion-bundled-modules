@@ -136,3 +136,38 @@ https://www.bromptontech.com/support/downloads/.
 
 #### Groups
 - groupBrightness1, groupBrightness2, etc. (These will only be visible to the companion app after a successful connection to the processor.)
+
+#### Fan Status/Speeds
+- caseFan1Speed
+- caseFan1Status
+- caseFan2Speed
+- caseFan2Status
+- fpgaFanSpeed
+- fpgaFanStatus
+
+#### Temperatures
+- ambientTemperature
+- cpuTemperature
+- dspTemperature
+- ethernetCopperATemperature
+- ethernetCopperBTemperature
+- ethernetSFPATemperature
+- ethernetSFPBTemperature
+- ethernetSFPCTemperature
+- ethernetSFPDTemperature
+- fpgaTemperature
+- frontTemperature
+- gpuTemperature
+- mainBoardTemperature
+- psuTemperature
+- rearTemperature
+
+#### System Information
+- uptime
+- serialNumber
+- softwareVersion
+- processorName
+- processorType
+
+#### Project
+- projectName
