@@ -1,4 +1,4 @@
 MODULE_NAME=eyevinn-intercom
-GIT_REF=1.0.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/15185373837
-UPDATE_DATE=2025-05-22
+GIT_REF=1.0.3
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/16225685637
+UPDATE_DATE=2025-07-11
