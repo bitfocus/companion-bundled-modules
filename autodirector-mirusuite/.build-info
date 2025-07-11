@@ -1,0 +1,4 @@
+MODULE_NAME=autodirector-mirusuite
+GIT_REF=v0.1.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/16209836019
+UPDATE_DATE=2025-07-11
