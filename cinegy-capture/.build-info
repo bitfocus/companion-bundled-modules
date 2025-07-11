@@ -1,0 +1,4 @@
+MODULE_NAME=cinegy-capture
+GIT_REF=v1.0.3
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/16225777745
+UPDATE_DATE=2025-07-11
