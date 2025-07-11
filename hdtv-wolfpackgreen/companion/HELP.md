@@ -6,6 +6,7 @@ A module for controlling HDTV WolfPackGreen HDMI Matrix.
 
 - HDTVFIX1600AE
 - HDTVFIX1600E
+- HDTVFIX800E
 
 ## Available Commands
 
