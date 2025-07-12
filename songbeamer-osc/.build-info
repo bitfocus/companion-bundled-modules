@@ -1,4 +1,4 @@
 MODULE_NAME=songbeamer-osc
-GIT_REF=v2.0.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/9745094367
-UPDATE_DATE=2024-07-01
+GIT_REF=v2.3.2
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/16240011479
+UPDATE_DATE=2025-07-12
