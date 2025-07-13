@@ -8,6 +8,8 @@ The module binds to UDP ports 319 & 320 on the selected interface.
 
 - PTP Synced
 
+Module will report sync loss after twice the Sync interval duration without a sync event.
+
 ## Variables
 
 - Last Sync
@@ -15,3 +17,5 @@ The module binds to UDP ports 319 & 320 on the selected interface.
 - PTP Master (Address)
 - PTP Time (s)
 - PTP Time (ns)
+
+PTP Time variables updated each sync event.
