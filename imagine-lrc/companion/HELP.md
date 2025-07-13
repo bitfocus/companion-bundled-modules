@@ -53,6 +53,9 @@ Request execution of a crosspoint salvo.
 One salvo can be specified in each action.
 Optionally, one or more flags may be specified to adjust behavior of the request.
 
+Some implementations of LRC (e.g. on a Imagine Platinum MX as reported in #9) seem to require inclusion of a user ID to properly execute XSALVO commands.
+If you are attempting to use XSALVO commands and they're not working, you may need to enable the `Send User ID with XSALVO Commands` configuration option.
+
 ### Destination Lock (LOCK)
 
 Secure a destination from further crosspoint status changes by any User ID including the lock owner.
