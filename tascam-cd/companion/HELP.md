@@ -171,6 +171,10 @@ INPUT SELECT sets the input source select of the controlled device.
 
 ## Version History
 
+### Version 2.1.6
+
+- Fix some queries on connection
+
 ### Version 2.1.5
 
 - Update Node 22
