@@ -25,6 +25,7 @@ The following Actions are available:
 - Pause rundown
 - Go to next cue
 - Go to previous cue
+- Add/Remove time from active cue
 
 ### Module Feedbacks
 
