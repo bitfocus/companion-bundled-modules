@@ -1,4 +1,4 @@
 MODULE_NAME=joy-playdeck
-GIT_REF=v4.0.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/16226815216
-UPDATE_DATE=2025-07-11
+GIT_REF=v4.0.2
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/16376850902
+UPDATE_DATE=2025-07-18
