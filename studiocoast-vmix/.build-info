@@ -1,4 +1,4 @@
 MODULE_NAME=studiocoast-vmix
-GIT_REF=v4.1.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/16200337979
-UPDATE_DATE=2025-07-10
+GIT_REF=v4.1.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/16403501168
+UPDATE_DATE=2025-07-20
