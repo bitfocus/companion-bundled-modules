@@ -21,7 +21,8 @@ This module provides integration with Calrec audio consoles using the CSCP (Calr
 
 ### Variables
 
-The module provides variables for each fader (0-255):
+The module provides variables for each fader (1-256):
+
 - `fader_X_level`: Current fader level (0-1023)
 - `fader_X_level_db`: Current fader level in dB
 - `fader_X_label`: Fader label
