@@ -1,4 +1,4 @@
 MODULE_NAME=modulopi-moduloplayer
-GIT_REF=v4.0.5
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/16188775243
-UPDATE_DATE=2025-07-10
+GIT_REF=v4.0.6
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/16659709103
+UPDATE_DATE=2025-07-31
