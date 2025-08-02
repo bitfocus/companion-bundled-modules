@@ -1,4 +1,4 @@
 MODULE_NAME=panasonic-av-hs6000
-GIT_REF=1.0.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/16691831363
+GIT_REF=v1.1.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/16691910383
 UPDATE_DATE=2025-08-02
