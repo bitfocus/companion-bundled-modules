@@ -1,6 +1,6 @@
 ## Pixelhue
 
-This module will allow you to control the following Pixelhue products: F4, F4 Lite, F8, P10, P20 and Q8.
+This module will allow you to control the following Pixelhue products: P10, P20 and Q8 (F4, F4 Lite, F8 currently not available).
 
 ### Configuration
 
@@ -17,17 +17,11 @@ This module will allow you to control the following Pixelhue products: F4, F4 Li
 - Preset Destination
 - Screens
 - Layers
-- Sources
 - SwapCopy
-- MatchPgm
-- Take Time-
-- Take Time+
-- Mapping
-
+- 
 **Available Feedbacks:**
 
 - FTB Status Detection
 - Freeze Status Detection
 - PGM Status Detection
 - SwapCopy Status Detection
-- Mapping Status Detection
