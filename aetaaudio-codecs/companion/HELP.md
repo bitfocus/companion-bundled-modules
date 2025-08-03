@@ -210,5 +210,5 @@ The module includes comprehensive error handling:
 
 ## Version History
 
-### Version 1.0.2-beta
-* Initial release
+### Version 1.0.3-beta
+* fixed call states feedbacks
