@@ -18,24 +18,6 @@ This module connects to an [Adder AVM Receiver](https://www.adder.com/en/kvm-sol
 
 Configuration | Help 
 --------------|----------
-<br>
-
-Additional Help and Tips:
-- The feedback [Preset Connection Status](#preset-connection-status) will allow you to receive feedback based on the response from the receiver.
-- If you have enabled "Listen for Events" and are using feedback, the button will update if a "Video Loss" event is triggered.
-- Can be used with Companions Step options or Duration Groups to add Disconnection Features. Adding a Step 2 or Duration Group combined with the [Disconnect Preset](#disconnect-preset) will allow you to toggle the connection on the same button.
-
-#### Disconnect
-- Action to disconnect connected receiver.
-
-<br>
-
-### Feedback
-#### Preset Connection Status
-A Feedback option that allows for different button background/text colours based on the state of the connections specified in the Actions. These colours can be customized.
-
-- When does feedback get updated?
-Feedback will get updated whenever the Action is attempted. When Listening for Events 
 **Label**  | Your friendly name for the AVM Receiver
 **Receiver IP** | Target IP Address for the AVM Receiver
 **password** | User password if required
@@ -56,7 +38,14 @@ Option | help
 **Learn** | Refreshes available presets. (Only available on Companion)
 **Preset** | Name of the Preset to connect.
 
-<br>is enabled, the Buttons feedback will get refreshed whenever a message is received.
+#### Disconnect
+- Action to disconnect connected receiver.
+
+<br>
+
+### Feedback
+#### Preset Connection Status
+A Feedback option that allows for different button background/text colours based on the state of the connections specified in the Actions. These colours can be customized. The selected Preset to track is required to provide the correct feeback
 
 - What does this feedback provide?
 Whenever a connection is attempted, the receiver will return a success or failure. The feedback will change the background based on this state. It will also provide feedback for a video loss event if configured. These are possible states:
@@ -66,9 +55,14 @@ State | Explanation
 **Disconnected** | When the preset is disconnected. This will return the disconnected colours (Default Red/White) configured by the user.
 **Connected** | Returns configured Button/Text colour (Default Green/Black) when all configured actions connected successfully
 **Video Loss** | Returns Configured Button/Text Colour (Default Orange/Black) when a video loss message has been received from the Receiver. The user can configure a custom message to replace the Text during a video loss event.
+- When does feedback get updated?
+Feedback will get updated whenever the Action is attempted. When Listening for Events is enabled, the Buttons feedback will get refreshed whenever a message is received.
 
-<br>
-<br>
+Additional Help and Tips:
+- The feedback [Preset Connection Status](#preset-connection-status) will allow you to receive feedback based on the response from the receiver.
+- If you have enabled "Listen for Events" and are using feedback, the button will update if a "Video Loss" event is triggered.
+- Can be used with Companions Step options or Duration Groups to add Disconnection Features. Adding a Step 2 or Duration Group combined with the [Disconnect Preset](#disconnect-preset) will allow you to toggle the connection on the same button.
+- You can use the Internal Feedback "Logic: operation" to create Logical AND or Logical OR conditions when combining multiple AVM receivers on a single button.
 
 #### Boolean Feedbacks
 Two boolean feedbacks have been provided to allow for further customization and for compatibility with Bitfocus Buttons. These are the "Preset Connection Status - Boolean" and "Video Status - Boolean".
@@ -89,4 +83,4 @@ Tips:
 #### Using Multiple Receivers
 Companion allows for connecting multiple modules. You can use this to control multiple receivers and create a single action to connect multiple receivers to presets. This give the flexibility to connect several AVM devices with one button.
 
-*When using multiple actions per button, Feedback will be limited due to the modules being completely seperate. If multiple feedbacks are applied, only the last to update will display.
+- Feedback can be added to track different AVM Receiver connections on the same button. Using the Logic: operation internal Feedback, you can add multiple conditions in the AND. If all receivers return connected, it will then activate the styling defined.
