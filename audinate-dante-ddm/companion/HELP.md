@@ -14,6 +14,10 @@ To clear subscriptions on an Rx channel, set the Tx device and Tx channel to emp
 
 The new multi-channel subscription comes with a learn button for both the action and feedback to load fresh states from the device.
 
+## Companion version support
+
+This module is built and tested for Companion version 4.
+
 ## Selector
 
 When using the selector, it is expected that a row of buttons is set up to set the selector value (i.e., the destination) and another set of buttons to set the subscription value (i.e., the source)

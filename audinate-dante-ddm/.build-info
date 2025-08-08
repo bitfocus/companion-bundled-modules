@@ -1,4 +1,4 @@
 MODULE_NAME=audinate-dante-ddm
-GIT_REF=v1.2.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/16531394104
-UPDATE_DATE=2025-07-25
+GIT_REF=v1.2.3
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/16835227114
+UPDATE_DATE=2025-08-08
