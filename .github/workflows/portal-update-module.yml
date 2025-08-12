@@ -67,7 +67,7 @@ jobs:
           path: modules
           ref: ${{ github.ref_name }}
 
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         with:
           name: pkg
 
@@ -112,7 +112,7 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         with:
           name: pkg
 
