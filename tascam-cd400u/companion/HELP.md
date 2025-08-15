@@ -120,6 +120,11 @@ RESUME PLAY SELECT turns the resume play mode of the controlled device on or off
 
 ## Version History
 
+### Version 1.1.7
+
+- Convert to ESM
+- Refactor
+
 ### Version 1.1.6
 
 - Parse local variables
