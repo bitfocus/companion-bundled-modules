@@ -126,6 +126,25 @@ A preset is automatically created for each salvo provided by the router.
 Action is `Salvo Execution` for the given salvo.
 Feedback is `Salvo State` in green if the given salvo is active.
 
+
+## Variables
+
+Starting from version 2.2, this module exposes the following variable types: 
+
+### Routing Database 
+
+* Input Names by ID
+* Input IDs by Name
+* Output Names by ID
+
+
+### Routing State
+
+* Destination (by name or number) Status - Current Routed Input Name 
+* Destination (by name or number) Status - Current Routed Input Number
+* Destination (by name or number) Status - Lock/Protect State
+
+
 ## Protocol Documentation
 
 Full documentation for the LRC protocol is available in the [Imagine Communications Customer Portal](https://community.imaginecommunications.com/)
