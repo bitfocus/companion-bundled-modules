@@ -1,4 +1,4 @@
 MODULE_NAME=allenheath-dlive-ilive
-GIT_REF=v2.0.2
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/16985189640
-UPDATE_DATE=2025-08-15
+GIT_REF=v2.0.3
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/17013008666
+UPDATE_DATE=2025-08-16

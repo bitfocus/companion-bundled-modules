@@ -14,7 +14,10 @@ This module provides comprehensive control for Allen & Heath dLive and iLive dig
 3. **Network Ports**: 
    - **MIDI Port**: Configurable (default: 51328) - Used for basic mixer commands
    - **TCP Port**: Configurable (default: 51321) - Used for dLive advanced features only
-4. **Port Configuration**: Both MIDI and TCP ports can be customized in the module configuration
+4. **MIDI Channel Configuration**:
+   - **MIDI Channel for dLive System (N)**: Base MIDI channel for dLive system control (default: 0)
+   - **Note**: dLive uses 5 consecutive MIDI channels (N through N+4) for different control types
+5. **Port Configuration**: Both MIDI and TCP ports can be customized in the module configuration
 
 ## Available Actions
 
@@ -35,6 +38,8 @@ This module provides comprehensive control for Allen & Heath dLive and iLive dig
 - **Mute Mono Matrix** - Mute/unmute mono matrix outputs
 - **Mute Stereo Matrix** - Mute/unmute stereo matrix outputs
 - **Mute Group Master** - Mute/unmute mute group masters
+- **Mute UFX Stereo Send** - Mute/unmute UFX stereo send buses
+- **Mute UFX Stereo Return** - Mute/unmute UFX stereo return channels
 
 #### iLive Only:
 - **Mute Mix** - Mute/unmute mix buses
@@ -54,6 +59,8 @@ This module provides comprehensive control for Allen & Heath dLive and iLive dig
 - **Set Stereo Aux Master Fader to Level** - Control stereo aux master levels
 - **Set Mono Matrix Master Fader to Level** - Control mono matrix master levels
 - **Set Stereo Matrix Master Fader to Level** - Control stereo matrix master levels
+- **Set UFX Stereo Send Fader to Level** - Control UFX stereo send levels
+- **Set UFX Stereo Return Fader to Level** - Control UFX stereo return levels
 
 #### iLive Only:
 - **Set Mix Fader to Level** - Control mix bus fader levels
@@ -88,6 +95,7 @@ This module provides comprehensive control for Allen & Heath dLive and iLive dig
 - **Set Matrix Mono Send Level** - Control individual matrix mono send levels
 - **Set Matrix Stereo Send Level** - Control individual matrix stereo send levels
 - **Input to Main Assign** - Assign/unassign inputs to main mix
+- **Set UFX Stereo Send Level** - Control individual UFX stereo send levels
 
 **iLive Systems:**
 - **Set Mix Send Level** - Control individual mix send levels
@@ -103,6 +111,28 @@ This module provides comprehensive control for Allen & Heath dLive and iLive dig
 - **Talkback On** - Enable/disable talkback
 - **Virtual Soundcheck** - Switch between Inactive, Record Send, and Virtual Soundcheck modes
 
+### 🎛️ UFX Card Controls (dLive Only)
+
+The UFX card is an effects processing expansion card for dLive systems. These controls are available when UFX cards are installed:
+
+#### UFX Global Controls:
+- **Set UFX Global Key** - Control the global key setting for UFX processing (C, C#, D, D#, E, F, F#, G, G#, A, A#, B)
+- **Set UFX Global Scale** - Control the global scale setting for UFX processing (Major, Minor)
+
+#### UFX Unit Controls:
+- **Set UFX Unit Parameter** - Direct control of UFX unit parameters using MIDI channel M and control number
+- **Set UFX Unit Key Parameter** - Control UFX unit key with automatic CC value scaling
+- **Set UFX Unit Scale Parameter** - Control UFX unit scale with automatic CC value scaling (Major, Minor, Chromatic)
+
+#### UFX Send/Return Controls:
+- **Mute UFX Stereo Send** - Mute/unmute UFX stereo send buses (1-8)
+- **Mute UFX Stereo Return** - Mute/unmute UFX stereo return channels (1-8)
+- **Set UFX Stereo Send Fader to Level** - Control UFX stereo send master fader levels
+- **Set UFX Stereo Return Fader to Level** - Control UFX stereo return fader levels
+- **Set UFX Stereo Send Level** - Control individual UFX stereo send levels
+
+**Note**: UFX unit controls require configuring individual MIDI channels (M) per UFX unit in the console's FX / UFX / Show Routing / MIDI Settings. These channels must be different from the main dLive system MIDI channels (N through N+4).
+
 ## Fader Level Range
 
 All fader controls use a precise dB scale:
@@ -113,12 +143,19 @@ All fader controls use a precise dB scale:
 ## Technical Notes
 
 - **MIDI Implementation**: Uses standard MIDI commands (Note On, Control Change, NRPN, SysEx, Pitchbend)
+- **UFX Card Support**: Full support for UFX effects processing cards including parameter control and routing
+- **MIDI Channel Management**: Supports both dLive system channels (N through N+4) and individual UFX unit channels (M)
 - **Real-time Control**: All actions are executed immediately
 - **Error Handling**: Connection status and error logging included
 - **Debug Logging**: Detailed MIDI message logging available
 
 ## Version History
 
+- **v2.0.3**: Added UFX card support for dLive systems
+  - UFX stereo send/return mute and level controls
+  - UFX global key and scale controls
+  - UFX unit parameter controls with CC value scaling
+  - MIDI channel configuration for dLive system
 - **v2.0.0**: Complete rewrite for Companion 3.0/4.0 compatibility
   - Added Protocol V2.0 support with 20+ new actions
   - Enhanced EQ, preamp, and send level controls
