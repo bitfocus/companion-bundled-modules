@@ -1,9 +1,13 @@
-# Controller for avolites titan desks
-This module is made to control avolites titan lighting desks, to make sure all the commands work they always need to run the latest software version.
-At this moment this is V14.0
+# companion-module-avolites-titan
 
-The module will probably work with V12.1 too but the image feedback is only available from V14.0 onwards
+## Module for Avolites Titan software and desks
 
-WARNING
-this module does NOT work with the titan one or T1, only T2, titan mobile or the physical desks.
-this is because the module uses the avolites webapi which is not available on titan one or T1.
+This module controls Avolites Titan software, running on computers or lighting desks.
+
+The module works for Titan version 14.0 and onwards. It will probably also works for older versions but with reduced functionality.
+
+---
+
+**WARNING**  
+This module does NOT work with the Titan One, T1 and Editor Keys.
+The modules communicates with Titan using the WebAPI which is enabled with T2 dongles and beyond (T3, desks...).
