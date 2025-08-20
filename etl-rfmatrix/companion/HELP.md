@@ -1,6 +1,6 @@
-# ETL Systems: Victor RF Matrix
+# ETL Systems: RF Matrix
 
-This module allows control of an ETL Systems Victor RF Matrix over TCP/IP using the ETL ASCII protocol.  
+This module allows control of an ETL Systems RF Matrix over TCP/IP using the ETL ASCII protocol.  
 It supports routing, reading input/output aliases, and monitoring connection status.
 
 ---
@@ -10,13 +10,16 @@ It supports routing, reading input/output aliases, and monitoring connection sta
 When adding the module in Companion, you will be prompted for:
 
 - **Host**  
-  The IP address or hostname of the Victor RF Matrix.
+  The IP address or hostname of the RF Matrix.
 
 - **Port**  
   TCP control port (default: `4000`).
 
 - **Polling Interval (ms)**  
   How often the module polls the matrix for status and aliases.
+
+- **Matrix size**
+  How many inputs and outputs the matrix has
 
 ---
 
@@ -46,14 +49,14 @@ When adding the module in Companion, you will be prompted for:
 
 The following variables are available:
 
-- `$(victor:input_<n>)` – Alias for input `n`  
-  Example: `$(victor:input_1)` returns alias of input 1.
+- `$(matrix:input_<n>)` – Alias for input `n`  
+  Example: `$(matrix:input_1)` returns alias of input 1.
 
-- `$(victor:output_<n>)` – Alias for output `n`  
-  Example: `$(victor:output_3)` returns alias of output 3.
+- `$(matrix:output_<n>)` – Alias for output `n`  
+  Example: `$(matrix:output_3)` returns alias of output 3.
 
-- `$(victor:routed_input_<n>)` – Input number currently routed to output `n`.  
-  Example: `$(victor:routed_input_4)` might return `2` if output 4 is fed from input 2.
+- `$(matrix:routed_input_<n>)` – Input number currently routed to output `n`.  
+  Example: `$(matrix:routed_input_4)` might return `2` if output 4 is fed from input 2.
 
 ---
 
@@ -66,7 +69,7 @@ The following variables are available:
 
 ## **Notes**
 
-- Ensure the Victor RF Matrix has TCP control enabled and is reachable from the Companion system.
+- Ensure the RF Matrix has TCP control enabled and is reachable from the Companion system.
 - This module communicates using ETL's ASCII protocol with checksum validation.
 - If aliases are changed on the matrix directly, they will be updated in Companion at the next poll.
 
@@ -115,5 +118,5 @@ Your feedback will help improve compatibility and reliability for all users.
 
 ---
 
-Module maintained by **Daniel Vegter**  
-[GitHub Repository](https://github.com/DaanCMP/companion-module-etl-victor-rfmatrix)
+Module maintained by [**Daniel Vegter**](https://github.com/DaanCMP)  
+[GitHub Repository](https://github.com/bitfocus/companion-module-etl-rfmatrix)
