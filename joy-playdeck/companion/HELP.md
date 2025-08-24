@@ -1,31 +1,57 @@
-Module for JOY Event & Media's Playdeck player. Now it support all versions up to 4.1b11.
-You can choose appropriate version. The module automatically adjusts the set of commands in accordance with your chosen version.
+Supports all versions up to **4.1b16**.
+You can select the appropriate version, and the module will automatically adjust the set of commands according to your choice.
 
-**Available commands (for Playdeck 4.1b11) (version dependent):**
+---
 
-**CONTROL**: CUE/PLAY/FADE-IN by number/list/UID/flex, CUE/PLAY Next, SWITCH CHANNEL, PAUSE/STOP, POSITION, POSITION SAVE/RECALL
+**🔧 Available Commands (for Playdeck 4.1b16; version dependent)**
 
-**ASSETS**: LOAD/APPEND/ Project
+- **CONTROL**:
+  CUE/PLAY/FADE-IN by number/list/UID/flex; CUE/PLAY Next; SWITCH CHANNEL; PAUSE/STOP; POSITION; POSITION SAVE/RECALL; FADE EDIT
 
-**AUDIO**: MUTE, Un-MUTE;
+- **ASSETS**:
+  LOAD, APPEND Project
 
-**OVERLAY**: PLAY/STOP/STOP ALL
+- **AUDIO**:
+  MUTE, UNMUTE
 
-**ACTIONS**: START/STOP/STOP ALL
+- **OVERLAY**:
+  PLAY, STOP, STOP ALL
 
-**DESKTOP**: START/STOP;
+- **ACTIONS**:
+  START, STOP, STOP ALL
 
-**STREAM**: START, STOP;
+- **DESKTOP**:
+  START, STOP
 
-**RECORDING**: START, STOP;
+- **STREAM**:
+  START, STOP
 
-**Custom command** - sends a custom command (shold be formatted like `<{command}|{playlidID}|{blockID}|{clipID}>`)
+- **RECORDING**:
+  START, STOP
 
-**Available feedbacks (become active after some actions):**
+- **UTILS**:
+  WAIT
 
-- **Current state of playlist** with options:
-  - _Channel_: 1,2,3,4,5,6,7,8
-  - _State_: _**STOP**_, _**PAUSE**_, _**PLAY**_, _**CUE**_
-  - _Block Number/Name_: 0 for any
-  - _Clip Number/Name_: 0 for any
-  - _Item ID_
+- **Custom command** — sends a custom command.
+  Format:
+
+  ```text
+  <{command}|{playlistID}|{blockID}|{clipID}>
+  ```
+
+---
+
+**📡 Available Feedbacks (activated after certain actions)**
+
+**Current channel state**
+
+- **Channel**: 1–8
+- **State**: `STOP`, `PAUSE`, `PLAY`, `CUE`
+- **Block Number/Name**: `0` = any
+- **Clip Number/Name**: `0` = any
+- **Item ID**
+
+**Current ready state**
+
+- **Target**: `CHANNEL`, `OUTPUT (DESKTOP)`, `INPUT`, `DIRECTOR VIEW`, `RECORDING`
+- **Target Number**: numeric value
