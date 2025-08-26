@@ -1,4 +1,4 @@
 MODULE_NAME=avolites-titan
-GIT_REF=v2.4.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/17194153489
-UPDATE_DATE=2025-08-24
+GIT_REF=v2.5.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/17253012573
+UPDATE_DATE=2025-08-26
