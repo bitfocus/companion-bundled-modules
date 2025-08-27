@@ -1,4 +1,4 @@
 MODULE_NAME=rode-rcv
-GIT_REF=v1.5.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/13501049699
-UPDATE_DATE=2025-02-24
+GIT_REF=v1.6.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/17253673276
+UPDATE_DATE=2025-08-27
