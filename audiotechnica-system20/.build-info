@@ -1,4 +1,4 @@
 MODULE_NAME=audiotechnica-system20
-GIT_REF=v1.0.2
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/17256391491
-UPDATE_DATE=2025-08-27
+GIT_REF=v1.1.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/17286745947
+UPDATE_DATE=2025-08-28
