@@ -1,4 +1,4 @@
 MODULE_NAME=tslproducts-umd
-GIT_REF=v2.2.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/15833526763
-UPDATE_DATE=2025-06-23
+GIT_REF=v2.3.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/17346437166
+UPDATE_DATE=2025-08-30
