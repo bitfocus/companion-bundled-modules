@@ -9,6 +9,7 @@ Because Watchout 7 works with ID's, it is possible to use the same buttons in di
 * **IP address**: The IP address of the Watchout Director
 * **Port**: The HTTP API port (default: 3019)
 * **Sort timelines on name**: When enabled, timeline dropdowns are sorted alphabetically by name. When disabled (default), they are sorted by ID preserving Watchout's native order.
+* **Default toggle behavior**: Choose the default action for timeline toggle when timeline is stopped. Options are "Play" (default) or "Pause".
 
 ## Connection Method
 
