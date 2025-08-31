@@ -1,93 +1,151 @@
-## companion-module-dataton-watchout-json
+# Companion module for Dataton Watchout 7
 
-This module will connect to a Watchout 7 Director. It uses two methods for staying synchronized:
-
-* **Real-time updates**: Playback status (play/pause/stop) is received via Server-Sent Events (SSE) for instant feedback
-* **Structure updates**: Timeline information (names, cues, etc.) is polled every 10 seconds to detect show changes
-
-All timeline information including names/cues are being fetched when the module connects, when shows are loaded, and periodically to detect changes.
-
-Presets for timelines are built with feedback and also with variables for text. This means that when changing names of timelines your button will be updated.
+This module connects to Dataton Watchout 7 Director via HTTP API and Server-Sent Events (SSE) to provide real-time control and feedback for timeline management, cue control, input management, and show loading.
 
 Because Watchout 7 works with ID's, it is possible to use the same buttons in different shows, the timeline names will update on your buttons, because the ID's are re-used by Watchout.
 
-### Available actions
+## Configuration
 
-**Timeline Control:**
+* **IP address**: The IP address of the Watchout Director
+* **Port**: The HTTP API port (default: 3019)
+* **Sort timelines on name**: When enabled, timeline dropdowns are sorted alphabetically by name. When disabled (default), they are sorted by ID preserving Watchout's native order.
 
-- Timeline action (play/pause/stop/toggle)
-- Jump to time (on timeline in milliseconds, select if you want to play directly or pause)
-- Jump to cue (on timeline, select if you want to play directly or pause)
-- Conditional timeline actions (play timeline if another timeline is in specific state)
+## Connection Method
 
-**Input Management:**
+The module uses a **dual update system**:
+- **Real-time updates (SSE)**: Instant feedback for playback states, input changes, and media presets
+- **Periodic polling (30s)**: Detects timeline structure changes, new cues, and show updates
 
-- Send Input Value (send single value to show variable/input)
-- Send Multiple Inputs (send multiple input values at once via JSON)
+## Actions
 
-**Show Management:**
+### Timeline Control
+* **Timeline Action**: Play, pause, or stop a specific timeline
+* **Timeline Toggle**: Toggle between play and pause for a timeline (smart detection of current state)
+* **Only play timeline if**: Conditional playback - play a timeline only if it's in a specific state
+* **Only play timeline if other timeline condition is met**: Play timeline A when timeline B is in a specific state
 
-- Show information (manually fetch timeline information)
-- Load Show from JSON (load show from JSON data)
-- Load Show from File (load show from .watch file path)
+### Timeline Navigation
+* **Jump to Time**: Jump to a specific time (in milliseconds) with play or pause state
+* **Jump to Cue**: Jump to a specific cue with play or pause state
 
-**Cue Sets:**
+### Input Management
+* **Send Input Value**: Send a single value to a show input/variable
+* **Send Multiple Inputs**: Send multiple input values at once using JSON format
+  - Format: `[{"key": "InputName", "value": 0.5}, {"key": "Input2", "value": 1.0}]`
 
-- Set group state by variant (set single cue group variant)
-- Set multiple cue groups (set multiple cue group variants at once via JSON)
-- Reset all cue groups (reset all cue groups to default variants)
+### Show Management
+* **Load Show from JSON**: Load a complete show from JSON data
+* **Load Show from File**: Load a show from a .watch file path on the Watchout system
+  - Supports optional show name parameter
+* **Show information**: Manually refresh timeline and show information
 
-**Node Management:**
+### Cue Set Control
+* **Set group state by with variant**: Set a single cue group to a specific variant
+* **Set Multiple Cue Groups**: Set multiple cue group variants simultaneously using JSON
+  - Format: `{"GroupName1": "VariantName1", "GroupName2": "VariantName2"}`
+* **Reset all cue groups by Name**: Reset all cue groups to their default state
 
-- Shutdown node (shutdown a specific Watchout node)
-- Restart services (restart services on a specific Watchout node)
+### Node Management
+* **Shutdown node**: Shutdown a Watchout node by IP address
+* **Restart Services**: Restart services on a Watchout node by IP address
 
-### Variables
+## Variables
 
-- Heartbeat (last time the Director was seen)
-- Asset manager (on which machine is it running)
-- Director (on which machine is it running)
-- All available timelines names
-- All available snapshot names
+The module provides dynamic variables that update automatically:
 
-### Presets
+* **$(companion-module-name:director)**: IP address of the Watchout Director
+* **$(companion-module-name:asset_manager)**: IP address of the Asset Manager
+* **$(companion-module-name:TIMELINE_ID)**: Name of each timeline (e.g., `$(companion-module-name:1)` for timeline 1)
 
-**Navigation:**
+Variables update in real-time via SSE and are refreshed every 30 seconds via polling to catch structural changes.
 
-- Jump to Cue
-- Jump to Time
-- Update timelines
+## Feedbacks
 
-**Timeline Control:**
+### Timeline Status
+* **Timeline Running**: Indicates if a timeline is currently playing
+* **Timeline Paused**: Indicates if a timeline is paused
+* **Timeline Stopped**: Indicates if a timeline is stopped
 
-- Play - Play button for all timelines incl feedback for play
-- Pause - Pause button for all timelines incl feedback for pause
-- Stop - Stop button for all timelines incl feedback for stop
-- Toggle - Toggle button for all timelines incl feedback for play/pause
+### Cue Set Status
+* **Cue Set Active**: Indicates if a specific cue group variant is active
 
-**Input Management:**
+All feedbacks update in real-time via the SSE connection for instant visual feedback.
 
-- Send Input - Send single input value to show
-- Send Multiple Inputs - Send multiple input values at once
+## Presets
 
-**Show Management:**
+The module includes comprehensive presets organized by category:
 
-- Load Show JSON - Load show from JSON data
-- Load Show File - Load show from .watch file
+### Basic Category
+* **Update timeline info**: Manual refresh of show information
 
-**Cue Sets:**
+### Timeline Control (Per Timeline)
+* **Play [Timeline Name]**: Play button with green play icon
+* **Pause [Timeline Name]**: Pause button
+* **Stop [Timeline Name]**: Stop button
+* **Toggle [Timeline Name]**: Smart play/pause toggle
 
-- Set Cue Group Variant - Set single cue group variant
-- Set Multiple Cue Groups - Set multiple cue group variants
-- Reset All Cue Groups - Reset all cue groups to defaults
+### Show Management
+* **Send Input Value**: Template for sending single input values
+* **Send Multiple Inputs**: Template for sending multiple inputs via JSON
+* **Load Show from JSON**: Template for loading shows from JSON data
+* **Load Show from File**: Template for loading shows from file paths
 
-**Media Presets:**
+### Cue Sets
+* **Set Cue Group Variant**: Template for setting single cue group variants
+* **Set Multiple Cue Groups**: Template for setting multiple cue groups via JSON
+* **Reset All Cue Groups**: Reset all cue groups to default
 
-- Toggle snapshot - Toggle button for all snapshots incl feedback for active
-- Clear snapshots - deactivate all active snapshots
+### Node Management
+* **Shutdown Node**: Template for node shutdown
+* **Restart Services**: Template for service restart
 
-**Node Management:**
+### Timeline Navigation (Per Timeline with Cues)
+* **Jump to [Cue Name]**: Direct cue navigation buttons
 
-- Shutdown - Shutdown a node incl a 2 sec delay for safety (needs IP address)
+All presets are generated dynamically based on your show structure and update automatically when timelines or cues change.
+
+## Advanced Features
+
+### Input System Integration
+The module supports Watchout's input system for dynamic show control:
+- Send real-time values to show variables
+- Batch input updates for synchronized changes
+- Variable parsing support for dynamic values
+
+### Show Loading Automation
+Automate show loading workflows:
+- Load shows from JSON data for backup/restore
+- Load shows from file paths for playlist automation
+- Automatic refresh of module state after show changes
+
+### Enhanced Cue Set Control
+Advanced cue set management:
+- Single and batch cue group updates
+- JSON-based configuration for complex setups
+- Real-time feedback for cue set states
+
+### Conditional Timeline Control
+Smart timeline automation:
+- Conditional playback based on timeline states
+- Cross-timeline dependencies
+- State-aware toggle operations
+
+## Limitations
+
+* The module requires Watchout 7 with HTTP API enabled (port 3019)
+* SSE connection provides real-time updates but polling is still needed for structural changes
+* Cue information is read-only (names, times, states cannot be modified via API)
+* Node management requires direct IP access to individual nodes (port 3017)
+* Input management requires appropriate input variables to be defined in the Watchout show
+
+## Troubleshooting
+
+* **No timeline updates**: Check if both HTTP API (port 3019) and SSE are accessible
+* **Missing cues**: Cues only appear if they have valid names and start times in Watchout
+* **Connection issues**: Verify IP address, port accessibility, and Watchout Director is running
+* **Input errors**: Ensure input keys match exactly with show variable names
+* **Show loading failures**: Verify file paths are accessible from the Watchout Director system
+
+For detailed API documentation, refer to the [Watchout 7 External Protocol Documentation](https://docs.dataton.com/watchout-7/external_protocol/external_protocol.html).
 
 > > Be aware this module is tested on Watchout version 7.5.1 Older versions might not work correctly because of newer API
