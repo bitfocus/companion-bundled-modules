@@ -1,4 +1,4 @@
 MODULE_NAME=neumannmueller-stageflow
-GIT_REF=v2.1.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/17334332086
-UPDATE_DATE=2025-08-29
+GIT_REF=v2.2.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/17381737945
+UPDATE_DATE=2025-09-01
