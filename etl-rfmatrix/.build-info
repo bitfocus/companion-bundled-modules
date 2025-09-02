@@ -1,4 +1,4 @@
 MODULE_NAME=etl-rfmatrix
-GIT_REF=v1.2.0-beta.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/17194105478
-UPDATE_DATE=2025-08-24
+GIT_REF=v1.2.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/17391896751
+UPDATE_DATE=2025-09-02
