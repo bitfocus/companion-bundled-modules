@@ -3,7 +3,7 @@
 
 This module will allow you to remotely operate MHC through its API.
 
-Supported MHC versions: 3.5.0+
+Supported MHC versions: 3.7.0+
 
 ## Configuration
 
@@ -23,4 +23,5 @@ pedal inputs to pan bars.
 -   Set Preset Options: Sets the preset recall mode to either cut or goto on the selected robot.
 -   Stop All Robots: Stops all robots.
 -   Stop Robot: Stops the selected robot.
+-   Set Current Head: Set specified Head as active.
 
