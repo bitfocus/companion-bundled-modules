@@ -13,8 +13,7 @@ Controls CueTimer by [PresentationTools](https://presentationtools.com/).
 - Cue next
 - Pause
 - Restart
-- Reset
-- Revert
+- Undo
 - Blackout
 - Add 1 minute
 - Subtract 1 minute
@@ -36,6 +35,9 @@ Controls CueTimer by [PresentationTools](https://presentationtools.com/).
 - Set Duration
 - Add X Minutes
 - Subtract X Minutes
+- ActivateNextList
+- ActivatePreviousList
+- ActivateThisList
 
 ## Variables:
 
@@ -53,6 +55,11 @@ Variables can be used by putting $(instancename:variablename) e.g. $(cuetimer:ho
 - nextTimerDuration
 - scheduleOffset
 - scheduleOffsetStatus
+- listName: The name of the list associated with the current instance (without number prefix)
+- listNumber: The number of the list associated with the current instance
+- listGUID: The GUID of the list associated with the current instance
+- list_x_name: Number-prefixed name for each list (e.g., list_1_name: 1 - ABC)
+
 
 ## Feedback:
 
