@@ -1,4 +1,4 @@
 MODULE_NAME=classx-mixboard
-GIT_REF=v1.1.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/17334388571
-UPDATE_DATE=2025-08-29
+GIT_REF=v1.1.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/17419275370
+UPDATE_DATE=2025-09-03
