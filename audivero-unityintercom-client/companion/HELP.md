@@ -3,9 +3,10 @@
 This module will allow you to remotely operate the Unity Intercom client running on Mac or Windows.
 
 ### Configuration
-* Enter the IP Address of the Unity Intercom Client in the configuration settings.
-* The device will use UDP port 20119.
-* If it is not the same as the local computer, you will need to enter the Companion computer's IP address in the Unity Client settings. See [this article]([https://www.unityintercom.com/unity-tech-notes/remote-stream-deck-control-for-mac-and-windows-clients).
+
+- Enter the IP Address of the Unity Intercom Client in the configuration settings.
+- The device will use UDP port 20119.
+- If it is not the same as the local computer, you will need to enter the Companion computer's IP address in the Unity Client settings. See [this article]([https://www.unityintercom.com/unity-tech-notes/remote-stream-deck-control-for-mac-and-windows-clients).
 
 **Available Actions:**
 The module functions by sending button presses to the Unity client API.
