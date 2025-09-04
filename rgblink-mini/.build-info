@@ -1,4 +1,4 @@
 MODULE_NAME=rgblink-mini
-GIT_REF=v2.0.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/10571354880
-UPDATE_DATE=2024-08-27
+GIT_REF=v2.1.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/17449826082
+UPDATE_DATE=2025-09-04
