@@ -1,0 +1,4 @@
+MODULE_NAME=roland-vr400uhd
+GIT_REF=v1.0.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/17517374809
+UPDATE_DATE=2025-09-06
