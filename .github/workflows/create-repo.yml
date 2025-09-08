@@ -19,7 +19,7 @@ jobs:
     name: Create Organization Repository
     steps:
       - name: Use Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
       - name: 'Creating GitHub Organization Repository: companion-module-${{ github.event.inputs.repo-name }}'
         uses: repo-ctrl/create-repo-action@main 
         id: create-repo
