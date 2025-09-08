@@ -51,12 +51,13 @@ For all matrices exists
 * Target Selection
 
 ## Available variables
-| Variable name                                         | What it shows                                                                                 |
-|-------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| **$(INSTANCENAME:input_MATRIXLABEL_SOURCEID)**        | Label of the specified source in the specified matrix                                         |
-| **$(INSTANCENAME:output_MATRIXLABEL_TARGETID)**       | Label of the specified target in the specified matrix                                         |
-| **$(INSTANCENAME:output_MATRIXLABEL_TARGETID_input)** | Label of the specified source in the specified matrix routed to the currently selected target |
-| **$(INSTANCENAME:selected_target)**                   | Label of the selected target                                                                  |
-| **$(INSTANCENAME:selected_target_source)**            | Label of the source routed to the selected target                                             |
-| **$(INSTANCENAME:selected_target_undo_source)**       | Label of the source which was routed to the target previously                                 |
-| **$(INSTANCENAME:selected_source)**                   | Label of the source which is selected                                                         |
+| Variable name                                            | What it shows                                                                                 |
+|----------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| **$(INSTANCENAME:input_MATRIXLABEL_SOURCEID)**           | Label of the specified source in the specified matrix                                         |
+| **$(INSTANCENAME:output_MATRIXLABEL_TARGETID)**          | Label of the specified target in the specified matrix                                         |
+| **$(INSTANCENAME:output_MATRIXLABEL_TARGETID_input)**    | Label of the specified source in the specified matrix routed to the currently selected target |
+| **$(INSTANCENAME:output_MATRIXLABEL_TARGETID_input_id)** | Id of the specified source in the specified matrix routed to the specified target             |
+| **$(INSTANCENAME:selected_target)**                      | Label of the selected target                                                                  |
+| **$(INSTANCENAME:selected_target_source)**               | Label of the source routed to the selected target                                             |
+| **$(INSTANCENAME:selected_target_undo_source)**          | Label of the source which was routed to the target previously                                 |
+| **$(INSTANCENAME:selected_source)**                      | Label of the source which is selected                                                         |
