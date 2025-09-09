@@ -75,7 +75,19 @@ Variables are generated per output, layout, and channel.
 - `output_<uuid>_audio_channel_label` — Label of the audio channel
 - `output_<uuid>_mux_audio_pid` — Output audio PID
 
+### ➤ Layouts
+
+- `layout_<uuid>_label` — Display Label UUID of the Layout
+- `layout_<uuid>_tile_count` — Number of Tiles in the Layout
+
+#### ➤ Layouts - Tiles
+- `layout_<uuid>_tile_${i}_type` - Tile Type (Clock, Channel, Text Box, etc.)
+- `layout_<uuid>_tile_${i}_channel` - Tile Channel UUID (if type Channel)
+- `layout_<uuid>_tile_${i}_channel_label` - Tile Channel Label (if type Channel)
+- `layout_<uuid>_tile_${i}_text` - Tile Text (if type Text Box)
+
 ### ➤ System Info
 
 - `output_count` — Total number of Outputs
 - `layout_count` — Total number of Layouts
+- `channel_count` - Total number of Channels
