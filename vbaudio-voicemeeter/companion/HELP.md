@@ -8,5 +8,5 @@ Version 2 of the Voicemeeter module for Companion has had a complete overhaul of
 Please ensure that Voicemeeter is updated, and both VBAN and the ASCII VBAN Stream (call 'Command1' by default) are enabled. 
 
 
-## Prereuisuites
+## Prerequisites
 Voicemeeter version 3.1.1.3 (Potato), 2.1.1.3 (Banana), or 1.1.1.3 (Standard)
