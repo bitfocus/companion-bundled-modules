@@ -81,6 +81,7 @@ Variables are generated per output, layout, and channel.
 - `layout_<uuid>_tile_count` — Number of Tiles in the Layout
 
 #### ➤ Layouts - Tiles
+
 - `layout_<uuid>_tile_${i}_type` - Tile Type (Clock, Channel, Text Box, etc.)
 - `layout_<uuid>_tile_${i}_channel` - Tile Channel UUID (if type Channel)
 - `layout_<uuid>_tile_${i}_channel_label` - Tile Channel Label (if type Channel)
