@@ -75,6 +75,20 @@ The module will update presets and actions every 15 seconds by default (configur
   - Automatic failover support
 - **Reset Source Main Backup**: Reset source backup to primary
 
+#### **Content Monitoring**
+- **Refresh Source Monitoring**: Update all source monitoring variables immediately
+  - Shows which destinations each source is active on
+  - Updates both PGM and PVW status for all sources
+  - Perfect for getting an instant overview of source usage
+- **List Screen Destination Content**: Display active sources for a specific screen destination
+  - Shows current PGM and PVW content (background + layers)
+  - Automatically refreshes source monitoring variables
+  - Useful for detailed destination analysis
+- **List AUX Destination Content**: Display active sources for a specific AUX destination
+  - Shows current PGM and PVW sources
+  - Automatically refreshes source monitoring variables
+  - Ideal for verifying AUX output content
+
 #### **MVR (Multi-Viewer)**
 - **List MVR Presets**: Display available multi-viewer presets
 - **Activate MVR Preset**: Load MVR preset by ID
@@ -105,6 +119,16 @@ The module will update presets and actions every 15 seconds by default (configur
 2. **Monitor Status**: Use "List Source Main Backup" to check current backup configurations
 3. **Manual Switching**: Use backup state selection to manually switch between sources
 
+#### **Source Monitoring**
+1. **Automatic Monitoring**: Source variables are automatically populated on startup and updated during polling
+   - Each source shows which destinations it's active on (PGM and PVW)
+   - Variables update in real-time based on your polling interval
+   - Get instant overview of source usage across all destinations
+2. **Manual Refresh**: Use "Refresh Source Monitoring" action for immediate updates of all sources
+   - Perfect for confirming current source distribution
+   - Individual destination actions also refresh source monitoring
+   - Ideal for live production monitoring and troubleshooting
+
 #### **Test Patterns**
 - Simple test patterns: Use legacy "Set testpattern" actions
 - Advanced patterns: Use "Change AUX/Screen Content" for pattern + source combinations
@@ -113,11 +137,27 @@ The module will update presets and actions every 15 seconds by default (configur
 
 ### **Available Variables**
 
+#### **System Information**
 - `$(barco-eventmaster:frame_IP)`: EventMaster IP address
 - `$(barco-eventmaster:frame_version)`: Software version
 - `$(barco-eventmaster:frame_OSVersion)`: Operating system version  
 - `$(barco-eventmaster:power_status1)`: Power supply 1 status
 - `$(barco-eventmaster:power_status2)`: Power supply 2 status
+
+#### **Hardware Status**
+- `$(barco-eventmaster:cardX_info)`: Card slot X information (X = 1-20)
+  - Displays card type, status, and temperature/fan status
+- `$(barco-eventmaster:syscard_info)`: System card information
+
+#### **Source Monitoring** *(Auto-populated on startup and polling)*
+- `$(barco-eventmaster:source_X_pgm_destinations)`: Which destinations source X is active on PGM
+- `$(barco-eventmaster:source_X_pvw_destinations)`: Which destinations source X is active on PVW
+
+*Examples:*
+- `$(barco-eventmaster:source_1_pgm_destinations)` = "Screen Main, AUX 2"
+- `$(barco-eventmaster:source_5_pgm_destinations)` = "Not active on PGM"
+
+*Note: Source monitoring variables are automatically populated during startup and updated via polling. You can also manually refresh them using the "Refresh Source Monitoring" action*
 
 ---
 
