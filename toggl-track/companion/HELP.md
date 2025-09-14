@@ -64,9 +64,13 @@ Presets are available for **Start Timer** and **Stop Timer**.
 
 ### Version 2.1.0
 
-- rewrite module in typescript
-- use module toggl-track instead of implementing api on our own
-- add status reports for some failure cases in connections dashboard
-- add configurable time entry poller
-- add feedback for currently running project and client
-- update timerDuration to contain the correct duration formatted as time string
+- Rewrite module in typescript
+- Use module toggl-track instead of implementing api on our own
+- Add status reports for some failure cases in connections dashboard
+- Add configurable time entry poller
+- Add feedback for currently running project and client
+- Update timerDuration to contain the correct duration formatted as time string
+
+### Version 2.1.1
+
+- Prevent module crash if user has no Clients
