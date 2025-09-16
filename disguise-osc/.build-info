@@ -1,4 +1,4 @@
 MODULE_NAME=disguise-osc
-GIT_REF=v2.0.3
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/17717212293
-UPDATE_DATE=2025-09-14
+GIT_REF=v2.0.4
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/17753041401
+UPDATE_DATE=2025-09-16
