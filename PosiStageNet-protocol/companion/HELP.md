@@ -54,6 +54,8 @@ Each tracker will have variables for:
 - The module will automatically detect and create variables for all trackers present in the data stream.
 - If a tracker is removed from the server, its variables will remain until Companion is restarted.
 - The module will ignore unknown or future chunk types for maximum compatibility.
+- Numeric tracker values (position, speed, orientation, acceleration, target position, validity) are rounded to at most 3 decimal places when exposed as variables to keep outputs readable.
+- You can configure how many trackers to follow via the setting "Max trackers to follow". Variables are generated for tracker IDs up to this number (including ID 0), and only those trackers will be populated during runtime.
 
 #### Example Usage
 
