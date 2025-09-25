@@ -30,6 +30,8 @@ A module for controlling Sony PTZ Camera BRC and SRG series using HTTP-based com
   - Look Back
   - PTZ Home (Center Position)
   - Preset Number (1-10)
+- Preset Set
+  - Preset Number (1-10)
 - Number of Multi-Person Tracking Target
   - 1 (off)
   - 2-8 (on)
@@ -63,20 +65,19 @@ A module for controlling Sony PTZ Camera BRC and SRG series using HTTP-based com
   - down: start
   - up: stop
 - Preset Call
+- Preset Set
 
 ### Variables
 
-- `$(BRC-AM7:autoFraming)` - Auto Framing Status	
+- `$(BRC-AM7:autoFraming)` - Auto Framing Status
 - `$(BRC-AM7:modelName)` - Model Name
-- `$(BRC-AM7:multiTracking)` - Multi-Person Tracking Status	
-- `$(BRC-AM7:multiTrackingNum)` - Multi Tracking Target Number	
-- `$(BRC-AM7:name)` - Camera Name	
+- `$(BRC-AM7:multiTracking)` - Multi-Person Tracking Status
+- `$(BRC-AM7:multiTrackingNum)` - Multi Tracking Target Number
+- `$(BRC-AM7:name)` - Camera Name
 - `$(BRC-AM7:power)` - System Power State
 - `$(BRC-AM7:serial)` - Serial Number
 - `$(BRC-AM7:softVersion)` - Software Version
-- `$(BRC-AM7:streamMode)` - Stream Mode	
-- `$(BRC-AM7:zoomMode)` - Zoom Mode	
-
+- `$(BRC-AM7:streamMode)` - Stream Mode
+- `$(BRC-AM7:zoomMode)` - Zoom Mode
 
 https://github.com/bitfocus/companion-module-sony-ptz/issues
-
