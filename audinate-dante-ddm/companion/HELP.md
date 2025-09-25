@@ -12,7 +12,8 @@ Each of these operations has a preset, which includes the appropriate feedback. 
 
 To clear subscriptions on an Rx channel, set the Tx device and Tx channel to empty strings.
 
-The new multi-channel subscription comes with a learn button for both the action and feedback to load fresh states from the device.
+The new multi-channel subscription comes with a learn button for both the action and feedback to load fresh states from the device. Note that this
+multi-channel subscription action renders drop-downs for low channel counts and and text field for high channel counts.
 
 ## Companion version support
 
@@ -20,7 +21,9 @@ This module is built and tested for Companion version 4.
 
 ## Selector
 
-When using the selector, it is expected that a row of buttons is set up to set the selector value (i.e., the destination) and another set of buttons to set the subscription value (i.e., the source)
+When using the selector, it is expected that a row of buttons is set up to set the selector value (i.e., the destination) and another set of buttons to set the subscription value (i.e., the source).
+
+In newer versions of the module, there's an option to change the number of selectors to support uses cases where more selectors are required.
 
 ## Connection
 
