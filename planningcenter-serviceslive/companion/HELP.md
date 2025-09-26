@@ -20,10 +20,13 @@ Add an action to a button and choose the PCO Plan you wish to control.
 
 - Go to Next Item (Select Plan Date from list)
 - Go to Previous Item (Select Plan Date from list)
+- Reset Live Times (Select Plan from list)
 - Go to Next Item of Next Plan in Selected Service Type
 - Go to Previous Item of Next Plan in Selected Service Type
+- Reset Live Times of Next Plan in Selected Service Type
 - Go to Next Item of a Specific Plan (Specify Service Type Id and Plan Id - supports variables)
 - Go to Previous Item of a Specific Plan (Specify Service Type Id and Plan Id - supports variables)
+- Reset Live Times of a Specific Plan (Specify Service Type Id and Plan Id - supports variables)
 - Take Control of Plan (Select Plan Date from list)
 - Release Control (Select Plan Date from list)
 - Take Control of a Specific Plan (Specify Service Type Id and Plan Id - supports variables)
