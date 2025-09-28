@@ -3,6 +3,7 @@
 ## Getting started
 
 Just select the device from the module config window and enter the control IP of your EM2/EM4 receiver or network charger and press 'Save'. To control multiple devices, just add the connection several times to your Companion instance.
+For receivers with firmware >= 4.0.0 : please enable the "Legacy Mode" in the Sennheiser WSM Software for the receiver, to be able to control the devices using the SCP v1 protocol. If this is not done, you can't control your devices via Companion at this point.
 
 ### Variables
 

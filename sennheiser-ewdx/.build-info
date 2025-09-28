@@ -1,4 +1,4 @@
 MODULE_NAME=sennheiser-ewdx
-GIT_REF=v1.0.4
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/15187531080
-UPDATE_DATE=2025-05-22
+GIT_REF=v1.0.5
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/18080988139
+UPDATE_DATE=2025-09-28
