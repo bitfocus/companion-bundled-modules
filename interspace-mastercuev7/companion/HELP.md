@@ -29,3 +29,8 @@ After configuring the MasterCueV7 Connection, you have several options to custom
 - Blackout State : Indicates state of Blackout Cue
 - TM State : Indicates state of Technician Mode
 - Acknowledge Cue : Indicates Cue being received (Last Feedback step)
+
+**Available variables:**
+
+ - LastCueType : Equals the last cue received by the V7 (forward/back/black)
+ - CueTrigger : Briefly equals the last cue received by the V7 (forward/back/black) before returning to an empty string

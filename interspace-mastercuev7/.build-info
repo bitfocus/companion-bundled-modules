@@ -1,4 +1,4 @@
 MODULE_NAME=interspace-mastercuev7
-GIT_REF=v0.4.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/13411464854
-UPDATE_DATE=2025-02-19
+GIT_REF=v0.5.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/18081047642
+UPDATE_DATE=2025-09-28
