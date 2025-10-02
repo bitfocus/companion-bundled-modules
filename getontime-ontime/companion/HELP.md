@@ -4,7 +4,7 @@ This module gives control over Ontime leveraging its [WebSockets API](https://do
 
 ## Requirements
 
-- This module version requires Ontime v3
+- This module version requires Ontime v4, if you are using Ontime v3 you will need to downgrade the module
 
 ## Links
 
