@@ -1,0 +1,4 @@
+MODULE_NAME=clearcom-station-ic
+GIT_REF=v1.0.3
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/18181368892
+UPDATE_DATE=2025-10-02
