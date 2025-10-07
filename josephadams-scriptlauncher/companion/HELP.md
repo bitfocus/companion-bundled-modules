@@ -77,6 +77,7 @@ This module communicates with ScriptLauncher — a free local automation tool yo
 - **Mac: Restart CoreAudio**
 - **Mac: Logout**
 - **Mac: Change Wallpaper**
+- **Mac: Open Google Chrome** - includes option to silence debugger extensions
 
 > 🧠 Most macOS utilities use native AppleScript or shell commands and do not require any additional setup.
 
@@ -92,6 +93,7 @@ This module communicates with ScriptLauncher — a free local automation tool yo
 - **Windows: Set Wallpaper** Changes the desktop wallpaper using the Windows API via PowerShell.
 - **Windows: Open File or Folder** Opens a file or folder in Explorer.
 - **Windows: Toggle Mute** Mutes or unmutes system audio.
+- **Windows: Open Google Chrome** - includes option to silence debugger extensions
 
 ## Deep Link / URI Actions
 
