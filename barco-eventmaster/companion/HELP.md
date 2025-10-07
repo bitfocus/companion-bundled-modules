@@ -14,6 +14,31 @@ The module will update presets and actions every 15 seconds by default (configur
 - **Polling Interval**: How often to refresh data (in seconds, 0 to disable)
 - **Authentication Mode**: None, Operator ID, or Super User Password
 - **Auth Value**: Authentication credentials (when required)
+- **Enable Live Updates**: Enable real-time EventMaster subscriptions for instant feedback
+- **Notification Server Port**: Local port for receiving EventMaster notifications (default: 3000)
+- **Notification Listener IP**: IP address the EventMaster should send notifications to (auto-detected)
+
+---
+
+### **Live Updates (EventMaster Subscriptions)**
+
+When **Enable Live Updates** is enabled, the module subscribes to real-time notifications from the EventMaster device. This provides:
+
+#### **Benefits**
+- **Instant Tally Updates**: Source tally/feedback buttons update immediately when content changes
+- **Real-time Variables**: Source monitoring variables update within ~200ms of changes
+- **Reduced Network Load**: Only affected destinations are queried instead of polling everything
+
+#### **How It Works**
+1. The module starts a local notification server on the configured port
+2. It subscribes to EventMaster screen and AUX destination change events
+3. When content changes, EventMaster sends notifications to your Companion system
+4. The module batches and processes notifications, updating only affected sources/destinations
+5. Tally feedback and variables update automatically without waiting for the next poll (See Sources Feedback)
+
+#### **Network Requirements**
+- **Firewall**: The notification port (default 3000) must be open for incoming connections
+- **Routing**: EventMaster must be able to reach your Companion system's IP address
 
 ---
 
@@ -75,22 +100,7 @@ The module will update presets and actions every 15 seconds by default (configur
   - Automatic failover support
 - **Reset Source Main Backup**: Reset source backup to primary
 
-#### **Content Monitoring**
-- **Refresh Source Monitoring**: Update all source monitoring variables immediately
-  - Shows which destinations each source is active on
-  - Updates both PGM and PVW status for all sources
-  - Perfect for getting an instant overview of source usage
-- **List Screen Destination Content**: Display active sources for a specific screen destination
-  - Shows current PGM and PVW content (background + layers)
-  - Automatically refreshes source monitoring variables
-  - Useful for detailed destination analysis
-- **List AUX Destination Content**: Display active sources for a specific AUX destination
-  - Shows current PGM and PVW sources
-  - Automatically refreshes source monitoring variables
-  - Ideal for verifying AUX output content
-
 #### **MVR (Multi-Viewer)**
-- **List MVR Presets**: Display available multi-viewer presets
 - **Activate MVR Preset**: Load MVR preset by ID
 - **Change MVR Layout**: Switch multi-viewer layouts with frame unit control
 
@@ -98,7 +108,6 @@ The module will update presets and actions every 15 seconds by default (configur
 - **Reset Frame Settings**: Various reset options (soft, factory, power down)
 - **Get Power Status**: Check power supply status and update variables
 - **Get Frame Settings**: Retrieve system information and update variables
-- **List Operators**: Show configured operators
 
 ---
 
@@ -158,6 +167,50 @@ The module will update presets and actions every 15 seconds by default (configur
 - `$(barco-eventmaster:source_5_pgm_destinations)` = "Not active on PGM"
 
 *Note: Source monitoring variables are automatically populated during startup and updated via polling. You can also manually refresh them using the "Refresh Source Monitoring" action*
+
+---
+
+### **Available Feedback (Source Tally)**
+
+The module provides two types of source tally feedback for buttons:
+
+#### **Source Active (Simple)**
+- **Purpose**: Basic tally feedback - shows if a source is active anywhere
+- **Colors**: 
+  - **Red**: Source is active on Program (PGM) on any destination
+  - **Green**: Source is active on Preview (PVW) on any destination
+  - **No Color**: Source is not active anywhere
+- **Use Case**: Quick overview of source activity across your entire system
+- **Configuration**: Just select the source number
+
+#### **Source Active on Destinations**
+- **Purpose**: Advanced tally feedback - shows if a source is active on specific destinations
+- **Colors**:
+  - **Red**: Source is active on Program (PGM) on the selected destination(s)
+  - **Green**: Source is active on Preview (PVW) on the selected destination(s)
+  - **No Color**: Source is not active on the selected destination(s)
+- **Destination Options**:
+  - **Anywhere**: Monitor all destinations (same as Simple feedback)
+  - **Anywhere PGM**: Monitor all destinations for PGM activity only
+  - **Anywhere PVW**: Monitor all destinations for PVW activity only
+  - **Specific Screens**: Monitor individual screen destinations (LED MAIN PGM, LED SIDES PVW, etc.)
+  - **Specific AUX**: Monitor individual AUX destinations (WAL 1 PGM, WAL 2 PVW, etc.)
+- **Tally State Options**:
+  - **Program**: Only show feedback when source is on PGM
+  - **Preview**: Only show feedback when source is on PVW
+- **Use Case**: Precise monitoring of source usage on specific outputs
+
+#### **Real-time Updates**
+- Both feedback types update automatically when **Live Updates** are enabled
+- Updates occur within ~200ms of EventMaster content changes
+- Fallback to polling updates if live updates are disabled
+- Works with background layers, regular layers, and AUX content
+
+#### **Usage Examples**
+1. **Master Tally Wall**: Use "Source Active (Simple)" for an overview of all source activity
+2. **Operator Panel**: Use "Source Active on Destinations" to monitor specific screen or AUX outputs
+3. **Director Panel**: Use destination-specific feedback to see what's live on main program feeds
+4. **Technical Monitoring**: Use both types - simple for overview, specific for detailed monitoring
 
 ---
 
