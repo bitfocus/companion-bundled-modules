@@ -1,4 +1,4 @@
 MODULE_NAME=rossvideo-nkrouter
-GIT_REF=v2.0.4
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/15865799757
-UPDATE_DATE=2025-06-25
+GIT_REF=v2.0.5
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/18347152932
+UPDATE_DATE=2025-10-08
