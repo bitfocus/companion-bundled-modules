@@ -15,12 +15,13 @@ This module allows [Bitfocus Companion](https://bitfocus.io/companion) to interf
 
 To configure this module in Companion, fill in the following fields:
 
-| Setting       | Description                                      | Default |
-|---------------|--------------------------------------------------|---------|
-| `host`        | IP address or hostname of the MixBoard device    | *(required)* |
-| `port`        | TCP command port                                 | `701`   |
-| `eventport`   | TCP event/feedback port                          | `801`   |
-| `protocollog` | Enable verbose TCP response logging (debug only) | `false` |
+| Setting                  | Description                                                               | Default |
+|--------------------------|---------------------------------------------------------------------------|---------|
+| `Host`                   | IP address or hostname of the MixBoard device                             | *(required)* |
+| `Command port`           | TCP command port                                                          | `701`   |
+| `Event port`             | TCP event/feedback port                                                   | `801`   |
+| `Link channel selection` | MixBoard GUI will switch by following the control panel channel selection | `false` |
+| `Protocol log`           | Enable verbose TCP response logging (debug only)                          | `false` |
 
 Ensure your network allows access to these ports.
 
@@ -42,6 +43,7 @@ Once the module is configured, the following actions become available in Compani
 - **Execute action** – Generic execute action for control execute buttons
 - **Control preview VideoInput** – Enable control of the preview VideoInput
 - **Control program VideoInput** – Enable control of the program VideoInput
+- **T-Bar value** – Set the T-Bar from the internal variable "custom:tbar_value"
 
 ## Feedbacks
 
