@@ -11,6 +11,8 @@ For second generation GigaCore's, firmware version 1.2.0 or later is advised. Ea
 - GigaCore16i
 - GigaCore10i
 - GigaCore10t
+- GigaCore16tf
+- GigaCore10t-IP
 
 For first generation GigaCore's, firmware version 3.0.2 or later is advised. Earlier versions may work but were not tested
 
