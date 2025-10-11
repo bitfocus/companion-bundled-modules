@@ -24,6 +24,9 @@ Instance Configuration
 
 ## Version History
 
+### Version 1.2.7
+- Improve polling
+
 ### Version 1.2.6
 - Manage message queue for better responsiveness
 
