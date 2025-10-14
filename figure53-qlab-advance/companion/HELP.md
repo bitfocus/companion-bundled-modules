@@ -131,6 +131,7 @@ Commands implemented:
 | **$(INSTANCENAME:s_count)**           | Number of cues currently selected                                                                                |
 | **$(INSTANCENAME:s_id)**              | Unique ID of the selected cue (or the first ID if more than one cue is selected)                                 |
 | **$(INSTANCENAME:s_ids)**             | List of Unique IDs of all cues selected, separated by ':'                                                        |
+| **$(INSTANCENAME:c_color)**           | Current cue Color as HEX RRGGBB                                                                                  |
 | **$(INSTANCENAME:min_go)**            | Current value of double-go protection (in seconds)                                                               |
 | **$(INSTANCENAME:q\_{num}\_name)**    | Name of cue number {num}. See below for certain restrictions.                                                    |
 | **$(INSTANCENAME:id\_{ID}\_name)**    | Name of cue ID {ID}. See below for certain restrictions.                                                         |
