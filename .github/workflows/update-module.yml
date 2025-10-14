@@ -155,7 +155,7 @@ jobs:
           mv pkg modules/${{ github.event.inputs.module-name }}
 
       - name: Commit updated module
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           repository: modules
           commit_message: "update ${{ github.event.inputs.module-name }} to ${{ github.event.inputs.git-ref }}"
