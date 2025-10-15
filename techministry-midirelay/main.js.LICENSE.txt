@@ -19,6 +19,8 @@
  * MIT Licensed
  */
 
+/*! Axios v1.12.0 Copyright (c) 2025 Matt Zabriskie and contributors */
+
 /**
  * Wrapper for built-in http.js to emulate the browser XMLHttpRequest object.
  *
