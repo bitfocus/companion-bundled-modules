@@ -1,4 +1,4 @@
 MODULE_NAME=cvmeventi-countdown
-GIT_REF=v2.1.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/5324833738
-UPDATE_DATE=2023-06-20
+GIT_REF=v2.9.11
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/18564443791
+UPDATE_DATE=2025-10-16
