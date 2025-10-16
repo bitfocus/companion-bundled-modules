@@ -7,7 +7,7 @@ Module to control various Nevion Videohubs via the closed MRP protocol. It reads
 **Suppoted Models:**
 * All Nevion Videohubs, from small to big :)
 
-**Availble commands for Christie projectors**
+**Availble commands for Nevion VikinX Routers**
 * Route
 * Select_destination
 * Route_source
