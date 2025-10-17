@@ -15,6 +15,8 @@ Allows you to connect and control OnTheAir Video available from Softron Media Se
 - Skip to previous clip
 - Goto T-n seconds of the current clip
 - Update list of playlists and clips
+- Play/Pause/Stop a specific CG project [requires DGO option]
+- Join In Progress [Requires Traffic Option]
 
 ### Supported feedback
 
@@ -22,6 +24,7 @@ Allows you to connect and control OnTheAir Video available from Softron Media Se
 - Active clip
 - Active clip, with status
 - Time remaining
+- Thumbnail display
 
 ### Supported button variables
 
