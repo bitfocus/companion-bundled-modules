@@ -60,7 +60,7 @@ _Requires Mitti 2_
 - Cue Contrast
 - Cue Opacity
 - Set Cue Volume to Value
-- Cue Playback Speed
+- Set/ Adjust Cue Playback Speed
 - Adjust Current Cue Volume
 - Toggle Goto Cue after End
 - Goto after End On
@@ -71,6 +71,7 @@ _Requires Mitti 2_
 - Toggle / On / Off Audio Outputs
 - Adjust Playhead
 - Scrub Playhead with Timecode
+- Locate Playhead with Timecode
 - Set In / Out from Playhead
 
 **Available Feedback**
@@ -127,6 +128,7 @@ _Requires Mitti 2_
 - currentCueLoop
 - currentCueTransition
 - currentCueGoto
+- currentCuePlaybackSpeed
 - cue\_(number)\_cueName (requires Mitti 2)
 - cue\_(number)\_audio (requires Mitti 2)
 - video_outputs (requires Mitti 2)
