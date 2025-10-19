@@ -24,7 +24,3 @@ This module inherently has no actions. If you wish to perform an action based on
 ## Presets
 
 - Tally State Green/Red with Tally Label from Variable
-
-## Sponsored By
-
-This module's availability to Companion was sponsored in part by Alex Hasker <alex@lexaudiovisual.com.au>.
