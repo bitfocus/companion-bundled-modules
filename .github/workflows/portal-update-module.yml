@@ -1,5 +1,5 @@
 name: Portal Update Module
-run-name: "${{ github.event.inputs.run-id }}: ${{ github.event.inputs.module-name }} updated to ${{ github.event.inputs.git-ref }}(${{ github.event.inputs.git-sha }})"
+run-name: "${{ github.event.inputs.run-id }}: ${{ github.event.inputs.module-name }} (${{ github.event.inputs.module-type }}) updated to ${{ github.event.inputs.git-ref }}(${{ github.event.inputs.git-sha }})"
 
 # Controls when the workflow will run
 on:
@@ -9,6 +9,13 @@ on:
         type: string
         description: Unique identifer for this workflow run
         required: true
+      module-type:
+        type: choice
+        description: The type of the module
+        required: true
+        options:
+          - connection
+          - surface
       module-name:
         type: string
         description: Name of the module (eg bmd-atem)
@@ -39,7 +46,7 @@ jobs:
 
     uses: bitfocus/actions/.github/workflows/module-checks.yaml@main
     with:
-      repository-name: bitfocus/companion-module-${{ github.event.inputs.module-name }}
+      repository-name: bitfocus/companion-${{ (github.event.inputs.module-type == 'connection' && 'module') || github.event.inputs.module-type }}-${{ github.event.inputs.module-name }}
       git-ref: ${{ github.event.inputs.git-ref }}
       git-sha-check: ${{ github.event.inputs.git-sha }}
       upload-artifact: true
@@ -60,7 +67,7 @@ jobs:
     steps:
       - name: Report info
         run: |
-          echo "Updating **${{ github.event.inputs.repository-name }}** to ${{ github.event.inputs.git-ref }}(${{ github.event.inputs.git-sha }}) :rocket:" >> $GITHUB_STEP_SUMMARY
+          echo "Updating  **${{ github.event.inputs.module-name }}** (${{ github.event.inputs.module-type }}) to ${{ github.event.inputs.git-ref }}(${{ github.event.inputs.git-sha }}) :rocket:" >> $GITHUB_STEP_SUMMARY
 
       - uses: actions/checkout@v5
         with:
@@ -81,6 +88,7 @@ jobs:
           rm -Rf pkg/.yarn || true
 
           tee -a pkg/.build-info <<EOF
+          MODULE_TYPE=${{ github.event.inputs.module-type }}
           MODULE_NAME=${{ github.event.inputs.module-name }}
           GIT_REF=${{ github.event.inputs.git-ref }}
           RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/${{ github.run_id	}}
@@ -89,6 +97,9 @@ jobs:
            
           # TODO - verify module looks valid?
 
+      - name: Prepare module commit
+        if: ${{ github.event.inputs.module-type == 'connection' }}
+        run: |
           # make sure there isn't a legacy version
           rm -Rf modules/_legacy/companion-module-${{ github.event.inputs.module-name }} || true
            
@@ -97,6 +108,7 @@ jobs:
           mv pkg modules/${{ github.event.inputs.module-name }}
 
       - name: Commit updated module
+        if: ${{ github.event.inputs.module-type == 'connection' }}
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           repository: modules
@@ -129,7 +141,7 @@ jobs:
           # extract the package
           tar -xvzf pkg.tgz
 
-          ARTIFACT_DIR="${{ github.event.inputs.module-name }}-${{ github.event.inputs.git-ref }}-${{ github.event.inputs.git-sha }}"
+          ARTIFACT_DIR="${{ github.event.inputs.module-type }}/${{ github.event.inputs.module-name }}/${{ github.event.inputs.git-ref }}-${{ github.event.inputs.git-sha }}"
           ARTIFACT_NAME="${{ github.event.inputs.module-name }}-${{ github.event.inputs.git-ref }}.tgz"
 
           # copy the package to the companion directory
@@ -155,11 +167,10 @@ jobs:
           MANIFEST_JSON=$(cat pkg/companion/manifest.json)
           MANIFEST_JSON=${MANIFEST_JSON//\"/\\\"}
 
-          # TODO: dynamic module type
           # TODO: rename logUrl property
 
           PUT_PAYLOAD='{
-            "moduleType": "companion-connection",
+            "moduleType": "companion-${{ github.event.inputs.module-type }}",
             "moduleName": "${{ github.event.inputs.module-name }}",
             "logUrl": "https://github.com/bitfocus/companion-bundled-modules/actions/runs/${{ github.run_id }}",
             "pkgDirUrl": "${{ steps.upload.outputs.artifact-url }}",
@@ -171,11 +182,10 @@ jobs:
           }'
 
           echo "PUT_PAYLOAD=$PUT_PAYLOAD"
-          
+
           curl -X 'PUT' \
             'https://developer.bitfocus.io/api/v1/modules/package' \
             -H 'accept: application/json' \
             -H 'Content-Type: application/json' \
             -H 'Authorization: Bearer ${{ secrets.DEVELOPER_API_KEY }}' \
             -d "${PUT_PAYLOAD}"
-
