@@ -60,16 +60,27 @@ Profiles:
 
 ### Variables implemented
 
-| Id                    | Name                      |
-| --------------------- | ------------------------- |
-| `short_name`          | Short Name                |
-| `long_name`           | Long Name                 |
-| `nr_dmx_ports`        | Number of DMX ports       |
-| `nr_processblocks`    | Number of Process Engines |
-| `serial`              | Serial Number             |
-| `mac_address`         | MAC address               |
-| `device_type`         | Device Model              |
-| `current_snapshot`    | Current Snapshot          |
-| `next_snapshot`       | Next Snapshot             |
-| `active_profile_name` | Active Profile Name       |
-| `profile_${id}_name`  | Profile `${id}` Name      |
+| Id                    | Name                       |
+| --------------------- | -------------------------- |
+| `short_name`          | Short Name                 |
+| `long_name`           | Long Name                  |
+| `nr_dmx_ports`        | Number of DMX ports        |
+| `nr_processblocks`    | Number of Process Engines  |
+| `serial`              | Serial Number              |
+| `mac_address`         | MAC address                |
+| `device_type`         | Device Model               |
+| `current_snapshot`    | Current Snapshot           |
+| `next_snapshot`       | Next Snapshot              |
+| `active_profile_name` | Active Profile Name        |
+| `current_version`     | Current Firmware version   |
+| `alternate_version`   | Alternate Firmware version |
+| `profile_${id}_name`  | Profile `${id}` Name       |
+
+For Firmware version v2.7.1 and newer, the following variables are also implemented:
+
+| Id                           | Name                          |
+| ---------------------------- | ----------------------------- |
+| `processblock_${id}_name`    | Process Block `${id}` Name    |
+| `processblock_${id}_color_1` | Process Block `${id}` Color 1 |
+| `processblock_${id}_color_2` | Process Block `${id}` Color 2 |
+| `processblock_${id}_mode`    | Process Block `${id}` Mode    |
