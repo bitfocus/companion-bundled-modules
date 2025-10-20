@@ -1,4 +1,4 @@
 MODULE_NAME=softron-movierecorder
-GIT_REF=v2.0.4
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/10570130680
-UPDATE_DATE=2024-08-27
+GIT_REF=v2.1.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/18660668838
+UPDATE_DATE=2025-10-20
