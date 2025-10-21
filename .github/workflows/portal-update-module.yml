@@ -187,4 +187,6 @@ jobs:
             -H 'accept: application/json' \
             -H 'Content-Type: application/json' \
             -H 'Authorization: Bearer ${{ secrets.DEVELOPER_API_KEY }}' \
-            -d "${PUT_PAYLOAD}"
+            -d "${PUT_PAYLOAD}" \
+            --fail-with-body \
+            --show-error
