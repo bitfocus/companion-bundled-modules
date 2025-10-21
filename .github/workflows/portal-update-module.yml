@@ -158,7 +158,7 @@ jobs:
       - name: Report to api
         shell: bash
         run: |
-          echo "Uploaded build to ${{ steps.upload.outputs.artifact-url }}" >> $GITHUB_STEP_SUMMARY
+          echo "Uploaded build to ${{ steps.upload.outputs.artifact-url }}/${{ steps.upload.outputs.artifact-name }}" >> $GITHUB_STEP_SUMMARY
 
           PKG_SHA256=$(sha256sum pkg.tgz | awk '{print $1}')
           echo "With SHA256=${PKG_SHA256}" >> $GITHUB_STEP_SUMMARY
