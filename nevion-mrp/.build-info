@@ -1,4 +1,4 @@
 MODULE_NAME=nevion-mrp
-GIT_REF=v3.0.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/18558129685
-UPDATE_DATE=2025-10-16
+GIT_REF=v3.1.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/18841486939
+UPDATE_DATE=2025-10-27
