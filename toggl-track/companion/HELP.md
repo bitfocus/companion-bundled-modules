@@ -74,3 +74,13 @@ Presets are available for **Start Timer** and **Stop Timer**.
 ### Version 2.1.1
 
 - Prevent module crash if user has no Clients
+
+### Version 2.1.2
+
+- Update node runtime to node22
+- make polling interval configurable as toggl is updating their [API usage limits](https://support.toggl.com/en/articles/11484112-api-webhook-limits)
+
+### Version 2.1.3
+
+- update dependencies (fix CVE-2025-58754)
+- handle rate limiting of toggl
