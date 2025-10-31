@@ -1,11 +1,12 @@
-## Generic HTTP Requests Module
+# Hollyland Solidcom Module for Companion
 
-Generic modules are only for use with custom applications. If you use this module to control a device or software on the market that more than you are using, <strong>PLEASE let us know</strong> about this software, so we can make a proper module for it. If we already support this and you use this to trigger a feature our module doesn't support, please let us know. We want Companion to be as easy as possible to use for anyone.
+This module provides control and monitoring of Hollyland Solidcom wireless intercom systems via HTTP API.
 
-**Available commands**
+## Connection Settings
 
-* POST
-* GET
-* PUT
-* PATCH
-* DELETE
+- **Device IP Address**: The IP address of your Solidcom base station (default: `192.168.218.10`)
+- **Device Username**: Login username for the base station (default: `admin`)
+- **Device Password**: Login password for the base station (default: `12345678`)
+- **Variable Polling Interval**: How often to refresh variables from the device in milliseconds
+
+**Security Note**: Hollyland Solidcom devices store credentials in plain text. Use at your own risk!

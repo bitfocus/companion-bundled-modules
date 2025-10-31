@@ -1,4 +1,4 @@
 MODULE_NAME=hollyland-solidcom
-GIT_REF=v1.0.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/18975478272
+GIT_REF=v1.0.3
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/18979121814
 UPDATE_DATE=2025-10-31
