@@ -1,4 +1,4 @@
 MODULE_NAME=skaarhoj-rawpanel
-GIT_REF=v2.1.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/18993667017
+GIT_REF=v2.1.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/18994513133
 UPDATE_DATE=2025-11-01
