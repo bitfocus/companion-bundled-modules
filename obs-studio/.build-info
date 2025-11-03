@@ -1,4 +1,4 @@
 MODULE_NAME=obs-studio
-GIT_REF=v3.13.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/17721153227
-UPDATE_DATE=2025-09-15
+GIT_REF=v3.13.2
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/19043800732
+UPDATE_DATE=2025-11-03
