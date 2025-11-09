@@ -1,6 +1,9 @@
-# DirectOut 
+# DirectOut
+
 ## PRODIGY.MC, PRODIGY.MP, PRODIGY.MX and MAVEN.A
+
 ### Devices
+
 - PRODIGY.MC&nbsp;&nbsp;&nbsp;&nbsp;(System v25.08.1 tested)
 - PRODIGY.MP&nbsp;&nbsp;&nbsp;&nbsp;(System v25.08.1 tested)
 - PRODIGY.MX&nbsp;&nbsp;&nbsp;&nbsp;(System v25.08.1 tested)
@@ -12,7 +15,7 @@ Compatible with Companion version 4.0.0 or later.
 
 The module works adaptive, it automatically detects the device and matches actions, feedback and variables. Configurations can be used with different device types. A routing button for "MADI1 IN 1" to "NET 1 OUT 1" does the same on any device type, as long as the hardware and software configuration is compatible.
 
-User Labels are shown in many dropdown selections. The naming scheme usually is: 
+User Labels are shown in many dropdown selections. The naming scheme usually is:
 
 > **user slot name** - **user channel name** (**default slot name** – **default channel name**)
 
@@ -38,4 +41,3 @@ Besides the fixed actions and feedbacks, the custom feadback gives the opportuni
 
 To make things even easier, a selection of presets is provided with the module. The color scheme for the presets can be adjusted in the module configuration.  
 Due to the vast number of parameters and possible combinations, presets are only given for one channel or item. Use a preset as a starting point and edit it to reflect your needed channel.
-
