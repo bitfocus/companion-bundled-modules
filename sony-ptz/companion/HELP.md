@@ -66,18 +66,32 @@ A module for controlling Sony PTZ Camera BRC and SRG series using HTTP-based com
   - up: stop
 - Preset Call
 - Preset Set
+- Rotary Button
+  - Pan
+  - Tilt
+  - Zoom
 
 ### Variables
 
-- `$(BRC-AM7:autoFraming)` - Auto Framing Status
-- `$(BRC-AM7:modelName)` - Model Name
-- `$(BRC-AM7:multiTracking)` - Multi-Person Tracking Status
-- `$(BRC-AM7:multiTrackingNum)` - Multi Tracking Target Number
-- `$(BRC-AM7:name)` - Camera Name
-- `$(BRC-AM7:power)` - System Power State
-- `$(BRC-AM7:serial)` - Serial Number
-- `$(BRC-AM7:softVersion)` - Software Version
-- `$(BRC-AM7:streamMode)` - Stream Mode
-- `$(BRC-AM7:zoomMode)` - Zoom Mode
+- `$(this:autoFraming)` - Auto Framing Status
+- `$(this:modelName)` - Model Name
+- `$(this:multiTracking)` - Multi-Person Tracking Status
+- `$(this:multiTrackingNum)` - Multi Tracking Target Number
+- `$(this:name)` - Camera Name
+- `$(this:power)` - System Power State
+- `$(this:serial)` - Serial Number
+- `$(this:softVersion)` - Software Version
+- `$(this:streamMode)` - Stream Mode
+- `$(this:zoomMode)` - Zoom Mode
+- `$(this:panPos)` - Current Pan Position
+- `$(this:tiltPos)` - Current Tilt Position
+- `$(this:zoomPos)` - Current Zoom Position
+- `$(this:focusPos)` - Current Focus Position
+- `$(this:panRangeLeft)` - Possible Left Movement Range of Pan
+- `$(this:panRangeRight)` - Possible Right Movement Range of Pan
+- `$(this:tiltRangeLower)` - Possible Lower Movement Range of Tilt
+- `$(this:tiltRangeUpper)` - Possible Upper Movement Range of Tilt
+- `$(this:zoomRangeWide)` - Possible Wide Movement Range of Zoom
+- `$(this:zoomRangeTele)` - Possible Tele Movement Range of Zoom
 
 https://github.com/bitfocus/companion-module-sony-ptz/issues
