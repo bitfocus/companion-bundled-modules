@@ -29,22 +29,28 @@ This module integrates with the TAG Video Systems MCS API (v5), allowing you to 
 ## ⚙️ Actions
 
 - **Select Output**
-  Select an Output to be used on other actions.
+  Select an Output to be used in other actions.
 
 - **Select Layout**
-  Select a Layout to be used on other actions.
+  Select a Layout to be used in other actions.
 
 - **Select Video Channel**
-  Select a Video Channel to be used on other actions.
+  Select a Video Channel to be used in other actions.
 
 - **Select Audio Channel**
-  Select a Audio Channel to be used on other actions.
+  Select a Audio Channel to be used in other actions.
 
 - **Select Tile Number**
-  Select a Tile Number to be used on other actions.
+  Select a Tile Number to be used in other actions.
+
+- **Select Device**
+  Select a Device to be used in other actions.
 
 - **Modify Layout**
   Modify a layout by changing the Video Channel assigned to a Tile Number.
+
+- **Set Output State**
+  Turn the output either on or off.
 
 - **Apply Layout to Output**  
   Assign a layout to an output. These can either be chosen from a list or using the pre-selected Output or Layout.
@@ -59,8 +65,8 @@ This module integrates with the TAG Video Systems MCS API (v5), allowing you to 
 - **Layout is Active on Output**  
   Active when a selected layout is currently assigned to an output. These can either be chosen from a list or using the pre-selected Output or Layout.
 
-- **Output Using Selected Audio Channel**  
-  Active when a selected audio channel is currently feeding the output.
+- **Output is Active on Device**
+  Active when the chosen output is assigned to the chosen device.
 
 ---
 
@@ -74,6 +80,8 @@ Variables are generated per output, layout, and channel.
 - `output_<uuid>_layout_label` — Label of the Layout currently assigned
 - `output_<uuid>_audio_channel_label` — Label of the audio channel
 - `output_<uuid>_mux_audio_pid` — Output audio PID
+- `output_<uuid>_device` - Output Device UUID
+- `output_<uuid>_device_label` - Output Device Label
 
 ### ➤ Layouts
 
