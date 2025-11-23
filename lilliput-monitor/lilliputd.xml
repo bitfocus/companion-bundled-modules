@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev driver="lilliputd">
+<!--
+    There's a subset of Lilliput commands below. They were chosen as most useful for common tasks.
+    You can add, remove or modify them as long as you know what you are doing and the XML document remains valid.
+
+    Mode attribute says if command is read only, write only or read/write.
+    Values of wDuration and rDuration are defined in miliseconds.
+    Number values can be decimal or hexadecimal. Hex numbers must be used with prefix 0x
+-->
+    <command name="source" code="0x00" mode="w">
+        <!-- Set current source. Return string. Command: 'source source_name' -->
+        <value name="source">
+            <!-- Ensure this list matches the status command's source field -->
+            <item name="SDI1" value="0x00"/>
+            <item name="SDI2" value="0x01"/>
+            <item name="SDI3" value="0x02"/>
+            <item name="SDI4" value="0x03"/>
+            <item name="SFP" value="0x04"/>
+            <item name="2SI" value="0x05"/>
+            <item name="Square Division" value="0x06"/>
+            <item name="HDMI" value="0x07"/>
+            <item name="Multiviewer" value="0x10"/>
+            <!-- and maybe some more -->
+        </value>
+        <value name="mv2-1">
+            <!-- Ensure this list matches the status command's multiviewer field -->
+            <item name="SDI1-SDI1" value="0x00"/>
+            <item name="SDI1-SDI2" value="0x01"/>
+            <item name="SDI1-SDI3" value="0x02"/>
+            <item name="SDI1-SDI4" value="0x03"/>
+            <item name="SDI1-SFP" value="0x04"/>
+            <item name="SDI1-HDMI" value="0x05"/>
+            <item name="SDI2-SDI1" value="0x10"/>
+            <item name="SDI2-SDI2" value="0x11"/>
+            <item name="SDI2-SDI3" value="0x12"/>
+            <item name="SDI2-SDI4" value="0x13"/>
+            <item name="SDI2-SFP" value="0x14"/>
+            <item name="SDI2-HDMI" value="0x15"/>
+            <item name="SDI3-SDI1" value="0x20"/>
+            <item name="SDI3-SDI2" value="0x21"/>
+            <item name="SDI3-SDI3" value="0x22"/>
+            <item name="SDI3-SDI4" value="0x23"/>
+            <item name="SDI3-SFP" value="0x24"/>
+            <item name="SDI3-HDMI" value="0x25"/>
+            <item name="SDI4-SDI1" value="0x30"/>
+            <item name="SDI4-SDI2" value="0x31"/>
+            <item name="SDI4-SDI3" value="0x32"/>
+            <item name="SDI4-SDI4" value="0x33"/>
+            <item name="SDI4-SFP" value="0x34"/>
+            <item name="SDI4-HDMI" value="0x35"/>
+            <item name="SFP-SDI1" value="0x40"/>
+            <item name="SFP-SDI2" value="0x41"/>
+            <item name="SFP-SDI3" value="0x42"/>
+            <item name="SFP-SDI4" value="0x43"/>
+            <item name="SFP-SFP" value="0x44"/>
+            <item name="SFP-HDMI" value="0x45"/>
+            <item name="HDMI-SDI1" value="0x50"/>
+            <item name="HDMI-SDI2" value="0x51"/>
+            <item name="HDMI-SDI3" value="0x52"/>
+            <item name="HDMI-SDI4" value="0x53"/>
+            <item name="HDMI-SFP" value="0x54"/>
+            <item name="HDMI-HDMI" value="0x55"/>
+        </value>
+        <value name="mv4-3">
+            <!-- Ensure this list matches the status command's multiviewer field -->
+            <item name="SDI1-SDI1" value="0x00"/>
+            <item name="SDI1-SDI2" value="0x01"/>
+            <item name="SDI1-SDI3" value="0x02"/>
+            <item name="SDI1-SDI4" value="0x03"/>
+            <item name="SDI1-SFP" value="0x04"/>
+            <item name="SDI1-HDMI" value="0x05"/>
+            <item name="SDI2-SDI1" value="0x10"/>
+            <item name="SDI2-SDI2" value="0x11"/>
+            <item name="SDI2-SDI3" value="0x12"/>
+            <item name="SDI2-SDI4" value="0x13"/>
+            <item name="SDI2-SFP" value="0x14"/>
+            <item name="SDI2-HDMI" value="0x15"/>
+            <item name="SDI3-SDI1" value="0x20"/>
+            <item name="SDI3-SDI2" value="0x21"/>
+            <item name="SDI3-SDI3" value="0x22"/>
+            <item name="SDI3-SDI4" value="0x23"/>
+            <item name="SDI3-SFP" value="0x24"/>
+            <item name="SDI3-HDMI" value="0x25"/>
+            <item name="SDI4-SDI1" value="0x30"/>
+            <item name="SDI4-SDI2" value="0x31"/>
+            <item name="SDI4-SDI3" value="0x32"/>
+            <item name="SDI4-SDI4" value="0x33"/>
+            <item name="SDI4-SFP" value="0x34"/>
+            <item name="SDI4-HDMI" value="0x35"/>
+            <item name="SFP-SDI1" value="0x40"/>
+            <item name="SFP-SDI2" value="0x41"/>
+            <item name="SFP-SDI3" value="0x42"/>
+            <item name="SFP-SDI4" value="0x43"/>
+            <item name="SFP-SFP" value="0x44"/>
+            <item name="SFP-HDMI" value="0x45"/>
+            <item name="HDMI-SDI1" value="0x50"/>
+            <item name="HDMI-SDI2" value="0x51"/>
+            <item name="HDMI-SDI3" value="0x52"/>
+            <item name="HDMI-SDI4" value="0x53"/>
+            <item name="HDMI-SFP" value="0x54"/>
+            <item name="HDMI-HDMI" value="0x55"/>
+        </value>
+    </command>
+    <command name="picture" code="0x01" mode="w">
+        <value name="brightness" min="0" max="100"/>
+        <value name="contrast" min="0" max="100"/>
+        <value name="saturation" min="0" max="100"/>
+        <value name="tint" min="0" max="100"/>
+        <value name="sharpness" min="0" max="100"/>
+        <value name="backlight" min="0" max="100"/>
+        <value name="color-temp">
+            <item name="3200K" value="0x00"/>
+            <item name="5500K" value="0x01"/>
+            <item name="6500K" value="0x02"/>
+            <item name="7500K" value="0x03"/>
+            <item name="9300K" value="0x04"/>
+            <item name="User" value="0x05"/>
+        </value>
+    </command>
+    <command name="marker" code="0x02" mode="w">
+    </command>
+    <command name="audio" code="0x03" mode="w">
+        <value name="volume" min="0" max="100"/>
+        <value name="meter">
+            <item name="None" value="0x00"/>
+            <item name="Level" value="0x10"/>
+            <item name="Vector-1-2" value="0x20"/>
+            <item name="Vector-3-4" value="0x21"/>
+            <item name="Vector-5-6" value="0x22"/>
+            <item name="Vector-7-8" value="0x23"/>
+            <item name="Vector-9-10" value="0x24"/>
+            <item name="Vector-11-12" value="0x25"/>
+            <item name="Vector-13-14" value="0x26"/>
+            <item name="Vector-15-16" value="0x27"/>
+            <item name="Level-Vector-1-2" value="0x30"/>
+            <item name="Level-Vector-3-4" value="0x31"/>
+            <item name="Level-Vector-5-6" value="0x32"/>
+            <item name="Level-Vector-7-8" value="0x33"/>
+            <item name="Level-Vector-9-10" value="0x34"/>
+            <item name="Level-Vector-11-12" value="0x35"/>
+            <item name="Level-Vector-13-14" value="0x36"/>
+            <item name="Level-Vector-15-16" value="0x37"/>
+        </value>
+        <value name="right-left-out">
+            <item name="2-1" value="0x10"/>
+            <item name="4-3" value="0x32"/>
+            <item name="6-5" value="0x54"/>
+            <item name="8-7" value="0x76"/>
+            <item name="10-9" value="0x98"/>
+            <item name="12-11" value="0xba"/>
+            <item name="14-13" value="0xdc"/>
+            <item name="16-15" value="0xfe"/>
+        </value>
+    </command>
+    <command name="function" code="0x04" mode="w">
+    </command>
+    <command name="umd" code="0x05" mode="w">
+        <value name="tally-umd1">
+            <item name="Off-Off-White" value="0x00"/>
+            <item name="Off-Off-Red" value="0x01"/>
+            <item name="Off-Off-Green" value="0x02"/>
+            <item name="Off-Off-Blue" value="0x03"/>
+            <item name="Off-Off-Yellow" value="0x04"/>
+            <item name="Off-Off-Cyan" value="0x05"/>
+            <item name="Off-Off-Magenta" value="0x06"/>
+            <item name="Off-On-White" value="0x08"/>
+            <item name="Off-On-Red" value="0x09"/>
+            <item name="Off-On-Green" value="0x0a"/>
+            <item name="Off-On-Blue" value="0x0b"/>
+            <item name="Off-On-Yellow" value="0x0c"/>
+            <item name="Off-On-Cyan" value="0x0d"/>
+            <item name="Off-On-Magenta" value="0x0e"/>
+            <item name="Red-Off-White" value="0x10"/>
+            <item name="Red-Off-Red" value="0x11"/>
+            <item name="Red-Off-Green" value="0x12"/>
+            <item name="Red-Off-Blue" value="0x13"/>
+            <item name="Red-Off-Yellow" value="0x14"/>
+            <item name="Red-Off-Cyan" value="0x15"/>
+            <item name="Red-Off-Magenta" value="0x16"/>
+            <item name="Red-On-White" value="0x18"/>
+            <item name="Red-On-Red" value="0x19"/>
+            <item name="Red-On-Green" value="0x1a"/>
+            <item name="Red-On-Blue" value="0x1b"/>
+            <item name="Red-On-Yellow" value="0x1c"/>
+            <item name="Red-On-Cyan" value="0x1d"/>
+            <item name="Red-On-Magenta" value="0x1e"/>
+            <item name="Green-Off-White" value="0x20"/>
+            <item name="Green-Off-Red" value="0x21"/>
+            <item name="Green-Off-Green" value="0x22"/>
+            <item name="Green-Off-Blue" value="0x23"/>
+            <item name="Green-Off-Yellow" value="0x24"/>
+            <item name="Green-Off-Cyan" value="0x25"/>
+            <item name="Green-Off-Magenta" value="0x26"/>
+            <item name="Green-On-White" value="0x28"/>
+            <item name="Green-On-Red" value="0x29"/>
+            <item name="Green-On-Green" value="0x2a"/>
+            <item name="Green-On-Blue" value="0x2b"/>
+            <item name="Green-On-Yellow" value="0x2c"/>
+            <item name="Green-On-Cyan" value="0x2d"/>
+            <item name="Green-On-Magenta" value="0x2e"/>
+            <item name="Yellow-Off-White" value="0x30"/>
+            <item name="Yellow-Off-Red" value="0x31"/>
+            <item name="Yellow-Off-Green" value="0x32"/>
+            <item name="Yellow-Off-Blue" value="0x33"/>
+            <item name="Yellow-Off-Yellow" value="0x34"/>
+            <item name="Yellow-Off-Cyan" value="0x35"/>
+            <item name="Yellow-Off-Magenta" value="0x36"/>
+            <item name="Yellow-On-White" value="0x38"/>
+            <item name="Yellow-On-Red" value="0x39"/>
+            <item name="Yellow-On-Green" value="0x3a"/>
+            <item name="Yellow-On-Blue" value="0x3b"/>
+            <item name="Yellow-On-Yellow" value="0x3c"/>
+            <item name="Yellow-On-Cyan" value="0x3d"/>
+            <item name="Yellow-On-Magenta" value="0x3e"/>
+        </value>
+        <value name="umd1"/>
+        <value name="umd2"/>
+        <value name="umd3"/>
+        <value name="umd4"/>
+        <value name="umd5"/>
+        <value name="umd6"/>
+        <value name="umd7"/>
+        <value name="umd8"/>
+        <value name="umd9"/>
+        <value name="umd10"/>
+        <value name="umd11"/>
+        <value name="umd12"/>
+        <value name="umd13"/>
+        <value name="umd14"/>
+        <value name="umd15"/>
+        <value name="umd16"/>
+        <value name="umd3-umd2">
+            <item name="Off-Off" value="0x22"/>
+            <item name="Off-On" value="0x2a"/>
+            <item name="On-Off" value="0xa2"/>
+            <item name="On-On" value="0xaa"/>
+        </value>
+        <value name="umdnum-umd4">
+            <item name="1-Off-White" value="0x00"/>
+            <item name="1-Off-Red" value="0x01"/>
+            <item name="1-Off-Green" value="0x02"/>
+            <item name="1-Off-Blue" value="0x03"/>
+            <item name="1-Off-Yellow" value="0x04"/>
+            <item name="1-Off-Cyan" value="0x05"/>
+            <item name="1-Off-Magenta" value="0x06"/>
+            <item name="1-On-White" value="0x08"/>
+            <item name="1-On-Red" value="0x09"/>
+            <item name="1-On-Green" value="0x0a"/>
+            <item name="1-On-Blue" value="0x0b"/>
+            <item name="1-On-Yellow" value="0x0c"/>
+            <item name="1-On-Cyan" value="0x0d"/>
+            <item name="1-On-Magenta" value="0x0e"/>
+            <item name="2-Off-White" value="0x10"/>
+            <item name="2-Off-Red" value="0x11"/>
+            <item name="2-Off-Green" value="0x12"/>
+            <item name="2-Off-Blue" value="0x13"/>
+            <item name="2-Off-Yellow" value="0x14"/>
+            <item name="2-Off-Cyan" value="0x15"/>
+            <item name="2-Off-Magenta" value="0x16"/>
+            <item name="2-On-White" value="0x18"/>
+            <item name="2-On-Red" value="0x19"/>
+            <item name="2-On-Green" value="0x1a"/>
+            <item name="2-On-Blue" value="0x1b"/>
+            <item name="2-On-Yellow" value="0x1c"/>
+            <item name="2-On-Cyan" value="0x1d"/>
+            <item name="2-On-Magenta" value="0x1e"/>
+            <item name="3-Off-White" value="0x20"/>
+            <item name="3-Off-Red" value="0x21"/>
+            <item name="3-Off-Green" value="0x22"/>
+            <item name="3-Off-Blue" value="0x23"/>
+            <item name="3-Off-Yellow" value="0x24"/>
+            <item name="3-Off-Cyan" value="0x25"/>
+            <item name="3-Off-Magenta" value="0x26"/>
+            <item name="3-On-White" value="0x28"/>
+            <item name="3-On-Red" value="0x29"/>
+            <item name="3-On-Green" value="0x2a"/>
+            <item name="3-On-Blue" value="0x2b"/>
+            <item name="3-On-Yellow" value="0x2c"/>
+            <item name="3-On-Cyan" value="0x2d"/>
+            <item name="3-On-Magenta" value="0x2e"/>
+            <item name="4-Off-White" value="0x30"/>
+            <item name="4-Off-Red" value="0x31"/>
+            <item name="4-Off-Green" value="0x32"/>
+            <item name="4-Off-Blue" value="0x33"/>
+            <item name="4-Off-Yellow" value="0x34"/>
+            <item name="4-Off-Cyan" value="0x35"/>
+            <item name="4-Off-Magenta" value="0x36"/>
+            <item name="4-On-White" value="0x38"/>
+            <item name="4-On-Red" value="0x39"/>
+            <item name="4-On-Green" value="0x3a"/>
+            <item name="4-On-Blue" value="0x3b"/>
+            <item name="4-On-Yellow" value="0x3c"/>
+            <item name="4-On-Cyan" value="0x3d"/>
+            <item name="4-On-Magenta" value="0x3e"/>
+            <item name="Single-Off-White" value="0xf0"/>
+            <item name="Single-Off-Red" value="0xf1"/>
+            <item name="Single-Off-Green" value="0xf2"/>
+            <item name="Single-Off-Blue" value="0xf3"/>
+            <item name="Single-Off-Yellow" value="0xf4"/>
+            <item name="Single-Off-Cyan" value="0xf5"/>
+            <item name="Single-Off-Magenta" value="0xf6"/>
+            <item name="Single-On-White" value="0xf8"/>
+            <item name="Single-On-Red" value="0xf9"/>
+            <item name="Single-On-Green" value="0xfa"/>
+            <item name="Single-On-Blue" value="0xfb"/>
+            <item name="Single-On-Yellow" value="0xfc"/>
+            <item name="Single-On-Cyan" value="0xfd"/>
+            <item name="Single-On-Magenta" value="0xfe"/>
+        </value>
+    </command>
+    <command name="status" code="0xfe" mode="r">
+        <!-- Get current status of display. Return object. Command: 'status?' -->
+        <value name="unknown1"/>
+        <value name="brightness" min="0" max="100"/>
+        <value name="contrast" min="0" max="100"/>
+        <value name="saturation" min="0" max="100"/>
+        <value name="tint" min="0" max="100"/>
+        <value name="sharpness" min="0" max="100"/>
+        <value name="backlight" min="0" max="100"/>
+        <value name="color-temp">
+            <item name="3200K" value="0x00"/>
+            <item name="5500K" value="0x01"/>
+            <item name="6500K" value="0x02"/>
+            <item name="7500K" value="0x03"/>
+            <item name="9300K" value="0x04"/>
+            <item name="User" value="0x05"/>
+        </value>
+        <value name="source">
+            <!-- Ensure this list matches the source command -->
+            <item name="SDI1" value="0x00"/>
+            <item name="SDI2" value="0x01"/>
+            <item name="SDI3" value="0x02"/>
+            <item name="SDI4" value="0x03"/>
+            <item name="SFP" value="0x04"/>
+            <item name="2SI" value="0x05"/>
+            <item name="Square Division" value="0x06"/>
+            <item name="HDMI" value="0x07"/>
+            <item name="Multiviewer" value="0x10"/>
+            <!-- and some more -->
+        </value>
+        <!-- Begin unknown guesswork... -->
+        <value name="marker1"/>
+        <value name="marker2"/>
+        <value name="marker3-thickness"/>
+        <!-- End unknown guesswork... -->
+        <value name="volume" min="0" max="100"/>
+        <value name="meter">
+            <item name="None" value="0x00"/>
+            <item name="Level" value="0x10"/>
+            <item name="Vector-1-2" value="0x20"/>
+            <item name="Vector-3-4" value="0x21"/>
+            <item name="Vector-5-6" value="0x22"/>
+            <item name="Vector-7-8" value="0x23"/>
+            <item name="Vector-9-10" value="0x24"/>
+            <item name="Vector-11-12" value="0x25"/>
+            <item name="Vector-13-14" value="0x26"/>
+            <item name="Vector-15-16" value="0x27"/>
+            <item name="Level-Vector-1-2" value="0x30"/>
+            <item name="Level-Vector-3-4" value="0x31"/>
+            <item name="Level-Vector-5-6" value="0x32"/>
+            <item name="Level-Vector-7-8" value="0x33"/>
+            <item name="Level-Vector-9-10" value="0x34"/>
+            <item name="Level-Vector-11-12" value="0x35"/>
+            <item name="Level-Vector-13-14" value="0x36"/>
+            <item name="Level-Vector-15-16" value="0x37"/>
+        </value>
+        <value name="right-left-out">
+            <item name="2-1" value="0x10"/>
+            <item name="4-3" value="0x32"/>
+            <item name="6-5" value="0x54"/>
+            <item name="8-7" value="0x76"/>
+            <item name="10-9" value="0x98"/>
+            <item name="12-11" value="0xba"/>
+            <item name="14-13" value="0xdc"/>
+            <item name="16-15" value="0xfe"/>
+        </value>
+        <!-- Begin unknown guesswork... -->
+        <value name="function1"/>
+        <value name="function2"/>
+        <value name="function3"/>
+        <value name="function4"/>
+        <value name="function5"/>
+        <!-- End unknown guesswork... -->
+        <value name="tally-umd1">
+            <item name="Off-Off-White" value="0x00"/>
+            <item name="Off-Off-Red" value="0x01"/>
+            <item name="Off-Off-Green" value="0x02"/>
+            <item name="Off-Off-Blue" value="0x03"/>
+            <item name="Off-Off-Yellow" value="0x04"/>
+            <item name="Off-Off-Cyan" value="0x05"/>
+            <item name="Off-Off-Magenta" value="0x06"/>
+            <item name="Off-On-White" value="0x08"/>
+            <item name="Off-On-Red" value="0x09"/>
+            <item name="Off-On-Green" value="0x0a"/>
+            <item name="Off-On-Blue" value="0x0b"/>
+            <item name="Off-On-Yellow" value="0x0c"/>
+            <item name="Off-On-Cyan" value="0x0d"/>
+            <item name="Off-On-Magenta" value="0x0e"/>
+            <item name="Red-Off-White" value="0x10"/>
+            <item name="Red-Off-Red" value="0x11"/>
+            <item name="Red-Off-Green" value="0x12"/>
+            <item name="Red-Off-Blue" value="0x13"/>
+            <item name="Red-Off-Yellow" value="0x14"/>
+            <item name="Red-Off-Cyan" value="0x15"/>
+            <item name="Red-Off-Magenta" value="0x16"/>
+            <item name="Red-On-White" value="0x18"/>
+            <item name="Red-On-Red" value="0x19"/>
+            <item name="Red-On-Green" value="0x1a"/>
+            <item name="Red-On-Blue" value="0x1b"/>
+            <item name="Red-On-Yellow" value="0x1c"/>
+            <item name="Red-On-Cyan" value="0x1d"/>
+            <item name="Red-On-Magenta" value="0x1e"/>
+            <item name="Green-Off-White" value="0x20"/>
+            <item name="Green-Off-Red" value="0x21"/>
+            <item name="Green-Off-Green" value="0x22"/>
+            <item name="Green-Off-Blue" value="0x23"/>
+            <item name="Green-Off-Yellow" value="0x24"/>
+            <item name="Green-Off-Cyan" value="0x25"/>
+            <item name="Green-Off-Magenta" value="0x26"/>
+            <item name="Green-On-White" value="0x28"/>
+            <item name="Green-On-Red" value="0x29"/>
+            <item name="Green-On-Green" value="0x2a"/>
+            <item name="Green-On-Blue" value="0x2b"/>
+            <item name="Green-On-Yellow" value="0x2c"/>
+            <item name="Green-On-Cyan" value="0x2d"/>
+            <item name="Green-On-Magenta" value="0x2e"/>
+            <item name="Yellow-Off-White" value="0x30"/>
+            <item name="Yellow-Off-Red" value="0x31"/>
+            <item name="Yellow-Off-Green" value="0x32"/>
+            <item name="Yellow-Off-Blue" value="0x33"/>
+            <item name="Yellow-Off-Yellow" value="0x34"/>
+            <item name="Yellow-Off-Cyan" value="0x35"/>
+            <item name="Yellow-Off-Magenta" value="0x36"/>
+            <item name="Yellow-On-White" value="0x38"/>
+            <item name="Yellow-On-Red" value="0x39"/>
+            <item name="Yellow-On-Green" value="0x3a"/>
+            <item name="Yellow-On-Blue" value="0x3b"/>
+            <item name="Yellow-On-Yellow" value="0x3c"/>
+            <item name="Yellow-On-Cyan" value="0x3d"/>
+            <item name="Yellow-On-Magenta" value="0x3e"/>
+        </value>
+        <value name="format1"/>
+        <value name="format2"/>
+        <value name="format3"/>
+        <value name="format4"/>
+        <value name="format5"/>
+        <value name="format6"/>
+        <value name="format7"/>
+        <value name="format8"/>
+        <value name="format9"/>
+        <value name="format10"/>
+        <value name="format11"/>
+        <value name="format12"/>
+        <value name="format13"/>
+        <value name="format14"/>
+        <value name="format15"/>
+        <value name="format16"/>
+        <value name="format17"/>
+        <value name="format18"/>
+        <value name="name1"/>
+        <value name="name2"/>
+        <value name="name3"/>
+        <value name="name4"/>
+        <value name="name5"/>
+        <value name="name6"/>
+        <value name="name7"/>
+        <value name="name8"/>
+        <value name="name9"/>
+        <value name="name10"/>
+        <value name="name11"/>
+        <value name="name12"/>
+        <value name="name13"/>
+        <value name="name14"/>
+        <value name="name15"/>
+        <value name="name16"/>
+        <value name="umd3-umd2">
+            <item name="Off-Off" value="0x22"/>
+            <item name="Off-On" value="0x2a"/>
+            <item name="On-Off" value="0xa2"/>
+            <item name="On-On" value="0xaa"/>
+        </value>
+        <value name="umdnum-umd4">
+            <item name="1-Off-White" value="0x00"/>
+            <item name="1-Off-Red" value="0x01"/>
+            <item name="1-Off-Green" value="0x02"/>
+            <item name="1-Off-Blue" value="0x03"/>
+            <item name="1-Off-Yellow" value="0x04"/>
+            <item name="1-Off-Cyan" value="0x05"/>
+            <item name="1-Off-Magenta" value="0x06"/>
+            <item name="1-On-White" value="0x08"/>
+            <item name="1-On-Red" value="0x09"/>
+            <item name="1-On-Green" value="0x0a"/>
+            <item name="1-On-Blue" value="0x0b"/>
+            <item name="1-On-Yellow" value="0x0c"/>
+            <item name="1-On-Cyan" value="0x0d"/>
+            <item name="1-On-Magenta" value="0x0e"/>
+            <item name="2-Off-White" value="0x10"/>
+            <item name="2-Off-Red" value="0x11"/>
+            <item name="2-Off-Green" value="0x12"/>
+            <item name="2-Off-Blue" value="0x13"/>
+            <item name="2-Off-Yellow" value="0x14"/>
+            <item name="2-Off-Cyan" value="0x15"/>
+            <item name="2-Off-Magenta" value="0x16"/>
+            <item name="2-On-White" value="0x18"/>
+            <item name="2-On-Red" value="0x19"/>
+            <item name="2-On-Green" value="0x1a"/>
+            <item name="2-On-Blue" value="0x1b"/>
+            <item name="2-On-Yellow" value="0x1c"/>
+            <item name="2-On-Cyan" value="0x1d"/>
+            <item name="2-On-Magenta" value="0x1e"/>
+            <item name="3-Off-White" value="0x20"/>
+            <item name="3-Off-Red" value="0x21"/>
+            <item name="3-Off-Green" value="0x22"/>
+            <item name="3-Off-Blue" value="0x23"/>
+            <item name="3-Off-Yellow" value="0x24"/>
+            <item name="3-Off-Cyan" value="0x25"/>
+            <item name="3-Off-Magenta" value="0x26"/>
+            <item name="3-On-White" value="0x28"/>
+            <item name="3-On-Red" value="0x29"/>
+            <item name="3-On-Green" value="0x2a"/>
+            <item name="3-On-Blue" value="0x2b"/>
+            <item name="3-On-Yellow" value="0x2c"/>
+            <item name="3-On-Cyan" value="0x2d"/>
+            <item name="3-On-Magenta" value="0x2e"/>
+            <item name="4-Off-White" value="0x30"/>
+            <item name="4-Off-Red" value="0x31"/>
+            <item name="4-Off-Green" value="0x32"/>
+            <item name="4-Off-Blue" value="0x33"/>
+            <item name="4-Off-Yellow" value="0x34"/>
+            <item name="4-Off-Cyan" value="0x35"/>
+            <item name="4-Off-Magenta" value="0x36"/>
+            <item name="4-On-White" value="0x38"/>
+            <item name="4-On-Red" value="0x39"/>
+            <item name="4-On-Green" value="0x3a"/>
+            <item name="4-On-Blue" value="0x3b"/>
+            <item name="4-On-Yellow" value="0x3c"/>
+            <item name="4-On-Cyan" value="0x3d"/>
+            <item name="4-On-Magenta" value="0x3e"/>
+            <item name="Single-Off-White" value="0xf0"/>
+            <item name="Single-Off-Red" value="0xf1"/>
+            <item name="Single-Off-Green" value="0xf2"/>
+            <item name="Single-Off-Blue" value="0xf3"/>
+            <item name="Single-Off-Yellow" value="0xf4"/>
+            <item name="Single-Off-Cyan" value="0xf5"/>
+            <item name="Single-Off-Magenta" value="0xf6"/>
+            <item name="Single-On-White" value="0xf8"/>
+            <item name="Single-On-Red" value="0xf9"/>
+            <item name="Single-On-Green" value="0xfa"/>
+            <item name="Single-On-Blue" value="0xfb"/>
+            <item name="Single-On-Yellow" value="0xfc"/>
+            <item name="Single-On-Cyan" value="0xfd"/>
+            <item name="Single-On-Magenta" value="0xfe"/>
+        </value>
+        <value name="mv2-1">
+            <!-- Ensure this list matches the source command mv options -->
+            <item name="SDI1-SDI1" value="0x00"/>
+            <item name="SDI1-SDI2" value="0x01"/>
+            <item name="SDI1-SDI3" value="0x02"/>
+            <item name="SDI1-SDI4" value="0x03"/>
+            <item name="SDI1-SFP" value="0x04"/>
+            <item name="SDI1-HDMI" value="0x05"/>
+            <item name="SDI2-SDI1" value="0x10"/>
+            <item name="SDI2-SDI2" value="0x11"/>
+            <item name="SDI2-SDI3" value="0x12"/>
+            <item name="SDI2-SDI4" value="0x13"/>
+            <item name="SDI2-SFP" value="0x14"/>
+            <item name="SDI2-HDMI" value="0x15"/>
+            <item name="SDI3-SDI1" value="0x20"/>
+            <item name="SDI3-SDI2" value="0x21"/>
+            <item name="SDI3-SDI3" value="0x22"/>
+            <item name="SDI3-SDI4" value="0x23"/>
+            <item name="SDI3-SFP" value="0x24"/>
+            <item name="SDI3-HDMI" value="0x25"/>
+            <item name="SDI4-SDI1" value="0x30"/>
+            <item name="SDI4-SDI2" value="0x31"/>
+            <item name="SDI4-SDI3" value="0x32"/>
+            <item name="SDI4-SDI4" value="0x33"/>
+            <item name="SDI4-SFP" value="0x34"/>
+            <item name="SDI4-HDMI" value="0x35"/>
+            <item name="SFP-SDI1" value="0x40"/>
+            <item name="SFP-SDI2" value="0x41"/>
+            <item name="SFP-SDI3" value="0x42"/>
+            <item name="SFP-SDI4" value="0x43"/>
+            <item name="SFP-SFP" value="0x44"/>
+            <item name="SFP-HDMI" value="0x45"/>
+            <item name="HDMI-SDI1" value="0x50"/>
+            <item name="HDMI-SDI2" value="0x51"/>
+            <item name="HDMI-SDI3" value="0x52"/>
+            <item name="HDMI-SDI4" value="0x53"/>
+            <item name="HDMI-SFP" value="0x54"/>
+            <item name="HDMI-HDMI" value="0x55"/>
+        </value>
+        <value name="mv4-3">
+            <!-- Ensure this list matches the source command mv options -->
+            <item name="SDI1-SDI1" value="0x00"/>
+            <item name="SDI1-SDI2" value="0x01"/>
+            <item name="SDI1-SDI3" value="0x02"/>
+            <item name="SDI1-SDI4" value="0x03"/>
+            <item name="SDI1-SFP" value="0x04"/>
+            <item name="SDI1-HDMI" value="0x05"/>
+            <item name="SDI2-SDI1" value="0x10"/>
+            <item name="SDI2-SDI2" value="0x11"/>
+            <item name="SDI2-SDI3" value="0x12"/>
+            <item name="SDI2-SDI4" value="0x13"/>
+            <item name="SDI2-SFP" value="0x14"/>
+            <item name="SDI2-HDMI" value="0x15"/>
+            <item name="SDI3-SDI1" value="0x20"/>
+            <item name="SDI3-SDI2" value="0x21"/>
+            <item name="SDI3-SDI3" value="0x22"/>
+            <item name="SDI3-SDI4" value="0x23"/>
+            <item name="SDI3-SFP" value="0x24"/>
+            <item name="SDI3-HDMI" value="0x25"/>
+            <item name="SDI4-SDI1" value="0x30"/>
+            <item name="SDI4-SDI2" value="0x31"/>
+            <item name="SDI4-SDI3" value="0x32"/>
+            <item name="SDI4-SDI4" value="0x33"/>
+            <item name="SDI4-SFP" value="0x34"/>
+            <item name="SDI4-HDMI" value="0x35"/>
+            <item name="SFP-SDI1" value="0x40"/>
+            <item name="SFP-SDI2" value="0x41"/>
+            <item name="SFP-SDI3" value="0x42"/>
+            <item name="SFP-SDI4" value="0x43"/>
+            <item name="SFP-SFP" value="0x44"/>
+            <item name="SFP-HDMI" value="0x45"/>
+            <item name="HDMI-SDI1" value="0x50"/>
+            <item name="HDMI-SDI2" value="0x51"/>
+            <item name="HDMI-SDI3" value="0x52"/>
+            <item name="HDMI-SDI4" value="0x53"/>
+            <item name="HDMI-SFP" value="0x54"/>
+            <item name="HDMI-HDMI" value="0x55"/>
+        </value>
+        <!-- Begin unknown guesswork... -->
+        <value name="unknown2"/>
+        <!-- End unknown guesswork... -->
+    </command>
+</dev>	
