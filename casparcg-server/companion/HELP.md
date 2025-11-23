@@ -11,5 +11,9 @@
 * CLEAR
 * CALL
 * SWAP
+* CG ADD
+* CG UPDATE
+* CG PLAY
+* CG STOP
 * Manually specify AMCP command
-* Goto relative position (from start or end of video)
+* GOTO relative position (from start or end of video)
