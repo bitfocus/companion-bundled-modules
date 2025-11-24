@@ -71,7 +71,7 @@ jobs:
         run: |
           echo "Updating  **${{ github.event.inputs.module-name }}** to ${{ github.event.inputs.git-ref }}(${{ github.event.inputs.git-sha }}) :rocket:" >> $GITHUB_STEP_SUMMARY
 
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           path: modules
           ref: ${{ github.ref_name }}
