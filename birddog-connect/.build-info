@@ -1,4 +1,4 @@
 MODULE_NAME=birddog-connect
-GIT_REF=v1.2.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/17519975072
-UPDATE_DATE=2025-09-06
+GIT_REF=v1.3.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/19620149313
+UPDATE_DATE=2025-11-24
