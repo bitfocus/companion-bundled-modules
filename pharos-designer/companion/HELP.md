@@ -10,6 +10,7 @@ Known supported models:
 
 - LPC-1
 - LPC-2
+- LPC X 10
 
 ### Available commands
 
