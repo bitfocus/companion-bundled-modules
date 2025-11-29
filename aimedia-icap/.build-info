@@ -1,4 +1,4 @@
 MODULE_NAME=aimedia-icap
-GIT_REF=v1.0.7
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/13270116795
-UPDATE_DATE=2025-02-11
+GIT_REF=v1.0.9
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/19788154172
+UPDATE_DATE=2025-11-29
