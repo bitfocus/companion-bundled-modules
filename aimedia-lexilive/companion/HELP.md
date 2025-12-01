@@ -24,6 +24,9 @@ Instance Configuration
 
 ## Version History
 
+### Version 1.2.9
+- Update `companion-module-base` to make sure updated secrets are handled during configUpdated
+
 ### Version 1.2.8
 - Fix handling of module secrets
 - Improve polling
