@@ -1,4 +1,4 @@
 MODULE_NAME=meld-studio
-GIT_REF=v1.0.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/18080961033
-UPDATE_DATE=2025-09-28
+GIT_REF=v1.0.3
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/19873244207
+UPDATE_DATE=2025-12-02
