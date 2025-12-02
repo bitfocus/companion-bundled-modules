@@ -11,8 +11,8 @@ Utilities folder contains reference files for developers as well as a dial pad c
 * **Password** - AARC password if configured on the codec (leave blank if none)
 * **Enable Status Polling** - Enable/disable automatic status updates
 * **Polling Interval** - How often to poll for status updates (in milliseconds)
-* **Enable VU Meter** - (Feature currently disabled)
-* **VU Meter Interval** - (Feature currently disabled)
+* **Enable VU Meter** - Enable/disable real-time VU meter monitoring
+* **VU Meter Interval** - How often to poll for VU meter updates (in milliseconds)
 
 ## Available Actions
 
@@ -49,7 +49,7 @@ Utilities folder contains reference files for developers as well as a dial pad c
   _Applicable units: S+, Sy+ S_
 * **Set Headphone Coordination Channel Routing** - Configure headphone routing  
   _Applicable units: S+, Sy+ S_
-* **Monitor Audio Levels** - Start/stop periodic monitoring (feature currently disabled)
+* **Monitor Audio Levels** - Start/stop periodic monitoring
 
 ### Network Settings
 * **Set Network Type** - Change network interface type  
@@ -145,6 +145,7 @@ Utilities folder contains reference files for developers as well as a dial pad c
 
 ### Technical Monitoring
 * **Codec Alarms** - Changes color when the codec has active alarms
+* **Audio Levels** - Visual feedback for Tx/Rx audio levels
 
 ## Variables
 
@@ -167,6 +168,10 @@ Utilities folder contains reference files for developers as well as a dial pad c
 * Audio Status
 * Audio Level
 * Input/Output Gain
+* Tx Left Level
+* Tx Right Level
+* Rx Left Level
+* Rx Right Level
 
 ### Network Settings
 * Network Type
@@ -209,6 +214,10 @@ The module includes comprehensive error handling:
 * Hardware alarms
 
 ## Version History
+
+### Version 1.1.1-beta
+* Implemented real-time VU Metering (Tx/Rx Levels)
+* Improved status reporting and error handling
 
 ### Version 1.0.3-beta
 * fixed call states feedbacks
