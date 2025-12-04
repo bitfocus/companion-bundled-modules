@@ -54,9 +54,12 @@ The module uses a **dual update system**:
 
 The module provides dynamic variables that update automatically:
 
-* **$(companion-module-name:director)**: IP address of the Watchout Director
-* **$(companion-module-name:asset_manager)**: IP address of the Asset Manager
-* **$(companion-module-name:TIMELINE_ID)**: Name of each timeline (e.g., `$(companion-module-name:1)` for timeline 1)
+* **$(companion-module-name:director)**: Name of the Watchout Director
+* **$(companion-module-name:asset_manager)**: Name of the Asset Manager
+* **$(companion-module-name:heartbeat)**: Last reply from Watchout
+* **$(companion-module-name:show_name)**: show_name
+* **$(companion-module-name:TIMELINE_ID)**: Name of each timeline
+* **$(companion-module-name:TIMELINE_ID_CUE_ID)**: When a CUE has a name, it will be shown. If its a timer the value will be the timer value, otherwise it will show the name of the cue
 
 Variables update in real-time via SSE and are refreshed every 30 seconds via polling to catch structural changes.
 
