@@ -9,9 +9,22 @@ This module will allow you to control the splicer of Novastar.
 **Available actions:**
 
 - Play Preset
+- Play Preset Group
+- Select Screen
+- Select Layer
+- Switch Source
 - Freeze Screen
 - Unfreeze Screen
+- Freeze Layer
+- Unfreeze Layer
 - FTB Screen
 - Cancel FTB
-- Set Brightness
 - Custom Command
+- Turn on/off the Volume
+- Increase/Decrease the Volume
+- Increase/Decrease the Brightness
+- Switch PGM/PVW Mode
+- Take
+- Turn on/off the OSD Text
+- Turn on/off the OSD Image
+- Turn on/off the BKG
