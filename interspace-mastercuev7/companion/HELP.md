@@ -32,5 +32,5 @@ After configuring the MasterCueV7 Connection, you have several options to custom
 
 **Available variables:**
 
- - LastCueType : Equals the last cue received by the V7 (forward/back/black)
- - CueTrigger : Briefly equals the last cue received by the V7 (forward/back/black) before returning to an empty string
+- LastCueType : Equals the last cue received by the V7 (forward/back/black)
+- CueTrigger : Briefly equals the last cue received by the V7 (forward/back/black) before returning to an empty string
