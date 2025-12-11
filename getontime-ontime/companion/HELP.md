@@ -21,6 +21,13 @@ Ontime provides an interface to generate these links:
 ## Links
 
 Download ontime or try our cloud service from the website [www.getontime.no](https://www.getontime.no/) \
+View full release notes for the module on [GitHub](https://github.com/bitfocus/companion-module-getontime-ontime/releases) \
 Read the docs at [http://docs.getontime.no](https://docs.getontime.no/) \
 Follow Ontime's development on [GitHub](https://github.com/cpvalente/ontime) \
 Join the [discord community](https://discord.com/invite/eje3CSUEXm)
+
+### New for module version 5.2.0
+- Better message feedback
+- Variables for flag, group and rundown offsets
+- Variables as input to change action on custom fields and title
+- A playback toggle action
