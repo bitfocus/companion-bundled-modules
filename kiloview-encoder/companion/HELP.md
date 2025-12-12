@@ -1,6 +1,6 @@
 ## Kiloview Encoder
 
-Should work with E1/E2/G1/G2 models.
+Should work with E1/E2/E3/G1/G2 models.
 
 **Available commands for Kiloview Encoder**
 
