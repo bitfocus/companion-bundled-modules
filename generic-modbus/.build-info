@@ -1,4 +1,4 @@
 MODULE_NAME=generic-modbus
-GIT_REF=v0.2.3
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/19830614769
-UPDATE_DATE=2025-12-01
+GIT_REF=v0.3.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/20211558855
+UPDATE_DATE=2025-12-14
