@@ -7,6 +7,7 @@ A module for controlling Sony PTZ Camera BRC and SRG series using HTTP-based com
 - BRC-AM7
 - SRG-A40
 - SRG-A12
+- ILME-FR7
 
 ### Actions
 
@@ -53,6 +54,15 @@ A module for controlling Sony PTZ Camera BRC and SRG series using HTTP-based com
 - Stop Pan Tilt Zoom
   - pan/tilt
   - wide/tele
+- Auto Focus
+  - on/off
+  - mode (normal/interval/zoomtrigger)
+  - sensitivity (normal/low)
+- Absolute Focus \*SRG only
+- Absolute Zoom \*SRG only
+- Absolute PTZF
+- Absolute PanTilt
+- Relative PanTilt \*SRG only
 - Other Command
   - Any command can be sent
 
@@ -70,6 +80,7 @@ A module for controlling Sony PTZ Camera BRC and SRG series using HTTP-based com
   - Pan
   - Tilt
   - Zoom
+- Auto Focus
 
 ### Variables
 
@@ -93,5 +104,9 @@ A module for controlling Sony PTZ Camera BRC and SRG series using HTTP-based com
 - `$(this:tiltRangeUpper)` - Possible Upper Movement Range of Tilt
 - `$(this:zoomRangeWide)` - Possible Wide Movement Range of Zoom
 - `$(this:zoomRangeTele)` - Possible Tele Movement Range of Zoom
+- `$(this:absoluteFocus)` - Absolute Focus Value
+- `$(this:afSensitivity)` - Auto Focus Sensitivity
+- `$(this:autoFocusMode)` - Auto Focus Mode (normal/interval/zoomtrigger) \*SRG only
+- `$(this:focusMode)` - Focus Mode (auto/manual)
 
 https://github.com/bitfocus/companion-module-sony-ptz/issues
