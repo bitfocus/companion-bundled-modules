@@ -54,6 +54,9 @@ The mixer control API uses a string specification to determine to which inputs a
 - Indicator
 - LED
 - Level Meter
+- Named Control Position
+- Named Control String Value
+- Named Control Value
 
 **Variables**
 
