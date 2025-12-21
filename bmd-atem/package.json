@@ -1,10 +1,10 @@
 {
   "name": "bmd-atem",
-  "version": "3.19.1",
+  "version": "3.20.1",
   "license": "MIT",
   "type": "commonjs",
   "dependencies": {
-    "atem-connection": "3.6.0"
+    "atem-connection": "3.8.0"
   },
   "resolutions": {
     "node-gyp": "npm:empty-npm-package@1.0.0"
