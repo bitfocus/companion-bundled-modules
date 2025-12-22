@@ -1,4 +1,4 @@
 MODULE_NAME=aja-helo
-GIT_REF=v2.3.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/8274526052
-UPDATE_DATE=2024-03-14
+GIT_REF=v2.4.2
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/20421245524
+UPDATE_DATE=2025-12-22

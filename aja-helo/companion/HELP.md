@@ -4,14 +4,18 @@
 
 - Start/Stop Record
 - Start/Stop Streaming
+- Change Audio / Video input
 - Change recording profile
 - Change streaming profile
-- Change Audio / Video input
+- Change Current layout
+- Recall Presets
+- Enable/Disable Scheduler and configure scheduler actions
 - Rename file
 - Rename file with current timestamp - YYYYMMDD_HHMM
-- Rename file with variable
 
 Check out the [AJA HELO Support Page](https://www.aja.com/products/helo#support) for firmware updates and hardware support.
+
+For information on the HELO REST API, please see the [AJA HELO REST API Repo](https://gitlab.aja.com/pub/rest_api).
 
 **Variables & Polling**
 
