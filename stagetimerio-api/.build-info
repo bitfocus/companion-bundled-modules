@@ -1,4 +1,4 @@
 MODULE_NAME=stagetimerio-api
-GIT_REF=v2.2.2
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/10658279097
-UPDATE_DATE=2024-09-01
+GIT_REF=v2.3.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/20642163951
+UPDATE_DATE=2026-01-01
