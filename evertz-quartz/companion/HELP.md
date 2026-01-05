@@ -14,6 +14,7 @@ Multiple levels can be set at once, for example `VABC` routes video and first 3 
 -   Route Source to Destination (XPT)
 -   Set Destination
 -   Route Source to Selected Destination
+-	Added the Take Action for the Module
 
 The latter two actions work together to build a traditional router control panel, so you can first press the destination and then press the source to make the route.
 Here you will find a way to see the salvo ID's without having to download the active config file. (http://[MAGNUM_IP]/magnum/controls/listPreset)
