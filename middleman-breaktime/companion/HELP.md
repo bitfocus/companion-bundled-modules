@@ -4,36 +4,36 @@ This module controls Middleman Software's BreakTime. For more information, visit
 
 ## Configuration Options:
 
--   IP/Port of Server
--   Enable/Disable Verbose Mode (for logging)
+- IP/Port of Server
+- Enable/Disable Verbose Mode (for logging)
 
 ## Actions:
 
--   Start Selected Event
--   End Selected Event
--   Select Next Event
--   Select Previous Event
--   Select Event (from list)
--   Increase Duration
--   Decrease Duration
+- Start Selected Event
+- End Selected Event
+- Select Next Event
+- Select Previous Event
+- Select Event (from list)
+- Increase Duration
+- Decrease Duration
 
 ## Feedbacks:
 
--   Selected Event is Running
--   Selected Event is Finished
--   Selected Event Duration Mode is X
--   Increase/Decrease Not Allowed
--   SCTE104 Connected/Disconnected
--   VMix Connected/Disconnected
--   Temporary Warning
+- Selected Event is Running
+- Selected Event is Finished
+- Selected Event Duration Mode is X
+- Increase/Decrease Not Allowed
+- SCTE104 Connected/Disconnected
+- VMix Connected/Disconnected
+- Temporary Warning
 
 ## Variables:
 
--   Running Events Count
--   Selected Event Name
--   Selected Event Status
--   Selected Event Duration
--   Selected Event Time Remaining/Elapsed
--   Selected Event Duration Mode
--   SCTE 104 Injector Status
--   VMix Connectivity Status
+- Running Events Count
+- Selected Event Name
+- Selected Event Status
+- Selected Event Duration
+- Selected Event Time Remaining/Elapsed
+- Selected Event Duration Mode
+- SCTE 104 Injector Status
+- VMix Connectivity Status
