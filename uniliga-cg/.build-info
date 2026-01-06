@@ -1,4 +1,4 @@
 MODULE_NAME=uniliga-cg
-GIT_REF=v1.0.4
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/16835579855
-UPDATE_DATE=2025-08-08
+GIT_REF=v1.1.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/20755642672
+UPDATE_DATE=2026-01-06
