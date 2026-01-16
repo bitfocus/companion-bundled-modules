@@ -1,8 +1,30 @@
 ## Disguise OSC
 
-This module provides default OSC controls to the d3/disguise server. Setup OSC transport within d3/disguise.
+This module provides default OSC controls to the Disguise server. Setup OSC transport within Disguise.
 
-Warning: Full functionality is only available if the disguise is configured to _always send_ osc feedback
+Warning: Full functionality is only available if the Disguise is configured to _always send_ osc feedback
+
+## Variable Support in Actions
+
+All actions that accept numeric input (integer or float) now support Companion variables. You can enter a variable (e.g., `$(internal:myvar)`) in any field marked as supporting variables. The value will be resolved at runtime, and the action will validate the result before sending.
+
+**Examples:**
+
+- Cue: Enter `5` or `$(internal:cue_number)`
+- Float Cue: Enter `1.23` or `$(internal:float_value)`
+- Brightness/Volume Steps: Enter `0.01` or `$(internal:step)`
+
+If a variable does not resolve to a valid number, the action will log a debug message and abort.
+
+### Debug Logging
+
+All actions that resolve variables will log debug information to help with troubleshooting. Check the Companion log for details if an action does not behave as expected.
+
+### UI Validation
+
+The UI will now accept both direct numbers and variable patterns in relevant fields. Errors will be shown if the resolved value is not a valid number at runtime.
+
+---
 
 **ACTIONS**
 
@@ -19,8 +41,8 @@ Warning: Full functionality is only available if the disguise is configured to _
 - Next track
 - Track name
 - Track ID
-- Cue
-- Float Cue
+- Cue (integer or variable)
+- Float Cue (float or variable)
 - Fade up
 - Fade down
 - Hold
@@ -29,8 +51,9 @@ Warning: Full functionality is only available if the disguise is configured to _
 - Toggle shift[^1]
 - Shift aware volume[^2]
 - Decrease master brightness
-- Decrease master brightness
+- Increase master brightness
 - Shift aware brightness[^2]
+- Send custom OSC message
 
 [^1]: Toggle shift inverts a boolean variable not available to the user. It provides increased functionality to shift aware actions, presets and feedbacks.
 
@@ -112,6 +135,7 @@ Warning: Full functionality is only available if the disguise is configured to _
 - increase brightness[^5]
 - decrease brightness[^5]
 - master brightness = 0
+- custom OSC address
 
 [^5]: increase (or decrease) volume (or brightness) feedbacks change the png on the button to indicate if the shift variable state is set to allow increase or decrease to volume and brightness
 
