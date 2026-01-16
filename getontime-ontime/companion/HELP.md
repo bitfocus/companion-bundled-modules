@@ -26,6 +26,10 @@ Read the docs at [http://docs.getontime.no](https://docs.getontime.no/) \
 Follow Ontime's development on [GitHub](https://github.com/cpvalente/ontime) \
 Join the [discord community](https://discord.com/invite/eje3CSUEXm)
 
+### New for module version 5.3.0
+- Variables as input to add time action
+- Variables as input to aux timer values
+
 ### New for module version 5.2.0
 - Better message feedback
 - Variables for flag, group and rundown offsets
