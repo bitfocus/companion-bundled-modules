@@ -18,16 +18,18 @@ In instaces tab specify the ip and port you want to send. In button actions tab 
 - Listen for OSC messages (Float)
 - Listen for OSC messages (Boolean)
 - Listen for OSC messages (Multiple Arguments)
+- Listen for OSC messages (Specific Arguments)
 - Listen for OSC messages (No Arguments)
 
 **Available variables for OSC Generic:**
+
 - Latest OSC message received timestamp: `$(osc:latest_received_timestamp)`
 - Latest OSC message received: `$(osc:latest_received_raw)`
 - Latest OSC path received: `$(osc:latest_received_path)`
 - Latest OSC message received client (UDP only): `$(osc:latest_received_client)`
 - Latest OSC message received port (UDP only): `$(osc:latest_received_port)`
-- Latest OSC arguments received: `$(osc:latest_received_args)` *(Use expression `$(osc:latest_received_args)[0]` to fetch the first value, `$(osc:latest_received_args)[1]` to fetch the second value,etc.)*
+- Latest OSC arguments received: `$(osc:latest_received_args)` _(Use expression `$(osc:latest_received_args)[0]` to fetch the first value, `$(osc:latest_received_args)[1]` to fetch the second value,etc.)_
 - Latest OSC message sent timestamp: `$(osc:latest_sent_timestamp)`
 - Latest OSC message sent: `$(osc:latest_sent_raw)`
 - Latest OSC path sent: `$(osc:latest_sent_path)`
-- Latest OSC arguments sent: `$(osc:latest_sent_args)` *(Use expression `$(osc:latest_sent_args)[0]` to fetch the first value, `$(osc:latest_sent_args)[1]` to fetch the second value, etc.)*
+- Latest OSC arguments sent: `$(osc:latest_sent_args)` _(Use expression `$(osc:latest_sent_args)[0]` to fetch the first value, `$(osc:latest_sent_args)[1]` to fetch the second value, etc.)_
