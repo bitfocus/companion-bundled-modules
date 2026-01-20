@@ -1,5 +1,9 @@
 # Zoom Tiles
 
+This module is for the [Zoom Tiles](https://www.liminalet.com/tiles) application.
+
+> The minimum version for Zoom Tiles is v1.2.0.
+
 ## Configuration
 
 To configure this module, you need to provide the following settings:
@@ -7,22 +11,45 @@ To configure this module, you need to provide the following settings:
 - **Target IP**: The IP address of the computer running Zoom Tiles application
 - **Zoom Tiles Receiving Port**: The port number that Zoom Tiles is listening on (default: 3456)
 
-Make sure the Zoom Tiles application is running and configured to receive OSC commands on the specified port.
+![Companion Module Configuration](images/0.png)
 
-## Usage
+Within Tiles, you can find the port number to use and you also need to make sure that the OSC commands are turned on.
 
-### Using Variables with User Names
+![Tiles Application Configuration](images/0-TilesConfig.png)
 
-Actions that require a **userName** parameter support Companion variables. This allows you to dynamically specify users in your commands.
+## Dynamic Participants in By User Name Actions
 
-**Integration with ZoomOSC/ZoomISO:**
+You can leverage the participant selection workflow from the ZoomOSC Companion module with the Zoom Tiles OSC actions to dynamically select the participant(s) for the "by user name" action to take action on.
 
-1. Add the ZoomOSC or ZoomISO module to your Companion instance
-2. Use their user selection actions to choose a participant
-3. Reference the `$(zoomOSC:selectedUser)` or `$(zoomISO:selectedUser)` variable in Zoom Tiles actions
-4. This allows you to perform operations like Favorite, Block, or Replace on dynamically selected users
+> Note: one of the advantages of using this module over just a generic OSC connection for Zoom tiles, is that all of the Zoom Tiles By User Name actions allow you to take action against multiple users at once.
 
-**Example:** In a "Favorite by User Name" action, use `$(zoomOSC:selectedUser)` instead of typing a static name.
+To enable the dynamic participants list using ZoomOSC, follow the steps below:
+
+1. You’ll need the ZoomOSC/ISO module and this module.
+
+   ![Step 1](images/1.png)
+
+1. In ZoomOSC, click the button that has the participant on it so that it gets added to the selectedCallers variable.
+
+   ![Step 3](images/3.png)
+
+   > To enable multiple user selection, in ZoomOSC, run the action Selection method and set it to Multi Select or Toggle it to Multi Select.
+
+1. In ZoomOSC, when you select someone it populates a variable in the Companion variables list for the ZoomOSC module called `selectedCallers`. In this example, Anika was selected. Copy this variable name using the red copy button on the left.
+
+   ![Step 2](images/2.png)
+
+1. When you add a "By User Name" action, for the user name field, instead of typing a static name, paste the variable name you copied (`$(zoomOSC:selectedCallers)`).
+
+   ![Step 4](images/4.png)
+
+   > You can find all of the "By User Name" actions by searching in the Action list for By User Name or searching this document for the action names.
+
+1. Now when you press the key that has the "By User Name" action, it will take affect on the participant that was selected in Companion . For our example, we did Favorite by User and notice the star on Anika in the Tiles favorite list.
+
+   ![Step 5](images/5.png)
+
+This workflow works for all of the Tiles By User Name actions.
 
 ## Supported Actions and Feedbacks
 
