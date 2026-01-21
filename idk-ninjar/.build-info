@@ -1,4 +1,4 @@
 MODULE_NAME=idk-ninjar
-GIT_REF=v1.0.1
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/19392508705
-UPDATE_DATE=2025-11-15
+GIT_REF=v1.1.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/21228380312
+UPDATE_DATE=2026-01-21
