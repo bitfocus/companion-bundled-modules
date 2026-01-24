@@ -1,4 +1,4 @@
 MODULE_NAME=qsys-remote-control
-GIT_REF=v3.2.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/20401135276
-UPDATE_DATE=2025-12-20
+GIT_REF=v3.2.1
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/21323617356
+UPDATE_DATE=2026-01-24
