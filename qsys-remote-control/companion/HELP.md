@@ -1,6 +1,6 @@
 ## Q-SYS Remote Control
 
-This module will connect to Q-SYS systems using the [QRC](https://q-syshelp.qsc.com/#External_Control_APIs/QRC/QRC_Overview.htm) protocl.
+This module will connect to Q-SYS systems using the [QRC](https://q-syshelp.qsc.com/#External_Control_APIs/QRC/QRC_Overview.htm) protocol.
 
 **Available commands for Q-SYS Remote Control**
 
