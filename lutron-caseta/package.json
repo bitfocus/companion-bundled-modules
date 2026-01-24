@@ -1,1 +1,9 @@
-{"name":"Lutron Caseta","version":"0.1.0","license":"MIT","type":"commonjs","dependencies":{}}
+{
+  "name": "Lutron Caseta",
+  "version": "0.1.1",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "tinkerhub-mdns": "0.5.1"
+  }
+}
