@@ -11,6 +11,7 @@ In instaces tab specify the ip and port you want to send. In button actions tab 
 - Send message with multiple arguments
 - Send boolean (this is not part of OSC standard and may only work with some receivers)
 - Send blob (Base64 & Hex)
+- Send MIDI message (OSC MIDI)
 
 **Available feedback for OSC Generic:**
 
@@ -20,6 +21,7 @@ In instaces tab specify the ip and port you want to send. In button actions tab 
 - Listen for OSC messages (Multiple Arguments)
 - Listen for OSC messages (Specific Arguments)
 - Listen for OSC messages (No Arguments)
+- Listen for OSC messages (OSC MIDI)
 
 **Available variables for OSC Generic:**
 
