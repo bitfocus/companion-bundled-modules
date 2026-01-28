@@ -2,7 +2,7 @@
 
 This module will communicate with OBSBOT products over OSC.
 
-The OBSBOT OSC standard protocol is based on the touchOSC protocol. It can be applied to the OBSBOT Center App (software), OBSBOT Tail 2 (hardware), and OBSBOT Tail Air (hardware). The OSC application on OBSBOT Center is compatible with the OBSBOT Tiny series (Tiny, Tiny 4K, Tiny 2, Tiny 2 Lite, Tiny SE), OBSBOT Meet series (Meet, Meet 4K, Meet 2, Meet SE), and OBSBOT Tail series (Tail Air, Tail 2). However, when using the OSC protocol with OBSBOT Center, the software must be running and have the OSC server enabled.
+The OBSBOT OSC standard protocol is based on the touchOSC protocol. It can be applied to the OBSBOT Center App (software), OBSBOT Tail 2 (hardware), and OBSBOT Tail Air (hardware). The OSC application on OBSBOT Center is compatible with the OBSBOT Tiny series (Tiny, Tiny 4K, Tiny 2, Tiny 2 Lite, Tiny 3, Tiny 3 Lite, Tiny SE), OBSBOT Meet series (Meet, Meet 4K, Meet 2, Meet SE), and OBSBOT Tail series (Tail Air, Tail 2). However, when using the OSC protocol with OBSBOT Center, the software must be running and have the OSC server enabled.
 
 Additionally, the OSC can be independently applied to OBSBOT Tail 2, and OBSBOT Tail Air.
 
@@ -13,7 +13,7 @@ Please file any issues you have with the connection on the [Github repo here](ht
 There are two ways to connect to your OBSBOT camera:
 
 1. Connecting directly via IP to the Tail 2 or Tail Air
-2. Connecting via OSC to the OBSBOT Center app (Tail 2, Tail Air, Tiny, Tiny 4K, Tiny 2, Tiny 2 Lite, Tiny SE, Meet, Meet 4K, Meet SE)
+2. Connecting via OSC to the OBSBOT Center app (Tail 2, Tail Air, Tiny, Tiny 4K, Tiny 2, Tiny 2 Lite, Tiny 3, Tiny 3 Lite, Tiny SE, Meet, Meet 4K, Meet SE)
 
 ### Direct connection
 
@@ -52,6 +52,9 @@ If you wish to connect to the Tiny series or Meet series of OBSBOT cameras you w
 - Center App | Tiny Series | AI Mode
 - Center App | Tiny Series | Set Tracking Mode
 - Center App | Tiny Series | Trigger Preset
+- Center App | Tiny Series | Set White Balance Shift
+- Center App | Tiny Series | Set Red/Blue Gain
+- Center App | Tiny Series | Set Tracking Speed
 - Gimbal | Move Down
 - Gimbal | Move Left
 - Gimbal | Move Right
@@ -72,6 +75,7 @@ If you wish to connect to the Tiny series or Meet series of OBSBOT cameras you w
 - Image | Set Shutter Speed
 - Other | Set Mirror Mode
 - Tail 2 | Set AI Mode and Auto Zoom Mode
+- Tail 2 | Set AI Mode On/Off
 - Tail 2 | Set Only Me On/Off
 - Tail 2 | Set Tracking Speed
 - Tail 2 | Start Recording
