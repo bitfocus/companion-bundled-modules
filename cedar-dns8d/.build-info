@@ -1,4 +1,4 @@
 MODULE_NAME=cedar-dns8d
-GIT_REF=v1.0.6
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/18851910110
-UPDATE_DATE=2025-10-27
+GIT_REF=v1.0.7
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/21489393936
+UPDATE_DATE=2026-01-29
