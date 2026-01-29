@@ -19,6 +19,12 @@ This module will connect to Blackmagic Design SmartView and SmartScope devices.
 - Set LUT
 - Select Input
 
+### Available value feedbacks (model dependent)
+
+- Border color
+- Input
+- Scope function
+
 ### Available variables (model dependent)
 
 - Brightness
