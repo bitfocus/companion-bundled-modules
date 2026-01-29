@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev driver="samsungd">
+<!--
+    There's a subset of Samsung MDC commands below. They were chosen as most useful for common tasks.
+    You can add, remove or modify them as long as you know what you are doing and the XML document remains valid.
+
+    Mode attribute says if command is read only or read/write.
+    Values of wDuration and rDuration are defined in miliseconds.
+    Number values can be decimal or hexadecimal. Hex numbers must be used with prefix 0x
+-->
+    <command name="status" code="0x00" mode="r">
+    <!-- Get current status of display. Return object. Command: 'status?' -->
+        <value name="power">
+            <item name="on" value="0x01"/>
+            <item name="off" value="0x00"/>
+        </value>
+        <value name="volume"/>
+        <value name="mute">
+            <item name="on" value="0x01"/>
+            <item name="off" value="0x00"/>
+        </value>
+        <value name="input">
+            <!-- Ensure this list matches the input command -->
+            <item name="S-Video" value="0x04"/>
+            <item name="Component" value="0x08"/>
+            <item name="AV" value="0x0C"/>
+            <item name="AV2" value="0x0D"/>
+            <item name="SCART1" value="0x0E"/>
+            <item name="PC" value="0x14"/>
+            <item name="DVI" value="0x18"/>
+            <item name="BNC" value="0x1E"/>
+            <item name="DVI-Video" value="0x1F"/>
+            <item name="MagicInfo" value="0x20"/>
+            <item name="HDMI1, HDMI" value="0x21"/>
+            <item name="HDMI1-PC" value="0x22"/>
+            <item name="HDMI2" value="0x23"/>
+            <item name="HDMI2-PC" value="0x24"/>
+            <item name="DP, DP1, DisplayPort1" value="0x25"/>
+            <item name="DP2" value="0x26"/>
+            <item name="DP3" value="0x27"/>
+            <item name="HDMI3" value="0x31"/>
+            <item name="HDMI3-PC" value="0x32"/>
+            <item name="HDMI4" value="0x33"/>
+            <item name="HDMI4-PC" value="0x34"/>
+            <item name="TV-DTV" value="0x40"/>
+            <item name="HD-BaseT" value="0x55"/>
+            <item name="OCM" value="0x56"/>
+            <item name="MagicInfo-S" value="0x60"/>
+            <item name="Screen Mirroring" value="0x61"/>
+            <item name="USB" value="0x62"/>
+            <item name="URL Launcher" value="0x63"/>
+            <item name="Whiteboard" value="0x64"/>
+            <item name="Web Browser" value="0x65"/>
+            <item name="Remote Workspace" value="0x66"/>
+            <!-- and some more -->
+        </value>
+        <value name="aspect"/>
+        <value name="NTimeNF"/>
+        <value name="FTimeNF"/>
+    </command>
+    <command name="sernum" code="0x0B" mode="r"/> <!-- Get display serial number. Return string. Command: 'sernum?' -->
+    <command name="software" code="0x0E" mode="r"/><!-- Get info and software version. Return string. Command: 'software?' -->
+    <command name="power" code="0x11" mode="rw" wDuration="10000">
+        <!-- Set display power on/off or get power status. Return string 'on|off'. Command: 'power on|off', 'power?' -->
+        <value>
+            <item name="on" value="0x01"/>
+            <item name="off" value="0x00"/>
+        </value>
+    </command>
+    <command name="volume" code="0x12" mode="rw"/><!-- Set/get display audio volume. Return number. Command: 'volume 0-100', 'volume?' -->
+    <command name="mute" code="0x13" mode="rw">
+        <!-- Set audio mute on/off or get mute state. Return string. Command: 'mute on|off', 'mute?' -->
+        <value>
+            <item name="on" value="0x01"/>
+            <item name="off" value="0x00"/>
+        </value>
+    </command>
+    <command name="input" code="0x14" mode="rw" wDuration="5000">
+        <!-- Set/get current input. Return string. Command: 'input input_name', 'input?' -->
+        <value>
+            <!-- Ensure this list matches the status command's input field -->
+            <item name="S-Video" value="0x04"/>
+            <item name="Component" value="0x08"/>
+            <item name="AV" value="0x0C"/>
+            <item name="AV2" value="0x0D"/>
+            <item name="SCART1" value="0x0E"/>
+            <item name="PC" value="0x14"/>
+            <item name="DVI" value="0x18"/>
+            <item name="BNC" value="0x1E"/>
+            <item name="DVI-Video" value="0x1F"/>
+            <item name="MagicInfo" value="0x20"/>
+            <item name="HDMI1, HDMI" value="0x21"/>
+            <item name="HDMI1-PC" value="0x22"/>
+            <item name="HDMI2" value="0x23"/>
+            <item name="HDMI2-PC" value="0x24"/>
+            <item name="DP, DP1, DisplayPort1" value="0x25"/>
+            <item name="DP2" value="0x26"/>
+            <item name="DP3" value="0x27"/>
+            <item name="HDMI3" value="0x31"/>
+            <item name="HDMI3-PC" value="0x32"/>
+            <item name="HDMI4" value="0x33"/>
+            <item name="HDMI4-PC" value="0x34"/>
+            <item name="TV-DTV" value="0x40"/>
+            <item name="HD-BaseT" value="0x55"/>
+            <item name="OCM" value="0x56"/>
+            <item name="MagicInfo-S" value="0x60"/>
+            <item name="Screen Mirroring" value="0x61"/>
+            <item name="USB" value="0x62"/>
+            <item name="URL Launcher" value="0x63"/>
+            <item name="Whiteboard" value="0x64"/>
+            <item name="Web Browser" value="0x65"/>
+            <item name="Remote Workspace" value="0x66"/>
+            <!-- and some more -->
+        </value>
+    </command>
+
+    <command name="screenSize" code="0x19" mode="r"/> <!-- Get screen size (diagonal) in inches. Command: 'screensize?' -->
+    <command name="contrast" code="0x24" mode="rw"/><!-- Set/get display contrast. Return number. Command: 'contrast 0-100', 'contrast?' -->
+    <command name="brightness" code="0x25" mode="rw"/><!-- Set/get display brightness. Return number. Command: 'brightness 0-100', 'brightness?' -->
+    <command name="sharpness" code="0x26" mode="rw"/><!-- Set/get display sharpness. Return number. Command: 'sharpness 0-100', 'sharpness?' -->
+    <command name="saturation" code="0x27" mode="rw"/><!-- Set/get display color saturation. Return number. Command: 'saturation 0-100', 'saturation?' -->
+    <command name="tint" code="0x28" mode="rw"/><!-- Set/get display tint. Return number. Command: 'tint 0-100', 'tint?' -->
+    <command name="rgbContrast" code="0x37" mode="rw"/><!-- Set/get display RGB contrast. Return number. Command: 'rgbContrast 0-100', 'rgbContrast?' -->
+    <command name="rgbBrightness" code="0x38" mode="rw"/><!-- Set/get display RGB brightness. Return number. Command: 'rgbBrightness 0-100', 'rgbBrightness?' -->
+    <command name="fanspeed" code="0x44" mode="rw"/> <!-- Set/get fan speed. Return number. Command: 'fanspeed 0-100', 'fanspeed?' -->
+    <command name="wallMode" code="0x5C" mode="rw">
+        <!-- Set/get border compensation for wall/matrix mode. Return string. Command: 'wallMode natural|full', 'wallmode?' -->
+        <value>
+            <item name="natural" value="0x00"/> <!-- border compensation -->
+            <item name="full" value="0x01"/> <!-- no compensation -->
+        </value>
+    </command>
+
+    <command name="volumeUpDown" code="0x62" mode="w">
+        <!-- Set display audio volume up/down. Command: 'volumeUpDown up|down' -->
+        <value>
+            <item name="up" value="0x00"/>
+            <item name="down" value="0x01"/>
+        </value>
+    </command>
+
+    <command name="wallOn" code="0x84" mode="rw">
+        <!-- Set wall/matrix mode on/off or get state of this. Return string. Command: 'wallOn on|off', 'wallOn?' -->
+        <value>
+            <item name="on" value="0x01"/>
+            <item name="off" value="0x00"/>
+        </value>
+    </command>
+    <command name="wallDef" code="0x89" mode="rw">
+        <!-- Set wall/matrix configuration for display or get this. Return Object. Command: 'wallDef Wall_Div,Wall_SNo', 'wallDef?' .
+        Wall_Div represents a column-row size of wall while Wall_SNo is ordinal number in matrix starting from upper-left corner following "Z" scheme into lower-right -->
+        <value name="Wall_Div" min="0" max="0xF6">
+            <item name="off" value="0x00"/>
+            <item name="1x1" value="0x11"/>
+            <item name="2x2" value="0x22"/>
+            <item name="3x3" value="0x33"/>
+            <item name="4x4" value="0x44"/>
+            <item name="5x5" value="0x55"/>
+            <item name="6x6" value="0x66"/>
+            <item name="7x7" value="0x77"/>
+            <item name="8x8" value="0x88"/>
+            <item name="9x9" value="0x99"/>
+            <item name="10x10" value="0xAA"/>
+            <!-- other divs available but rarely used -->
+        </value>
+        <value name="Wall_SNo" min="0" max="100"/> <!-- ordinal number in wall. Upper left is 1 -->
+    </command>
+    <command name="model" code="0x8A" mode="r"/><!-- Get display model name. Command: 'model?' -->
+
+    <!--
+        0x8B    Video Wall Direct User Control get/set
+    -->
+</dev>	
