@@ -1,4 +1,4 @@
 MODULE_NAME=generic-webtable
-GIT_REF=v1.0.3
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/12330734422
-UPDATE_DATE=2024-12-14
+GIT_REF=v1.0.4
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/21574545596
+UPDATE_DATE=2026-02-02
