@@ -1,7 +1,13 @@
 # Matrox ConductIP
 
-This module provides actions and presets to run Matrox ConductIP salvos.
+This module provides actions, feedbacks, and presets for the [Matrox ConductIP](https://video.matrox.com/en/products/infrastructure/convertip-series/conductip).
 
-This module will automatically fetch available rooms and panels every second. You can use presets to find the rooms and panels your user has access to. And you can use variables to keep labels on buttons up to date with the labels of the salvos inside ConductIP.
+**Note: ConductIP software version 2.04.0 or higher is required to use versions ≥1.1.0 of this module**
 
-Usernames and passwords are the same as on the Conduct IP web interface. Make sure to assign at least one room and panel to a user for it to work with this module.
+# Getting Started
+
+- Setup a user using the ConductIP's Web UI, and ensure it has permissions for at least one room you wish to control
+- Enter the Username and Password into the module configuration
+- If using a self-signed certificate, enable the "Allow Unverified/Self-Signed HTTPS Certificates" toggle
+
+This module will automatically populate available rooms and panels, and keep them up to date. You can use presets to find the rooms and panels your user has access to. And you can use variables to keep labels on buttons up to date with the labels of the presets inside ConductIP.
