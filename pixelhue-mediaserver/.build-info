@@ -1,4 +1,4 @@
 MODULE_NAME=pixelhue-mediaserver
-GIT_REF=v1.3.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/16015068547
-UPDATE_DATE=2025-07-02
+GIT_REF=v1.4.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/21772074905
+UPDATE_DATE=2026-02-07

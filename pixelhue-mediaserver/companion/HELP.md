@@ -20,3 +20,5 @@ This module will allow you to control the following Pixelhue media server produc
 - On Test PIC
 - Prev Program
 - Next Program
+- Bind Media
+- Bind CUE
