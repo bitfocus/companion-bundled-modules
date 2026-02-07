@@ -1,4 +1,4 @@
 MODULE_NAME=elgato-keylight
-GIT_REF=v2.1.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/9087329819
-UPDATE_DATE=2024-05-14
+GIT_REF=v3.0.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/21771723382
+UPDATE_DATE=2026-02-07
