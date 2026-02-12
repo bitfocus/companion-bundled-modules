@@ -1,4 +1,4 @@
 MODULE_NAME=evertz-quartz
-GIT_REF=v2.1.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/20702182879
-UPDATE_DATE=2026-01-05
+GIT_REF=v3.0.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/21966761969
+UPDATE_DATE=2026-02-12
