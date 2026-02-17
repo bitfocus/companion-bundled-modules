@@ -1,4 +1,4 @@
 MODULE_NAME=middleman-adit
-GIT_REF=v2.0.4
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/20702019345
-UPDATE_DATE=2026-01-05
+GIT_REF=v3.0.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/22085610485
+UPDATE_DATE=2026-02-17
