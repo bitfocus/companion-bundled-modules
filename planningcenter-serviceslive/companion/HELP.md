@@ -31,6 +31,8 @@ Add an action to a button and choose the PCO Plan you wish to control.
 - Release Control (Select Plan Date from list)
 - Take Control of a Specific Plan (Specify Service Type Id and Plan Id - supports variables)
 - Release Control of a Specific Plan (Specify Service Type Id and Plan Id - supports variables)
+- Take Control of Next Plan in Selected Service Type
+- Release Control of Next Plan in Selected Service Type
 - Set Plan Id to poll for variables
 
 **Available Variables:**
