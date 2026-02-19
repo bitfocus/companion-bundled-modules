@@ -5,14 +5,14 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@julusian/freetype2@npm:^1.1.2":
-  version: 1.2.1
-  resolution: "@julusian/freetype2@npm:1.2.1"
+"@julusian/freetype2@npm:^1.3.1":
+  version: 1.3.1
+  resolution: "@julusian/freetype2@npm:1.3.1"
   dependencies:
     node-addon-api: "npm:^6.1.0"
-    node-gyp: "npm:^10.1.0"
+    node-gyp: "npm:latest"
     pkg-prebuilds: "npm:^1.0.0"
-  checksum: 10c0/7aa5ce36119c85d773eca684a2b0d70f16e3af42eeead7b72feae9506075b06931ddbb193b63ee732dd33a9334ec733c73609704b8ea87d3e4ed461cff0533d8
+  checksum: 10c0/487416fe7eb558875610764e91d120243a92c0ffd76ecee2a1a02164fe67799e468fa83f6aac31aec17dd66cad30a70a714a714e43451d71aee95c6e0e5ab87a
   languageName: node
   linkType: hard
 
@@ -39,21 +39,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"atem-connection@npm:3.8.0":
-  version: 3.8.0
-  resolution: "atem-connection@npm:3.8.0"
+"atem-connection@npm:3.9.0":
+  version: 3.9.0
+  resolution: "atem-connection@npm:3.9.0"
   dependencies:
-    "@julusian/freetype2": "npm:^1.1.2"
+    "@julusian/freetype2": "npm:^1.3.1"
     debug: "npm:^4.3.4"
     eventemitter3: "npm:^4.0.7"
     exit-hook: "npm:^2.2.1"
-    nanotimer: "npm:^0.3.15"
     p-lazy: "npm:^3.1.0"
     p-queue: "npm:^6.6.2"
     threadedclass: "npm:^1.2.1"
     tslib: "npm:^2.6.2"
     wavefile: "npm:^8.4.6"
-  checksum: 10c0/fa7342c6e692b13ad39bfd595241384789f833ec176abdc3c29442876d024612b021698397e15449e3fa2cc66512b4e95c0d0b47efcdfa14eee72b71e5e78339
+  checksum: 10c0/18b2d1a2acca8444bc35b625eb721707c332999d8f910e47639377f24d42829dae762aa1e61cc824174a5b4875fed159e598d22f5b891435bdbb5f9a46ababe6
   languageName: node
   linkType: hard
 
@@ -75,7 +74,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "bmd-atem@workspace:."
   dependencies:
-    atem-connection: "npm:3.8.0"
+    atem-connection: "npm:3.9.0"
   languageName: unknown
   linkType: soft
 
@@ -212,13 +211,6 @@ __metadata:
   version: 2.1.3
   resolution: "ms@npm:2.1.3"
   checksum: 10c0/d924b57e7312b3b63ad21fc5b3dc0af5e78d61a1fc7cfb5457edaf26326bf62be5307cc87ffb6862ef1c2b33b0233cdb5d4f01c4c958cc0d660948b65a287a48
-  languageName: node
-  linkType: hard
-
-"nanotimer@npm:^0.3.15":
-  version: 0.3.15
-  resolution: "nanotimer@npm:0.3.15"
-  checksum: 10c0/b774d0e6ae72b4a7a0277136c58884ce1e0f47f109b177a9b24a4cc77500f063e4b05642b465f733bb4d5594005aec5ef3a54ff7a85d15d7de9b24bd3074cc2e
   languageName: node
   linkType: hard
 
