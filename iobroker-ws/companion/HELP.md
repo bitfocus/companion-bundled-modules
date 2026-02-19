@@ -1,4 +1,4 @@
-## Your module
+## ioBroker Websockets
 
 **Configuration**
 
