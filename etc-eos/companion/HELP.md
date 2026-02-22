@@ -46,6 +46,8 @@ _A User ID of `-1` refers to whichever user the console is currently set to._
 
 The **Use TCP SLIP** setting will use port 3037 with TCP 1.1 SLIP protocol, otherwise it will use port 3032. This is a new option since EOS 3.1 for 3rd party connections.
 
+The **Labels to poll** setting controls how many `group_label_X`, `preset_label_X`, and `macro_label_X` variables are created and actively queried from the console.
+
 ## Actions
 
 While it's not practical to create specific actions for every possible command available in your light console, some common actions/keys have been added, although the **Custom Command** action is the most flexible.
@@ -77,31 +79,34 @@ Note: `\n` is used to put a new line in the button's text. It's unrelated to usi
 
 A list of the available variables is listed on the module's config page, and is also available below:
 
-| Variable                        | Description                         | Example value               |
-| ------------------------------- | ----------------------------------- | --------------------------- |
-| $(etc-eos:cue_active_list)      | The active cue list number          | 1                           |
-| $(etc-eos:cue_active_num)       | The active cue number               | 30                          |
-| $(etc-eos:cue_active_label)     | The active cue label                | Intermission                |
-| $(etc-eos:cue_active_duration)  | The active cue duration in seconds  | 3.0                         |
-| $(etc-eos:cue_active_intensity) | The active cue intensity percent    | 100%                        |
-| $(etc-eos:cue_pending_list)     | The pending cue list number         | 1                           |
-| $(etc-eos:cue_pending_num)      | The pending cue number              | 40                          |
-| $(etc-eos:cue_pending_label)    | The pending cue label               | Act 3                       |
-| $(etc-eos:cue_pending_duration) | The pending cue duration in seconds | 3.0                         |
-| $(etc-eos:show_name)            | The name of the show                | My show                     |
-| $(etc-eos:cmd)                  | The command line for the user       | LIVE: Cue 20 : Sub 1 @ 60 # |
-| $(etc-eos:softkey_label_1)      | Soft key 1's label                  | Attributes                  |
-| $(etc-eos:softkey_label_2)      | Soft key 2's label                  | Fw/Hg                       |
-| $(etc-eos:softkey_label_3)      | Soft key 3's label                  | AutoMark Off                |
-| $(etc-eos:softkey_label_4)      | Soft key 4's label                  | Link/Loop                   |
-| $(etc-eos:softkey_label_5)      | Soft key 5's label                  | Execute                     |
-| $(etc-eos:softkey_label_6)      | Soft key 6's label                  |                             |
-| $(etc-eos:softkey_label_7)      | Soft key 7's label                  |                             |
-| $(etc-eos:softkey_label_8)      | Soft key 8's label                  |                             |
-| $(etc-eos:softkey_label_9)      | Soft key 9's label                  |                             |
-| $(etc-eos:softkey_label_10)     | Soft key 10's label                 |                             |
-| $(etc-eos:softkey_label_11)     | Soft key 11's label                 | Offset                      |
-| $(etc-eos:softkey_label_12)     | Soft key 12's label                 | AutoBlk Clean               |
+| Variable                           | Description                         | Example value               |
+| ---------------------------------- | ----------------------------------- | --------------------------- |
+| $(etc-eos:cue_active_list)         | The active cue list number          | 1                           |
+| $(etc-eos:cue_active_num)          | The active cue number               | 30                          |
+| $(etc-eos:cue_active_label)        | The active cue label                | Intermission                |
+| $(etc-eos:cue_active_duration)     | The active cue duration in seconds  | 3.0                         |
+| $(etc-eos:cue_active_intensity)    | The active cue intensity percent    | 100%                        |
+| $(etc-eos:cue_pending_list)        | The pending cue list number         | 1                           |
+| $(etc-eos:cue_pending_num)         | The pending cue number              | 40                          |
+| $(etc-eos:cue_pending_label)       | The pending cue label               | Act 3                       |
+| $(etc-eos:cue_pending_duration)    | The pending cue duration in seconds | 3.0                         |
+| $(etc-eos:show_name)               | The name of the show                | My show                     |
+| $(etc-eos:eos_version)             | The Eos software version            | 3.3.0.273                   |
+| $(etc-eos:fixture_library_version) | The fixture library version         | 3.3.0.102                   |
+| $(etc-eos:gel_swatch_type)         | The gel swatch type                 | 0                           |
+| $(etc-eos:cmd)                     | The command line for the user       | LIVE: Cue 20 : Sub 1 @ 60 # |
+| $(etc-eos:softkey_label_1)         | Soft key 1's label                  | Attributes                  |
+| $(etc-eos:softkey_label_2)         | Soft key 2's label                  | Fw/Hg                       |
+| $(etc-eos:softkey_label_3)         | Soft key 3's label                  | AutoMark Off                |
+| $(etc-eos:softkey_label_4)         | Soft key 4's label                  | Link/Loop                   |
+| $(etc-eos:softkey_label_5)         | Soft key 5's label                  | Execute                     |
+| $(etc-eos:softkey_label_6)         | Soft key 6's label                  |                             |
+| $(etc-eos:softkey_label_7)         | Soft key 7's label                  |                             |
+| $(etc-eos:softkey_label_8)         | Soft key 8's label                  |                             |
+| $(etc-eos:softkey_label_9)         | Soft key 9's label                  |                             |
+| $(etc-eos:softkey_label_10)        | Soft key 10's label                 |                             |
+| $(etc-eos:softkey_label_11)        | Soft key 11's label                 | Offset                      |
+| $(etc-eos:softkey_label_12)        | Soft key 12's label                 | AutoBlk Clean               |
 
 _Soft keys 7-12 are the alternates available when you toggle the {More SK} button._
 
@@ -109,8 +114,9 @@ _Soft keys 7-12 are the alternates available when you toggle the {More SK} butto
 
 These parameters are reported when working with a fixture. You must select the fixture by typing its number on the command line. If using next/last or other methods the EOS software does not consistently send updates on the values.
 
-All of these variables are availabe in a string (integer) and a floating point format. Just append _stringval or _floatval to the end of the base name in the list below:
+All of these variables are available in a string (integer) and a floating point format. Just append \_stringval or \_floatval to the end of the base name in the list below:
 
+```
 enc_intensity
 enc_background_intensity
 enc_zoom
@@ -221,32 +227,32 @@ enc_cie_x_7
 enc_cie_y_7
 enc_cie_x_8
 enc_cie_y_8
-
+```
 
 ## Wheels - By category
 
-The encoder wheels are also availble by category:
+The encoder wheels are also available by category:
 
-| Category# | Description         |
-| --------- | ------------------- |
-| 0         | Uncategorized       |
-| 1         | Intensity           |
-| 2         | Focus               |
-| 3         | Color               |
-| 4         | Image               |
-| 5         | Form                |
-| 6         | Shutter             |
+| Category# | Description   |
+| --------- | ------------- |
+| 0         | Uncategorized |
+| 1         | Intensity     |
+| 2         | Focus         |
+| 3         | Color         |
+| 4         | Image         |
+| 5         | Form          |
+| 6         | Shutter       |
 
 Each category will have its own set of encoder wheels depending on
 the fixture selected
 
-| Variable                     | Description                            |
-| ---------------------------- | -------------------------------------- |
-| catX_wheel_count             | How many wheels are in this category   |
-| catX_wheel_Y_label           | Label for Wheel Y of Category X        |
-| catX_wheel_Y_stringval       | String/Int for Wheel Y of Category X   |
-| catX_wheel_Y_floatval        | Float value for Wheel Y or Category X  |
-| catX_wheel_Y_oscname         | OSC path value (from label)            |
+| Variable               | Description                           |
+| ---------------------- | ------------------------------------- |
+| catX_wheel_count       | How many wheels are in this category  |
+| catX_wheel_Y_label     | Label for Wheel Y of Category X       |
+| catX_wheel_Y_stringval | String/Int for Wheel Y of Category X  |
+| catX_wheel_Y_floatval  | Float value for Wheel Y or Category X |
+| catX_wheel_Y_oscname   | OSC path value (from label)           |
 
 There is a sample Stream Deck + configuration file in the github repository that demonstrates how this can be used effectively to manage all encoders on a single Stream Deck + page.
 
@@ -254,10 +260,11 @@ There is a sample Stream Deck + configuration file in the github repository that
 
 To allow the use of buttons to select groups, and capture the group label for use on the buttons, there are a set of variables that hold this information.
 
-Currently the first 30 groups are captured:
+The module captures group labels from `group_label_1` up to your configured **Labels to poll** value.
+
+By default this is:
 
 group_label_1 through group_label_30
-
 
 ## Feedbacks
 
