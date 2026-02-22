@@ -6,8 +6,6 @@ This module is a SNMP trap reciever optimised for the logic configurable traps f
 
 Each XCI card is capable of 256 logic configurable SNMP traps. NB. In the test system the 256th logic cell doesnt report an OID correctly.
 
-Due to the necessary UDP port binding, it is only possible to run one instance of this module at a time.
-
 ### Configuration
 
 **XCI IP**
@@ -75,6 +73,14 @@ Follows the state of the specified SNMP trap
 Goes true when triggered by a Trap. Stays true until reset.
 
 ## Version History
+
+### Version 1.3.0
+
+- Pass Shared UDP Socket to SNMP agent so multiple instances can be run at once
+- Let Companion parse variables
+- Abort actions and feedbacks by throwing errors
+- Replace isVisible properties with isVisibleExpression
+- Update dependencies
 
 ### Version 1.2.2
 
