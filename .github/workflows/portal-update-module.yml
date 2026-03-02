@@ -84,6 +84,11 @@ jobs:
         run: |
           tar -xvzf pkg.tgz
 
+          # The extracted folder may be named 'pkg' or the module name - normalize to 'pkg'
+          if [ ! -d "pkg" ] && [ -d "${{ github.event.inputs.module-name }}" ]; then
+            mv "${{ github.event.inputs.module-name }}" pkg
+          fi
+
           UPDATE_DATE=$(date +%Y-%m-%d)
 
           # cleanup some junk
@@ -139,6 +144,11 @@ jobs:
         run: |
           # extract the package
           tar -xvzf pkg.tgz
+
+          # The extracted folder may be named 'pkg' or the module name - normalize to 'pkg'
+          if [ ! -d "pkg" ] && [ -d "${{ github.event.inputs.module-name }}" ]; then
+            mv "${{ github.event.inputs.module-name }}" pkg
+          fi
 
           ARTIFACT_DIR="${{ github.event.inputs.module-type }}/${{ github.event.inputs.module-name }}/${{ github.event.inputs.git-ref }}-${{ github.event.inputs.git-sha }}"
           ARTIFACT_NAME="${{ github.event.inputs.module-name }}-${{ github.event.inputs.git-ref }}.tgz"
