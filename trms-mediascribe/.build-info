@@ -1,0 +1,4 @@
+MODULE_NAME=trms-mediascribe
+GIT_REF=v0.1.0
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/22592265536
+UPDATE_DATE=2026-03-02
