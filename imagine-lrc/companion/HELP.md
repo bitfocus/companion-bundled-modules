@@ -6,7 +6,7 @@ This module controls Imagine Communications (f/k/a Harris) video routers via Log
 
 This module is based on version 1.1 of the LRC protocol. Not all features are available in prior versions of the protocol.
 
-All testing was performed against a Platinum IP3. Any router supporting the LRC protocol should be compatible, but YMMV.
+Testing has been performed against Platinum MX Series routers and Platinum IP3 Routers. Please  [open an issue](https://github.com/bitfocus/companion-module-imagine-lrc/issues/new) with any incompatibilities or inconsistencies discovered across hardware platforms.
 
 ## Setup
 
@@ -141,6 +141,8 @@ Starting from version 2.2, this module exposes the following variable types:
 - Destination (by name or number) Status - Current Routed Input Name
 - Destination (by name or number) Status - Current Routed Input Number
 - Destination (by name or number) Status - Lock/Protect State
+
+From version 3.0, the Lock & Protect state variables are exposed separately from each other, per destination. The rules around how the LRC protocol describes simultaneous lock and/or protect states can be complicated, so please review the protocol documentation to ensure understanding of how all of these states interact.
 
 ## Protocol Documentation
 
