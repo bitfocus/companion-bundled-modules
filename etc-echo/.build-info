@@ -1,0 +1,4 @@
+MODULE_NAME=etc-echo
+GIT_REF=v0.2.2
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/22575891559
+UPDATE_DATE=2026-03-02
