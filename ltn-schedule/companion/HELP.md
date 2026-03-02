@@ -16,11 +16,11 @@ More infos available on the LTN website: https://ltnglobal.com/
 To get a pair of credentials for the Schedule API, create a new user in the Schedule UI and assign
 the api user role to it. You can then use it to connect through this companion module.
 
-| Setting          | Description                                                     |
-|------------------|-----------------------------------------------------------------|
-| **Host**         | Enter the hostname of your Schedule instance.                   |
-| **API Username** | Enter the username of one of the Schedule instance's API Users. |
-| **API Password** | Enter the corresponding password.                               |
+| Setting          | Description                                                                         |
+|------------------|-------------------------------------------------------------------------------------|
+| **Host**         | Enter the hostname of your Schedule instance. (Can be a variable)                   |
+| **API Username** | Enter the username of one of the Schedule instance's API Users. (Can be a variable) |
+| **API Password** | Enter the corresponding password. (Can be a variable)                               |
 
 ## Actions
 
@@ -41,6 +41,9 @@ the api user role to it. You can then use it to connect through this companion m
 | **Resync system**           | Attempts re-syncing with the redundant system                                                                                                        |
 | **Jump to element**         | Jump to an element by ID, index, title, or custom key and value pair                                                                                 |
 | **Toggle output scaling**   | Activate or deactivate the currently set output scaling settings                                                                                     |
+| **Change graphics layer**   | Activate, deactivate or toggler a graphics engine rundown element                                                                                    |
+| **Stop graphics**           | Stop all graphics engine layers                                                                                                                      |
+| **Start graphics**          | Start all graphics engine layers                                                                                                                     |
 
 ## Feedback available
 
@@ -62,6 +65,7 @@ the api user role to it. You can then use it to connect through this companion m
 | **Element playing status**          | Shows if an element is playing (by ID)                                                               |
 | **Flexible playback status**        | Shows if flexible playback mode is activated                                                         |
 | **Output scaling status**           | Shows if output scaling is activated                                                                 |
+| **Graphics layer status**           | Shows if a graphics layer is on air                                                                  |
 
 ## Variables
 
