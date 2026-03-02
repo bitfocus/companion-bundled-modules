@@ -1,4 +1,4 @@
 MODULE_NAME=novastar-mediaserver
-GIT_REF=v1.4.0
-RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/21323888843
-UPDATE_DATE=2026-01-25
+GIT_REF=v1.4.2
+RUN_URL=https://github.com/bitfocus/companion-bundled-modules/actions/runs/22592373363
+UPDATE_DATE=2026-03-02
