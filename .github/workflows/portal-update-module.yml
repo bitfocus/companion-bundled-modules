@@ -92,9 +92,9 @@ jobs:
 
 
           export HOME="$(pwd)" MC_CONFIG_DIR="$(pwd)"
-          ./mc alias set remote/ https://${{ vars.S3_BUCKET }}.${{ vars.S3_HOST }} ${{ secrets.S3_KEY }} ${{ secrets.S3_SECRET }}
+          ./mc alias set remote/ https://${{ vars.S3_HOST }} ${{ secrets.S3_KEY }} ${{ secrets.S3_SECRET }}
 
-          ./mc cp "pkg/companion/" "remote/${ARTIFACT_DIR}" --recursive
+          ./mc cp "pkg/companion/" "remote/${{ vars.S3_BUCKET }}/${ARTIFACT_DIR}" --recursive
 
           echo "artifact-name=${ARTIFACT_NAME}" >> $GITHUB_OUTPUT
           echo "artifact-url=https://${{ vars.S3_BUCKET }}.${{ vars.S3_HOST }}/${ARTIFACT_DIR}" >> $GITHUB_OUTPUT
