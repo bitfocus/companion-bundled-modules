@@ -97,7 +97,7 @@ jobs:
           ./mc cp "pkg/companion/" "remote/${ARTIFACT_DIR}" --recursive
 
           echo "artifact-name=${ARTIFACT_NAME}" >> $GITHUB_OUTPUT
-          echo "artifact-url=https://${{ vars.S3_BUCKET }.${{ vars.S3_HOST }}/${ARTIFACT_DIR}" >> $GITHUB_OUTPUT
+          echo "artifact-url=https://${{ vars.S3_BUCKET }}.${{ vars.S3_HOST }}/${ARTIFACT_DIR}" >> $GITHUB_OUTPUT
 
       - name: Report to api
         shell: bash
