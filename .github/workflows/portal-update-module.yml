@@ -51,6 +51,7 @@ jobs:
       git-sha-check: ${{ github.event.inputs.git-sha }}
       upload-artifact: true
       prerelease: ${{ !!inputs.prerelease }}
+      is-developer-portal: true
 
   publish:
     runs-on: ubuntu-latest
