@@ -67,15 +67,33 @@ jobs:
         with:
           name: pkg
 
-      - name: Download minio client
+      - name: Download rclone client
         shell: bash
+        env:
+          RCLONE_VERSION: "1.75.1"
+          RCLONE_SHA256: "982b5aa772841168f8e380f139e9e787b2a105403e32b94da8676a0e1c0a13ab"
         run: |
-          wget -q https://dl.min.io/client/mc/release/linux-amd64/mc
-          chmod +x mc
+          set -euo pipefail
+          archive="rclone.zip"
+          extract_dir="rclone-extracted"
+          curl --fail --location --silent --show-error --retry 3 \
+            -o "$archive" \
+            "https://downloads.rclone.org/v${RCLONE_VERSION}/rclone-v${RCLONE_VERSION}-linux-amd64.zip"
+          printf '%s  %s\n' "$RCLONE_SHA256" "$archive" | sha256sum --check --status
+          rm -rf "$extract_dir"
+          unzip -q "$archive" -d "$extract_dir"
+          install -m 0755 "$extract_dir/rclone-v${RCLONE_VERSION}-linux-amd64/rclone" ./rclone
+          rm -rf "$archive" "$extract_dir"
 
       - name: Upload
         id: upload
         shell: bash
+        env:
+          S3_HOST: ${{ vars.S3_HOST }}
+          S3_REGION: ${{ vars.S3_REGION || 'eu-north-1' }}
+          S3_BUCKET: ${{ vars.S3_BUCKET }}
+          S3_ACCESS_KEY: ${{ secrets.S3_KEY }}
+          S3_SECRET_KEY: ${{ secrets.S3_SECRET }}
         run: |
           # extract the package
           tar -xvzf pkg.tgz
@@ -92,13 +110,24 @@ jobs:
           cp pkg.tgz "pkg/companion/${ARTIFACT_NAME}"
 
 
-          export HOME="$(pwd)" MC_CONFIG_DIR="$(pwd)"
-          ./mc alias set remote/ https://${{ vars.S3_HOST }} ${{ secrets.S3_KEY }} ${{ secrets.S3_SECRET }}
+          export RCLONE_CONFIG_REMOTE_TYPE="s3"
+          export RCLONE_CONFIG_REMOTE_PROVIDER="Other"
+          export RCLONE_CONFIG_REMOTE_ENV_AUTH="false"
+          export RCLONE_CONFIG_REMOTE_ACCESS_KEY_ID="$S3_ACCESS_KEY"
+          export RCLONE_CONFIG_REMOTE_SECRET_ACCESS_KEY="$S3_SECRET_KEY"
+          export RCLONE_CONFIG_REMOTE_ENDPOINT="https://${S3_HOST}"
+          export RCLONE_CONFIG_REMOTE_REGION="$S3_REGION"
 
-          ./mc cp "pkg/companion/" "remote/${{ vars.S3_BUCKET }}/${ARTIFACT_DIR}" --recursive
+          # rcat writes one remote object, like S3 PutObject.
+          (cd pkg/companion && find . -type f -print0) | while IFS= read -r -d '' file; do
+            file="${file#./}"
+            FILE_SIZE=$(wc -c < "pkg/companion/${file}" | tr -d '[:space:]')
+            ./rclone rcat "remote:${S3_BUCKET}/${ARTIFACT_DIR}/${file}" \
+              --size "$FILE_SIZE" --s3-no-head --s3-no-check-bucket < "pkg/companion/${file}"
+          done
 
           echo "artifact-name=${ARTIFACT_NAME}" >> $GITHUB_OUTPUT
-          echo "artifact-url=https://${{ vars.S3_BUCKET }}.${{ vars.S3_HOST }}/${ARTIFACT_DIR}" >> $GITHUB_OUTPUT
+          echo "artifact-url=https://${S3_BUCKET}.${S3_HOST}/${ARTIFACT_DIR}" >> $GITHUB_OUTPUT
 
       - name: Report to api
         shell: bash
