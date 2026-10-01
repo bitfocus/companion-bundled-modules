@@ -103,7 +103,11 @@ jobs:
             mv "${{ github.event.inputs.module-name }}" pkg
           fi
 
-          ARTIFACT_DIR="${{ github.event.inputs.module-type }}/${{ github.event.inputs.module-name }}/${{ github.event.inputs.git-ref }}-${{ github.event.inputs.git-sha }}"
+          # include part of the package hash, so that a rerun doesn't overwrite a previous upload
+          PKG_SHA256=$(sha256sum pkg.tgz | awk '{print $1}')
+          GIT_SHA="${{ github.event.inputs.git-sha }}"
+
+          ARTIFACT_DIR="${{ github.event.inputs.module-type }}/${{ github.event.inputs.module-name }}/${{ github.event.inputs.git-ref }}-${GIT_SHA:0:12}-${PKG_SHA256:0:12}"
           ARTIFACT_NAME="${{ github.event.inputs.module-name }}-${{ github.event.inputs.git-ref }}.tgz"
 
           # copy the package to the companion directory
@@ -128,13 +132,14 @@ jobs:
 
           echo "artifact-name=${ARTIFACT_NAME}" >> $GITHUB_OUTPUT
           echo "artifact-url=https://${S3_BUCKET}.${S3_HOST}/${ARTIFACT_DIR}" >> $GITHUB_OUTPUT
+          echo "pkg-sha256=${PKG_SHA256}" >> $GITHUB_OUTPUT
 
       - name: Report to api
         shell: bash
         run: |
           echo "Uploaded build to ${{ steps.upload.outputs.artifact-url }}/${{ steps.upload.outputs.artifact-name }}" >> $GITHUB_STEP_SUMMARY
 
-          PKG_SHA256=$(sha256sum pkg.tgz | awk '{print $1}')
+          PKG_SHA256="${{ steps.upload.outputs.pkg-sha256 }}"
           echo "With SHA256=${PKG_SHA256}" >> $GITHUB_STEP_SUMMARY
 
           MANIFEST_JSON=$(cat pkg/companion/manifest.json)
